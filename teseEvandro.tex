@@ -1,0 +1,193 @@
+\documentclass[12pt,a4paper,tocpage=plain,floatnumber=continuous,chapter=TITLE,appendix=nobox,font=plain, header=ruled,hyperindex=false]{abnt}
+\usepackage[utf8x]{inputenc}
+\usepackage[portuges, brazil]{babel}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shadows}
+\usepgflibrary{arrows}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{courier}
+\usepackage{indentfirst}
+\usepackage{latexsym,amstext,amsxtra,amsopn}
+\usepackage{hyperref}
+\usepackage[alf,abnt-full-initials=no,abnt-etal-list=0,abnt-emphasize=bf,abnt-thesis-year=final,abnt-year-extra-label=yes,abnt-etal-cite=2]{abntcite}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=small,textfont=small]{caption}
+\usepackage[singlelinecheck=true,margin=10pt,font=small]{subfig}
+\usepackage{rotating}
+\usepackage{marvosym}
+\usepackage{remreset}
+\usepackage{setspace}
+\usepackage{listings}
+%\usepackage[hang,center]{subfigure}
+\usepackage{makeidx}
+\usepackage{tabularx,array,colortbl}
+%\usepackage[table]{xcolor}
+\usepackage[style=list,number=none,border=none,header=none,cols=2]{glossary}
+%\usepackage{glossaries}
+%\usepackage[subentrycounter,seeautonumberlist]{glossaries}
+
+%Numeração das equações
+\usepackage{remreset}
+\makeatletter\@removefromreset{equation}{chapter}\makeatother
+
+%defini glossarios
+\newglossarytype[agl]{sigla}{sig}{sgl}
+\newglossarytype[sgl]{simbolo}{sim}{sbl}
+%\newglossary[agl]{sigla}{sig}{sgl}{Siglas}
+%\newglossary[sgl]{simbolo}{sim}{sbl}{Simbolos}
+
+%\usepackage{geometry}
+%\geometry{tmargin= 3cm,bmargin= 2cm,lmargin= 3cm,rmargin=2cm}
+\makeglossary
+%\makeglossaries
+\makeindex
+\makeatletter
+\@removefromreset{footnote}{chapter}
+\makeatother
+\author{Evandro Moimaz Anselmo}
+\renewcommand{\ABNTchapterfont}{\bfseries}
+\renewcommand{\ABNTchaptersize}{\normalsize}
+\renewcommand{\ABNTanapsize}{\normalsize}
+\renewcommand{\ABNTsectionfontsize}{\normalsize} 
+\renewcommand{\ABNTsectionfont}{\rm} 
+\renewcommand{\ABNTsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTsubsectionfont}{\rm\bfseries}
+\renewcommand{\captionfont}{\small}
+%%códigos fontes
+%\renewcommand{\lstlistingname}{Código fonte}
+%\renewcommand{\lstlistlistingname}{Lista de Códigos Fonte}
+%\renewcommand*\thelstlisting{\arabic{lstlisting}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+%\renewcommand{\descriptionwidth}{0.85\textwidth}
+%\renewcommand{\glossaryalignment}{\textwidth}
+\hypersetup{pdfborder=000,colorlinks=false,pdftitle={Morfologia das tempestades elétricas na América do Sul}, pdfcreator={Evandro Moimaz Anselmo}, pdfproducer={Evandro Moimaz Anselmo}, pdfkeywords={Rel\^ampagos, tempestades elétricas, precipitação}}
+%\hypersetup{colorlinks, citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+%\hypersetup{colorlinks=false}
+
+%\hypersetup{backref=true,pdfpagemode=UseOutlines,colorlinks=true,a5paper,breaklinks=true,hyperindex,linkcolor=blue,
+%anchorcolor=black,citecolor=green,filecolor=magenta,menucolor=red,pagecolor=red,urlcolor=cyan,bookmarks=true,
+%bookmarksopen=true,pdfpagelayout=SinglePage,pdfpagetransition=Dissolve}
+\hypersetup{bookmarksopen=true,backref=true,pdfpagemode=true,hyperindex,bookmarks=true}
+
+\lstset{ 
+language=SQL,                % choose the language of the code
+extendedchars=true,
+basicstyle=\scriptsize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers'z
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=2,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=8pt,                  % how far the line-numbers are from the code
+numberstyle=\tiny,
+%backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=trBL,			% adds a frame around the code
+frameround=fttt,
+tabsize=2,			% sets default tabsize to 2 spaces
+captionpos=b,			% sets the caption-position to bottom
+breaklines=true,		% sets automatic line breaking
+breakatwhitespace=false,	% sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)},        % if you want to add a comment within your code
+basicstyle=\fontfamily{pcr}\fontseries{m}\selectfont\footnotesize,
+commentstyle=\ttfamily\color{gray}
+%columns=fullflexible
+}
+%%%
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\begin{document}
+\autor{Evandro Moimaz Anselmo}
+\titulo{Morfologia das tempestades elétricas na América do Sul}
+\orientador[Orientador:\\]{Prof. Dr. Carlos Augusto Morales Rodriguez }
+
+\comentario{Tese ao departamento de Ciências Atmosféricas, realizada como pré-requisito para obtenção do título de Doutor em Ciências.}
+\instituicao{Instituto de Astronomia, Geofísica e Ciências Atmosféricas da Universidade de São Paulo}
+\local{São Paulo - SP}
+\data{2014}
+\capa
+\folhaderosto
+%\begin{folhadeaprovacao}
+%Dissertação titulada como \textit{Estudo da razão entre o número de relâmpagos intranuvens e nuvem-solo para sistemas convectivos na cidade de Campo Grande - MS}, defendida por Evandro Moimaz Anselmo e aprovada em 29 de Maio de 2009 na cidade de Campo Grande - MS, Universidade Federal de Mato Grosso do Sul, Departamento de Física, pela seguinte banca examinadora: 
+%\setlength{\ABNTsignthickness}{0.4pt}
+%\setlength{\ABNTsignskip}{2cm}
+%\assinatura{Prof. Dr. Widinei Alver Fernandes\\ Universidade Federal de Mato Grosso do Sul \\ Orientador}
+%\assinatura{Prof. Ph. D. Moacir Lacerda\\ Universidade Federal de Mato Grosso do Sul \\ Co-orientador}
+%\assinatura{Prof. Ph. D. Carlos Augusto Morales \\ Universidade de São Paulo}
+%\assinatura{Prof. Dr. Roberto Ferreira dos Santos\\ Universidade Federal de Mato Grosso do Sul}
+%\end{folhadeaprovacao}
+\pretextualchapter{}
+\vfill
+\begin{flushright}
+\textit{\large Tese}
+\end{flushright}
+
+\pretextualchapter{AGRADECIMENTOS}
+
+
+\begin{resumo}
+Resumo
+
+\bigskip
+\bigskip
+Palavras-chave: relâmpagos, tempestades, monitoramento.
+\end{resumo}
+
+\begin{abstract}
+\paragraph*{}
+Abstract
+
+\bigskip
+\bigskip
+Key-words: lightning, storms, tracking.
+\end{abstract}
+
+\listoffigures
+\listoftables
+%\lstlistoflistings
+%\sumario
+\cleardoublepage
+\phantomsection
+%\ABNTaddcontentsline{lot}{chapter}{SUMÁRIO}
+\tableofcontents
+
+
+\makesigla
+\renewcommand{\glossaryname}{LISTA DE SIGLAS E ABREVIATURAS}
+\cleardoublepage
+\phantomsection
+\printsigla
+
+\makesimbolo
+\renewcommand{\glossaryname}{LISTA DE S\'{I}MBOLOS}
+\cleardoublepage
+\phantomsection
+\printsimbolo
+
+%\printglossaries
+
+%\include{capitulos/Introducao}
+\include{capitulos/Metodologia}
+%\include{capitulos/MarcoDasTempestadesEletricas}
+%\include{capitulos/MorfologiaDasTempestadesEletricas}
+%\include{capitulos/Severidade}
+%\include{capitulos/Conclusao}
+%\apendice
+%\include{cfontesal}
+\cleardoublepage
+\phantomsection
+\renewcommand{\bibname}{REFER\^ENCIAS}
+\renewcommand{\arraystretch}{2}
+\bibliography{referencias}
+%\addcontentsline{toc}{chapter}{Indice Remissívo}
+\cleardoublepage
+\phantomsection
+%\addcontentsline{toc}{chapter}{ÍNDICE REMISSIVO}
+\printindex
+\end{document}

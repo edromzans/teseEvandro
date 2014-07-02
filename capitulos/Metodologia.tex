@@ -1,0 +1,176 @@
+\chapter{METODOLOGIA}
+
+Consiste fundamentalmente na construção de um subconjunto de dados provindos das observações dos sensores abordo do satélite TRMM, que estiveram em orbita planetária entre 1998 e 2011. 
+
+As informações dos diferentes sensores foram combinadas de maneira à identificar-se sistemas denominados como Tempestades Elétricas.
+
+
+\begin{itemize}
+\item Orbital TRMM LIS, VIRS (1B01), and PR (2A25) data from 1998-2011. 
+\item NCEP RII reanalysis from 1998-2011: geopotential height and temperature in 17 pressure levels.
+\item Region over South America -- SA: 40S-10N and 90-30W.
+\item 68,230 TRMM orbits and 154,189 thunderstorms found, only 96,281 thunderstorm had a least one valid PR profile.
+\item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141–159, 2003.}.
+\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
+\end{itemize}
+
+
+
+Para melhor entender as implicações que envolvem a construção de uma base de dados de sistemas individualmente a partir das observações do TRMM, inicialmente descreve-se algumas das principais características operacionais do satélite TRMM.
+
+\section{O SATÉLITE TRMM}
+
+O satélite TRMM (\textit{Tropical Rainfall Measuring Mission})\sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}}  faz parte de uma missão conjunta entre a NASA (\textit{National Aeronautics and Space Administration} - EUA)\sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a JAXA (\textit{Japan Aerospace Exploration Agency}) \cite{simpson1988}. Os instrumentos a bordo do TRMM são; radar de precipitação (PR), radiômetro de microondas (TMI),  radiômetro no visível e no infravermelho (VIRS), sistema de energia radiante da terra e das nuvens (CERES) e sensor para imageamento de relâmpagos (LIS) \cite{kummerok1998}. 
+
+\sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}}
+
+Esse satélite possui uma órbita de aproximadamente 320 Km de altura e inclinação de 30$^{\circ}$-35$^{\circ}$ para que possa visitar uma mesma região duas vezes ao dia, em horários distintos, sobre a região tropical do planeta Terra \cite{simpson1988}.   
+
+\subsection{Radar de Precipitação}
+
+O PR (\textit{Precipitation Radar}) é um radar que opera na frequência de 13,8 GHz e possui uma resolução horizontal entre 4,3-5 km, 250 m de resolução vertical e uma varredura 215 km. Uma de suas características mais importantes é a capacidade para fornecer a estrutura tridimensional dos hidrometeoros de nuvens, desde a superfície até uma altura de 20 km \cite{kummerok1998}. Para esta pesquisa serão utilizados os dados 2A25 que apresentam o fator de refletividade do radar corrigido por atenuação da chuva \cite{2A25}.
+\sigla{name={PR},description={\textit{Precipitation Radar}}}
+
+\subsection{Imageador de relâmpagos}
+
+O LIS (\textit{Lightning Imaging Sensor}) é um sensor óptico capaz de detectar e localizar relâmpagos em tempestades individuais, analisando a emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos, em resposta a ocorrência de descargas atmosféricas. Este sensor CCD\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens em câmeras digitais.}, que trabalha no comprimento de onda de 772 nm, identifica descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno, a partir da amostragem de 500 imagens por segundo. Combinado com a velocidade do satélite (11 km/s) e abertura da CCD, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80 a 90 s, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
+\sigla{name={LIS},description={\textit{Lightning Imaging Sensor}}}
+
+\subsection{Radiômetro no visível e infravermelho}
+
+O VIRS (\textit{Visible and InfraRed Scanner}) é um radiômetro passivo que realizada medidas de radiância em 5 bandas espectrais, com comprimentos de onda de 0,63 $\mu$m, 1,61 $\mu$m, 3,75 $\mu$m, 10,8 $\mu$m e 12 $\mu$m. Sua resolução horizontal atinge 2,11 km no nadir e 720 km de varredura \cite{trmmhandbook}.
+
+Nesta pesquisa, utilizamos apenas o canal  10,8$\mu$m, para estimativa da temperatura de topo de nuvens.
+\sigla{name={VIRS},description={\textit{Visible and InfraRed Scanner}}}
+
+\subsection{Radiômetro de microondas}
+
+O TMI (\textit{TRMM Microwave Imager}) é um radiômetro passivo multicanal, 10,65 GHz, 19,35 GHz, 21,3 GHz, 37 GHz, e 85,5 GHz, com dupla polarização. Possui uma varredura cônica combinada com movimento de rotação de sua antena, a qual observa regiões elipsoidais quando projetadas na superfície \cite{kummerok1998}. Sua resolução horizontal varia entre 6-50 km, dependendo do ângulo entre o feixe e o nadir, e varredura de ~760 km \cite{trmmhandbook}. 
+\sigla{name={TMI},description={\textit{TRMM Microwave Imager}}}
+
+\section{FONTE DE DADOS}
+
+A fonte de dados foi obtida utilizando a infra-estrutura de rede do IAG-USP, aonde os dados foram transferidos a partir do servidor de FTP da NASA (ftp://disc2.nascom.nasa.gov/ftp/data/s4pa). 
+
+Os arquivos orbitais do TRMM na versão 7, produtos 1B01, 2A25 e 1B11 foram baixados para o período entre 1998 e 2011. Nesta etapa um conjunto de \textit{scripts} foi desenvolvido para download e verificação de integridade dos dados baixados. No total o volume de dados atingiu 28 TB.  %PR 16,5TB / VIRS 10TB / TMI 1,4TB /   
+
+Os dados do LIS de \textit{flash}, \textit{group}, \textit{events} e \textit{view time} foram concedidos pela pesquisadora \citeonline{rachel}, quem já possuía essa base de dados no Brasil. 
+
+Como as observações globais do PR, LIS, VIRS e TMI entre 1998-2011 representam um volume de aproximadamente 30 TB, a região de estudo foi limitada entre 10N-40S e 91W-30W. Portanto foi feito um recorte nos dados orbitais apenas para esta região que cobre toda a América do Sul, o que reduziu bastante o volume de dados a serem utilizados e tornou o processamento possível perante a infraestrutura computacional do IAG-USP.
+
+\section{RAIOS COM DIFERENTES TAXAS DE DESCARGAS DE RETORNO}
+
+O estudo da Morfologia das tempestades foi iniciado pela construção de um algoritmo que fez a extração de perfis verticais do fator de refletividade corrigida por atenuação ($Z_c$) \simbolo{name={$Z_e$},description={\textit{Fator de refletividade corrigida por atenuação, produto TRMM 2A25}}}, produto 2A25, nos pontos de grade onde ocorreram descargas atmosféricas observadas pelo LIS.
+
+%Esse processamento envolveu uma quantidade de dados de aproximadamente 16 TB. Foram utilizados 4 HDs (Hard Disk) de 1 TB realizando \textit{striping} por \textit{RAID0} via software, permitindo o processamento integral na massa de dados do LIS e 2A25 fosse realizado em aproximadamente 7 dias. Sem esse planejamento de hardware o as extrações ficariam inviáveis, pois mesmo que o algoritmo não exija grande demanda de processador, a leitura e escrita em disco gerava I/O que davam \textit{kernel panic} no sistema.
+
+Após a extração dos perfis verticais de $Z_e$ orientada pela ocorrência de raios, foi constituída uma base de dados com as seguintes características:
+
+\begin{itemize}
+\item Para cada raio observado pelo LIS existia um perfil vertical de refletividade do radar.
+\item Além dos 80 níveis verticais de cada perfil de refletividade do radar, temos também a classificação do tipo de chuva identificada pelo produto TRMM 2A25 (convectiva, estratiforme, etc).
+\item Cada raio (\textit{flash}) possui o seu respectivo número de eventos (pixels da CCD iluminados), número de grupo (grupos de \textit{pixels} iluminados na CCD que compõem o raio), e tempo de duração em milisegundos. 
+\end{itemize}
+
+A morfologia da estrutura 3D da precipitação observada pelo PR foi estudada para diferentes classes de perfis separados conforme o número de descargas de retorno (\textit{groups}) de cada raio (\textit{flash}). 
+
+Nesta etapa foi investigada se a taxa de descargas de retorno representa maior definição de precipitação em altitude principalmente na região de fase mista, entre 5 e 7 km de altitude. 
+
+\section{IDENTIFICAÇÃO DAS TEMPESTADES ELÉTRICAS}
+
+Após uma análise ponto a ponto, buscando associar cada raio com um perfil de refletividade do PR, partimos para uma análise de grupo, buscando identificar quais as tempestades elétricas que representam maior intensidade convectiva.
+
+Técnicas numéricas de mudança de eixo ordenados foram utilizadas para projetar as
+observações orbitais do VIRS, PR e LIS em uma grade regular com 0,05$^{\circ}$ de resolução, a qual foi utilizada para verificar regiões com medidas coincidentes entre os sensores.
+
+A equação de Planck foi aplicada nos dados de radiância espectral do produto 1B01, canal 4 do VIRS (10,8 µm), e áreas com temperaturas de corpo negro em infravermelho mais frias do que 258 K delimitaram os \textit{clusters} de nuvens. Após, o algoritmo verifica se houve raios detectados pelo LIS na mesma área da nuvem. Havendo pelo menos um raio, o sistema era classificado como uma tempestade elétrica. 
+
+Desta forma, cada tempestade elétrica foi armazenada na forma de um arquivo HDF contendo medidas coincidentes do VIRS, LIS e PR. Os arquivos de tempestades elétricas são compostos pelas seguintes informações contidas nos produtos do TRMM:
+
+\begin{itemize}
+\item VIRS: 1B01 -- \textit{latitude, longitude, Radiance channel 4} (10,8 µm)
+\item PR: 2A25 -- \textit{latitude, longitude, Corrected Z-factor, Rain Type} 
+\item LIS: \textit{latitude and longitude of, flashes, groups, events and View Time}  
+\end{itemize} 
+
+Foram identificadas 154,189 tempestades elétrica e devido a varredura do PR ser menor do que a do VIRS, apenas 96,281 tiveram pelo menos um perfil de chuva válido observado pelo radar a bordo do satélite.
+
+
+\section{A TAXA DE RAIOS POR TEMPESTADE ELÉTRICA}
+
+A taxa de raios no tempo (FT), foi definida como a razão entre o número de flashes ($N_{fl}$) e o tempo médio ($VT_m$) em que o sensor LIS observou a tempestade elétrica, da mesma forma como foi calcula para as \textit{precipitation features} \cite{cecil2005, Nesbitt2000}. 
+
+%Os pixels do view time do LIS de cada orbita foram projetados em uma grade regular com 0.25 de resolução 
+
+A taxa de raios no tempo também foi normalizada pela área da tempestade elétrica ($A_t$), obtendo também o índice da taxa de raios no tempo por área (FTA). 
+
+\begin{equation}
+FT = \frac{N_{fl} }{VT_m} 60 ~[raios~minuto^{-1}]  
+\label{eqFT}  
+\end{equation}
+%31557600 ano
+\begin{equation}
+FTA = \frac{N_{fl} }{VT_m A_t } 86400 ~[raios~dia^{-1}~km^{-2}]
+\label{eqFTA}
+\end{equation}
+
+Para cada sistema foram calculados os dois índices que podem estar associados com a severidade de tempo, o FT e FTA, conforme mostra as equações \ref{eqFT} e \ref{eqFTA} 
+\simbolo{name={FT},description={\textit{Taxa de raios por tempo $[raios~minuto^{-1}]$}}} \simbolo{name={FTA},description={\textit{Taxa de raios por tempo por área $[raios~dia^{-1}~km^{-2}]$}}}.
+
+\section{DENSIDADES ESPACIAIS DE RAIOS E TEMPESTADES ELÉTRICAS}
+
+Neste trabalho, buscamos identificar espacialmente as regiões mais eficientes nos processos de eletrificação, as quais possuem pouca densidade de sistemas porém alta densidade de raios em comparação com as demais regiões da América do Sul.
+
+O que se torna fundamental na construção destes mapas é considerar quantas vezes, ou qual o tempo em que o satélite ficou observando cada parte da região de estudo. Qualquer análise de densidade espacial com dados do TRMM que não considere o número de passagens ou tempo em que o sensor observou a região projetada na superfície, será tendenciosa.
+
+Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua orbita inclinada 35° e velocidade, entre 1998 e 2011, o satélite passou 10,000 vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT}, com todas as orbitas e as varreduras do VIRS projetadas e acumuladas sobre a América do Sul. 
+
+Fazendo o acumulado do tempo de visada do LIS na superfície, como mostra a figura \ref{lisVT}, observa-se que em 14 anos o LIS passou 10 dias a mais na latitude -34°S do que em 0°.
+
+Na figura \ref{gridVT},  estão representadas duas grades regulares com 0,25° de resolução. A grade ($\mathbf{VT}_{lis}$) do tempo total da visada do sensor LIS sobre a superfície e a grade ($\mathbf{VT}_{virs}$), do número de vezes que o satélite passou conforme a o tamanho da varredura do radiômetro VIRS na superfície.  
+
+\begin{figure}[hbp]
+  \centering{
+  \subfloat[Tempo de visada do LIS (0,25°). Valores convertidos em dias de observação.]{{\includegraphics[scale=0.9]{img/vt_trmm}} \label{lisVT}}
+  \subfloat[Número de passagens do VIRS (0,25°).]{{\includegraphics[scale=0.9]{img/passagens_virs_1998-2011}} \label{VirsVT}}
+  }
+   
+\caption{Observações do TRMM sobre a América do Sul}
+\label{gridVT} 
+
+\end{figure} 
+
+Da mesma forma que o tempo ou o número de passagens do satélite foi acumulada em uma grade regular de 0,25°, os raios foram acumulados na grade ($\mathbf{FL}$) e todos os píxeis do VIRS com radiância espectral associada com temperaturas de brilho inferiores a 258 K que definiram as áreas das tempestades elétricas  
+
+
+%para as regiões em que o satélite passa mais tempo observando.
+
+\begin{equation}
+DE_{r} = \frac{N_{fl}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600 ~[raios~ano^{-1}~km^{-2}]    
+\end{equation}
+
+\begin{equation}
+DE_{te} = \frac{P_{virs}}{VT_{virs} A_g} 31557600 ~[sistemas~ano^{-1}~km^{-2}]    
+\end{equation}
+
+
+\section{MORFOLOGIA DA PRECIPITAÇÃO}
+
+descrever CFAD CCFD CFTD
+
+A morfologia da precipitação observada pelo PR foi estudada por meio de diagramas de contorno de frequência de ocorrência por altitude, os CFADs, utilizando os perfis de refletividade efetiva ($Z_{ef}$) do produto 2A25.
+
+Conforme descreve \cite{yuter1995}, primeiramente obtivemos histogramas bidimensionais (hist2D) da densidade de probabilidade de ocorrência de $Z_{ef}$ por nível de altitude com tamanho de bin de 1 dBZ para cada 250 m de altitude. Cada nível de altitude do hist2D foi normalizado pelo total de ocorrência de refletividade (N$_{Zef}$) do respectivo nível.
+
+Para cada diagrama foi calculado o percentual (\%) de perfis classificados como convectivo, estratiforme e outros, (P) o número de perfis que compõe o CFAD, (L) o número de ocorrência de refletividade do nível de máxima ocorrência e (H) a altitude do nível de máxima ocorrência. Ao plotar os contornos dos CFADs, os níveis de altitude que representaram menos do que 10\% de L foram desconsiderados.
+
+Com base nos dados de Reanálises rII do NCEP, o eixo de altitude dos perfis do radar foram projetados em um eixo de temperatura conforme os campos de altura geopotencial e temperatura, por nível de pressão.
+
+Desta forma desenvolvemos o estudo das frequências de ocorrência de refletividade por nível de temperatura, construindo diagramas que foram denominados como Diagramas de Contorno de Frequência por Temperatura (CFTD) e Diagramas de Contorno de Frequência Cumulativa por Temperatura (CCFTD).
+
+
+
+
+
+
+
