@@ -125,32 +125,51 @@ O que se torna fundamental na construção destes mapas é considerar quantas ve
 
 Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua orbita inclinada 35° e velocidade, entre 1998 e 2011, o satélite passou 10,000 vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT}, com todas as orbitas e as varreduras do VIRS projetadas e acumuladas sobre a América do Sul. 
 
+\begin{figure}[!Hb]
+  \centering{
+  \subfloat[Tempo de visada do LIS (0,25°). Valores convertidos em dias de observação.]{{\includegraphics[scale=0.9]{img/grids/vt_trmm}} \label{lisVT}}
+  \subfloat[Número de passagens do VIRS (0,25°).]{{\includegraphics[scale=0.9]{img/grids/passagens_virs_1998-2011}} \label{VirsVT}}
+  }
+
+\caption{Observações do TRMM sobre a América do Sul.}
+\label{gridVT} 
+\end{figure} 
+
 Fazendo o acumulado do tempo de visada do LIS na superfície, como mostra a figura \ref{lisVT}, observa-se que em 14 anos o LIS passou 10 dias a mais na latitude -34°S do que em 0°.
 
-Na figura \ref{gridVT},  estão representadas duas grades regulares com 0,25° de resolução. A grade ($\mathbf{VT}_{lis}$) do tempo total da visada do sensor LIS sobre a superfície e a grade ($\mathbf{VT}_{virs}$), do número de vezes que o satélite passou conforme a o tamanho da varredura do radiômetro VIRS na superfície.  
+Na figura \ref{gridVT}, estão representadas duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0,25° de resolução, projetada sobe a América do Sul. A matriz ($\mathbf{VT}_{lis}$) do tempo total da visada do sensor LIS sobre a superfície e a matriz ($\mathbf{VT}_{virs}$), do número de vezes que o satélite passou conforme o tamanho da varredura do radiômetro VIRS na superfície.  
+
+Com as mesmas dimensões e resolução de grade que o tempo de observação e o número de passagens do satélite foram acumulados em duas matrizes, os raios foram acumulados na matriz ($\mathbf{FL}_{lis}$) e todos os píxeis do VIRS com radiância espectral associada com temperaturas de brilho inferiores a 258 K e que definiram as áreas das tempestades elétricas, foram acumulados na matriz ($\mathbf{P}_{te}$) que representa os locais com maior cobertura de nuvens de tempestades elétricas.
+
+A matriz $\mathbf{FL}_{lis}$ projeta sobre a América do Sul está representada na figura \ref{gridFL} e a matriz $\mathbf{P}_{te}$, na figura \ref{gridTe}. Note que principalmente a figura \ref{gridTe} é notável o alto número de sistemas na região Sul da AS, com a mesma magnitude do que em locais ao Norte aonde atua a Zona de Convergência Intertropical. Mas esse máximo no Sul da AS não indica maior ocorrência de tempestades elétricas e sim maior frequência de passagem do satélite TRMM.
 
 \begin{figure}[hbp]
   \centering{
-  \subfloat[Tempo de visada do LIS (0,25°). Valores convertidos em dias de observação.]{{\includegraphics[scale=0.9]{img/vt_trmm}} \label{lisVT}}
-  \subfloat[Número de passagens do VIRS (0,25°).]{{\includegraphics[scale=0.9]{img/passagens_virs_1998-2011}} \label{VirsVT}}
+  \subfloat[Acumulado de raios observados pelo LIS (0,25°).]{{\includegraphics[scale=0.9]{img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill}} \label{gridFL}}
+  \subfloat[Acumulado das áreas de tempestade elétrica (0,25°).]{{\includegraphics[scale=0.9]{img/grids/densEspacial19982011acumuladoTempestadesPolyfill}} \label{gridTe}}
   }
-   
-\caption{Observações do TRMM sobre a América do Sul}
-\label{gridVT} 
 
+\caption{Acumulados dos raios e áreas das 154,189 tempestades elétricas identificadas.}
+\label{gridSistemas} 
 \end{figure} 
 
-Da mesma forma que o tempo ou o número de passagens do satélite foi acumulada em uma grade regular de 0,25°, os raios foram acumulados na grade ($\mathbf{FL}$) e todos os píxeis do VIRS com radiância espectral associada com temperaturas de brilho inferiores a 258 K que definiram as áreas das tempestades elétricas  
+Mesmo que as matrizes representem pontos em uma grade com espaçamento angular regular, as áreas de cada ponto de grade não são iguais, pois a  o comprimento de arco de 0.25° na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades espaciais.
 
 
-%para as regiões em que o satélite passa mais tempo observando.
+Portanto, a densidade espacial de raios ($\mathbf{DE}_{fl}$) é calculada conforme a equação \ref{defl}. Note que a razão de $\mathbf{FL}_{lis}$ por $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ é multiplicada por $24\times60\times60\times365,25$, o que converte o tempo de observação do LIS de segundos para anos. Então as densidades espaciais de raios, possuem dimensões de número de [raios] por [tempo] por [quilômetro quadrado].
+
+No mesmo caminho as densidades espacias de tempestades elétricas ($\mathbf{DE}_{te}$) foram obtidas conforme a equação \ref{dete}. Porém a constante de conversão de tempo na equação \ref{dete} é diferente da equação \ref{defl}, pois o tempo que o VIRS observou a AS, foi estimado a partir do número de vezes que o satélite passou sobre a AS e considerando que cada ponto de grade na orbita foi observado por 90 segundos. Portanto ao converter a matriz $\mathbf{VT}_{virs}$ para segundos de observação, temos um fator de 90 no denominador, que está implícito na equação \ref{dete}.
+
+
 
 \begin{equation}
-DE_{r} = \frac{N_{fl}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600 ~[raios~ano^{-1}~km^{-2}]    
+\mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600 ~[raios~ano^{-1}~km^{-2}]    
+\label{defl}
 \end{equation}
 
 \begin{equation}
-DE_{te} = \frac{P_{virs}}{VT_{virs} A_g} 31557600 ~[sistemas~ano^{-1}~km^{-2}]    
+\mathbf{DE}_{te} = \frac{\mathbf{P}_{te}}{\mathbf{VT}_{virs} \mathbf{A}_g} 350640 ~[sistemas~ano^{-1}~km^{-2}]    
+\label{dete}
 \end{equation}
 
 
