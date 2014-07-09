@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.6.23)  2 JUL 2014 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.9)  9 JUL 2014 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,17 +901,17 @@ Writing index file teseEvandro.idx
 
 Package hyperref Warning: Invalid value `000'
 (hyperref)                for option `pdfborder'.
-(hyperref)                Option setting is ignored on input line 69.
+(hyperref)                Option setting is ignored on input line 70.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 69.
+Package hyperref Info: Option `colorlinks' set `false' on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 76.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 77.
 
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 76.
+(hyperref)                setting the option has no effect on input line 77.
 
 
 Package hyperref Warning: Values of option `pdfpagemode':
@@ -922,15 +922,15 @@ Package hyperref Warning: Values of option `pdfpagemode':
 (hyperref)                * `UseOC' (PDF 1.5)
 (hyperref)                * `UseAttachments' (PDF 1.6)
 (hyperref)                * An empty value disables the option.
-(hyperref)                Unknown value `true' on input line 76.
+(hyperref)                Unknown value `true' on input line 77.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 76.
+(hyperref)                setting the option has no effect on input line 77.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 76.
+(hyperref)                setting the option has no effect on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -942,21 +942,21 @@ LaTeX Warning: Unused global option(s):
 (./teseEvandro.aux (./capitulos/Metodologia.aux))
 \openout1 = `teseEvandro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 106.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -995,7 +995,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring OFF on input line 105.
+Package hyperref Info: Link coloring OFF on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1005,9 +1005,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count176
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 
 (./teseEvandro.out) (./teseEvandro.out)
 \@outlinefile=\write7
@@ -1024,114 +1024,114 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count177
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 114.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 115.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 114
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 115
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 114
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 115
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 114.
+(Font)              <12> on input line 115.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 114.
+(Font)              <8> on input line 115.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 114.
-LaTeX Font Info:    Try loading font information for U+msa on input line 114.
+(Font)              <6> on input line 115.
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 114.
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 114.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 115.
  [0
 
 \openout4 = `teseEvandro.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 3375) in paragraph at lines 115--115
+Underfull \hbox (badness 3375) in paragraph at lines 116--116
 []\OT1/lmr/m/n/12 Tese ao de-par-ta-mento de Ci^encias At-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 116.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115 \folhaderosto
+l.116 \folhaderosto
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 132.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.131 \pretextualchapter
+l.132 \pretextualchapter
                         {AGRADECIMENTOS} [2
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134 \begin{resumo}
+l.135 \begin{resumo}
                      [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 141.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \end{resumo}
+l.141 \end{resumo}
                    [4
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 150.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 150.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \end{abstract}
+l.150 \end{abstract}
                      [5
 
 
@@ -1140,14 +1140,14 @@ l.149 \end{abstract}
 \openout8 = `teseEvandro.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 153.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \listoftables
+l.153 \listoftables
                     [6
 
 ] (./teseEvandro.lot)
@@ -1155,14 +1155,14 @@ l.152 \listoftables
 \openout9 = `teseEvandro.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 156.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \cleardoublepage
+l.156 \cleardoublepage
                        [7
 
 ] (./teseEvandro.toc)
@@ -1170,14 +1170,14 @@ l.155 \cleardoublepage
 \openout10 = `teseEvandro.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 159.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \tableofcontents
+l.159 \tableofcontents
                        [8
 
 
@@ -1187,204 +1187,257 @@ l.158 \tableofcontents
 
 
 Writing sigla file teseEvandro.sig 
-No file teseEvandro.sgl.
+(./teseEvandro.sgl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+)
 \@simbolofile=\write12
 \openout12 = `teseEvandro.sim'.
 
+
 Writing simbolo file teseEvandro.sim 
-No file teseEvandro.sbl.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170 \cleardoublepage
+                       [9
+
+
+
+] (./teseEvandro.sbl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+[]|\OT1/lmr/m/n/12 Taxa de raios por tempo por ^^Sarea
+ []
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 \include{capitulos/Metodologia}
+                                      [10
+
+
+]
 \openout2 = `capitulos/Metodologia.aux'.
 
-(./capitulos/Metodologia.tex
+ (./capitulos/Metodologia.tex
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 9.
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 13.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 13.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 13.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
- [9
-
-
-
+(babel)             in language  on input line 23.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 23.
+[11
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 26.
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 41.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 41.
+ [12]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
- [10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 41.
 
-Overfull \hbox (96.2034pt too wide) in paragraph at lines 53--54
+Overfull \hbox (96.2034pt too wide) in paragraph at lines 43--44
 \OT1/lmr/m/n/12 da-dos fo-ram trans-fe-ri-dos a par-tir do ser-vi-dor de FTP da
  NASA (ftp://disc2.nascom.nasa.gov/ftp/data/s4pa). 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 60.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 60.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
-[11]
+(babel)             in language  on input line 63.
+ [13]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
- [12]
+(babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 92.
+ [14]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 120.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
- [13] <img/grids/vt_trmm.pdf, id=219, 255.95625pt x 212.795pt>
+(babel)             in language  on input line 114.
+
+<img/grids/vt_trmm.pdf, id=252, 255.95625pt x 212.795pt>
 File: img/grids/vt_trmm.pdf Graphic file (type pdf)
 
 <use img/grids/vt_trmm.pdf>
-Package pdftex.def Info: img/grids/vt_trmm.pdf used on input line 130.
+Package pdftex.def Info: img/grids/vt_trmm.pdf used on input line 124.
 (pdftex.def)             Requested size: 230.35847pt x 191.51372pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 130.
+(Font)              <10.95> on input line 124.
 
-<img/grids/passagens_virs_1998-2011.pdf, id=220, 255.95625pt x 212.795pt>
+<img/grids/passagens_virs_1998-2011.pdf, id=253, 255.95625pt x 212.795pt>
 File: img/grids/passagens_virs_1998-2011.pdf Graphic file (type pdf)
 
 <use img/grids/passagens_virs_1998-2011.pdf>
 Package pdftex.def Info: img/grids/passagens_virs_1998-2011.pdf used on input l
-ine 131.
+ine 125.
 (pdftex.def)             Requested size: 230.35847pt x 191.51372pt.
 
-Overfull \hbox (13.30606pt too wide) in paragraph at lines 130--133
+Overfull \hbox (13.30606pt too wide) in paragraph at lines 124--127
  [][][][] 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 143.
-[14 <./img/grids/vt_trmm.pdf> <./img/grids/passagens_virs_1998-2011.pdf>]
-<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf, id=238, 255.956
+(babel)             in language  on input line 135.
+[15]
+<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf, id=270, 255.956
 25pt x 215.80624pt>
 File: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf Graphic fil
 e (type pdf)
 
 <use img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyf
-ill.pdf used on input line 148.
+ill.pdf used on input line 144.
 (pdftex.def)             Requested size: 230.35847pt x 194.22382pt.
 
-<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf, id=239, 255.95
+<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf, id=271, 255.95
 625pt x 215.80624pt>
 File: img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf Graphic fi
 le (type pdf)
 
 <use img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf>
 Package pdftex.def Info: img/grids/densEspacial19982011acumuladoTempestadesPoly
-fill.pdf used on input line 149.
+fill.pdf used on input line 145.
 (pdftex.def)             Requested size: 230.35847pt x 194.22382pt.
 
-Underfull \hbox (badness 1365) in paragraph at lines 149--149
+Underfull \hbox (badness 1365) in paragraph at lines 145--145
 []\OT1/lmr/m/n/10.95 (b) |Acu-mu-lado das ^^Sareas de tem-pes-tade
  []
 
 
-Overfull \hbox (13.30606pt too wide) in paragraph at lines 148--151
+Overfull \hbox (13.30606pt too wide) in paragraph at lines 144--147
  [][][][] 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
-[15 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf> <./img/gr
-ids/densEspacial19982011acumuladoTempestadesPolyfill.pdf>]
+(babel)             in language  on input line 155.
+[16 <./img/grids/vt_trmm.pdf> <./img/grids/passagens_virs_1998-2011.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
- [16])
+(babel)             in language  on input line 185.
+
+[17]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
- [17]
-(./teseEvandro.bbl
+(babel)             in language  on input line 230.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 230.
+ [18]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 266.
+ [19])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+ [20]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+ [21 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf> <./img/g
+rids/densEspacial19982011acumuladoTempestadesPolyfill.pdf>] (./teseEvandro.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
- [18
+(babel)             in language  on input line 99.
+ [22
 
 
 
-]
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 190.
+ [23]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 (./teseEvandro.aux (./capitulos/Metodologia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
 Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
-(rerunfilecheck)             Checksum: D7184CB21FCA32C1DA2D65CE60FEE23E;1304.
+(rerunfilecheck)             Checksum: 559B656691FDD8F1992EDAE0ABE7C5EA;1624.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 22610 strings out of 494956
- 404520 string characters out of 6179494
- 497988 words of memory out of 5000000
- 25230 multiletter control sequences out of 15000+600000
- 75464 words of font info for 90 fonts, out of 8000000 for 9000
+ 22695 strings out of 494956
+ 405784 string characters out of 6179495
+ 499131 words of memory out of 5000000
+ 25276 multiletter control sequences out of 15000+600000
+ 84285 words of font info for 93 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  55i,13n,78p,981b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
 lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/l
@@ -1394,10 +1447,10 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb>
 public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy8.pfb>
-Output written on teseEvandro.pdf (19 pages, 1580237 bytes).
+Output written on teseEvandro.pdf (24 pages, 1591280 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
