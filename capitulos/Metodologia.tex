@@ -40,10 +40,10 @@ O TMI (\textit{TRMM Microwave Imager}) é um radiômetro passivo multicanal, 10,
 
 \section{FONTE DE DADOS}
 
-A fonte de dados foi obtida utilizando a infra-estrutura de rede do IAG-USP, aonde os dados foram transferidos a partir do servidor de FTP da NASA (disc2.nascom.nasa.gov).
-%(ftp://disc2.nascom.nasa.gov/ftp/data/s4pa). 
+A fonte de dados foi obtida utilizando a infra-estrutura de rede do IAG-USP, aonde os dados foram transferidos a partir do servidor de FTP da NASA (ftp://disc2.nascom.nasa.gov) e do NCEP (ftp://ftp.cdc.noaa.gov).
 
-Os arquivos orbitais do TRMM na versão 7, produtos 1B01, 2A25 e 1B11 foram baixados para o período entre 1998 e 2011. Nesta etapa um conjunto de \textit{scripts} foi desenvolvido para download e verificação de integridade dos dados baixados. No total o volume de dados atingiu 28 TB.  %PR 16,5TB / VIRS 10TB / TMI 1,4TB /   
+
+Foram baixados os dados de temperatura em altura geopotencial em 17 níveis de pressão das reanálises II do NCEP e os arquivos orbitais do TRMM na versão 7, produtos 1B01, 2A25 e 1B11  para o período entre 1998 e 2011. Nesta etapa um conjunto de \textit{scripts} foi desenvolvido para download e verificação de integridade dos dados baixados. No total o volume de dados atingiu 28 TB.  %PR 16,5TB / VIRS 10TB / TMI 1,4TB /   
 
 Os dados do LIS de \textit{flash}, \textit{group}, \textit{events} e \textit{view time} foram concedidos pela pesquisadora \citeonline{rachel}, quem já possuía essa base de dados no Brasil. 
 
@@ -52,8 +52,6 @@ Como as observações globais do PR, LIS, VIRS e TMI entre 1998-2011 representam
 \section{RAIOS COM DIFERENTES TAXAS DE DESCARGAS DE RETORNO}
 
 O estudo da Morfologia das tempestades foi iniciado pela construção de um algoritmo que fez a extração de perfis verticais do fator de refletividade corrigida por atenuação ($Z_c$), \simbolo{name={$Z_c$},description={Fator de refletividade corrigida por atenuação, produto TRMM 2A25}} produto 2A25 \cite{iguchi2009}, nos pontos de grade onde ocorreram descargas atmosféricas (\textit{flashes}) observadas pelo LIS.
-
-%Esse processamento envolveu uma quantidade de dados de aproximadamente 16 TB. Foram utilizados 4 HDs (Hard Disk) de 1 TB realizando \textit{striping} por \textit{RAID0} via software, permitindo o processamento integral na massa de dados do LIS e 2A25 fosse realizado em aproximadamente 7 dias. Sem esse planejamento de hardware o as extrações ficariam inviáveis, pois mesmo que o algoritmo não exija grande demanda de processador, a leitura e escrita em disco gerava I/O que davam \textit{kernel panic} no sistema.
 
 Após a extração dos perfis verticais de $Z_c$ orientada pela ocorrência de raios, foi constituída uma base de dados com as seguintes características:
 
@@ -94,7 +92,6 @@ A taxa de raios no tempo (FT), foi definida como a razão entre o número de fla
 \simbolo{name={$N_{fl}$},description={Número de flashes }}
 \simbolo{name={$VT_m$},description={Tempo médio de visada do LIS}}
 
-%Os pixels do view time do LIS de cada orbita foram projetados em uma grade regular com 0.25 de resolução 
 
 A taxa de raios no tempo também foi normalizada pela área da tempestade elétrica ($A_t$), obtendo também o índice da taxa de raios no tempo por área (FTA). 
 \simbolo{name={$A_t$},description={Área da tempestade elétrica}}
@@ -184,8 +181,6 @@ Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função 
 
 Para a obtenção dos diagramas de probabilidade normalizados por nível de altitude, cada nível $y$ da função $f_{pdf}(x,y)$ foi normalizado pelo número total de ocorrências de valores de $Z_c$ distribuídos em $x$. Os níveis $y$ de altitude com número total de ocorrência de $Z_c$ em $x$, menor do que 10\% do nível de máxima ocorrência, foram desconsiderados dos contornos de probabilidade em todos os CFADs.
 
-%histogramas bidimensionais da densidade de probabilidade de ocorrência de 
-
 Com base na função de densidade de probabilidade ($f_{pdf}(x,y)$) que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa ($f_{cdf}(x,y)$) de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
 
 
@@ -203,7 +198,6 @@ Pois, sendo o fator de refletividade do radar proporcional ao diâmetro das gota
 
 E considerando um regime de precipitação estratiforme, o qual é muito mais governado por processos de agregação do que acreção, será observado um aumento acentuado no fator de refletividade do radar em torno da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve. \simbolo{name={$^{\circ}$C},description={Grau Celcius}} Como o índice de refração de micro-ondas no gelo é de $\sim$0,1 e na água líquida de $\sim$0,9, a transição de fase sólida para líquida representa um aumento de 7 dBZ na potência do sinal do radar.
 
-%O aumento de potência recebida no radar na camada de derretimento pode ser intensificada na presença de flocos de neve, que ao derreter, desenvolvem uma película de água líquida ao seu redor, o que aumenta o espalhamento radiativo das micro-ondas enviadas pelo radar.%, causando a banda brilhante.
 
 % durante o caminho que a precipitação percorre até a superfície ou temperaturas acima de 0°C.
 %Na figura \ref{fabry}, \citeonline{Fabry1995}
@@ -216,7 +210,6 @@ E considerando um regime de precipitação estratiforme, o qual é muito mais go
 %\caption{Fabry Taka}
 %\label{fabyTaka} 
 %\end{figure} 
-
 
 Em um ambiente de precipitação convectiva a transição de fase é perturbada por correntes ascendentes e os processos de agregação, acreção e colisão coalescência, os quais são os maiores responsáveis pelo aumento do diâmetro dos hidrometeoros de nuvem, tornam-se mais eficientes. 
 
@@ -233,18 +226,6 @@ Nos CFTDs, os níveis de temperatura não correspondem as condições controlada
 Foram utilizados os dados de reanálises II do NCEP entre 1998 e 2011, mais especificamente os dados em 17 níveis de pressão, de altura geopotencial e temperatura \cite{kanamitsu}. 
 
 Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo TRMM, foram extraídos. Utilizando interpolação de dados, os 80 níveis de altitudes referentes as observações do PR, foram convertidos em 80 níveis de temperatura.
-
-%Neste trabalho buscamos associar a intensidade convectiva com a intensidade dos processos de eletrificação.
-% com perfis de chuva que mostram aumentos abruptos nos valores de $Z_c$ em regiões acima da camada de derretimento, que indicam intensificação da agregação, juntamente com uma espessa camada de derretimento. 
-%Este poderá ser um ambiente eficiente na produção de descargas elétricas.
-
-%ocorre em um caminho de temperatura muito maior do que na precipitação estratiforme.
-%Para investigar processos microfísicos de nuvem na morfologia da precipitação, foi
-
-%Como os valores de potência recebida do radar são diretamente proporcionais a taxa de precipitação, os CFTD, revelam uma estimativa da concentração de hidrometeoros associada as variações de temperatura no perfil atmosférico.  
-
-%Para cada tempestade elétrica foi localizado os dados de altura geopotencial e temperatura para a hora mais próxima, antes da ocorrência do sistema.
-
 
 Desta maneira, obteve-se a função $f_{pdf}(x,y)$, cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de temperaturas estimados a partir das reanálises II do NCEP. A função $f_{pdf}(x,y)$ de $Z_c$ por temperatura, foi representada por uma matriz bidimensional com a granularidade de 1 dBZ para cada 2 $^{\circ}$C. Nos CFTDs, os níveis superiores e inferiores foram definidos para temperaturas entre 20° C e -50° C.
 
