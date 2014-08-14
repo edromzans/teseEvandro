@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.23)  29 JUL 2014 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.23)  14 AUG 2014 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,30 +940,33 @@ LaTeX Warning: Unused global option(s):
     [appendix=nobox].
 
 (./teseEvandro.aux (./capitulos/Metodologia.aux)
-(./capitulos/MarcoDasTempestadesEletricas.aux
+(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux
 
-LaTeX Warning: Label `tempestadesDJF' multiply defined.
-
-
-LaTeX Warning: Label `sub@tempestadesDJF' multiply defined.
+LaTeX Warning: Label `txDJF' multiply defined.
 
 
-LaTeX Warning: Label `tempestadesMAM' multiply defined.
+LaTeX Warning: Label `sub@txDJF' multiply defined.
 
 
-LaTeX Warning: Label `sub@tempestadesMAM' multiply defined.
+LaTeX Warning: Label `txMAM' multiply defined.
 
 
-LaTeX Warning: Label `tempestadesJJA' multiply defined.
+LaTeX Warning: Label `sub@txMAM' multiply defined.
 
 
-LaTeX Warning: Label `sub@tempestadesJJA' multiply defined.
+LaTeX Warning: Label `txJJA' multiply defined.
 
 
-LaTeX Warning: Label `tempestadesSON' multiply defined.
+LaTeX Warning: Label `sub@txJJA' multiply defined.
 
 
-LaTeX Warning: Label `sub@tempestadesSON' multiply defined.
+LaTeX Warning: Label `txSON' multiply defined.
+
+
+LaTeX Warning: Label `sub@txSON' multiply defined.
+
+
+LaTeX Warning: Label `TaxaFlash' multiply defined.
 
 ))
 \openout1 = `teseEvandro.aux'.
@@ -1160,7 +1163,22 @@ l.150 \end{abstract}
                      [5
 
 
-] (./teseEvandro.lof)
+] (./teseEvandro.lof
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ...$Z_{ef}$. \relax }}{43}{figure.caption.25}
+                                                   [6
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 43.
+)
 \tf@lof=\write8
 \openout8 = `teseEvandro.lof'.
 
@@ -1173,9 +1191,13 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.153 \listoftables
-                    [6
+                    [7] (./teseEvandro.lot
+Overfull \hbox (7.05008pt too wide) in paragraph at lines 3--3
+ [][] [][]\OT1/lmr/m/n/12 Total de tem-pes-ta-des el^^Setricas ob-ser-va-das en
+-tre 1998-2011, para cada per^^S^^Podo 
+ []
 
-] (./teseEvandro.lot)
+)
 \tf@lot=\write9
 \openout9 = `teseEvandro.lot'.
 
@@ -1188,9 +1210,28 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.156 \cleardoublepage
-                       [7
+                       [8
 
-] (./teseEvandro.toc)
+] (./teseEvandro.toc
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 23.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ...CAS SEVERAS}{37}{section.listoftables.3.2}
+                                                   [9
+
+
+]
+Overfull \hbox (1.7828pt too wide) in paragraph at lines 23--23
+ [][] [][]\OT1/lmr/m/n/12 ESTRUTURA TRI-DI-MEN-SI-O-NAL DA PRECIPITA[][]AO DAS 
+TEM-PES- 
+ []
+
+)
 \tf@toc=\write10
 \openout10 = `teseEvandro.toc'.
 
@@ -1203,10 +1244,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.159 \tableofcontents
-                       [8
-
-
-]
+                       [10]
 \@siglafile=\write11
 \openout11 = `teseEvandro.sig'.
 
@@ -1215,14 +1253,11 @@ Writing sigla file teseEvandro.sig
 (./teseEvandro.sgl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-
-Overfull \vbox (5.423pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 90.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
- [9
+(babel)             in language  on input line 90.
+ [11
 
 
 
@@ -1232,7 +1267,16 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 Writing simbolo file teseEvandro.sim 
-(./teseEvandro.sbl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170 \cleardoublepage
+                       [12] (./teseEvandro.sbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
@@ -1250,7 +1294,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.177 \include{capitulos/Metodologia}
-                                      [10
+                                      [13
 
 
 ]
@@ -1268,7 +1312,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
-[11
+[14
 
 
 ]
@@ -1278,8 +1322,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 27.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining portuges shorthand "|
@@ -1288,7 +1330,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
- [12]
+ [15]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 
@@ -1309,20 +1351,20 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
- [13]
+ [16]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 69.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
- [14]
+ [17]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
 
-<img/grids/vt_trmm.pdf, id=307, 255.95625pt x 212.795pt>
+<img/grids/vt_trmm.pdf, id=375, 255.95625pt x 212.795pt>
 File: img/grids/vt_trmm.pdf Graphic file (type pdf)
 
 <use img/grids/vt_trmm.pdf>
@@ -1331,7 +1373,7 @@ Package pdftex.def Info: img/grids/vt_trmm.pdf used on input line 124.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 124.
 
-<img/grids/passagens_virs_1998-2011.pdf, id=308, 255.95625pt x 212.795pt>
+<img/grids/passagens_virs_1998-2011.pdf, id=376, 255.95625pt x 212.795pt>
 File: img/grids/passagens_virs_1998-2011.pdf Graphic file (type pdf)
 
 <use img/grids/passagens_virs_1998-2011.pdf>
@@ -1347,8 +1389,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
-[15]
-<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf, id=324, 255.956
+[18]
+<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf, id=393, 255.956
 25pt x 215.80624pt>
 File: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf Graphic fil
 e (type pdf)
@@ -1358,7 +1400,7 @@ Package pdftex.def Info: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyf
 ill.pdf used on input line 144.
 (pdftex.def)             Requested size: 230.35847pt x 194.22382pt.
 
-<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf, id=325, 255.95
+<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf, id=394, 255.95
 625pt x 215.80624pt>
 File: img/grids/densEspacial19982011acumuladoTempestadesPolyfill.pdf Graphic fi
 le (type pdf)
@@ -1381,13 +1423,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 153.
-[16 <./img/grids/vt_trmm.pdf> <./img/grids/passagens_virs_1998-2011.pdf>]
+[19 <./img/grids/vt_trmm.pdf> <./img/grids/passagens_virs_1998-2011.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 170.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 170.
 
-[17 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf> <./img/gr
+[20 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.pdf> <./img/gr
 ids/densEspacial19982011acumuladoTempestadesPolyfill.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 172.
@@ -1397,17 +1439,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
- [18]
+ [21]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 225.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 225.
- [19])
+ [22])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
- [20]
+ [23]
 \openout2 = `capitulos/MarcoDasTempestadesEletricas.aux'.
 
 
@@ -1416,210 +1458,226 @@ Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
-<img/ciclos/ciclodiurno19982011total.pdf, id=402, 226.8475pt x 141.52875pt>
+(babel)             in language  on input line 6.
+<img/ciclos/ciclodiurno19982011total.pdf, id=471, 226.8475pt x 141.52875pt>
 File: img/ciclos/ciclodiurno19982011total.pdf Graphic file (type pdf)
 
 <use img/ciclos/ciclodiurno19982011total.pdf>
 Package pdftex.def Info: img/ciclos/ciclodiurno19982011total.pdf used on input 
-line 14.
+line 13.
 (pdftex.def)             Requested size: 215.50389pt x 134.45154pt.
 
-<img/ciclos/cicloanual19982011total.pdf, id=403, 226.8475pt x 141.52875pt>
+<img/ciclos/cicloanual19982011total.pdf, id=472, 226.8475pt x 141.52875pt>
 File: img/ciclos/cicloanual19982011total.pdf Graphic file (type pdf)
 
 <use img/ciclos/cicloanual19982011total.pdf>
 Package pdftex.def Info: img/ciclos/cicloanual19982011total.pdf used on input l
-ine 15.
+ine 14.
 (pdftex.def)             Requested size: 215.50389pt x 134.45154pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
- [21
+(babel)             in language  on input line 23.
+ [24
 
 
 
  <./img/ciclos/ciclodiurno19982011total.pdf> <./img/ciclos/cicloanual19982011to
 tal.pdf>]
-<img/ciclos/ciclodiurno10x1019982011localtime.pdf, id=419, 255.95625pt x 223.83
+<img/ciclos/ciclodiurno10x1019982011localtime.pdf, id=488, 255.95625pt x 223.83
 624pt>
 File: img/ciclos/ciclodiurno10x1019982011localtime.pdf Graphic file (type pdf)
  <use img/ciclos/ciclodiurno10x1019982011localtime.pdf>
 Package pdftex.def Info: img/ciclos/ciclodiurno10x1019982011localtime.pdf used 
-on input line 31.
+on input line 30.
 (pdftex.def)             Requested size: 383.93341pt x 335.75354pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
- [22 <./img/ciclos/ciclodiurno10x1019982011localtime.pdf>]
+(babel)             in language  on input line 40.
+ [25 <./img/ciclos/ciclodiurno10x1019982011localtime.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
- [23]
-<img/ciclos/cicloanual10x1019982011localtime.pdf, id=439, 255.95625pt x 223.836
+(babel)             in language  on input line 54.
+ [26]
+<img/ciclos/cicloanual10x1019982011localtime.pdf, id=508, 255.95625pt x 223.836
 24pt>
 File: img/ciclos/cicloanual10x1019982011localtime.pdf Graphic file (type pdf)
  <use img/ciclos/cicloanual10x1019982011localtime.pdf>
 Package pdftex.def Info: img/ciclos/cicloanual10x1019982011localtime.pdf used o
-n input line 60.
+n input line 58.
 (pdftex.def)             Requested size: 383.93341pt x 335.75354pt.
-
-
-Package hyperref Warning: Suppressing empty link on input line 125.
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
-[24 <./img/ciclos/cicloanual10x1019982011localtime.pdf>]
+(babel)             in language  on input line 124.
+ [27 <./img/ciclos/cicloanual10x1019982011localtime.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
- [25]
+(babel)             in language  on input line 124.
+ [28]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 137.
 
 <img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pdf, id=
-477, 255.95625pt x 215.80624pt>
+542, 255.95625pt x 215.80624pt>
 File: img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pdf
  Graphic file (type pdf)
 
 <use img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pdf>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011TotalTemp
-estadesPolyfill.pdf used on input line 159.
+estadesPolyfill.pdf used on input line 147.
 (pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
 
-<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=478, 255.956
+<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=543, 255.956
 25pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf Graphic fil
 e (type pdf)
 
 <use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyf
-ill.pdf used on input line 160.
+ill.pdf used on input line 148.
 (pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
- [26]
-<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf, id=49
-4, 255.95625pt x 215.80624pt>
-File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf G
-raphic file (type pdf)
-
-<use img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf>
-Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
-tadesPolyfill.pdf used on input line 186.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
-
-<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf, id=49
-5, 255.95625pt x 215.80624pt>
-File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf G
-raphic file (type pdf)
-
-<use img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf>
-Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011mamTempes
-tadesPolyfill.pdf used on input line 187.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
-
-Overfull \hbox (3.07349pt too wide) in paragraph at lines 186--188
- [][][][] 
- []
-
-
-<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf, id=49
-6, 255.95625pt x 215.80624pt>
-File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf G
-raphic file (type pdf)
-
-<use img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf>
-Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011jjaTempes
-tadesPolyfill.pdf used on input line 189.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
-
-<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf, id=49
-7, 255.95625pt x 215.80624pt>
-File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf G
-raphic file (type pdf)
-
-<use img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf>
-Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011sonTempes
-tadesPolyfill.pdf used on input line 190.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
-
-Overfull \hbox (3.07349pt too wide) in paragraph at lines 189--191
- [][][][] 
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
-[27 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pd
-f> <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>]
-<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=512, 255.95625
+(babel)             in language  on input line 152.
+ [29]
+<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=563, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
 
 <use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
-l.pdf used on input line 199.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
+l.pdf used on input line 169.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
 
-<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=513, 255.95625
+<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=565, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
 
 <use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfil
-l.pdf used on input line 200.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
+l.pdf used on input line 170.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
 
-Overfull \hbox (3.07349pt too wide) in paragraph at lines 199--201
+Overfull \hbox (3.07349pt too wide) in paragraph at lines 169--171
  [][][][] 
  []
 
 
-<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=514, 255.95625
+<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=567, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
 
 <use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
-l.pdf used on input line 202.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
+l.pdf used on input line 172.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
 
-<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=515, 255.95625
+<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=569, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
 
 <use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfil
-l.pdf used on input line 203.
-(pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
+l.pdf used on input line 173.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
 
-Overfull \hbox (3.07349pt too wide) in paragraph at lines 202--205
+Overfull \hbox (3.07349pt too wide) in paragraph at lines 172--175
+ [][][][] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 181.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 181.
+[30 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pd
+f> <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+ [31 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf> <./img/Tax
+aFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspa
+cial_19982011jjaTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_19982011so
+nTaxaFlashPolyfill.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 217.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 217.
+ [32]
+<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf, id=64
+5, 255.95625pt x 215.80624pt>
+File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf G
+raphic file (type pdf)
+
+<use img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
+tadesPolyfill.pdf used on input line 222.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
+
+<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf, id=64
+7, 255.95625pt x 215.80624pt>
+File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf G
+raphic file (type pdf)
+
+<use img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011mamTempes
+tadesPolyfill.pdf used on input line 223.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
+
+Overfull \hbox (3.07349pt too wide) in paragraph at lines 222--224
  [][][][] 
  []
 
 
-<img/TaxaFlashTempestade/densEspacial19982011totalEficienciaPolyfill.pdf, id=51
-6, 255.95625pt x 215.80624pt>
+<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf, id=64
+9, 255.95625pt x 215.80624pt>
+File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf G
+raphic file (type pdf)
+
+<use img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011jjaTempes
+tadesPolyfill.pdf used on input line 225.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
+
+<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf, id=65
+1, 255.95625pt x 215.80624pt>
+File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf G
+raphic file (type pdf)
+
+<use img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011sonTempes
+tadesPolyfill.pdf used on input line 226.
+(pdftex.def)             Requested size: 225.24219pt x 183.72694pt.
+
+Overfull \hbox (3.07349pt too wide) in paragraph at lines 225--227
+ [][][][] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 234.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 234.
+[33 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf>
+ <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf> <.
+/img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf> <./im
+g/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf>]
+<img/TaxaFlashTempestade/densEspacial19982011totalEficienciaPolyfill.pdf, id=67
+8, 255.95625pt x 215.80624pt>
 File: img/TaxaFlashTempestade/densEspacial19982011totalEficienciaPolyfill.pdf G
 raphic file (type pdf)
 
 <use img/TaxaFlashTempestade/densEspacial19982011totalEficienciaPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlashTempestade/densEspacial19982011totalEfici
-enciaPolyfill.pdf used on input line 210.
+enciaPolyfill.pdf used on input line 242.
 (pdftex.def)             Requested size: 225.24219pt x 189.91006pt.
 )
 Package babel Info: Redefining portuges shorthand "|
@@ -1627,20 +1685,289 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
 
-[28 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.pdf>
- <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.pdf> <.
-/img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.pdf> <./im
-g/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 178.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 178.
+[34 <./img/TaxaFlashTempestade/densEspacial19982011totalEficienciaPolyfill.pdf>
+]
+\openout2 = `capitulos/Severidade.aux'.
 
-[29 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf> <./img/Taxa
-Flash/densEspacial_19982011mamTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspac
-ial_19982011jjaTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_19982011son
-TaxaFlashPolyfill.pdf> <./img/TaxaFlashTempestade/densEspacial19982011totalEfic
-ienciaPolyfill.pdf>] (./teseEvandro.bbl
+ (./capitulos/Severidade.tex
+Cap\'{\i }tulo 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+[35
+
+
+
+] <img/tb/TbAreas.pdf, id=697, 426.59375pt x 141.52875pt>
+File: img/tb/TbAreas.pdf Graphic file (type pdf)
+
+<use img/tb/TbAreas.pdf>
+Package pdftex.def Info: img/tb/TbAreas.pdf used on input line 23.
+(pdftex.def)             Requested size: 231.86638pt x 155.6821pt.
+File: img/tb/TbAreas.pdf Graphic file (type pdf)
+ <use img/tb/TbAreas.pdf>
+Package pdftex.def Info: img/tb/TbAreas.pdf used on input line 24.
+(pdftex.def)             Requested size: 226.34572pt x 155.6821pt.
+
+Overfull \hbox (18.63443pt too wide) in paragraph at lines 23--27
+ [][][][] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 39.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 39.
+[36 <./img/tb/TbAreas.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 61.
+ [37]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 76.
+ [38]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.86 \hline
+           
+? 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 95.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 95.
+[39]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 112.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 112.
+ [40]
+<img/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia_km_90.pdf, id=817, 263.
+98625pt x 223.83624pt>
+File: img/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia_km_90.pdf Graphic 
+file (type pdf)
+
+<use img/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia_km_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia
+_km_90.pdf used on input line 119.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+<img/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90.pdf, id=818, 263.
+98625pt x 223.83624pt>
+File: img/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90.pdf Graphic 
+file (type pdf)
+
+<use img/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia
+_km_90.pdf used on input line 120.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+Overfull \hbox (17.20633pt too wide) in paragraph at lines 119--121
+ [][][][] 
+ []
+
+
+<img/precipitacao3d/percentil/ft/cfad10_semraio_fl_dia_90.pdf, id=819, 263.9862
+5pt x 223.83624pt>
+File: img/precipitacao3d/percentil/ft/cfad10_semraio_fl_dia_90.pdf Graphic file
+ (type pdf)
+
+<use img/precipitacao3d/percentil/ft/cfad10_semraio_fl_dia_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/ft/cfad10_semraio_fl_dia_
+90.pdf used on input line 122.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+<img/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_90.pdf, id=820, 263.9862
+5pt x 223.83624pt>
+File: img/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_90.pdf Graphic file
+ (type pdf)
+
+<use img/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_
+90.pdf used on input line 123.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+Overfull \hbox (17.20633pt too wide) in paragraph at lines 122--124
+ [][][][] 
+ []
+
+
+<img/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90.pdf, id=821, 
+263.98625pt x 223.83624pt>
+File: img/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90.pdf Grap
+hic file (type pdf)
+
+<use img/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl
+_dia_km_90.pdf used on input line 133.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+<img/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90.pdf, id=822,
+ 263.98625pt x 223.83624pt>
+File: img/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90.pdf Gra
+phic file (type pdf)
+
+<use img/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/fta/ccftd_10deg_comraio_f
+l_dia_km_90.pdf used on input line 134.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+Overfull \hbox (17.20633pt too wide) in paragraph at lines 133--135
+ [][][][] 
+ []
+
+
+<img/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90.pdf, id=823, 263.
+98625pt x 223.83624pt>
+File: img/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90.pdf Graphic 
+file (type pdf)
+
+<use img/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_
+min_90.pdf used on input line 136.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+<img/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90.pdf, id=824, 263
+.98625pt x 223.83624pt>
+File: img/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90.pdf Graphic
+ file (type pdf)
+
+<use img/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90.pdf>
+Package pdftex.def Info: img/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl
+_min_90.pdf used on input line 137.
+(pdftex.def)             Requested size: 232.30861pt x 196.9765pt.
+
+Overfull \hbox (30.8063pt too wide) in paragraph at lines 136--139
+ [][][][] 
+ []
+
+
+LaTeX Warning: File `img/deriv1.pdf' not found on input line 145.
+
+
+! Package pdftex.def Error: File `img/deriv1.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 ...cale=1.1]{img/deriv1.pdf} \label{deriv1}}
+                                                  
+? 
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 145.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 3803) in paragraph at lines 145--145
+\OT1/lmr/m/n/10.95 40S e 60W-
+ []
+
+
+LaTeX Warning: File `img/deriv2.pdf' not found on input line 146.
+
+
+! Package pdftex.def Error: File `img/deriv2.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 ...cale=1.1]{img/deriv2.pdf} \label{deriv2}}
+                                                  
+? 
+
+Underfull \hbox (badness 2150) in paragraph at lines 146--146
+\OT1/lmr/m/n/10.95 10N e 60W-
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 153.
+
+<img/DistEspacialPercentis/distEspacialValor50thFta.pdf, id=825, 255.95625pt x 
+223.83624pt>
+File: img/DistEspacialPercentis/distEspacialValor50thFta.pdf Graphic file (type
+ pdf)
+ <use img/DistEspacialPercentis/distEspacialValor50thFta.pdf>
+Package pdftex.def Info: img/DistEspacialPercentis/distEspacialValor50thFta.pdf
+ used on input line 159.
+(pdftex.def)             Requested size: 225.24219pt x 190.79337pt.
+
+<img/DistEspacialPercentis/distEspacialValor90thFta.pdf, id=827, 255.95625pt x 
+223.83624pt>
+File: img/DistEspacialPercentis/distEspacialValor90thFta.pdf Graphic file (type
+ pdf)
+ <use img/DistEspacialPercentis/distEspacialValor90thFta.pdf>
+Package pdftex.def Info: img/DistEspacialPercentis/distEspacialValor90thFta.pdf
+ used on input line 160.
+(pdftex.def)             Requested size: 225.24219pt x 190.79337pt.
+
+Overfull \hbox (3.07349pt too wide) in paragraph at lines 159--161
+ [][][][] 
+ []
+
+
+<img/DistEspacialPercentis/distEspacialValor95thFta.pdf, id=829, 255.95625pt x 
+223.83624pt>
+File: img/DistEspacialPercentis/distEspacialValor95thFta.pdf Graphic file (type
+ pdf)
+ <use img/DistEspacialPercentis/distEspacialValor95thFta.pdf>
+Package pdftex.def Info: img/DistEspacialPercentis/distEspacialValor95thFta.pdf
+ used on input line 162.
+(pdftex.def)             Requested size: 225.24219pt x 190.79337pt.
+
+<img/DistEspacialPercentis/distEspacialValor98thFta.pdf, id=831, 255.95625pt x 
+223.83624pt>
+File: img/DistEspacialPercentis/distEspacialValor98thFta.pdf Graphic file (type
+ pdf)
+ <use img/DistEspacialPercentis/distEspacialValor98thFta.pdf>
+Package pdftex.def Info: img/DistEspacialPercentis/distEspacialValor98thFta.pdf
+ used on input line 163.
+(pdftex.def)             Requested size: 225.24219pt x 190.79337pt.
+
+Overfull \hbox (3.07349pt too wide) in paragraph at lines 162--165
+ [][][][] 
+ []
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+ [41]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+ [42 <./img/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia_km_90.pdf> <./im
+g/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90.pdf> <./img/precipit
+acao3d/percentil/ft/cfad10_semraio_fl_dia_90.pdf> <./img/precipitacao3d/percent
+il/ft/cfad10_comraio_fl_dia_90.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+ [43 <./img/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90.pdf> <
+./img/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90.pdf> <./img
+/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90.pdf> <./img/precipita
+cao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 180.
+ [44 <./img/DistEspacialPercentis/distEspacialValor50thFta.pdf> <./img/DistEspa
+cialPercentis/distEspacialValor90thFta.pdf> <./img/DistEspacialPercentis/distEs
+pacialValor95thFta.pdf> <./img/DistEspacialPercentis/distEspacialValor98thFta.p
+df>] (./teseEvandro.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 
@@ -1648,19 +1975,25 @@ Package babel Info: Redefining portuges shorthand "|
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 91.
- [30
+(babel)             in language  on input line 95.
+ [45
 
 
 
-])
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 188.
+ [46])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 190.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 190.
- [31]
+
+[47]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
@@ -1669,11 +2002,11 @@ No file teseEvandro.ind.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 (./teseEvandro.aux (./capitulos/Metodologia.aux)
-(./capitulos/MarcoDasTempestadesEletricas.aux))
+(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
 Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
-(rerunfilecheck)             Checksum: DAE01EC58C8A130B0582A2641A0F960B;1888.
+(rerunfilecheck)             Checksum: 830F9173D483CD516BDE2549637E62C0;2375.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1681,28 +2014,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 22910 strings out of 494956
- 412770 string characters out of 6179494
- 553131 words of memory out of 5000000
- 25416 multiletter control sequences out of 15000+600000
- 88503 words of font info for 94 fonts, out of 8000000 for 9000
+ 23190 strings out of 494956
+ 419879 string characters out of 6179494
+ 555131 words of memory out of 5000000
+ 25605 multiletter control sequences out of 15000+600000
+ 89018 words of font info for 96 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 55i,13n,78p,1066b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
-lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmsy8.pfb>
-Output written on teseEvandro.pdf (32 pages, 7700012 bytes).
+ 55i,15n,78p,1066b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
+fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
+}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc
+/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/courier/ucrr8a.pfb>
+Output written on teseEvandro.pdf (48 pages, 22527240 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 138 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1012 PDF objects out of 1200 (max. 8388607)
+ 850 compressed objects within 9 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 537 words of extra memory for PDF output out of 10000 (max. 10000000)
 
