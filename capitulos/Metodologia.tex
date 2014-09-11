@@ -87,7 +87,7 @@ Foram identificadas 154,189 tempestades elétrica e devido a varredura do PR ser
 
 
 \section{A TAXA DE RAIOS POR TEMPESTADE ELÉTRICA}
-
+\label{metodoFtaFt}
 A taxa de raios no tempo (FT), foi definida como a razão entre o número de flashes ($N_{fl}$) e o tempo médio ($VT_m$) em que o sensor LIS observou a tempestade elétrica, da mesma forma como foi calcula para as \textit{precipitation features} \cite{cecil2005, Nesbitt2000}. 
 
 \simbolo{name={$N_{fl}$},description={Número de flashes }}
@@ -119,10 +119,10 @@ O que se torna fundamental na construção destes mapas é considerar quantas ve
 
 Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua orbita inclinada 35° e velocidade, entre 1998 e 2011, o satélite passou 10,000 vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT}, com todas as orbitas e as varreduras do VIRS projetadas e acumuladas sobre a América do Sul. 
 
-\begin{figure}[!hb]
+\begin{figure}[!ht]
   \centering{
-  \subfloat[Tempo de visada do LIS (0,25°). Valores convertidos em dias de observação.]{{\includegraphics[scale=0.9]{img/grids/vt_trmm}} \label{lisVT}}
-  \subfloat[Número de passagens do VIRS (0,25°).]{{\includegraphics[scale=0.9]{img/grids/passagens_virs_1998-2011}} \label{VirsVT}}
+  \subfloat[Tempo de visada do LIS (0,25°).]{{\includegraphics[height=10.65cm]{img/grids/vt_trmm}} \label{lisVT}}\\
+  \subfloat[Número de passagens do VIRS (0,25°).]{{\includegraphics[height=10.65cm]{img/grids/passagens_virs_1998-2011}} \label{VirsVT}}
   }
 
 \caption{Observações do TRMM sobre a América do Sul.}
@@ -139,10 +139,10 @@ Com as mesmas dimensões e resolução de grade que o tempo de observação e o 
 
 A matriz $\mathbf{FL}_{lis}$ projeta sobre a América do Sul está representada na figura \ref{gridFL} e a matriz $\mathbf{P}_{te}$, na figura \ref{gridTe}. Principalmente na figura \ref{gridTe} é notável o alto número de sistemas na região Sul da AS, com mesma ordem de magnitude do que em locais ao Norte aonde atua a Zona de Convergência Intertropical. Mas esse máximo no Sul da AS não indica maior ocorrência de tempestades elétricas e sim maior frequência de passagem do satélite TRMM.
 
-\begin{figure}[!hb]
+\begin{figure}[!ht]
   \centering{
-  \subfloat[Acumulado de raios observados pelo LIS (0,25°).]{{\includegraphics[scale=0.9]{img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill}} \label{gridFL}}
-  \subfloat[Acumulado das áreas de tempestade elétrica (0,25°).]{{\includegraphics[scale=0.9]{img/grids/densEspacial19982011acumuladoTempestadesPolyfill}} \label{gridTe}}
+  \subfloat[Acumulado de raios observados pelo LIS (0,25°).]{{\includegraphics[height=10.65cm]{img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill}} \label{gridFL}}\\
+  \subfloat[Acumulado das áreas de tempestade elétrica (0,25°).]{{\includegraphics[height=10.65cm]{img/grids/densEspacial19982011acumuladoTempestadesPolyfill}} \label{gridTe}}
   }
 
 \caption{Acumulados dos raios e áreas das 154,189 tempestades elétricas identificadas.}

@@ -10,8 +10,8 @@ Utilizando a base de dados de tempestades elétricas construída nesta pesquisa,
 
 \begin{figure}[!hb]
   \centering{
-  \subfloat[Ciclo diruno.]{{\includegraphics[scale=0.95]{img/ciclos/ciclodiurno19982011total}} \label{ciclodiurnototal}}
-  \subfloat[Ciclo anual.]{{\includegraphics[scale=0.95]{img/ciclos/cicloanual19982011total}} \label{cicloanualtotal}}
+  \subfloat[Ciclo diruno.]{{\includegraphics[height=5cm]{img/ciclos/ciclodiurno19982011total}} \label{ciclodiurnototal}}
+  \subfloat[Ciclo anual.]{{\includegraphics[height=5cm]{img/ciclos/cicloanual19982011total}} \label{cicloanualtotal}}
   }
 \caption{Ciclo diurno e anual das tempestades elétricas observadas em hora local. Os valores de probabilidade foram normalizados pelo total dos 154,189 sistemas identificados.}
 \label{diurnoanual} 
@@ -27,7 +27,7 @@ O ciclo diurno também foi estudado para cada região de 10 por 10 graus, como m
 
 
 \begin{figure}[!hb]
-\centering{\includegraphics[scale=1.5]{img/ciclos/ciclodiurno10x1019982011localtime}}  
+\centering{\includegraphics[height=13.5cm]{img/ciclos/ciclodiurno10x1019982011localtime}}  
 \caption{Ciclo diurno em hora local para as tempestades elétricas observadas em cada região de 10 por 10 graus. Os valores de probabilidade são mostrados em porcentagem e foram normalizados pelo total de 154,189 sistemas observados.}
 \label{diurno}
 \end{figure}
@@ -55,7 +55,7 @@ A tabela \ref{caracEstacao} mostra os meses de duração das estações de tempe
 
 
 \begin{figure}[!ht]
-\centering{\includegraphics[scale=1.5]{img/ciclos/cicloanual10x1019982011localtime}}  
+\centering{\includegraphics[height=13.5cm]{img/ciclos/cicloanual10x1019982011localtime}}  
 \caption{Ciclo anual em hora local para as tempestades elétricas observadas em cada região de 10 por 10 graus. Os valores de probabilidade são mostrados em porcentagem e foram normalizados pelo total de 154,189 sistemas observados. As linhas horizontais cortam o valor de 0.7 do máximo de probabilidade, utilizado como limiar para definir o início e fim das estações de tempestades elétricas.}
 \label{anual}
 \end{figure}
@@ -143,12 +143,20 @@ Na figura \ref{tempestadestotal}, observa-se que as regiões de máxima ocorrên
 
 
 \begin{figure}[!ht]
- \centering{
-  \subfloat[Densidade espacial total de tempestades elétricas. Os valores correspondem ao número de sistemas por ano por quilômetro quadrado em cada pronto da grade de 0.25 graus.]{\includegraphics[scale=0.88]{img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill} \label{tempestadestotal}}
-  \subfloat[Densidade espacial total de raios. Os valores correspondem ao número de raios por ano por quilômetro quadrado em cada pronto da grade de 0.25 graus.]{\includegraphics[scale=0.88]{img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill}\label{raiosTotal}}
-  }
-\caption{Densidade espacial de tempestades elétricas e raios observados entre 1998 e 2011.}
-\label{tempesRaios}
+ \centering
+ {\includegraphics[height=13.5cm]{img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill}}
+\caption{Densidade espacial total de tempestades elétricas. Os valores correspondem ao número de sistemas por ano por quilômetro quadrado em cada pronto da grade de 0.25 graus.}
+ \label{tempestadestotal}
+\end{figure}
+ 
+ 
+\begin{figure}[!ht]
+ \centering
+  {\includegraphics[height=13.5cm]{img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill}}
+  \caption{Densidade espacial total de raios. Os valores correspondem ao número de raios por ano por quilômetro quadrado em cada pronto da grade de 0.25 graus.}
+  \label{raiosTotal}
+%\caption{Densidade espacial de tempestades elétricas e raios observados entre 1998 e 2011.}
+%\label{tempesRaios}
 \end{figure}
 
 Mesmo que os sistemas com as maiores taxas de raios no tempo observados pelo TRMM, estejam mais concentrados no Sul da América do Sul conforme mostram \citeonline{cecil2005,zipser2006}, as tempestades elétricas são bem mais frequentes à Noroeste da AS.
@@ -166,11 +174,11 @@ Nas figuras \ref{TaxaFlash} e \ref{DensidadeTempestadesSazonal}, a densidade esp
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[DJF]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill}} \label{txDJF}}
-  \subfloat[MAM]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill}} \label{txMAM}}
+  \subfloat[DJF]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill}} \label{txDJF}}
+  \subfloat[MAM]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill}} \label{txMAM}}
 
-  \subfloat[JJA]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill}} \label{txJJA}}
-  \subfloat[SON]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill}} \label{txSON}}
+  \subfloat[JJA]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill}} \label{txJJA}}
+  \subfloat[SON]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill}} \label{txSON}}
   }    
   \caption{Densidade espacial sazonal de raios.}
 \label{TaxaFlash}
@@ -219,11 +227,11 @@ Por exemplo, a maior área continua da América do Sul com taxas anuais de raios
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[DJF]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill}} \label{tempestadesDJF}}
-  \subfloat[MAM]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill}} \label{tempestadesMAM}}
+  \subfloat[DJF]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill}} \label{tempestadesDJF}}
+  \subfloat[MAM]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill}} \label{tempestadesMAM}}
 
-  \subfloat[JJA]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill}} \label{tempestadesJJA}}
-  \subfloat[SON]{{\includegraphics[scale=0.88, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill}} \label{tempestadesSON}}
+  \subfloat[JJA]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill}} \label{tempestadesJJA}}
+  \subfloat[SON]{{\includegraphics[height=6.5cm, trim=0 7 0 0, clip]{img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill}} \label{tempestadesSON}}
   
   }    
   \caption{Densidade espacial sazonal das tempestades elétricas.}
@@ -239,7 +247,7 @@ Na região do  Parque Nacional Natural Paramillo na Colômbia e no Lago Maracaib
 Algumas regiões no pico da Cordilheira dos Andes são bastante eficientes, principalmente na região da cidade de Cochabamba na Bolívia.
 
 \begin{figure}[!h]
-\centering{\includegraphics[scale=0.88]{img/TaxaFlashTempestade/densEspacial19982011totalEficienciaPolyfill}}  
+\centering{\includegraphics[height=13.5cm]{{img/eficiencia/densEspacial_19982011totalEficienciaPolyfill}}}  
 \caption{Eficiencia de tempestade}
 \label{eficiencia}
 \end{figure}
