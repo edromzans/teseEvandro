@@ -1,20 +1,21 @@
 \chapter{A SEVERIDADE DOS SISTEMAS}
 
-Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa, estão associadas aos índices FTA e FT.  Nesta seção identificamos qual desses índices representaram tempestades elétricas com maior intensidade convectiva, ou seja, os sistemas com as maiores taxas de raios por minuto ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado. 
+Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa, estão associadas aos índices FTA e FT.  Nesta seção identificamos qual desses índices representaram tempestades elétricas com maior intensidade convectiva, ou seja, os sistemas com as maiores taxas de raios por minuto ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado de sua extensão. 
 
 Ao aplicar as equações \ref{eqFT} e \ref{eqFTA} na base de dados de 94,711 tempestades elétricas, as quais tiveram pelo menos um pixel da varredura do PR contida na área do sistema e com tempo médio de visada do LIS maior ou igual a 1 minuto, foram estudadas as distribuições de probabilidades dos índices FTA e FT. Conforme mostra a figura \ref{seriesFtaFt}, trata-se de distribuições exponenciais de probabilidade. 
 
-Os sistemas potencialmente severos foram selecionados pelo nonagésimo percentil, associado aos máximos valores de FTA e FT. A linha vermelha nas figuras \ref{pdfFta} e \ref{pdfFt} marca o limite o qual os índices são considerados extremos. Os valores de FTA e FT a direita da linha vermelha correspondem ao conjunto dos 9472 sistemas, que correspondem aos 10\% mais raros da amostragem nos 14 anos de observação do TRMM.  
-
-Portanto será investigada a severidade apenas dos sistemas com índices FTA e FT extremos, os quais possuem valores acima de 18.0 $\times$ 10$^{-4}$ raios por minuto por quilômetro quadrado, como mostra a figura \ref{pdfFta}, ou acima de 6.3 raios por minutos, como mostra a figura \ref{pdfFt}. Porém, os máximos valores de FTA e FT das tempestades elétricas foram de 1258.8 $\times$ 10$^{-4}$ raios por minuto por quilômetro quadrado e 1283.6 raios por minuto respectivamente. 
- 
-\begin{figure}[!ht]
+\begin{figure}[!hb]
   \centering 
   \subfloat[FTA] { \includegraphics[height=5cm]{img/FtaFt/pdfFta} \label{pdfFta}} 
   \subfloat[FT]{ \includegraphics[height=5cm]{img/FtaFt/pdfFt} \label{pdfFt}} 
    \caption{Densidade de probabilidade dos valores da série referente aos índices FTA e FT.}
    \label{seriesFtaFt}
 \end{figure}
+
+Os sistemas potencialmente severos foram selecionados pelo 90\textsuperscript{\underline{o}} percentil, associado aos máximos valores de FTA e FT. A linha vermelha nas figuras \ref{pdfFta} e \ref{pdfFt} marca o limite cuja os índices são considerados extremos. Os valores de FTA e FT a direita da linha vermelha correspondem ao conjunto dos 9472 sistemas, que correspondem aos 10\% mais raros da amostragem nos 14 anos de observação do TRMM.  
+
+Portanto será investigada a severidade apenas dos sistemas com índices FTA e FT extremos, os quais possuem valores acima de 18.0 $\times$ 10$^{-4}$ raios por minuto por quilômetro quadrado, como mostra a figura \ref{pdfFta}, ou acima de 6.3 raios por minutos, como mostra a figura \ref{pdfFt}. Porém, os máximos valores de FTA e FT das tempestades elétricas foram de 1258.8 $\times$ 10$^{-4}$ raios por minuto por quilômetro quadrado e 1283.6 raios por minuto respectivamente. 
+
 
 % Na figura \ref{percetilFtaFt}, temos a série de FTA e FT ordenada, e a linha tracejada vertical corta o 90\% percentil dos índices. 
 
@@ -31,6 +32,17 @@ Portanto será investigada a severidade apenas dos sistemas com índices FTA e F
 Observa-se que os extremos de FT e FTA correspondem a sistemas com tamanhos bem distintos. Conforme é mostrado na figura \ref{size}, verifica-se que as máximas probabilidades de ocorrência de tempestades elétricas associadas com os extremos de FTA, ocorrem em sistemas com área 3 ordens de grandeza menor do que nos extremos de FT.
 
 
+
+\begin{figure}[!hb]
+  \centering{  
+  \subfloat[Densidade de probabilidade de extensão em área.] { \includegraphics[scale=1.1,trim=0 0 215 0,clip]{img/tb/TbAreas} \label{size}} 
+  \subfloat[Densidade de probabilidade de temperatura de brilho em infravermelho.]{ \includegraphics[scale=1.1,trim=220 0 0 0,clip]{img/tb/TbAreas} \label{tb}} 
+  }
+  \label{t_tb}
+  \caption{Estudo das frequências de ocorrências de tempestades elétricas selecionas pelo 90\textsuperscript{\underline{o}} percentil dos índices de FT e FTA, por extensão em área e por temperatura de brilho de topo das nuvens.}
+\end{figure}
+
+
 As tempestades elétricas ordenadas pelo índice FT são maiores em extensão por que conforme aumenta a área do sistema, maior a probabilidade de haver raios na região. Uma tempestade elétrica com 10$^5$ km$^2$, provavelmente terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$. 
 
 %Quando a densidade espacial de descargas aumenta muito em uma região com centenas de quilômetros quadrados, em torno de 100 descargas intranuvens para uma nuven-solo, como por exemplo os maiores valores de $Z=IC/CG$ mostrados por \cite{evandro2009} na região de Campo Grande - MS no Brasil, a capacidade do LIS de identificar brilhos transientes provavelmente fica comprometida devido a resolução horizontal da CCD.
@@ -40,15 +52,6 @@ Ao normalizar a taxa de raios no tempo por $A_t$, o número de raios fica diluí
 A frequência de ocorrência das temperaturas de brilho associadas a radiância espectral observada no canal 4 do VIRS para todos os pixeis que definiram as áreas dos sistemas, é mostrada na figura \ref{tb}. Observa-se que o maior valor de probabilidade para a curva das tempestades elétricas com índice extremo de FTA, possui temperatura de topo de nuvens aproximadamente 10 K mais frias do que nas tempestades elétricas com extremos de FT, indicando que a convecção nos sistemas ordenados por FTA é mais profunda na maioria das situações.
 
 
-
-\begin{figure}[!ht]
-  \centering{  
-  \subfloat[Densidade de probabilidade de extensão em área.] { \includegraphics[scale=1.1,trim=0 0 215 0,clip]{img/tb/TbAreas} \label{size}} 
-  \subfloat[Densidade de probabilidade de temperatura de brilho em infravermelho.]{ \includegraphics[scale=1.1,trim=220 0 0 0,clip]{img/tb/TbAreas} \label{tb}} 
-  }
-  \label{t_tb}
-  \caption{Estudo das frequências de ocorrências de tempestades elétricas selecionas pelo 90\textsuperscript{\underline{o}} percentil dos índices de FT e FTA, por extensão em área e por temperatura de brilho de topo das nuvens.}
-\end{figure}
 
 \citeonline{morales2003} ao desenvolver a \textit{Sferics Infrared Rainfall Technique} (SIRT), mostram que as regiões com temperatura de brilho inferior a 215 K e com ocorrência de \textit{sferics} foram as regiões categorizadas como de maior precipitação associada.\sigla{name={SIRT},description={\textit{Sferics Infrared Rainfall Technique} }}
 
@@ -70,28 +73,28 @@ Talvez alguns sistemas com extremos valores de FTA estejam em estágio de matura
 
 Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$ do PR, contidos nos sistemas com índices extremos de FTA e FT. Como os sistemas com extremos de FT possuem área na ordem de 10$^5$ km$^2$, o PR observou com maior frequência apenas  30\% da área total destas tempestades elétricas. Pois, geralmente a varredura do PR não contempla toda a sua extensão. Para os sistemas escolhidos pelos extremos de FTA o PR teve maior probabilidade de observar entre 90-100\% da área dos sistemas.
 
-Nas figura \ref{ftacfadftawith}, \ref{ftacfadftawithout}, \ref{ftcfadftawith} e \ref{ftcfadftawithout} foram calculados os CFADs para as tempestades elétricas com índices FTA e FT extremos, distribuídas conforme cada região de 10 por 10 graus. Para localizar a caixa de 10 por 10 graus em que cada sistema esteve contido, foi considerado a latitude e longitude do centro geométrico da área definida por cada sistema.
+Nas figuras \ref{ftacfadwith}, \ref{ftacfadwithout}, \ref{ftcfadwith} e \ref{ftcfadwithout} foram calculados os CFADs para as tempestades elétricas com índices FTA e FT extremos, distribuídas conforme cada região de 10 por 10 graus na superfície terrestre. Para localizar a caixa de 10 por 10 graus em que cada sistema esteve contido, foi considerado a latitude e longitude do centro geométrico da área definida por cada sistema.
 
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA}
  \caption{CFADs para os extremos de FTA. Porção da precipitação sem raios.}
- \label{ftacfadftawithout}
+ \label{ftacfadwithout}
 \end{figure} 
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA}
   \caption{CFADs para os extremos de FTA. Porção da precipitação com raios.}
-  \label{ftacfadftawith}   
+  \label{ftacfadwith}   
 \end{figure} 
 
-As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0.05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos de LIS, foram considerados como a precipitação dos núcleos de raios. Os CFADs foram calculados para a porção da chuva com, figuras \ref{ftacfadftawith} e \ref{ftcfadftawith}, e sem, figuras \ref{ftacfadftawithout} e \ref{ftcfadftawithout}, atividade elétrica de nuvem.
+As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0.05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. Os CFADs foram calculados para a porção da chuva com, figuras \ref{ftacfadwith} e \ref{ftcfadwith}, e sem, figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}, atividade elétrica de nuvem.
 
-Note que no canto superior direito de cada CFAD temos alguns valores estatísticos que representam: (\%) a porcentagem de perfis convectivos, estratiformes e outros, respectivamente; (P) o numero de perfis do PR computados, (L) o número de ocorrência de $Z_c$ no nível de altitude de máxima ocorrência e (H) o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$.
+Note que no canto superior direito de cada CFAD temos alguns valores estatísticos que representam: (\%) \simbolo{name={\%},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: a porcentagem de perfis convectivos, estratiformes e outros, respectivamente}} a porcentagem de perfis convectivos, estratiformes e outros, respectivamente; (P) \simbolo{name={P},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: número de perfis do PR computados}} o número de perfis do PR computados; (L) \simbolo{name={L},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o número de ocorrência de $Z_c$ no nível de altitude de máxima ocorrência}} o número de ocorrência de $Z_c$ no nível de altitude de máxima ocorrência; (H) \simbolo{name={H},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$}} o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$.
 
-Comparando os CFADs da chuva com e sem raios, representados para os extremos de FTA nas figuras \ref{ftacfadftawithout} e \ref{ftacfadftawith} e para os extremos de FT, nas figuras \ref{ftacfadftawithout} e \ref{ftcfadftawithout}, é evidente que a porção sem raios é a parte menos severa dos sistemas. Os níveis de contorno de probabilidades dos CFADs da precipitação sem raios possuem suas máximas altitudes aproximadamente 3 quilômetros abaixo das máximas altitudes atingidas pelos contornos dos CFADs da precipitação com raios. A porção sem raios dos sistemas possuíram maior percentual de perfis estratiformes e menores valores de $Z_c$ com os contornos de probabilidades entre 1-10\%, em todos os níveis de altitude.
+Comparando os CFADs da chuva com e sem raios, representados para os extremos de FTA nas figuras \ref{ftacfadwithout} e \ref{ftacfadwith} e para os extremos de FT, nas figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}, é evidente que a porção sem raios é a parte menos severa dos sistemas. Os níveis de contorno de probabilidades dos CFADs da precipitação sem raios possuem suas máximas altitudes aproximadamente 3 quilômetros abaixo das máximas altitudes atingidas pelos contornos dos CFADs da precipitação com raios. A porção sem raios dos sistemas possuíram maior percentual de perfis estratiformes e menores valores de $Z_c$ com os contornos de probabilidades entre 1-10\%, em todos os níveis de altitude.
 
 A porção eletricamente ativa possui maior percentual de perfis convectivos e com maiores valores de $Z_c$ associado aos contornos de probabilidade, confirmando a correlação positiva entre descargas elétricas e a produção de precipitação \cite{Petersen1998}.
 
@@ -100,15 +103,17 @@ A convecção é mais ativa nas regiões dos núcleos de raios, aonde a precipit
 
 % \caption{Diagramas de Contorno de Frequência por Altitude (CFADs). Em cada CFAD pode-se verificar: a porcentagem (\%) de perfis convectivos, estratiformes e outros, respectivamente; (P) o numero de perfis do PR computados, (L) o número de ocorrência de refletividade no nível de máxima ocorrência e (H) o nível de máxima ocorrência.}
 
-Se avaliarmos apenas os níveis de contorno com probabilidade entre 2-3.7\% (cor verde), observa-se que os máximos de $Z_c$ associados à chuva da porção sem raios, figuras \ref{ftacfadftawithout} e \ref{ftcfadftawithout}, não ultrapassaram os 40 dBZ em nenhuma região, enquanto que para a porção de chuvas com raios, figuras \ref{ftacfadftawith} e \ref{ftcfadftawith}, os valores de $Z_c$ entre 0-5 km de altitude registram valores entre 45-50 dBZ.
+Se avaliarmos apenas os níveis de contorno com probabilidade entre 2-3.7\% (cor verde), observa-se que os máximos de $Z_c$ associados à chuva da porção sem raios, figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}, não ultrapassaram os 40 dBZ em nenhuma região, enquanto que para a porção de chuvas com raios, figuras \ref{ftacfadwith} e \ref{ftcfadwith}, os valores de $Z_c$ entre 0-5 km de altitude registram valores entre 45-50 dBZ.
 
-A figura \ref{ftcfadftawithout} mostra que a precipitação sem raios dos extremos de FT na região tropical, entre 20S-10N e 90W-30W, possui banda brilhante marcada entre 4-5 km de altitude, principalmente nos perfis com probabilidade de ocorrência entre 2-5.3\%  , nas cores de contorno em verde e amarelo. Podemos observar a banda brilhante de maneira mais elucidativa por meio dos CCFADs da figura \ref{ftccfadftawithout}, os quais evidenciam que entre o 12\textsuperscript{\underline{o}} e o 95\textsuperscript{\underline{o}} percentil da $f_{pdf}(x,y)$ normalizada por altitude, que define cada CFAD entre 20S-10N e 90W-30W na figura \ref{ftcfadftawithout}, possuem uma queda no valor de $Z_c$ logo abaixo de 5 quilômetros de altitude, em todas as regiões de 10 por 10 graus. 
+A figura \ref{ftcfadwithout} mostra que a precipitação sem raios dos extremos de FT na região tropical, entre 20S-10N e 90W-30W, possui banda brilhante marcada entre 4-5 km de altitude, principalmente nos perfis com probabilidade de ocorrência entre 2-5.3\%, nas cores de contorno em verde e amarelo. 
+
+Podemos observar a banda brilhante dos sistemas com índice extremo de FT na porção sem raios de maneira mais elucidativa por meio dos CCFADs da figura \ref{ftccfadwithout}, os quais evidenciam que entre o 12\textsuperscript{\underline{o}} e o 95\textsuperscript{\underline{o}} percentil da $f_{pdf}(x,y)$ normalizada por altitude, que define cada CFAD entre 20S-10N e 90W-30W na figura \ref{ftcfadwithout}, há uma queda no valor de $Z_c$ logo abaixo de 5 quilômetros de altitude em cada região de 10 por 10 graus. 
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_semraio_topFT}
  \caption{CFADs para os extremos de FT. Porção da precipitação sem raios.}
- \label{ftcfadftawithout}
+ \label{ftcfadwithout}
 \end{figure} 
 
 \begin{figure}[!ht]
@@ -116,73 +121,79 @@ A figura \ref{ftcfadftawithout} mostra que a precipitação sem raios dos extrem
    \adjustbox{trim={0\width} {0.435\height} {0\width} {0\height} , clip}%
    {\includegraphics[width=\textwidth]{img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT}}
  \caption{CCFDs para os extremos de FT entre 20S-10N e 90W-30W. Porção da precipitação sem raios.}
- \label{ftccfadftawithout}
+ \label{ftccfadwithout}
 \end{figure} 
 
-Na figura \ref{ftacfadftawithout}, que representa da porção sem raios da precipitação tridimensional dos sistemas com índice extremo de FTA, entre 20S-10N e 90W-30W, a banda brilhante é evidente apenas nas regiões costeiras e oceânicas, nas caixas entre 0-10N  e 90-80W, entre 10-0S e 40-30W e entre 20-10S e 70-60W. As demais regiões observa-se um aumento contínuo de $Z_c$ conforme os níveis de altitude vão diminuindo, sem a diminuição abrupta de $Z_c$ abaixo de 5 quilômetros.    
+Na figura \ref{ftacfadwithout}, que representa a porção sem raios da precipitação tridimensional dos sistemas com índice extremo de FTA, não se observa banda brilhante marcada nos contornos de probabilidade de $Z_c$ por altitude. Há um aumento contínuo de $Z_c$,  conforme os níveis de altitude diminuem, sem a diminuição abrupta de $Z_c$ logo abaixo de 5 quilômetros.   
 
-As chuvas na superfície associada com as porções da precipitação de tempestades elétricas tropicais (entre 20S-10N e 90W-30W) sem raios, referentes aos extremos de FT têm maiores valores de probabilidades com valores de $Z_c$ mais moderados do que referente aos extremos de FTA, os quais são mais aleatórias em intensidade de $Z_c$, mas podem atingir valores superiores de $Z_c$. Note como os contornos de probabilidade na figura \ref{ftacfadftawithout}, principalmente entre 0.3-3.7\% representados pelas cores em azul e verde, são mais alargados para os extremos de FTA. Para os extremos de FT os contornos da figura \ref{ftcfadftawithout} são mais estreitos, indicando menor aleatoriedade nos valores de $Z_c$ observados.
+%observa-se que, entre 20S-10N e 90W-30W,  
+%a banda brilhante é evidente apenas nas regiões costeiras e oceânicas, nas caixas entre 0-10N  %e 90-80W, entre 10-0S e 40-30W e entre 20-10S e 70-60W.
 
-Na região subtropical, entre 40-20S e 90-30W, a banda brilhante foi menos evidente tanto para figura \ref{ftccfadftawithout} quanto para \ref{ftacfadftawithout}. Nesta região, a porção sem atividade elétricas dos extremos de FTA mostram que a chuva na superfície tem maior probabilidade de valores inferiores de $Z_c$ em relação as porções sem raios dos extremos de FT. Observe como a mediana da amostra de probabilidade na região subtropical, que é numericamente igual ao 50\textsuperscript{\underline{o}} percentil das $f_{pdf}(x,y)$ normalizada por altitude a cada 10 por 10 graus e que está marcado como uma das linhas de contorno na cor preta que compõem os CCFADs nas figura \ref{ftccfdsubtrop} e \ref{ftaccfdsubtrop}, indicam mais chuva entre 0-5 km para a parte sem raios das tempestades elétricas com índice FT extremo, mesmo que a estatística na parte superior direita de cada CCFADs indique maior percentual de perfis convectivos para a porção sem raios dos extremos de FTA.
+As chuvas na superfície associadas com a precipitação sem raios das tempestades elétricas entre 20S-10N e 90W-30W, região tropical, referentes aos extremos de FT têm maiores valores de probabilidades com valores de $Z_c$ mais moderados do que quando compara-se com os extremos de FTA, os quais possuem perfis de $Z_c$ com maior aleatoriedade, mas podem atingir valores em dBZ superiores. Note como os contornos de probabilidade, principalmente entre 0.3-3.7\% representados pelas cores em azul e verde, são mais alargados na chuva sem raios dos extremos de FTA, figura \ref{ftacfadwithout} do que na chuva sem raios dos extremos de FT, figura \ref{ftcfadwithout}. Na chuva sem raios dos sistemas com extremos de FT, os contornos da figura \ref{ftcfadwithout} são mais estreitos, indicando menor aleatoriedade nos valores de $Z_c$ observados.
+
+Na região entre 40-20S e 70-50W que engloba a Bacia do Prata, a banda brilhante foi menos evidente nos contornos de probabilidade associados a estrutura tridimensional da precipitação fora dos núcleos de raios, tanto para os extremos de FT, figura \ref{ftccfadwithout}, quanto para os extremos de FTA, figura \ref{ftacfadwithout}. 
+
+Entre 40-20S e 70-50W, a porção sem raios da chuva dos extremos de FTA mostra que entre 0-5 km de altitude, a probabilidade de valores inferiores de $Z_c$ em relação as porções sem raios dos extremos de FT é maior. Observe como a mediana das amostras de probabilidades, marcada pela linha de contorno na cor preta no 50\textsuperscript{\underline{o}} percentil do CCFAD em cada caixa de 10 por 10 graus nas figuras \ref{ftccfdsubtrop} e \ref{ftaccfdsubtrop}, indica maior taxa de precipitação entre 0-5 km na porção sem raios das tempestades elétricas com índice FT extremo, figura \ref{ftccfdsubtrop}, mesmo que a estatística na parte superior direita de cada CCFAD indique maior percentual de perfis convectivos para a porção sem raios dos extremos de FTA, figura \ref{ftaccfdsubtrop}.
+
+
+%, evidenciando que a chuva sem raios dos sistemas com as maiores taxas de raios no tempo é mais severa nesta região.
 
 \begin{figure}[!ht]
   \centering  
-  \adjustbox{trim={.0\width} {.04\height} {0\width} {.565\height},clip}%
-  {\includegraphics[width=\textwidth] {img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT}}
- \caption{CCFDs para os extremos de FT entre 40-20S e 90-30W. Porção da precipitação sem raios.}
+  \adjustbox{trim={.349\width} {.045\height} {.322\width} {.565\height},clip}%
+  {\includegraphics[width=27cm] {img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT}}
+ \caption{CCFDs para os extremos de FT entre 40-20S e 70-50W. Porção da precipitação sem raios.}
  \label{ftccfdsubtrop}
 \end{figure} 
 
 \begin{figure}[!ht]
+%  \centering  
+%  \adjustbox{trim={.0\width} {.04\height} {0\width} {.565\height},clip}%
   \centering  
-  \adjustbox{trim={.0\width} {.04\height} {0\width} {.565\height},clip}%
-  {\includegraphics[width=\textwidth] {img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA}}
- \caption{CCFDs para os extremos de FTA entre 40-20S e 90-30W. Porção da precipitação sem raios.}
+  \adjustbox{trim={.349\width} {.045\height} {.322\width} {.565\height},clip}%  
+  {\includegraphics[width=27cm] {img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA}}
+ \caption{CCFDs para os extremos de FTA entre 40-20S e 70-50W. Porção da precipitação sem raios.}
  \label{ftaccfdsubtrop}
 \end{figure} 
 
-Porém nos sistemas extremos pelo índice FTA, os menores valores de probabilidades mostrados na figura \ref{ftacfadftawithout} entre 40-20S e 90-30W, valores entre 0.001-2\% representados pelas cores em preto e azul, atingem valores superiores de $Z_c$ do na figura \ref{ftcfadftawithout} entre 40-20S e 90-30W, mostrando que apesar da mediana das probabilidades dos CFADs indicarem precipitação mais intensa para os sistemas selecionados pelo índice FT, os perfis de refletividade acima do 80\textsuperscript{\underline{o}} percentil tanto para os extremos de FT quanto para FTA, os quais são mostrados nas figuras \ref{ftaccfdsubtrop} e figura \ref{ftccfdsubtrop}, são mais possuem valores mais elevados de $Z_c$ para os extremos de FTA. 
+Porém, a precipitação contida fora dos núcleos de raios dos sistemas extremos selecionados pelo índice FTA, situados entre 40-20S e 70-50W,  e que é explicitada por meio dos CFADs da figura \ref{ftacfadwithout}, revela que a probabilidade entre 0.001-2\%, representados pelas cores de contorno em preto e azul, atingem valores superiores de $Z_c$ do que quando compara-se com os sistemas extremos de FT, na figura \ref{ftcfadwithout}, também entre 40-20S e 70-50W.
 
+Apesar da mediana das probabilidades dos CFADs mostrarem que a precipitação entre 0-5 km de altitude foi mais intensa para os sistemas extremos de FT e localizados entre 40-20S e 70-50W, ao avaliar os contornos de probabilidade cumulativa dos CCFADs na figura \ref{ftaccfdsubtrop}, referente ao estudo da estrutura tridimensional da precipitação fora dos núcleos de raios dos extremos de FTA, observa-se que, acima do 80\textsuperscript{\underline{o}} percentil os valores de $Z_c$ foram superiores em relação aos sistemas com índice extremo de FT, na figura \ref{ftccfdsubtrop}.
 
-Os CFADs referentes as tempestades elétricas selecionadas por FTA possuem contornos de probabilidade em níveis de altitude mais elevados do que os CFADs dos sistemas selecionados por FT, tanto para a parte com raios quanto para a parte sem raios. A diferença mais notável pode ser observada entre a figura \ref{ftacfadftawithout} e \ref{ftcfadftawithout} para 0S-10S e 50W-60W, que abrange principalmente o estado do Pará, e parte do Amazônas, Tocantis e Mato Grosso. O CFAD em \ref{ftacfadftawithout} define valores de probabilidade em altitude 2 km mais elevada do que em \ref{ftcfadftawithout}.
+Os CFADs referentes as tempestades elétricas selecionadas por FTA possuem contornos de probabilidade em níveis de altitude mais elevados do que os CFADs dos sistemas selecionados por FT, tanto para a porção com raios quanto para a porção sem raios da precipitação dos sistemas.
+
+%A diferença mais notável pode ser observada entre a figura \ref{ftacfadwithout} e \ref{ftcfadwithout} para 0S-10S e 50W-60W, que abrange principalmente o estado do Pará, e parte do Amazônas, Tocantis e Mato Grosso. O CFAD em \ref{ftacfadwithout} define valores de probabilidade em altitude 2 km mais elevada do que em \ref{ftcfadwithout}.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_comraio_topFT}
   \caption{CFADs para os extremos de FT. Porção da precipitação com raios.}
-  \label{ftcfadftawith}   
+  \label{ftcfadwith}   
 \end{figure} 
 
+%Nas regiões entre 10N-0S e 70W-80W e entre 20S-40S e 50W-60W, em que \cite{cecil2005} apontam como região das tempestades mais severas na América do Sul, os CFADs em \ref{ftacfadwith} e \ref{ftacfadwithout} possuem contornos de probabilidade aproximadamente 1 km mais elevado do que em \ref{ftcfadwith} e \ref{ftcfadwithout}.
+
+Como o último nível de altitude dos CFADs deste trabalho é limitado por altitudes com até 10\% de L, a maior definição de probabilidades de ocorrência de $Z_c$ em altitude para as tempestades selecionadas pelo índice FTA, indica que a convecção é mais intensa nos extremos de FTA do que nos extremos de FT. Principalmente quando observamos a morfologia da estrutura tridimensional da precipitação dos núcleos de raios, para os extremos do FTA e FT, expressa nos CFADs das figuras \ref{ftacfadwith} e \ref{ftcfadwith}, aonde os perfis de precipitação são classificados majoritariamente como convectivos.
+
+A precipitação é bem mais frequente próxima da superfície, entre 0-5 km de altitude. Acima da região de mistura, a precipitação é mais rara de ocorrer. Em \cite{liu2008}, é mostrado que a densidade espacial de sistemas com no mínimo 20 dBZ em 2 km de altitude é globalmente maior do que os sistemas que atingem 20 dBZ em níveis superiores de altitude.
 
 
-Nas regiões entre 10N-0S e 70W-80W e entre 20S-40S e 50W-60W, em que \cite{cecil2005} apontam como região das tempestades mais severas na América do Sul, os CFADs em \ref{ftacfadftawith} e \ref{ftacfadftawithout} possuem contornos de probabilidade aproximadamente 1 km mais elevado do que em \ref{ftcfadftawith} e \ref{ftcfadftawithout}.
+%A região de 10 por 10 graus, a qual o valor de H marcado no topo direito de cada CFAD, é menor para a precipitação dos núcleos de raios dos sistemas com extremo de FTA, figura \ref{ftacfadwith}, do que para  a precipitação dos núcleos de raios dos sistemas com extremos de FT, figura \ref{ftcfadwith}, e mesmo assim, o CFAD dos extremos de FTA, figura \ref{ftacfadwith}, possuiu maior altitude nos níveis de contorno de probabilidade de $Z_c$, o índice FTA mostra que a chuva  
+%esteve associado com maior severidade de tempo do que FT.
+%Pois, mesmo que a refletividade mais ocorrente esteja abaixo da região de mistura, a precipitação também é frequente conforme o aumento da altitude, mostrando que nestas regiões, os sistemas com índice FTA extremo têm maior número de ocorrência de chuva 
+%mais chuvas na superfície e também maior precipitação acima de 10 km de altitude.
+%com bastante representatividade estatística.
+%maior quantidade de hidrometeoros na região de mistura e
 
-Como o último nível de altitude dos CFADs deste trabalho é limitado por altitudes com até 10\% de L, a maior definição de probabilidades de ocorrência em altitude para as tempestades selecionadas por FTA mostra que, as altas taxas de raios por km$^2$ estão associadas com a convecção mais profunda do que os sistemas com as maiores taxas de raios (FT).
+Por exemplo na região do Panamá, Colômbia e Equador, entre 10N-0S e 70W-80W, o nível H para a figura \ref{ftacfadwith} é de 4,0 km e o CFAD possui contornos de probabilidade até 16 km de altitude. Na figura \ref{ftcfadwith}, H é igual a 4,2 km e os níveis de contorno param em 15 km. Mesmo a precipitação com raios dos extremos de FTA possuir o maior número que ocorrência de $Z_c$ 200 metros 
 
+A precipitação tridimensional observado nos núcleos de raios, explicitada nos contorno dos CFADs da figura \ref{ftacfadwith}, referente ao índice FTA, mostram valores de refletividade entre 1-3 dBZ  maiores do que na figura \ref{ftcfadwith}, referente ao índice FT, principalmente quando observa-se os contornos de probabilidade de $Z_c$ acima de 5 km de altitude. 
 
+Para a precipitação entre 1-2 km de altitude os valores são mais semelhantes entre as tempestades elétricas selecionadas por FTA e FT. Porém, para FTA (figura \ref{ftacfadwith}) há um estreitamento da região de contorno com os maiores valores de probabilidade associada a chuva na superfície, entre 3-5\%. Entre 20S-40S e 40-70W, o estreitamente é maior do que as demais regiões mostrando que as chuvas possuem maior probabilidade de estarem associadas com valores de 45 dBZ em \ref{ftacfadwith}.      
 
+As probabilidades mais baixas de ocorrência de refletividade observadas nos CFADs da figura \ref{cfads} estão associadas com a precipitação mais severa. Observe as faixas de contorno mais escuras entre 0,1-0,7\% nas figuras \ref{ftacfadwith} e \ref{ftcfadwith}. Esta é a ocorrência de precipitação mais rara, porém pode estar associada com enchentes rápidas, alta taxa de raios, chuva de granizo, fortes rajadas de vento e até mesmo ocorrência de tornados em algumas regiões. 
 
-
-
-Em geral a precipitação é bem mais frequente próxima da superfície, entre 0-5km de altitude. Acima da região de mistura, a precipitação é mais rara de ocorrer. Em \cite{liu2008} é mostrado que a densidade espacial de sistemas com no mínimo 20 dBZ em 2 km de altitude é globalmente maior do que os sistemas que atingem 20 dBZ em níveis superiores de altitude.
-
-Principalmente nas regiões da figura \ref{cfads} as quais o valor de H, marcado no topo direito de cada CFAD, é menor em \ref{ftacfadftawith} do que em \ref{ftcfadftawith} e mesmo assim os CFADs em \ref{ftacfadftawith} possuem maior altitude nos níveis de contorno de probabilidade, o índice definido como FTA associa-se com maior severidade de tempo do que o FT. 
-
-Pois mesmo que a refletividade mais ocorrente esteja abaixo da região de mistura, a precipitação acima de 7 km também é frequente, mostrando que nestas regiões os sistemas ordenados pelo FTA têm mais chuva na superfície, maior quantidade de hidrometeoros na região de mistura e precipitação acima de 10 km de altitude com bastante representatividade estatística.
-
-
-
-Por exemplo na região da Colômbia entre 10N-0S e 70W-80W, o nível H para a figura \ref{ftacfadftawith} é de 4,0 km e em \ref{ftcfadftawith} é de 4,2 km e os níveis de contorno da figura \ref{ftacfadftawith} possuem valores até 16 km de altitude, enquanto que em \ref{ftcfadftawith} os contornos param em 15 km. 
-
-
-
-
-
-Os contornos da figura \ref{ftacfadftawith}, principalmente para as altitude acima de 5 km, mostram valores de refletividade entre 1-3 dBZ  maiores do que em \ref{ftcfadftawith}. Para a chuva entre 1-2 km de altitude os valores são mais semelhantes entre as tempestades elétricas selecionadas por FTA e FT. Porém, para FTA (figura \ref{ftacfadftawith}) há um estreitamento da região de contorno com os maiores valores de probabilidade associada a chuva na superfície, entre 3-5\%. Entre 20S-40S e 40-70W, o estreitamente é maior do que as demais regiões mostrando que as chuvas possuem maior probabilidade de estarem associadas com valores de 45 dBZ em \ref{ftacfadftawith}.      
-
-As probabilidades mais baixas de ocorrência de refletividade observadas nos CFADs da figura \ref{cfads} estão associadas com a precipitação mais severa. Observe as faixas de contorno mais escuras entre 0,1-0,7\% nas figuras \ref{ftacfadftawith} e \ref{ftcfadftawith}. Esta é a ocorrência de precipitação mais rara, porém pode estar associada com enchentes rápidas, alta taxa de raios, chuva de granizo, fortes rajadas de vento e até mesmo ocorrência de tornados em algumas regiões. 
-
-Os valores mais elevados de refletividade estiveram na figura \ref{ftacfadftawith} entre 20S-40S e 40W-70W, sobre a Bacia do Rio da Prata, que abrange o Sul do Brasil, Paraguai, Uruguai e Argentina. 
+Os valores mais elevados de refletividade estiveram na figura \ref{ftacfadwith} entre 20S-40S e 40W-70W, sobre a Bacia do Rio da Prata, que abrange o Sul do Brasil, Paraguai, Uruguai e Argentina. 
 
 A dinâmica de formação de Sistemas Convectivos de Meso-escala, como é discutido em \cite{Velasco1987} e \cite{Durkee2009}, somados com efeitos de topografia, como por exemplo a região da Serra de Córdoba na Argentina, a qual \cite{Rasmussen2011} mostram grande ocorrência de convecção profunda, promovem valores de refletividade de aproximadamente 45 dBZ entre 10-15 km de altitude e chuvas na superfície com 55 dBZ, como mostra os contornos com as probabilidade mais raras.
 
