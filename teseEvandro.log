@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.9.9)  24 SEP 2014 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.9.9)  26 SEP 2014 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,20 +990,7 @@ LaTeX Warning: Unused global option(s):
     [appendix=nobox].
 
 (./teseEvandro.aux (./capitulos/Metodologia.aux)
-(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux
-
-LaTeX Warning: Label `5oFta' multiply defined.
-
-
-LaTeX Warning: Label `sub@5oFta' multiply defined.
-
-
-LaTeX Warning: Label `10oFta' multiply defined.
-
-
-LaTeX Warning: Label `sub@10oFta' multiply defined.
-
-))
+(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux))
 \openout1 = `teseEvandro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
@@ -1022,7 +1009,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
 LaTeX Font Info:    ... okay on input line 107.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 107.
 
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -2007,134 +1995,142 @@ Package babel Info: Redefining portuges shorthand "|
  [53 <./img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 281.
-
-<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=906, 4272.9637
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 284.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 284.
+ [54 <./img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png> <./img/prec
+ipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png>]
+<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=917, 4272.9637
 5pt x 3752.0175pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png Graphic file 
 (type png)
 
 <use img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor005thFt
-a.png used on input line 286.
+a.png used on input line 291.
 (pdftex.def)             Requested size: 210.5963pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=908, 4270.9562
+<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=919, 4270.9562
 5pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png Graphic file 
 (type png)
 
 <use img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor010thFt
-a.png used on input line 287.
+a.png used on input line 292.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
-
-<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=910, 4270.95625p
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 306.
+ [55 <./img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png> <./img/Dis
+tEspacialPercentis/FTA/distEspacialValor010thFta.png>]
+<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=943, 4270.95625p
 t x 3755.02875pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor005thFt.png Graphic file (t
 ype png)
 
 <use img/DistEspacialPercentis/FT/distEspacialValor005thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor005thFt.
-png used on input line 299.
+png used on input line 310.
 (pdftex.def)             Requested size: 210.30185pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=912, 4274.97125p
+<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=945, 4274.97125p
 t x 3754.025pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor010thFt.png Graphic file (t
 ype png)
 
 <use img/DistEspacialPercentis/FT/distEspacialValor010thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor010thFt.
-png used on input line 300.
+png used on input line 311.
 (pdftex.def)             Requested size: 210.56477pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=914, 4270.9562
+<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=954, 4270.9562
 5pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png Graphic file 
 (type png)
 
 <use img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor095thFt
-a.png used on input line 312.
+a.png used on input line 328.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=916, 4270.9562
+<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=956, 4270.9562
 5pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png Graphic file 
 (type png)
 
 <use img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor099thFt
-a.png used on input line 313.
+a.png used on input line 329.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=918, 4270.95625p
+<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=958, 4270.95625p
 t x 3751.01375pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor095thFt.png Graphic file (t
 ype png)
 
 <use img/DistEspacialPercentis/FT/distEspacialValor095thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor095thFt.
-png used on input line 327.
+png used on input line 343.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=920, 4270.95625p
+<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=960, 4270.95625p
 t x 3751.01375pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor099thFt.png Graphic file (t
 ype png)
 
 <use img/DistEspacialPercentis/FT/distEspacialValor099thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor099thFt.
-png used on input line 328.
+png used on input line 344.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
- [54 <./img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png> <./img/prec
-ipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png>]
+ [56 <./img/DistEspacialPercentis/FT/distEspacialValor005thFt.png> <./img/DistE
+spacialPercentis/FT/distEspacialValor010thFt.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
- [55 <./img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png> <./img/Dis
-tEspacialPercentis/FTA/distEspacialValor010thFta.png> <./img/DistEspacialPercen
-tis/FT/distEspacialValor005thFt.png> <./img/DistEspacialPercentis/FT/distEspaci
-alValor010thFt.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 179.
- [56 <./img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png> <./img/Dis
+ [57 <./img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png> <./img/Dis
 tEspacialPercentis/FTA/distEspacialValor099thFta.png> <./img/DistEspacialPercen
 tis/FT/distEspacialValor095thFt.png> <./img/DistEspacialPercentis/FT/distEspaci
-alValor099thFt.png>]
-(./teseEvandro.bbl
+alValor099thFt.png>] (./teseEvandro.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
- [57
+ [58
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 188.
+(babel)             in language  on input line 187.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 188.
- [58])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 187.
  [59]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 279.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 279.
+
+[60])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 189.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 189.
+ [61]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
@@ -2153,18 +2149,18 @@ Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
- 23963 strings out of 494956
- 433773 string characters out of 6179495
+ 23982 strings out of 494956
+ 434001 string characters out of 6179495
  570820 words of memory out of 5000000
- 26310 multiletter control sequences out of 15000+600000
+ 26326 multiletter control sequences out of 15000+600000
  88503 words of font info for 94 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 55i,15n,87p,1101b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,87p,1101b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
@@ -2176,10 +2172,10 @@ b></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on teseEvandro.pdf (60 pages, 14548335 bytes).
+Output written on teseEvandro.pdf (62 pages, 14554040 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 886 compressed objects within 9 object streams
- 225 named destinations out of 1000 (max. 500000)
+ 1115 PDF objects out of 1200 (max. 8388607)
+ 915 compressed objects within 10 object streams
+ 228 named destinations out of 1000 (max. 500000)
  619 words of extra memory for PDF output out of 10000 (max. 10000000)
 
