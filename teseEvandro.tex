@@ -24,6 +24,8 @@
 \usepackage{setspace}
 \usepackage{listings}
 \usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{pdfpages}
 %\usepackage[hang,center]{subfigure}
 \usepackage{makeidx}
 \usepackage{tabularx,array,colortbl}
@@ -106,7 +108,7 @@ commentstyle=\ttfamily\color{gray}
 \setcounter{figure}{0}
 \begin{document}
 \autor{Evandro Moimaz Anselmo}
-\titulo{Morfologia das tempestades elétricas na América do Sul}
+\titulo{Morfologia das tempestades elétricas na América do Sul\\ \footnotesize{Versão preliminar para pedido de prorrogação do prazo}}
 \orientador[Orientador:\\]{Prof. Dr. Carlos Augusto Morales Rodriguez }
 
 \comentario{Tese ao departamento de Ciências Atmosféricas, realizada como pré-requisito para obtenção do título de Doutor em Ciências.}
@@ -172,14 +174,18 @@ Key-words: lightning, storms, tracking.
 \printsimbolo
 
 %\printglossaries
-%\include{capitulos/Introducao}
+\include{capitulos/Introducao}
 \include{capitulos/Metodologia}
 \include{capitulos/MarcoDasTempestadesEletricas}
 %\include{capitulos/MorfologiaDasTempestadesEletricas}
 \include{capitulos/Severidade}
 %\include{capitulos/Conclusao}
-%\apendice
-%\include{cfontesal}
+
+\apendice
+%\include{capitulos/cronogramaProrroga}
+\include{capitulos/submissao}
+\include{capitulos/TrabalhosApresentados}
+
 \cleardoublepage
 \phantomsection
 \renewcommand{\bibname}{REFER\^ENCIAS}

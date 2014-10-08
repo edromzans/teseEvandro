@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.9.9)  29 SEP 2014 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.9.9)  7 OCT 2014 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,6 +886,23 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen197
 \@vwid@roff=\dimen198
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box70
+\AM@toc@title=\toks42
+\c@AM@survey=\count166
+\AM@templatesizebox=\box71
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
@@ -894,28 +911,28 @@ Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen199
-\extrarowheight=\dimen200
-\NC@list=\toks42
+\col@sep=\dimen200
+\extrarowheight=\dimen201
+\NC@list=\toks43
 \extratabsurround=\skip66
 \backup@length=\skip67
 )
-\TX@col@width=\dimen201
-\TX@old@table=\dimen202
-\TX@old@col=\dimen203
-\TX@target=\dimen204
-\TX@delta=\dimen205
-\TX@cols=\count166
-\TX@ftn=\toks43
+\TX@col@width=\dimen202
+\TX@old@table=\dimen203
+\TX@old@col=\dimen204
+\TX@target=\dimen205
+\TX@delta=\dimen206
+\TX@cols=\count167
+\TX@ftn=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks44
+\everycr=\toks45
 \minrowclearance=\skip68
 )
 (/usr/share/texmf/tex/latex/glossary.sty
 Package: glossary 2006/07/20 2.4 (NLCT)
-\gls@cols=\count167
+\gls@cols=\count168
 
 No configuration file glossary.cfg found
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
@@ -924,17 +941,17 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip70
 \LTpre=\skip71
 \LTpost=\skip72
-\LTchunksize=\count168
-\LTcapwidth=\dimen206
-\LT@head=\box70
-\LT@firsthead=\box71
-\LT@foot=\box72
-\LT@lastfoot=\box73
-\LT@cols=\count169
-\LT@rows=\count170
-\c@LT@tables=\count171
-\c@LT@chunks=\count172
-\LT@p@ftn=\toks45
+\LTchunksize=\count169
+\LTcapwidth=\dimen207
+\LT@head=\box72
+\LT@firsthead=\box73
+\LT@foot=\box74
+\LT@lastfoot=\box75
+\LT@cols=\count170
+\LT@rows=\count171
+\c@LT@tables=\count172
+\c@LT@chunks=\count173
+\LT@p@ftn=\toks46
 )
 \descriptionwidth=\skip73
 \istfile=\write4
@@ -951,17 +968,17 @@ Writing index file teseEvandro.idx
 
 Package hyperref Warning: Invalid value `000'
 (hyperref)                for option `pdfborder'.
-(hyperref)                Option setting is ignored on input line 71.
+(hyperref)                Option setting is ignored on input line 73.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 71.
+Package hyperref Info: Option `colorlinks' set `false' on input line 73.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 78.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 80.
 
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 78.
+(hyperref)                setting the option has no effect on input line 80.
 
 
 Package hyperref Warning: Values of option `pdfpagemode':
@@ -972,15 +989,15 @@ Package hyperref Warning: Values of option `pdfpagemode':
 (hyperref)                * `UseOC' (PDF 1.5)
 (hyperref)                * `UseAttachments' (PDF 1.6)
 (hyperref)                * An empty value disables the option.
-(hyperref)                Unknown value `true' on input line 78.
+(hyperref)                Unknown value `true' on input line 80.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 78.
+(hyperref)                setting the option has no effect on input line 80.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 78.
+(hyperref)                setting the option has no effect on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -989,25 +1006,26 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 LaTeX Warning: Unused global option(s):
     [appendix=nobox].
 
-(./teseEvandro.aux (./capitulos/Metodologia.aux)
-(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux))
+(./teseEvandro.aux (./capitulos/Introducao.aux) (./capitulos/Metodologia.aux)
+(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux)
+(./capitulos/submissao.aux) (./capitulos/TrabalhosApresentados.aux))
 \openout1 = `teseEvandro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 109.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -1019,17 +1037,17 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
-\scratchdimen=\dimen207
-\scratchbox=\box74
-\nofMPsegments=\count174
-\nofMParguments=\count175
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count176
-\MPscratchDim=\dimen208
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count174
+\scratchdimen=\dimen208
+\scratchbox=\box76
+\nofMPsegments=\count175
+\nofMParguments=\count176
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count177
+\MPscratchDim=\dimen209
+\MPnumerator=\count178
+\makeMPintoPDFobject=\count179
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1045,8 +1063,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring OFF on input line 107.
+\AtBeginShipoutBox=\box77
+Package hyperref Info: Link coloring OFF on input line 109.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1054,11 +1072,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count179
+\c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 107.
-LaTeX Info: Redefining \pageref on input line 107.
-LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 109.
+LaTeX Info: Redefining \pageref on input line 109.
+LaTeX Info: Redefining \nameref on input line 109.
 
 (./teseEvandro.out) (./teseEvandro.out)
 \@outlinefile=\write7
@@ -1074,115 +1092,115 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count180
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 116.
+\c@lstlisting=\count181
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 118.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 116
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 118
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 116
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 118
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 116.
+(Font)              <12> on input line 118.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 116.
+(Font)              <8> on input line 118.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 116.
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+(Font)              <6> on input line 118.
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 116.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 118.
  [0
 
 \openout4 = `teseEvandro.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 3375) in paragraph at lines 117--117
+Underfull \hbox (badness 3375) in paragraph at lines 119--119
 []\OT1/lmr/m/n/12 Tese ao de-par-ta-mento de Ci^encias At-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 119.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 \folhaderosto
+l.119 \folhaderosto
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.133 \pretextualchapter
+l.135 \pretextualchapter
                         {AGRADECIMENTOS} [2
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 138.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136 \begin{resumo}
+l.138 \begin{resumo}
                      [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 144.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \end{resumo}
+l.144 \end{resumo}
                    [4
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 151.
+(babel)             in language  on input line 153.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.151 \end{abstract}
+l.153 \end{abstract}
                      [5
 
 
@@ -1197,7 +1215,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...sem raios.\relax }}{43}{figure.caption.26}
+l.32 ...sem raios.\relax }}{47}{figure.caption.26}
                                                    [6
 
 ])
@@ -1205,24 +1223,24 @@ l.32 ...sem raios.\relax }}{43}{figure.caption.26}
 \openout8 = `teseEvandro.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 156.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \listoftables
+l.156 \listoftables
                     [7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 156.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \listoftables
+l.156 \listoftables
                     [8] (./teseEvandro.lot
 Overfull \hbox (7.05008pt too wide) in paragraph at lines 3--3
  [][] [][]\OT1/lmr/m/n/12 Total de tem-pes-ta-des el^^Setricas ob-ser-va-das en
@@ -1234,42 +1252,47 @@ Overfull \hbox (7.05008pt too wide) in paragraph at lines 3--3
 \openout9 = `teseEvandro.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 159.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 \cleardoublepage
+l.159 \cleardoublepage
                        [9
 
 ] (./teseEvandro.toc
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 22.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 ...atura.}{50}{subsection.listoftables.3.2.1}
+l.22 ... DOS SISTEMAS}{44}{chapter.listoftables.4}
                                                    [10
 
 
-])
+]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 27.
+)
 \tf@toc=\write10
 \openout10 = `teseEvandro.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 162.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \tableofcontents
+l.162 \tableofcontents
                        [11]
 \@siglafile=\write11
 \openout11 = `teseEvandro.sig'.
@@ -1294,14 +1317,14 @@ Package babel Info: Redefining portuges shorthand "|
 
 Writing simbolo file teseEvandro.sim 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 172.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \cleardoublepage
+l.172 \cleardoublepage
                        [13] (./teseEvandro.sbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
@@ -1335,19 +1358,61 @@ Package babel Info: Redefining portuges shorthand "|
 
 ])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 177.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 \include{capitulos/Metodologia}
-                                      [15]
+l.177 \include{capitulos/Introducao}
+                                     [15]
+\openout2 = `capitulos/Introducao.aux'.
+
+ (./capitulos/Introducao.tex
+Cap\'{\i }tulo 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 14.
+ [16
+
+
+]
+Overfull \hbox (2.61873pt too wide) in paragraph at lines 24--25
+[]\OT1/lmr/m/n/12 Um es-tudo so-bre a mor-fo-lo-gia de sis-te-mas in-di-vi-du-a
+l-mente, para a regi~ao Sul- amaz^onia
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+[17]
+Overfull \hbox (5.63904pt too wide) in paragraph at lines 28--29
+[]\OT1/lmr/m/n/12 Morales C. A. e Anag-nos-tou E. M., (2002) de-sen-vol-ve-ram 
+um al-go-ritmo hidro-estimador
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 66.
+[18])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 177.
+ [19]
 \openout2 = `capitulos/Metodologia.aux'.
 
  (./capitulos/Metodologia.tex
-Cap\'{\i }tulo 1.
+Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -1358,7 +1423,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
-[16
+[20
+
 
 
 ]
@@ -1376,7 +1442,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
- [17]
+ [21]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 
@@ -1397,20 +1463,20 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 63.
- [18]
+ [22]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 69.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
- [19]
+ [23]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
 
-<img/grids/vt_trmm.png, id=423, 1246.6575pt x 1038.88126pt>
+<img/grids/vt_trmm.png, id=488, 1246.6575pt x 1038.88126pt>
 File: img/grids/vt_trmm.png Graphic file (type png)
 
 <use img/grids/vt_trmm.png>
@@ -1419,7 +1485,7 @@ Package pdftex.def Info: img/grids/vt_trmm.png used on input line 124.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 124.
 
-<img/grids/passagens_virs_1998-2011.png, id=424, 1246.6575pt x 1038.88126pt>
+<img/grids/passagens_virs_1998-2011.png, id=489, 1246.6575pt x 1038.88126pt>
 File: img/grids/passagens_virs_1998-2011.png Graphic file (type png)
 
 <use img/grids/passagens_virs_1998-2011.png>
@@ -1430,9 +1496,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
- [20]
+ [24]
 
-LaTeX Warning: Text page 21 contains only floats.
+LaTeX Warning: Text page 25 contains only floats.
 
 
 Overfull \vbox (6.75069pt too high) has occurred while \output is active []
@@ -1442,8 +1508,8 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
 
-[21 <./img/grids/vt_trmm.png> <./img/grids/passagens_virs_1998-2011.png>]
-<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png, id=448, 1246.65
+[25 <./img/grids/vt_trmm.png> <./img/grids/passagens_virs_1998-2011.png>]
+<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png, id=512, 1246.65
 75pt x 1046.91125pt>
 File: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png Graphic fil
 e (type png)
@@ -1453,7 +1519,7 @@ Package pdftex.def Info: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyf
 ill.png used on input line 144.
 (pdftex.def)             Requested size: 360.83661pt x 303.02167pt.
 
-<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png, id=449, 1246.6
+<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png, id=513, 1246.6
 575pt x 1046.91125pt>
 File: img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png Graphic fi
 le (type png)
@@ -1466,9 +1532,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
- [22]
+ [26]
 
-LaTeX Warning: Text page 23 contains only floats.
+LaTeX Warning: Text page 27 contains only floats.
 
 
 Overfull \vbox (6.75069pt too high) has occurred while \output is active []
@@ -1478,7 +1544,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
 
-[23 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png> <./img/gr
+[27 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png> <./img/gr
 ids/densEspacial19982011acumuladoTempestadesPolyfill.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 172.
@@ -1486,29 +1552,29 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 192.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 192.
- [24]
+ [28]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 194.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 227.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 227.
- [25])
+ [29])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
- [26]
+(babel)             in language  on input line 178.
+ [30]
 \openout2 = `capitulos/MarcoDasTempestadesEletricas.aux'.
 
 
 (./capitulos/MarcoDasTempestadesEletricas.tex
-Cap\'{\i }tulo 2.
+Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 6.
-<img/ciclos/ciclodiurno19982011total.png, id=515, 897.3525pt x 580.1675pt>
+<img/ciclos/ciclodiurno19982011total.png, id=580, 897.3525pt x 580.1675pt>
 File: img/ciclos/ciclodiurno19982011total.png Graphic file (type png)
 
 <use img/ciclos/ciclodiurno19982011total.png>
@@ -1516,7 +1582,7 @@ Package pdftex.def Info: img/ciclos/ciclodiurno19982011total.png used on input
 line 13.
 (pdftex.def)             Requested size: 220.03813pt x 142.26378pt.
 
-<img/ciclos/cicloanual19982011total.png, id=516, 931.48pt x 580.1675pt>
+<img/ciclos/cicloanual19982011total.png, id=581, 931.48pt x 580.1675pt>
 File: img/ciclos/cicloanual19982011total.png Graphic file (type png)
 
 <use img/ciclos/cicloanual19982011total.png>
@@ -1532,13 +1598,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 23.
-[27
+[31
 
 
 
  <./img/ciclos/ciclodiurno19982011total.png (PNG copy)> <./img/ciclos/cicloanua
 l19982011total.png (PNG copy)>]
-<img/ciclos/ciclodiurno10x1019982011localtime.png, id=527, 1257.69875pt x 1095.
+<img/ciclos/ciclodiurno10x1019982011localtime.png, id=592, 1257.69875pt x 1095.
 09125pt>
 File: img/ciclos/ciclodiurno10x1019982011localtime.png Graphic file (type png)
  <use img/ciclos/ciclodiurno10x1019982011localtime.png>
@@ -1549,13 +1615,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
- [28 <./img/ciclos/ciclodiurno10x1019982011localtime.png (PNG copy)>]
+ [32 <./img/ciclos/ciclodiurno10x1019982011localtime.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 52.
- [29]
-<img/ciclos/cicloanual10x1019982011localtime.png, id=545, 1276.77pt x 1094.0875
+ [33]
+<img/ciclos/cicloanual10x1019982011localtime.png, id=609, 1276.77pt x 1094.0875
 pt>
 File: img/ciclos/cicloanual10x1019982011localtime.png Graphic file (type png)
  <use img/ciclos/cicloanual10x1019982011localtime.png>
@@ -1566,174 +1632,179 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 122.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 122.
- [30 <./img/ciclos/cicloanual10x1019982011localtime.png (PNG copy)>]
+ [34 <./img/ciclos/cicloanual10x1019982011localtime.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
- [31]
+ [35]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
- [32]
+ [36]
 <img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png, id=
-588, 1246.6575pt x 1046.91125pt>
+651, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png
  Graphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011TotalTemp
 estadesPolyfill.png used on input line 147.
-(pdftex.def)             Requested size: 457.3945pt x 384.1122pt.
+(pdftex.def)             Requested size: 457.02232pt x 384.1122pt.
 
-Overfull \hbox (2.15039pt too wide) in paragraph at lines 147--148
+Overfull \hbox (1.77821pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
 
-<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png, id=589, 1246.65
-75pt x 1046.91125pt>
-File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png Graphic fil
-e (type png)
+<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=652, 255.956
+25pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf Graphic fil
+e (type pdf)
 
-<use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>
+<use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyf
-ill.png used on input line 155.
-(pdftex.def)             Requested size: 457.3945pt x 384.1122pt.
+ill.pdf used on input line 155.
+(pdftex.def)             Requested size: 455.6241pt x 384.1122pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+ [37 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.p
+ng>]
 
-Overfull \hbox (2.15039pt too wide) in paragraph at lines 155--156
- [][] 
+LaTeX Warning: Reference `tempesRaios' on page 38 undefined on input line 166.
+
+
+<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=667, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
+l.pdf used on input line 177.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=669, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfil
+l.pdf used on input line 178.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+Overfull \hbox (6.08075pt too wide) in paragraph at lines 177--179
+ [][][][] 
+ []
+
+
+<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=671, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
+l.pdf used on input line 180.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=673, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfil
+l.pdf used on input line 181.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+Overfull \hbox (6.08075pt too wide) in paragraph at lines 180--183
+ [][][][] 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
-[33 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pn
-g>]
-
-LaTeX Warning: Reference `tempesRaios' on page 34 undefined on input line 166.
-
-
-<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png, id=604, 1246.6575
-pt x 1046.91125pt>
-File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png Graphic file 
-(type png)
-
-<use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png>
-Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
-l.png used on input line 177.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
-
-<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png, id=606, 1246.6575
-pt x 1046.91125pt>
-File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png Graphic file 
-(type png)
-
-<use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png>
-Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfil
-l.png used on input line 178.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
-
-<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png, id=608, 1246.6575
-pt x 1046.91125pt>
-File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png Graphic file 
-(type png)
-
-<use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png>
-Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
-l.png used on input line 180.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
-
-<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png, id=610, 1246.6575
-pt x 1046.91125pt>
-File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png Graphic file 
-(type png)
-
-<use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png>
-Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfil
-l.png used on input line 181.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 185.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 185.
- [34 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>]
+[38 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 192.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 192.
- [35 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png> <./img/Tax
-aFlash/densEspacial_19982011mamTaxaFlashPolyfill.png> <./img/TaxaFlash/densEspa
-cial_19982011jjaTaxaFlashPolyfill.png> <./img/TaxaFlash/densEspacial_19982011so
-nTaxaFlashPolyfill.png>]
+ [39 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf> <./img/Tax
+aFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspa
+cial_19982011jjaTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_19982011so
+nTaxaFlashPolyfill.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 225.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 225.
- [36]
-<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=66
-9, 1246.6575pt x 1046.91125pt>
+ [40]
+<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=73
+9, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
 tadesPolyfill.png used on input line 230.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=67
-1, 1246.6575pt x 1046.91125pt>
+<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=74
+1, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011mamTempes
 tadesPolyfill.png used on input line 231.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=67
-3, 1246.6575pt x 1046.91125pt>
+<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=74
+3, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011jjaTempes
 tadesPolyfill.png used on input line 233.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=67
-5, 1246.6575pt x 1046.91125pt>
+<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=74
+5, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011sonTempes
 tadesPolyfill.png used on input line 234.
-(pdftex.def)             Requested size: 221.7065pt x 184.9429pt.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 242.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 242.
 
-[37 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
+[41 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
  <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png> <.
 /img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png> <./im
 g/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>]
-<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=694, 1246.
-6575pt x 1046.91125pt>
+<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=763, 4270.
+95625pt x 3589.41pt>
 File: img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png Graphic f
 ile (type png)
 
 <use img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>
 Package pdftex.def Info: img/eficiencia/densEspacial_19982011totalEficienciaPol
 yfill.png used on input line 250.
-(pdftex.def)             Requested size: 457.3945pt x 384.1122pt.
+(pdftex.def)             Requested size: 457.03343pt x 384.1122pt.
 
-Overfull \hbox (2.15039pt too wide) in paragraph at lines 250--251
+Overfull \hbox (1.78932pt too wide) in paragraph at lines 250--251
  [][] 
  []
 
@@ -1742,29 +1813,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 177.
- [38]
+(babel)             in language  on input line 179.
+ [42]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 177.
- [39 <./img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>]
+(babel)             in language  on input line 179.
+ [43 <./img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>]
 \openout2 = `capitulos/Severidade.aux'.
 
 (./capitulos/Severidade.tex
-Cap\'{\i }tulo 3.
+Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-<img/FtaFt/pdfFta.png, id=708, 960.58875pt x 593.21625pt>
+<img/FtaFt/pdfFta.png, id=778, 960.58875pt x 593.21625pt>
 File: img/FtaFt/pdfFta.png Graphic file (type png)
 
 <use img/FtaFt/pdfFta.png>
 Package pdftex.def Info: img/FtaFt/pdfFta.png used on input line 9.
 (pdftex.def)             Requested size: 230.37012pt x 142.26378pt.
 
-<img/FtaFt/pdfFt.png, id=709, 960.58875pt x 593.21625pt>
+<img/FtaFt/pdfFt.png, id=779, 960.58875pt x 593.21625pt>
 File: img/FtaFt/pdfFt.png Graphic file (type png)
 
 <use img/FtaFt/pdfFt.png>
@@ -1779,7 +1850,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
-[40
+[44
 
 
 
@@ -1787,7 +1858,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 30.
 
-<img/tb/TbAreas.pdf, id=725, 426.59375pt x 141.52875pt>
+<img/tb/TbAreas.pdf, id=794, 426.59375pt x 141.52875pt>
 File: img/tb/TbAreas.pdf Graphic file (type pdf)
 
 <use img/tb/TbAreas.pdf>
@@ -1806,15 +1877,15 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
-[41 <./img/tb/TbAreas.pdf>]
+[45 <./img/tb/TbAreas.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 75.
- [42]
-<img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png, id=759, 3665.695pt x
+ [46]
+<img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png, id=827, 3665.695pt x
  3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png Graphic file (ty
 pe png)
@@ -1823,7 +1894,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.p
 ng used on input line 81.
 (pdftex.def)             Requested size: 449.42912pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png, id=760, 3665.695pt x
+<img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png, id=828, 3665.695pt x
  3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png Graphic file (ty
 pe png)
@@ -1836,8 +1907,8 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 96.
 
-[43 <./img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png>]
-<img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png, id=774, 3665.695pt x 
+[47 <./img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png>]
+<img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png, id=843, 3665.695pt x 
 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png Graphic file (typ
 e png)
@@ -1846,7 +1917,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.pn
 g used on input line 103.
 (pdftex.def)             Requested size: 449.42912pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png, id=775, 3665.6
+<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png, id=844, 3665.6
 95pt x 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png Graphic fi
 le (type png)
@@ -1859,9 +1930,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
- [44 <./img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png>]
+ [48 <./img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png>]
 
-LaTeX Warning: Text page 45 contains only floats.
+LaTeX Warning: Text page 49 contains only floats.
 
 
 Overfull \vbox (3.63577pt too high) has occurred while \output is active []
@@ -1871,13 +1942,13 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 
-[45 <./img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png> <./img/precipit
+[49 <./img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png> <./img/precipit
 acao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 142.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 142.
- [46]
+ [50]
 File: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png Graphic fi
 le (type png)
 
@@ -1886,7 +1957,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_t
 opFT.png used on input line 153.
 (pdftex.def)             Requested size: 768.2244pt x 656.50098pt.
 
-<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png, id=811, 3665.
+<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png, id=881, 3665.
 695pt x 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png Graphic f
 ile (type png)
@@ -1899,8 +1970,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 169.
- [47]
-<img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png, id=820, 3665.695pt x 
+ [51]
+<img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png, id=890, 3665.695pt x 
 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png Graphic file (typ
 e png)
@@ -1913,17 +1984,17 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 186.
 
-[48 <./img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png>]
+[52 <./img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 200.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 200.
 
-[49 <./img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png>]
+[53 <./img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 208.
 
-<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png, id=860, 3701.83p
+<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png, id=928, 3701.83p
 t x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png Graphic file
  (type png)
@@ -1933,7 +2004,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topF
 TA.png used on input line 216.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png, id=861, 3701.83
+<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png, id=929, 3701.83
 pt x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png Graphic fil
 e (type png)
@@ -1943,7 +2014,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_top
 FTA.png used on input line 223.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png, id=862, 3701.83pt
+<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png, id=930, 3701.83pt
  x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png Graphic file 
 (type png)
@@ -1953,7 +2024,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topF
 T.png used on input line 233.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png, id=863, 3701.83p
+<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png, id=931, 3701.83p
 t x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png Graphic file
  (type png)
@@ -1966,8 +2037,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 246.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 246.
- [50]
-<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png, id=870, 800.9925pt
+ [54]
+<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png, id=938, 800.9925pt
  x 920.43875pt>
 File: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png Graphic file (
 type png)
@@ -1980,8 +2051,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 263.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 263.
- [51 <./img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png>]
-<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png, id=887, 800.9925pt
+ [55 <./img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png>]
+<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png, id=955, 800.9925pt
  x 920.43875pt>
 File: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png Graphic file (
 type png)
@@ -1994,26 +2065,26 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 275.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 275.
- [52 <./img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png>]
+ [56 <./img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 279.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 279.
- [53 <./img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png>]
+ [57 <./img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 280.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 280.
- [54 <./img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png>]
+ [58 <./img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 281.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 284.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 284.
- [55 <./img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png> <./img/prec
+ [59 <./img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png> <./img/prec
 ipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png>]
-<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=922, 4272.9637
+<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=990, 4272.9637
 5pt x 3752.0175pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png Graphic file 
 (type png)
@@ -2023,7 +2094,7 @@ Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor005thFt
 a.png used on input line 291.
 (pdftex.def)             Requested size: 210.5963pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=924, 4270.9562
+<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=992, 4270.9562
 5pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png Graphic file 
 (type png)
@@ -2036,10 +2107,10 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 306.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 306.
- [56 <./img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png> <./img/Dis
+ [60 <./img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png> <./img/Dis
 tEspacialPercentis/FTA/distEspacialValor010thFta.png>]
-<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=948, 4270.95625p
-t x 3755.02875pt>
+<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=1017, 4270.95625
+pt x 3755.02875pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor005thFt.png Graphic file (t
 ype png)
 
@@ -2048,8 +2119,8 @@ Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor005thFt.
 png used on input line 310.
 (pdftex.def)             Requested size: 210.30185pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=950, 4274.97125p
-t x 3754.025pt>
+<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=1019, 4274.97125
+pt x 3754.025pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor010thFt.png Graphic file (t
 ype png)
 
@@ -2058,8 +2129,8 @@ Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor010thFt.
 png used on input line 311.
 (pdftex.def)             Requested size: 210.56477pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=956, 4270.9562
-5pt x 3751.01375pt>
+<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=1025, 4270.956
+25pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png Graphic file 
 (type png)
 
@@ -2068,8 +2139,8 @@ Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor095thFt
 a.png used on input line 335.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=958, 4270.9562
-5pt x 3751.01375pt>
+<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=1027, 4270.956
+25pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png Graphic file 
 (type png)
 
@@ -2081,16 +2152,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 345.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 345.
- [57 <./img/DistEspacialPercentis/FT/distEspacialValor005thFt.png> <./img/DistE
+ [61 <./img/DistEspacialPercentis/FT/distEspacialValor005thFt.png> <./img/DistE
 spacialPercentis/FT/distEspacialValor010thFt.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 355.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 355.
- [58 <./img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png> <./img/Dis
+ [62 <./img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png> <./img/Dis
 tEspacialPercentis/FTA/distEspacialValor099thFta.png>]
-<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=990, 4270.95625p
-t x 3751.01375pt>
+<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=1058, 4270.95625
+pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor095thFt.png Graphic file (t
 ype png)
 
@@ -2099,8 +2170,8 @@ Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor095thFt.
 png used on input line 362.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=992, 4270.95625p
-t x 3751.01375pt>
+<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=1060, 4270.95625
+pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor099thFt.png Graphic file (t
 ype png)
 
@@ -2110,55 +2181,838 @@ png used on input line 363.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 179.
- [59 <./img/DistEspacialPercentis/FT/distEspacialValor095thFt.png> <./img/DistE
-spacialPercentis/FT/distEspacialValor099thFt.png>] (./teseEvandro.bbl
+(babel)             in language  on input line 181.
+ [63 <./img/DistEspacialPercentis/FT/distEspacialValor095thFt.png> <./img/DistE
+spacialPercentis/FT/distEspacialValor099thFt.png>]
+\openout2 = `capitulos/submissao.aux'.
+
+ (./capitulos/submissao.tex
+Apendice A.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95871pt
+(hyperref)                removed on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+</home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, id=107
+7, 597.50786pt x 845.04686pt>
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+
+[64
+
+
+
+]
+</home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, id=108
+4, page=1, 597.50786pt x 845.04686pt>
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, pa
+ge 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, pa
+ge 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, pa
+ge 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, pa
+ge 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+File: /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf Gr
+aphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf, pa
+ge 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/atmosres/atmosre
+s-d-12-00171.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+ [65 </home/evandro/Dropbox/Tese/submission/atmosres/atmosres-d-12-00171.pdf>]
+</home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, id=1104, 597.50
+829pt x 845.0471pt>
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+
+</home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, id=1107, page=1
+, 597.50829pt x 845.0471pt>
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+[66 </home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf>]
+</home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, id=1164, page=2
+, 597.50829pt x 845.0471pt>
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+[67 </home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf>]
+</home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, id=1174, page=3
+, 597.50829pt x 845.0471pt>
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+[68 </home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf>]
+</home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, id=1227, page=4
+, 597.50829pt x 845.0471pt>
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page4 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page4 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+File: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf Graphic fil
+e (type pdf)
+
+<use /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00
+171.pdf, page4 used on input line 6.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+[69 </home/evandro/Dropbox/Tese/submission/ATMOSRES-D-12-00171.pdf>])
+\openout2 = `capitulos/TrabalhosApresentados.aux'.
+
+
+(./capitulos/TrabalhosApresentados.tex
+Apendice B.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95871pt
+(hyperref)                removed on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1232, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf used on input line 7.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf used on input line 7.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+ [70
+
+
+
+]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1239, page=1, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [71 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1280, page=2, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page2 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page2 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page2 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [72 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1294, page=3, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page3 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page3 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page3 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [73 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1307, page=4, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page4 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page4 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page4 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [74 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1312, page=5, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 5>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page5 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 5>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page5 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 5>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page5 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [75 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1321, page=6, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 6>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page6 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 6>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page6 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 6>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page6 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [76 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_oral.
+pdf, id=1332, page=7, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 7>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page7 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 7>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page7 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 7.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_o
+ral.pdf, page 7>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_oral.pdf, page7 used on input line 7.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [77 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+oral.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1337, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf used on input line 8.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf used on input line 8.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1340, page=1, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 1>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [78 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1371, page=2, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page2 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page2 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 2>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page2 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [79 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1379, page=3, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page3 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page3 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 3>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page3 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [80 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1390, page=4, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page4 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page4 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 4>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page4 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [81 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1402, page=5, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 5>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page5 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 5>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page5 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 5>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page5 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [82 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1414, page=6, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 6>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page6 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 6>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page6 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 6>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page6 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [83 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]
+</home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_poste
+r.pdf, id=1440, page=7, 614.295pt x 794.97pt>
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 7>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page7 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 7>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page7 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+File: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf Graphic file (type pdf)
+
+<use /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_p
+oster.pdf, page 7>
+Package pdftex.def Info: /home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2
+014/AnselmoMorales_poster.pdf, page7 used on input line 8.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [84 </home/evandro/Dropbox/Tese/TrabalhosApresentados/icae2014/AnselmoMorales_
+poster.pdf>]) (./teseEvandro.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
- [60
+ [85
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 187.
- [61]
+(babel)             in language  on input line 185.
+ [86]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 279.
-
-[62])
+(babel)             in language  on input line 278.
+ [87])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 195.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
- [63]
+(babel)             in language  on input line 195.
+ [88]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
-(./teseEvandro.aux (./capitulos/Metodologia.aux)
-(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+(./teseEvandro.aux (./capitulos/Introducao.aux) (./capitulos/Metodologia.aux)
+(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux)
+(./capitulos/submissao.aux) (./capitulos/TrabalhosApresentados.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
-(rerunfilecheck)             Checksum: 6693666C222DFC6798436822CC993F4D;2464.
+(rerunfilecheck)             Checksum: 25B9A1F14D827B3E0493ABD48EA7E7F1;2711.
 
 
 LaTeX Warning: There were undefined references.
@@ -2166,33 +3020,50 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 23986 strings out of 494956
- 434059 string characters out of 6179495
- 571820 words of memory out of 5000000
- 26328 multiletter control sequences out of 15000+600000
- 88503 words of font info for 94 fonts, out of 8000000 for 9000
+ 24726 strings out of 494956
+ 451285 string characters out of 6179495
+ 582954 words of memory out of 5000000
+ 26984 multiletter control sequences out of 15000+600000
+ 90583 words of font info for 101 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 55i,15n,87p,1101b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,87p,1101b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/u
 sr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy8.pfb>
-Output written on teseEvandro.pdf (64 pages, 14547769 bytes).
+m/lm-rmsc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on teseEvandro.pdf (89 pages, 20946663 bytes).
 PDF statistics:
- 1140 PDF objects out of 1200 (max. 8388607)
- 937 compressed objects within 10 object streams
- 230 named destinations out of 1000 (max. 500000)
- 619 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1607 PDF objects out of 1728 (max. 8388607)
+ 1269 compressed objects within 13 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 798 words of extra memory for PDF output out of 10000 (max. 10000000)
 
