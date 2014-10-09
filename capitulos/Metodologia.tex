@@ -12,9 +12,7 @@ As informações dos diferentes sensores foram combinadas de maneira à identifi
 
 \section{O SATÉLITE TRMM}
 
-O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}} faz parte de uma missão conjunta entre a NASA (\textit{National Aeronautics and Space Administration} - EUA)\sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a JAXA 
-\sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}}
- (\textit{Japan Aerospace Exploration Agency}), com o objetivo de determinar a distribuição geográfica e a variabilidade da chuva e do fluxo de calor latente de condensação para a região tropical e subtropical terrestre, informações fundamentais nas inicializações, por exemplo, de modelos globais e climáticos, principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
+O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}} faz parte de uma missão conjunta entre a \textit{National Aeronautics and Space Administration} -- NASA e \sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a \textit{Japan Aerospace Exploration Agency} -- JAXA \sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}}, com o objetivo de determinar a distribuição geográfica e a variabilidade da chuva e do fluxo de calor latente de condensação para a região tropical e subtropical terrestre, informações fundamentais, por exemplo, nas inicializações de modelos globais e climáticos, principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
   
 Os instrumentos a bordo do TRMM são: radar de precipitação (PR), radiômetro de microondas (TMI), radiômetro no visível e no infravermelho (VIRS), sistema de energia radiante da terra e das nuvens (CERES) e sensor para imageamento de relâmpagos (LIS) \cite{kummerok1998}.
 
@@ -27,22 +25,34 @@ O (\textit{Precipitation Radar}) -- PR  é um radar que opera na frequência de 
 
 \subsection{Imageador de relâmpagos}
 
-O LIS (\textit{Lightning Imaging Sensor}) é um sensor óptico capaz de detectar e localizar relâmpagos em tempestades individuais, analisando a emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos, em resposta a ocorrência de descargas atmosféricas. Este sensor CCD\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens em câmeras digitais.}, que trabalha no comprimento de onda de 772 nm, identifica descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno, a partir da amostragem de 500 imagens por segundo. Combinado com a velocidade do satélite (11 km/s) e abertura da CCD, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80 a 90 s, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
+O \textit{Lightning Imaging Sensor} -- LIS  é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. O feixe luminoso é expandido em um telescópio f/1.6, depois passa por um filtro de interferência no comprimento de onda de 777.4 nm e largura de banda de 1 nm e atinge um matriz de 128 $\times$ 128 CCDs\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens com base no efeito fotoelétrico.}. O sistema de imagens do LIS também possui uma lente angular que proporciona um campo de visão 80$^{\circ}$ $\times$ 80$^{\circ}$ no nadir para observações panorâmicas sobre as tempestades elétricas que são sobrevoadas \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+
+Conforme é descrito por \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo da posição na matriz de 128 $\times$ 128 em que as CCDs são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagem do LIS identifica os \textit{events}, \textit{groups} e os \textit{flashes}. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo.
+
+A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  \textit{events}, \textit{groups} até a caracterização de um \textit{flash}. Observe, que após 700 milissegundos, como mostra a figura \ref{evgrfl}, temos 4 \textit{flashes} (A, B, C e D),  8 \textit{groups} (a, b, c, d, e, f, g e h) e 14 \textit{events} \cite{christian2000LISalgorithm,trmmhandbook}.
+
+
+O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno.  Com sua velocidade orbital de 11 km/s, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80 a 90 s, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
 \sigla{name={LIS},description={\textit{Lightning Imaging Sensor}}}
+
+
+
+
+
+
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0}} \label{lisVT}}
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time100}} \label{VirsVT}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0}} }
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time100}}}
   
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time350}} \label{lisVT}}
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time400}} \label{VirsVT}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time350}} }
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time400}} }
 
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700}} \label{VirsVT}}  
-  
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700}} \label{evgrfl}}  
   }
-\caption{Ilustração do algoritmo do LIS \cite{christian2000LISalgorithm}.}
-\label{gridVT} 
+\caption{Ilustração do algoritmo de identificação de \textit{events}, \textit{groups} e os \textit{flashes}  do LIS \cite{christian2000LISalgorithm}.}
+\label{LisImagemProcessa} 
 \end{figure} 
 
 
