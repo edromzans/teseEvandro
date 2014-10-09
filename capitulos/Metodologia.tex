@@ -12,23 +12,40 @@ As informações dos diferentes sensores foram combinadas de maneira à identifi
 
 \section{O SATÉLITE TRMM}
 
-O satélite TRMM (\textit{Tropical Rainfall Measuring Mission})\sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}}  faz parte de uma missão conjunta entre a NASA (\textit{National Aeronautics and Space Administration} - EUA)\sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a JAXA 
+O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}} faz parte de uma missão conjunta entre a NASA (\textit{National Aeronautics and Space Administration} - EUA)\sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a JAXA 
 \sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}}
- (\textit{Japan Aerospace Exploration Agency}), com o objetivo de determinar médias mensais da distribuição e variabilidade da precipitação e calor latente na região tropical, principalmente das regiões oceânicas, para melhor compreensão do ciclo hidrológico e validação da modelagem numérica climática de curto prazo e modelagem atmosférica global  \cite{simpson1988}.
-
+ (\textit{Japan Aerospace Exploration Agency}), com o objetivo de determinar a distribuição geográfica e a variabilidade da chuva e do fluxo de calor latente de condensação para a região tropical e subtropical terrestre, informações fundamentais nas inicializações, por exemplo, de modelos globais e climáticos, principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
+  
 Os instrumentos a bordo do TRMM são: radar de precipitação (PR), radiômetro de microondas (TMI), radiômetro no visível e no infravermelho (VIRS), sistema de energia radiante da terra e das nuvens (CERES) e sensor para imageamento de relâmpagos (LIS) \cite{kummerok1998}.
 
-Esse satélite possui uma órbita de aproximadamente 320 Km de altura e inclinação de 30$^{\circ}$-35$^{\circ}$ para que possa visitar uma mesma região duas vezes ao dia, em horários distintos, sobre a região tropical do planeta Terra \cite{simpson1988}.   
+Esse satélite possui uma órbita de aproximadamente 320 km de altura e inclinação de 30$^{\circ}$-35$^{\circ}$ para que possa visitar uma mesma região duas vezes ao dia, em horários distintos, sobre a região tropical do planeta Terra \cite{simpson1988}.   
 
 \subsection{Radar de Precipitação}
 
-O PR (\textit{Precipitation Radar}) é um radar que opera na frequência de 13,8 GHz e possui uma resolução horizontal entre 4,3-5 km, 250 m de resolução vertical e uma varredura 215 km. Uma de suas características mais importantes é a capacidade para fornecer a estrutura tridimensional dos hidrometeoros de nuvens, desde a superfície até uma altura de 20 km \cite{kummerok1998}. Para esta pesquisa serão utilizados os dados 2A25 que apresentam o fator de refletividade do radar corrigido por atenuação da chuva \cite{2A25}.
+O (\textit{Precipitation Radar}) -- PR  é um radar que opera na frequência de 13,8 GHz e possui uma resolução horizontal entre 4,3-5 km, 250 m de resolução vertical e uma varredura 215 km. Uma de suas características mais importantes é a capacidade para fornecer a estrutura tridimensional dos hidrometeoros de nuvens, desde a superfície até uma altura de 20 km, em 80 níveis verticais \cite{kummerok1998}. Para esta pesquisa serão utilizados os dados do produto 2A25 que apresentam o fator de refletividade do radar corrigido por atenuação da chuva \cite{2A25}.
 \sigla{name={PR},description={\textit{Precipitation Radar}}}
 
 \subsection{Imageador de relâmpagos}
 
 O LIS (\textit{Lightning Imaging Sensor}) é um sensor óptico capaz de detectar e localizar relâmpagos em tempestades individuais, analisando a emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos, em resposta a ocorrência de descargas atmosféricas. Este sensor CCD\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens em câmeras digitais.}, que trabalha no comprimento de onda de 772 nm, identifica descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno, a partir da amostragem de 500 imagens por segundo. Combinado com a velocidade do satélite (11 km/s) e abertura da CCD, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80 a 90 s, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
 \sigla{name={LIS},description={\textit{Lightning Imaging Sensor}}}
+
+\begin{figure}[!ht]
+  \centering{
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0}} \label{lisVT}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time100}} \label{VirsVT}}
+  
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time350}} \label{lisVT}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time400}} \label{VirsVT}}
+
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700}} \label{VirsVT}}  
+  
+  }
+\caption{Ilustração do algoritmo do LIS \cite{christian2000LISalgorithm}.}
+\label{gridVT} 
+\end{figure} 
+
+
 
 \subsection{Radiômetro no visível e infravermelho}
 
