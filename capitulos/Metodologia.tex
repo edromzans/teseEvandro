@@ -25,7 +25,10 @@ O (\textit{Precipitation Radar}) -- PR  é um radar que opera na frequência de 
 
 \subsection{Imageador de relâmpagos}
 
-O \textit{Lightning Imaging Sensor} -- LIS  é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. O feixe luminoso é expandido em um telescópio f/1.6, depois passa por um filtro de interferência no comprimento de onda de 777.4 nm e largura de banda de 1 nm e atinge um matriz de 128 $\times$ 128 CCDs\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens com base no efeito fotoelétrico.}. O sistema de imagens do LIS também possui uma lente angular que proporciona um campo de visão 80$^{\circ}$ $\times$ 80$^{\circ}$ no nadir para observações panorâmicas sobre as tempestades elétricas que são sobrevoadas \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+O \textit{Lightning Imaging Sensor} -- LIS  é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
+
+O sistema de imagens do LIS é constituído por um telescópio f/1.6 que expande o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777.4 nm e largura de banda de 1 nm e atinge um matriz de 128 $\times$ 128 CCDs\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens com base no efeito fotoelétrico.}. O LIS também possui uma lente angular que proporciona um campo de visão panorâmico sobre as tempestades elétricas sobrevoadas de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 580 km $\times$ 580 km no nadir. Um pixel do campo de visão do LIS, possui resolução entre 5-10km.  \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+
 
 Conforme é descrito por \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo da posição na matriz de 128 $\times$ 128 em que as CCDs são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagem do LIS identifica os \textit{events}, \textit{groups} e os \textit{flashes}. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo.
 
@@ -34,11 +37,6 @@ A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  \
 
 O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno.  Com sua velocidade orbital de 11 km/s, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80 a 90 s, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
 \sigla{name={LIS},description={\textit{Lightning Imaging Sensor}}}
-
-
-
-
-
 
 
 \begin{figure}[!ht]

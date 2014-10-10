@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.10.8)  9 OCT 2014 17:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.10.8)  10 OCT 2014 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1268,101 +1268,101 @@ Cap\'{\i }tulo 2.
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 28.
+(Font)              <10> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 28.
- [21] <img/TRMM/time0.png, id=465, 817.0525pt x 334.24875pt>
+(Font)              <7> on input line 30.
+ [21] <img/TRMM/time0.png, id=464, 817.0525pt x 334.24875pt>
 File: img/TRMM/time0.png Graphic file (type png)
 
 <use img/TRMM/time0.png>
-Package pdftex.def Info: img/TRMM/time0.png used on input line 40.
+Package pdftex.def Info: img/TRMM/time0.png used on input line 44.
 (pdftex.def)             Requested size: 229.52118pt x 93.89418pt.
 
-<img/TRMM/time100.png, id=467, 818.05624pt x 336.25626pt>
+<img/TRMM/time100.png, id=466, 818.05624pt x 336.25626pt>
 File: img/TRMM/time100.png Graphic file (type png)
 
 <use img/TRMM/time100.png>
-Package pdftex.def Info: img/TRMM/time100.png used on input line 41.
+Package pdftex.def Info: img/TRMM/time100.png used on input line 45.
 (pdftex.def)             Requested size: 228.43005pt x 93.89418pt.
 
-Overfull \hbox (6.62373pt too wide) in paragraph at lines 40--42
+Overfull \hbox (6.62373pt too wide) in paragraph at lines 44--46
  [][][][] 
  []
 
-<img/TRMM/time350.png, id=468, 813.0375pt x 337.26pt>
+<img/TRMM/time350.png, id=467, 813.0375pt x 337.26pt>
 File: img/TRMM/time350.png Graphic file (type png)
 
 <use img/TRMM/time350.png>
-Package pdftex.def Info: img/TRMM/time350.png used on input line 43.
+Package pdftex.def Info: img/TRMM/time350.png used on input line 47.
 (pdftex.def)             Requested size: 226.34633pt x 93.89418pt.
 
-<img/TRMM/time400.png, id=469, 811.03pt x 336.25626pt>
+<img/TRMM/time400.png, id=468, 811.03pt x 336.25626pt>
 File: img/TRMM/time400.png Graphic file (type png)
 
 <use img/TRMM/time400.png>
-Package pdftex.def Info: img/TRMM/time400.png used on input line 44.
+Package pdftex.def Info: img/TRMM/time400.png used on input line 48.
 (pdftex.def)             Requested size: 226.46808pt x 93.89418pt.
 
-Overfull \hbox (5.40352pt too wide) in paragraph at lines 43--45
+Overfull \hbox (5.40352pt too wide) in paragraph at lines 47--49
  [][][][] 
  []
 
-<img/TRMM/time700.png, id=470, 810.02625pt x 341.275pt>
+<img/TRMM/time700.png, id=469, 810.02625pt x 341.275pt>
 File: img/TRMM/time700.png Graphic file (type png)
 
 <use img/TRMM/time700.png>
-Package pdftex.def Info: img/TRMM/time700.png used on input line 46.
+Package pdftex.def Info: img/TRMM/time700.png used on input line 50.
 (pdftex.def)             Requested size: 222.8506pt x 93.89418pt.
  [22 <./img/TRMM/time0.png> <./img/TRMM/time100.png> <./img/TRMM/time350.png> <
 ./img/TRMM/time400.png> <./img/TRMM/time700.png>]
-Overfull \hbox (14.86697pt too wide) in paragraph at lines 68--69
+Overfull \hbox (14.86697pt too wide) in paragraph at lines 72--73
 \OT1/lmr/m/n/12 da-dos fo-ram trans-fe-ri-dos a par-tir do ser-vi-dor de FTP da
  NASA (ftp://disc2.nascom.nasa.gov)
  []
 
 [23]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 84.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 88.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 84.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 88.
  [24] [25]
-<img/grids/vt_trmm.png, id=526, 1246.6575pt x 1038.88126pt>
+<img/grids/vt_trmm.png, id=525, 1246.6575pt x 1038.88126pt>
 File: img/grids/vt_trmm.png Graphic file (type png)
 
 <use img/grids/vt_trmm.png>
-Package pdftex.def Info: img/grids/vt_trmm.png used on input line 148.
+Package pdftex.def Info: img/grids/vt_trmm.png used on input line 152.
 (pdftex.def)             Requested size: 363.61389pt x 303.02167pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 148.
+(Font)              <10.95> on input line 152.
 
-<img/grids/passagens_virs_1998-2011.png, id=527, 1246.6575pt x 1038.88126pt>
+<img/grids/passagens_virs_1998-2011.png, id=526, 1246.6575pt x 1038.88126pt>
 File: img/grids/passagens_virs_1998-2011.png Graphic file (type png)
 
 <use img/grids/passagens_virs_1998-2011.png>
 Package pdftex.def Info: img/grids/passagens_virs_1998-2011.png used on input l
-ine 149.
+ine 153.
 (pdftex.def)             Requested size: 363.61389pt x 303.02167pt.
 
-<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png, id=533, 1246.65
+<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png, id=532, 1246.65
 75pt x 1046.91125pt>
 File: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png Graphic fil
 e (type png)
 
 <use img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyf
-ill.png used on input line 168.
+ill.png used on input line 172.
 (pdftex.def)             Requested size: 360.83661pt x 303.02167pt.
 
-<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png, id=534, 1246.6
+<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png, id=533, 1246.6
 575pt x 1046.91125pt>
 File: img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png Graphic fi
 le (type png)
 
 <use img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png>
 Package pdftex.def Info: img/grids/densEspacial19982011acumuladoTempestadesPoly
-fill.png used on input line 169.
+fill.png used on input line 173.
 (pdftex.def)             Requested size: 360.83661pt x 303.02167pt.
  [26]
 
@@ -1387,7 +1387,7 @@ ids/densEspacial19982011acumuladoTempestadesPolyfill.png>] [29] [30]) [31]
 
 (./capitulos/MarcoDasTempestadesEletricas.tex
 Cap\'{\i }tulo 3.
-<img/ciclos/ciclodiurno19982011total.png, id=609, 897.3525pt x 580.1675pt>
+<img/ciclos/ciclodiurno19982011total.png, id=608, 897.3525pt x 580.1675pt>
 File: img/ciclos/ciclodiurno19982011total.png Graphic file (type png)
 
 <use img/ciclos/ciclodiurno19982011total.png>
@@ -1395,7 +1395,7 @@ Package pdftex.def Info: img/ciclos/ciclodiurno19982011total.png used on input
 line 13.
 (pdftex.def)             Requested size: 220.03813pt x 142.26378pt.
 
-<img/ciclos/cicloanual19982011total.png, id=610, 931.48pt x 580.1675pt>
+<img/ciclos/cicloanual19982011total.png, id=609, 931.48pt x 580.1675pt>
 File: img/ciclos/cicloanual19982011total.png Graphic file (type png)
 
 <use img/ciclos/cicloanual19982011total.png>
@@ -1413,7 +1413,7 @@ Overfull \hbox (1.0337pt too wide) in paragraph at lines 13--16
 
  <./img/ciclos/ciclodiurno19982011total.png (PNG copy)> <./img/ciclos/cicloanua
 l19982011total.png (PNG copy)>]
-<img/ciclos/ciclodiurno10x1019982011localtime.png, id=621, 1257.69875pt x 1095.
+<img/ciclos/ciclodiurno10x1019982011localtime.png, id=620, 1257.69875pt x 1095.
 09125pt>
 File: img/ciclos/ciclodiurno10x1019982011localtime.png Graphic file (type png)
  <use img/ciclos/ciclodiurno10x1019982011localtime.png>
@@ -1421,7 +1421,7 @@ Package pdftex.def Info: img/ciclos/ciclodiurno10x1019982011localtime.png used
 on input line 30.
 (pdftex.def)             Requested size: 441.14151pt x 384.1122pt.
  [33 <./img/ciclos/ciclodiurno10x1019982011localtime.png (PNG copy)>] [34]
-<img/ciclos/cicloanual10x1019982011localtime.png, id=638, 1276.77pt x 1094.0875
+<img/ciclos/cicloanual10x1019982011localtime.png, id=637, 1276.77pt x 1094.0875
 pt>
 File: img/ciclos/cicloanual10x1019982011localtime.png Graphic file (type png)
  <use img/ciclos/cicloanual10x1019982011localtime.png>
@@ -1430,7 +1430,7 @@ n input line 58.
 (pdftex.def)             Requested size: 448.23993pt x 384.1122pt.
  [35 <./img/ciclos/cicloanual10x1019982011localtime.png (PNG copy)>] [36] [37]
 <img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png, id=
-680, 3559.2975pt x 2991.175pt>
+679, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png
  Graphic file (type png)
 
@@ -1444,7 +1444,7 @@ Overfull \hbox (1.77821pt too wide) in paragraph at lines 147--148
  []
 
 
-<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=681, 255.956
+<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=680, 255.956
 25pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf Graphic fil
 e (type pdf)
@@ -1459,7 +1459,7 @@ ng>]
 LaTeX Warning: Reference `tempesRaios' on page 39 undefined on input line 166.
 
 
-<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=696, 255.95625
+<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=695, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
@@ -1469,7 +1469,7 @@ Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
 l.pdf used on input line 177.
 (pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=698, 255.95625
+<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=697, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
@@ -1484,7 +1484,7 @@ Overfull \hbox (6.08075pt too wide) in paragraph at lines 177--179
  []
 
 
-<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=700, 255.95625
+<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=699, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
@@ -1494,7 +1494,7 @@ Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
 l.pdf used on input line 180.
 (pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=702, 255.95625
+<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=701, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf Graphic file 
 (type pdf)
@@ -1514,7 +1514,7 @@ nsEspacial_19982011mamTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_1998
 2011jjaTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_19982011sonTaxaFlas
 hPolyfill.pdf>] [41]
 <img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=76
-8, 3559.2975pt x 2991.175pt>
+7, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png G
 raphic file (type png)
 
@@ -1523,8 +1523,8 @@ Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
 tadesPolyfill.png used on input line 230.
 (pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=77
-0, 3559.2975pt x 2991.175pt>
+<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=76
+9, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png G
 raphic file (type png)
 
@@ -1534,7 +1534,7 @@ tadesPolyfill.png used on input line 231.
 (pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 
 <img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=77
-2, 3559.2975pt x 2991.175pt>
+1, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png G
 raphic file (type png)
 
@@ -1544,7 +1544,7 @@ tadesPolyfill.png used on input line 233.
 (pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
 
 <img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=77
-4, 3559.2975pt x 2991.175pt>
+3, 3559.2975pt x 2991.175pt>
 File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png G
 raphic file (type png)
 
@@ -1557,7 +1557,7 @@ tadesPolyfill.png used on input line 234.
  <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png> <.
 /img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png> <./im
 g/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>]
-<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=793, 4270.
+<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=792, 4270.
 95625pt x 3589.41pt>
 File: img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png Graphic f
 ile (type png)
@@ -1579,14 +1579,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./capitulos/Severidade.tex
 Cap\'{\i }tulo 4.
-<img/FtaFt/pdfFta.png, id=807, 960.58875pt x 593.21625pt>
+<img/FtaFt/pdfFta.png, id=806, 960.58875pt x 593.21625pt>
 File: img/FtaFt/pdfFta.png Graphic file (type png)
 
 <use img/FtaFt/pdfFta.png>
 Package pdftex.def Info: img/FtaFt/pdfFta.png used on input line 9.
 (pdftex.def)             Requested size: 230.37012pt x 142.26378pt.
 
-<img/FtaFt/pdfFt.png, id=808, 960.58875pt x 593.21625pt>
+<img/FtaFt/pdfFt.png, id=807, 960.58875pt x 593.21625pt>
 File: img/FtaFt/pdfFt.png Graphic file (type png)
 
 <use img/FtaFt/pdfFt.png>
@@ -1602,7 +1602,7 @@ Overfull \hbox (21.16257pt too wide) in paragraph at lines 9--11
 
 
  <./img/FtaFt/pdfFta.png> <./img/FtaFt/pdfFt.png>]
-<img/tb/TbAreas.pdf, id=823, 426.59375pt x 141.52875pt>
+<img/tb/TbAreas.pdf, id=822, 426.59375pt x 141.52875pt>
 File: img/tb/TbAreas.pdf Graphic file (type pdf)
 
 <use img/tb/TbAreas.pdf>
@@ -1618,7 +1618,7 @@ Overfull \hbox (18.63443pt too wide) in paragraph at lines 38--42
  []
 
 [46 <./img/tb/TbAreas.pdf>] [47]
-<img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png, id=857, 3665.695pt x
+<img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png, id=856, 3665.695pt x
  3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png Graphic file (ty
 pe png)
@@ -1627,7 +1627,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.p
 ng used on input line 81.
 (pdftex.def)             Requested size: 449.42912pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png, id=858, 3665.695pt x
+<img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png, id=857, 3665.695pt x
  3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA.png Graphic file (ty
 pe png)
@@ -1637,7 +1637,7 @@ ng used on input line 88.
 (pdftex.def)             Requested size: 449.42912pt x 384.1122pt.
 
 [48 <./img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA.png>]
-<img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png, id=873, 3665.695pt x 
+<img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png, id=872, 3665.695pt x 
 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.png Graphic file (typ
 e png)
@@ -1646,7 +1646,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cfad10_semraio_topFT.pn
 g used on input line 103.
 (pdftex.def)             Requested size: 449.42912pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png, id=874, 3665.6
+<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png, id=873, 3665.6
 95pt x 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT.png Graphic fi
 le (type png)
@@ -1673,7 +1673,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_t
 opFT.png used on input line 153.
 (pdftex.def)             Requested size: 768.2244pt x 656.50098pt.
 
-<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png, id=910, 3665.
+<img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png, id=909, 3665.
 695pt x 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png Graphic f
 ile (type png)
@@ -1683,7 +1683,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_t
 opFTA.png used on input line 163.
 (pdftex.def)             Requested size: 768.2244pt x 656.50098pt.
  [52]
-<img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png, id=919, 3665.695pt x 
+<img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png, id=918, 3665.695pt x 
 3132.70375pt>
 File: img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png Graphic file (typ
 e png)
@@ -1694,7 +1694,7 @@ g used on input line 178.
 
 [53 <./img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA.png>]
 [54 <./img/precipitacao3d/severo/cfad/cfad10_comraio_topFT.png>]
-<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png, id=958, 3701.83p
+<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png, id=957, 3701.83p
 t x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png Graphic file
  (type png)
@@ -1704,7 +1704,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topF
 TA.png used on input line 216.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png, id=959, 3701.83
+<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png, id=958, 3701.83
 pt x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA.png Graphic fil
 e (type png)
@@ -1714,7 +1714,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_top
 FTA.png used on input line 223.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png, id=960, 3701.83pt
+<img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png, id=959, 3701.83pt
  x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png Graphic file 
 (type png)
@@ -1724,7 +1724,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topF
 T.png used on input line 233.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
 
-<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png, id=961, 3701.83p
+<img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png, id=960, 3701.83p
 t x 3132.70375pt>
 File: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png Graphic file
  (type png)
@@ -1734,7 +1734,7 @@ Package pdftex.def Info: img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_top
 FT.png used on input line 240.
 (pdftex.def)             Requested size: 453.85942pt x 384.1122pt.
  [55]
-<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png, id=968, 800.9925pt
+<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png, id=967, 800.9925pt
  x 920.43875pt>
 File: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png Graphic file (
 type png)
@@ -1744,7 +1744,7 @@ Package pdftex.def Info: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1
 .png used on input line 249.
 (pdftex.def)             Requested size: 222.84637pt x 256.0748pt.
  [56 <./img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA.png>]
-<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png, id=985, 800.9925pt
+<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png, id=984, 800.9925pt
  x 920.43875pt>
 File: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png Graphic file (
 type png)
@@ -1758,7 +1758,7 @@ img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT.png>] [59 <./img/precip
 itacao3d/severo/cftd/ccftd_10deg_comraio_topFT.png>] [60 <./img/precipitacao3d/
 deriv_ccftd/deriv_contornos_cdf_2_1.png> <./img/precipitacao3d/deriv_ccftd/deri
 v_contornos_cdf_3_3.png>]
-<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=1020, 4272.963
+<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=1019, 4272.963
 75pt x 3752.0175pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png Graphic file 
 (type png)
@@ -1768,7 +1768,7 @@ Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor005thFt
 a.png used on input line 291.
 (pdftex.def)             Requested size: 210.5963pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=1022, 4270.956
+<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=1021, 4270.956
 25pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png Graphic file 
 (type png)
@@ -1779,7 +1779,7 @@ a.png used on input line 292.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
  [61 <./img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png> <./img/Dis
 tEspacialPercentis/FTA/distEspacialValor010thFta.png>]
-<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=1046, 4270.95625
+<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=1045, 4270.95625
 pt x 3755.02875pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor005thFt.png Graphic file (t
 ype png)
@@ -1789,7 +1789,7 @@ Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor005thFt.
 png used on input line 310.
 (pdftex.def)             Requested size: 210.30185pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=1048, 4274.97125
+<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=1047, 4274.97125
 pt x 3754.025pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor010thFt.png Graphic file (t
 ype png)
@@ -1799,7 +1799,7 @@ Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor010thFt.
 png used on input line 311.
 (pdftex.def)             Requested size: 210.56477pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=1054, 4270.956
+<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=1053, 4270.956
 25pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png Graphic file 
 (type png)
@@ -1809,7 +1809,7 @@ Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor095thFt
 a.png used on input line 335.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=1056, 4270.956
+<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=1055, 4270.956
 25pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png Graphic file 
 (type png)
@@ -1822,7 +1822,7 @@ a.png used on input line 336.
 spacialPercentis/FT/distEspacialValor010thFt.png>] [63 <./img/DistEspacialPerce
 ntis/FTA/distEspacialValor095thFta.png> <./img/DistEspacialPercentis/FTA/distEs
 pacialValor099thFta.png>]
-<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=1087, 4270.95625
+<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=1086, 4270.95625
 pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor095thFt.png Graphic file (t
 ype png)
@@ -1832,7 +1832,7 @@ Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor095thFt.
 png used on input line 362.
 (pdftex.def)             Requested size: 210.56253pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=1089, 4270.95625
+<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=1088, 4270.95625
 pt x 3751.01375pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor099thFt.png Graphic file (t
 ype png)
@@ -1891,10 +1891,10 @@ c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb>
-Output written on teseEvandro.pdf (69 pages, 17303271 bytes).
+Output written on teseEvandro.pdf (69 pages, 17303403 bytes).
 PDF statistics:
- 1244 PDF objects out of 1440 (max. 8388607)
- 1022 compressed objects within 11 object streams
+ 1243 PDF objects out of 1440 (max. 8388607)
+ 1021 compressed objects within 11 object streams
  247 named destinations out of 1000 (max. 500000)
  652 words of extra memory for PDF output out of 10000 (max. 10000000)
 
