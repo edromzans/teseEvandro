@@ -20,34 +20,50 @@ Esse satélite possui uma órbita de aproximadamente 320 km de altura e inclina�
 
 \subsection{Radar de Precipitação}
 
-O (\textit{Precipitation Radar}) -- PR  é um radar que opera na frequência de 13,8 GHz e possui uma resolução horizontal entre 4,3-5 km, 250 m de resolução vertical e uma varredura 215 km. Uma de suas características mais importantes é a capacidade para fornecer a estrutura tridimensional dos hidrometeoros de nuvens, desde a superfície até uma altura de 20 km, em 80 níveis verticais \cite{kummerok1998}. Para esta pesquisa serão utilizados os dados do produto 2A25 que apresentam o fator de refletividade do radar corrigido por atenuação da chuva \cite{2A25}.
+O \textit{Precipitation Radar} -- PR é o principal instrumento do TRMM. Se trata do primeiro radar meteorológico lançado no espaço sendo a maior inovação apresentada pela missão TRMM. 
+
+Os maiores objetivos do PR são: prover a estrutura tridimensional da precipitação; e quantificar as taxas de precipitação sobre os continentes e oceanos, ambos objetivos focados na região tropical. 
+
+A antena do PR possui uma largura de feixe de 0.71$^{\circ}$ $\times$ 0.71$^{\circ}$, abertura de 2.0 m $\times$ 2.0 e faz uma varredura de $\pm$17$^{\circ}$ com 49 feixes, proporcionando a observação de uma faixa na superfície de $\simeq$215 km. A resolução horizontal no nadir é de 4.3 $\pm$ 0.12 km, e de até 5 km nos ângulos próximos dos $\pm$17$^{\circ}$. Verticalmente, o PR observa uma faixa de 20 km a partir da superfície, com resolução de 250 m. Portanto, a precipitação observada corresponde a uma matriz bidimensional com granularidade de 49 $\times$ 80: 49 feixes na varredura horizontal, com 80 níveis verticais de 250 m de altitude. Estas principais características operacionais do PR são representadas na figura \ref{prtrmm} \cite{kummerok1998}.
+
+\begin{figure}[!hb]
+  \centering{
+  {{\includegraphics[height=11.4cm]{img/TRMM/PRTRMM}}}
+  }
+\caption{Principais características das observações do PR \cite{trmmhandbook}}
+\label{prtrmm} 
+\end{figure} 
+
+Para esta pesquisa serão utilizados os dados do produto 2A25, o qual corrige a atenuação da refletividade do radar medida ($Z_m$) \simbolo{name={$Z_m$},description={Refletividade do radar medida}} e a partir do fator de refletividade corrigido por atenuação $Z_c$, estima a estrutura tridimensional da precipitação no instante da observação, bem como a taxa de precipitação em cada célula da resolução (46 $\times$ 80) do PR \cite{PRv7}. 
+
+Além da estrutura tridimensional da precipitação do produto 2A25, nesta tese, utiliza-se das classificações do tipo de chuva do produto 2A23: convectivo, estratiforme, outros, etc \cite{2A25,PRv7}.
+      
 \sigla{name={PR},description={\textit{Precipitation Radar}}}
 
 \subsection{Imageador de relâmpagos}
 
 O \textit{Lightning Imaging Sensor} -- LIS  é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
 
-O sistema de imagens do LIS é constituído por um telescópio f/1.6 que expande o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777.4 nm e largura de banda de 1 nm e atinge um matriz de 128 $\times$ 128 CCDs\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens com base no efeito fotoelétrico.}. O LIS também possui uma lente angular que proporciona um campo de visão panorâmico sobre as tempestades elétricas sobrevoadas de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 580 km $\times$ 580 km no nadir. Um pixel do campo de visão do LIS, possui resolução entre 5-10km.  \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+O sistema de imagens do LIS é constituído por um telescópio f/1.6 que expande o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777.4 nm e largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{Um dos dispositivos eletrônicos utilizados para registro de imagens com base no efeito fotoelétrico.}. O LIS também possui uma lente angular que proporciona um campo de visão panorâmico sobre as tempestades elétricas sobrevoadas de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 580 km $\times$ 580 km no nadir. Um pixel do campo de visão do LIS, possui resolução entre 5-10km. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo. \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+
+Conforme é descrito por \citeonline{christian2000LISalgorithm}, a identificação dos raios/\textit{flashes} depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo da posição em que as CCDs são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica os \textit{events}, \textit{groups} e os \textit{flashes}. Os \textit{flashes} são associados aos raios, sejam nuvem-solo ou intranuvem. Os \textit{events} e \textit{groups} estão associados os processos quem envolvem a formação das descargas de retorno, por exemplo, os processos de propagação, recuo e conexão dos líderes percursores das correntes elétricas dos raios.  
+
+A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  \textit{events}, \textit{groups} até a caracterização de um \textit{flash}. Observe, que após 700 milissegundos, como mostra a sequencia de figuras \ref{evgrfla}-\ref{evgrfle}, temos 4 \textit{flashes} (A, B, C e D),  8 \textit{groups} (a, b, c, d, e, f, g e h) e 14 \textit{events} \cite{christian2000LISalgorithm,trmmhandbook}.
 
 
-Conforme é descrito por \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo da posição na matriz de 128 $\times$ 128 em que as CCDs são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagem do LIS identifica os \textit{events}, \textit{groups} e os \textit{flashes}. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo.
-
-A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  \textit{events}, \textit{groups} até a caracterização de um \textit{flash}. Observe, que após 700 milissegundos, como mostra a figura \ref{evgrfl}, temos 4 \textit{flashes} (A, B, C e D),  8 \textit{groups} (a, b, c, d, e, f, g e h) e 14 \textit{events} \cite{christian2000LISalgorithm,trmmhandbook}.
-
-
-O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno.  Com sua velocidade orbital de 11 km/s, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80 a 90 s, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
+O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno.  Com sua velocidade orbital de 11 km/s, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por 80-90 segundos, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
 \sigla{name={LIS},description={\textit{Lightning Imaging Sensor}}}
 
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0}} }
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0}} \label{evgrfla}}
   \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time100}}}
   
   \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time350}} }
   \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time400}} }
 
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700}} \label{evgrfl}}  
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700}} \label{evgrfle}}  
   }
 \caption{Ilustração do algoritmo de identificação de \textit{events}, \textit{groups} e os \textit{flashes}  do LIS \cite{christian2000LISalgorithm}.}
 \label{LisImagemProcessa} 
