@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2014.10.12)  15 OCT 2014 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2014.10.12)  16 OCT 2014 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1232,7 +1232,13 @@ een already used, duplicate ignored
 l.159 \cleardoublepage
                        [7
 
-] (./teseEvandro.toc)
+] (./teseEvandro.toc
+Overfull \hbox (13.60394pt too wide) in paragraph at lines 15--15
+ [][] [][]\OT1/lmr/m/n/12 MORFOLOGIA DA ES-TRU-TURA TRI-DI-MEN-SI-O-NAL DA PREC
+IPITA[][]AO[] [][]  
+ []
+
+)
 \tf@toc=\write10
 \openout10 = `teseEvandro.toc'.
 
@@ -1257,15 +1263,11 @@ Writing sigla file teseEvandro.sig
 (./teseEvandro.sgl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-
-Overfull \vbox (5.42305pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
-
-[9
+(babel)             in language  on input line 102.
+ [9
 
 
 
@@ -1275,7 +1277,16 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 Writing simbolo file teseEvandro.sim 
-(./teseEvandro.sbl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 172.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 172.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \cleardoublepage
+                       [10] (./teseEvandro.sbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
@@ -1283,7 +1294,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--14
 []|\OT1/lmr/m/n/12 Taxa de raios por tempo por ^^Sarea
  []
 
-)
+
+Underfull \hbox (badness 4479) in paragraph at lines 55--57
+[]|\OT1/lmr/m/n/12 Nos di-a-gra-mas, CFAD, CC-FAD, CFTD
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 55--57
+\OT1/lmr/m/n/12 e CCFTD, re-pre-sen-tam: o n^^Sumero de
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 55--57
+\OT1/lmr/m/n/12 ocorr^encia de $\OML/lmm/m/it/12 Z[]$ \OT1/lmr/m/n/12 no n^^S^^
+Pvel de al-ti-tude de
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 62.
+[11
+
+
+])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
 Package babel Info: Redefining portuges shorthand "|
@@ -1293,10 +1327,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.178 \include{capitulos/Metodologia}
-                                      [10
-
-
-]
+                                      [12]
 \openout2 = `capitulos/Metodologia.aux'.
 
  (./capitulos/Metodologia.tex
@@ -1306,94 +1337,94 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 24.
-[11
+(babel)             in language  on input line 28.
+[13
 
 
-] <img/TRMM/PRTRMM.png, id=226, 1052.93375pt x 943.525pt>
+] <img/TRMM/PRTRMM.png, id=258, 1052.93375pt x 943.525pt>
 File: img/TRMM/PRTRMM.png Graphic file (type png)
 
 <use img/TRMM/PRTRMM.png>
-Package pdftex.def Info: img/TRMM/PRTRMM.png used on input line 31.
+Package pdftex.def Info: img/TRMM/PRTRMM.png used on input line 35.
 (pdftex.def)             Requested size: 352.44981pt x 315.82576pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
- [12 <./img/TRMM/PRTRMM.png>]
+(babel)             in language  on input line 42.
+ [14 <./img/TRMM/PRTRMM.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 47.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 47.
+(Font)              <10> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 47.
+(Font)              <7> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 47.
+(Font)              <5> on input line 51.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
- [13]
-<img/TRMM/time0.png, id=276, 817.0525pt x 334.24875pt>
+(babel)             in language  on input line 60.
+ [15]
+<img/TRMM/time0.png, id=307, 817.0525pt x 334.24875pt>
 File: img/TRMM/time0.png Graphic file (type png)
 
 <use img/TRMM/time0.png>
-Package pdftex.def Info: img/TRMM/time0.png used on input line 60.
+Package pdftex.def Info: img/TRMM/time0.png used on input line 64.
 (pdftex.def)             Requested size: 229.52118pt x 93.89418pt.
 
-<img/TRMM/time100.png, id=277, 818.05624pt x 336.25626pt>
+<img/TRMM/time100.png, id=308, 818.05624pt x 336.25626pt>
 File: img/TRMM/time100.png Graphic file (type png)
 
 <use img/TRMM/time100.png>
-Package pdftex.def Info: img/TRMM/time100.png used on input line 61.
+Package pdftex.def Info: img/TRMM/time100.png used on input line 65.
 (pdftex.def)             Requested size: 228.43005pt x 93.89418pt.
 
-Overfull \hbox (6.62373pt too wide) in paragraph at lines 60--62
+Overfull \hbox (6.62373pt too wide) in paragraph at lines 64--66
  [][][][] 
  []
 
-<img/TRMM/time350.png, id=278, 813.0375pt x 337.26pt>
+<img/TRMM/time350.png, id=309, 813.0375pt x 337.26pt>
 File: img/TRMM/time350.png Graphic file (type png)
 
 <use img/TRMM/time350.png>
-Package pdftex.def Info: img/TRMM/time350.png used on input line 63.
+Package pdftex.def Info: img/TRMM/time350.png used on input line 67.
 (pdftex.def)             Requested size: 226.34633pt x 93.89418pt.
 
-<img/TRMM/time400.png, id=279, 811.03pt x 336.25626pt>
+<img/TRMM/time400.png, id=310, 811.03pt x 336.25626pt>
 File: img/TRMM/time400.png Graphic file (type png)
 
 <use img/TRMM/time400.png>
-Package pdftex.def Info: img/TRMM/time400.png used on input line 64.
+Package pdftex.def Info: img/TRMM/time400.png used on input line 68.
 (pdftex.def)             Requested size: 226.46808pt x 93.89418pt.
 
-Overfull \hbox (5.40352pt too wide) in paragraph at lines 63--65
+Overfull \hbox (5.40352pt too wide) in paragraph at lines 67--69
  [][][][] 
  []
 
-<img/TRMM/time700.png, id=280, 810.02625pt x 341.275pt>
+<img/TRMM/time700.png, id=311, 810.02625pt x 341.275pt>
 File: img/TRMM/time700.png Graphic file (type png)
 
 <use img/TRMM/time700.png>
-Package pdftex.def Info: img/TRMM/time700.png used on input line 66.
+Package pdftex.def Info: img/TRMM/time700.png used on input line 70.
 (pdftex.def)             Requested size: 222.8506pt x 93.89418pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 93.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 93.
- [14 <./img/TRMM/time0.png> <./img/TRMM/time100.png> <./img/TRMM/time350.png> <
+(babel)             in language  on input line 94.
+ [16 <./img/TRMM/time0.png> <./img/TRMM/time100.png> <./img/TRMM/time350.png> <
 ./img/TRMM/time400.png> <./img/TRMM/time700.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 94.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 104.
 
-Overfull \hbox (49.25835pt too wide) in paragraph at lines 102--103
+Overfull \hbox (49.25835pt too wide) in paragraph at lines 106--107
 \OT1/lmr/m/n/12 tir do ser-vi-dor de FTP da NASA (ftp://disc2.nascom.nasa.gov) 
 e do NCEP (ftp://ftp.cdc.noaa.gov). 
  []
@@ -1402,132 +1433,137 @@ e do NCEP (ftp://ftp.cdc.noaa.gov).
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
-[15]
-Overfull \hbox (18.2841pt too wide) in paragraph at lines 159--160
+(babel)             in language  on input line 153.
+[17]
+Overfull \hbox (18.2841pt too wide) in paragraph at lines 163--164
 []\OT1/lmr/m/n/12 Inicialmente fo-ram iden-ti-fi-ca-das 154,189 tem-pes-ta-des 
 el^^Setricas, pelo ins-tru-mento num^^Serico
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 172.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 172.
-[16]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 177.
+(babel)             in language  on input line 176.
+[18]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 181.
 
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 177.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 181.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 204.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 212.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 208.
- [17]
-<img/grids/vt_trmm.png, id=365, 1246.6575pt x 1038.88126pt>
-File: img/grids/vt_trmm.png Graphic file (type png)
-
-<use img/grids/vt_trmm.png>
-Package pdftex.def Info: img/grids/vt_trmm.png used on input line 212.
-(pdftex.def)             Requested size: 363.61389pt x 303.02167pt.
-
-<img/grids/passagens_virs_1998-2011.png, id=366, 1246.6575pt x 1038.88126pt>
+(babel)             in language  on input line 212.
+ [19]
+<img/grids/passagens_virs_1998-2011.png, id=396, 1246.6575pt x 1038.88126pt>
 File: img/grids/passagens_virs_1998-2011.png Graphic file (type png)
 
 <use img/grids/passagens_virs_1998-2011.png>
 Package pdftex.def Info: img/grids/passagens_virs_1998-2011.png used on input l
-ine 213.
-(pdftex.def)             Requested size: 363.61389pt x 303.02167pt.
+ine 216.
+(pdftex.def)             Requested size: 460.93268pt x 384.1122pt.
 
-<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png, id=374, 1246.65
+Overfull \hbox (5.68857pt too wide) in paragraph at lines 216--217
+ [][] 
+ []
+
+<img/grids/vt_trmm.png, id=398, 1246.6575pt x 1038.88126pt>
+File: img/grids/vt_trmm.png Graphic file (type png)
+
+<use img/grids/vt_trmm.png>
+Package pdftex.def Info: img/grids/vt_trmm.png used on input line 230.
+(pdftex.def)             Requested size: 460.93268pt x 384.1122pt.
+
+Overfull \hbox (5.68857pt too wide) in paragraph at lines 230--231
+ [][] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 236.
+[20 <./img/grids/passagens_virs_1998-2011.png>]
+<img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png, id=411, 1246.65
 75pt x 1046.91125pt>
 File: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png Graphic fil
 e (type png)
 
 <use img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyf
-ill.png used on input line 240.
-(pdftex.def)             Requested size: 360.83661pt x 303.02167pt.
+ill.png used on input line 252.
+(pdftex.def)             Requested size: 457.3945pt x 384.1122pt.
 
-<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png, id=375, 1246.6
+Overfull \hbox (6.067pt too wide) in paragraph at lines 252--253
+ [][] 
+ []
+
+
+<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png, id=412, 1246.6
 575pt x 1046.91125pt>
 File: img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png Graphic fi
 le (type png)
 
 <use img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png>
 Package pdftex.def Info: img/grids/densEspacial19982011acumuladoTempestadesPoly
-fill.png used on input line 241.
-(pdftex.def)             Requested size: 360.83661pt x 303.02167pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
- [18]
+fill.png used on input line 259.
+(pdftex.def)             Requested size: 457.3945pt x 384.1122pt.
 
-LaTeX Warning: Text page 19 contains only floats.
-
-
-Overfull \vbox (6.75069pt too high) has occurred while \output is active []
+Overfull \hbox (2.15039pt too wide) in paragraph at lines 259--260
+ [][] 
+ []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
-
-[19 <./img/grids/vt_trmm.png> <./img/grids/passagens_virs_1998-2011.png>]
-
-LaTeX Warning: Text page 20 contains only floats.
-
-
-Overfull \vbox (6.75069pt too high) has occurred while \output is active []
-
+(babel)             in language  on input line 265.
+[21 <./img/grids/vt_trmm.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
-
-[20 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png> <./img/gr
-ids/densEspacial19982011acumuladoTempestadesPolyfill.png>]
+(babel)             in language  on input line 275.
+ [22 <./img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 268.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
- [21]
+(babel)             in language  on input line 287.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 290.
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 290.
+ [23 <./img/grids/densEspacial19982011acumuladoTempestadesPolyfill.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 293.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 319.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 319.
- [22])
+ [24])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
- [23]
-(./teseEvandro.bbl
+ [25] (./teseEvandro.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 103.
- [24
+(babel)             in language  on input line 102.
+ [26
 
 
 
@@ -1536,7 +1572,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 195.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 195.
- [25]
+ [27]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
@@ -1548,7 +1584,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
-(rerunfilecheck)             Checksum: EBD96E37DEC3CD9B2E9FDE75AF70DD26;1417.
+(rerunfilecheck)             Checksum: 4276D879E7533CF6F86A41FC785407FD;1526.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1556,13 +1592,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 24074 strings out of 494955
- 428379 string characters out of 6179473
+ 24078 strings out of 494955
+ 428347 string characters out of 6179473
  532978 words of memory out of 5000000
- 26578 multiletter control sequences out of 15000+600000
- 88503 words of font info for 94 fonts, out of 8000000 for 9000
+ 26568 multiletter control sequences out of 15000+600000
+ 84285 words of font info for 93 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 55i,14n,87p,924b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,87p,924b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
@@ -1575,10 +1611,10 @@ pe1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on teseEvandro.pdf (26 pages, 775936 bytes).
+Output written on teseEvandro.pdf (28 pages, 776230 bytes).
 PDF statistics:
- 536 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
 

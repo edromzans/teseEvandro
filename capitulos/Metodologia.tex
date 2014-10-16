@@ -11,12 +11,16 @@ As informações dos diferentes sensores foram combinadas de maneira a identific
 %Para melhor entender as implicações que envolvem a construção de uma base de dados de sistemas individualmente a partir das observações do TRMM, inicialmente descreve-se algumas das principais características operacionais do satélite TRMM.
 
 \section{O SATÉLITE TRMM}
+\label{metodologiaTRMM}
 
 O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}} faz parte de uma missão conjunta entre a \textit{National Aeronautics and Space Administration} -- NASA e \sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a \textit{Japan Aerospace Exploration Agency} -- JAXA \sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}}, com o objetivo de determinar a distribuição geográfica e a variabilidade da chuva e do fluxo de calor latente de condensação para a região tropical e subtropical terrestre, informações fundamentais, por exemplo, nas inicializações de modelos globais e climáticos, principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
   
 Os instrumentos a bordo do TRMM são: radar de precipitação (PR), radiômetro de microondas (TMI), radiômetro no visível e no infravermelho (VIRS), sistema de energia radiante da terra e das nuvens (CERES) e sensor para imageamento de relâmpagos (LIS) \cite{kummerok1998}.
 
-Esse satélite possui uma órbita de aproximadamente 320 km de altura e inclinação de 30$^{\circ}$-35$^{\circ}$ para que possa visitar uma mesma região duas vezes ao dia, em horários distintos, sobre a região tropical do planeta Terra \cite{simpson1988}.   
+Esse satélite possui uma órbita de aproximadamente 320 km de altura e inclinação de 30$^{\circ}$-35$^{\circ}$ para que possa visitar uma mesma região duas vezes ao dia, em horários distintos, sobre a região tropical do planeta Terra \cite{simpson1988}.  
+
+O satélite foi lançado em 28 novembro de 1997 e continua em operação.
+ 
 
 \subsection{Radar de Precipitação}
 
@@ -73,7 +77,7 @@ O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tan
 
 \subsection{Radiômetro no visível e infravermelho}
 
-O \textit{Visible and InfraRed Scanner} -- VIRS é um radiômetro de varredura biaxial que mede a radiância em 5 bandas espectrais: com comprimentos de onda de 0.63 $\mu$m e  1.61 $\mu$m, que correspondem a faixa do visível; 3.75 $\mu$m, 10.8 $\mu$m e 12 $\mu$m, na faixa do infravermelho para o monitoramento do vapor d'água e temperaturas de topo de nuvens. 
+O \textit{Visible and InfraRed Scanner} -- VIRS é um radiômetro de varredura biaxial, um eixo com $\pm$45$^{\circ}$ e outro 360$^{\circ}$, que mede a radiância em 5 bandas espectrais: com comprimentos de onda de 0.63 $\mu$m e  1.61 $\mu$m, que correspondem a faixa do visível; 3.75 $\mu$m, 10.8 $\mu$m e 12 $\mu$m, na faixa do infravermelho para o monitoramento do vapor d'água e temperaturas de topo de nuvens. 
 
 Com uma inclinação $\pm$45$^{\circ}$ na horizontal, observa uma faixa de 720 km, com resolução de 2,11 km no nadir\cite{kummerok1998,trmmhandbook}.
 
@@ -160,7 +164,7 @@ Inicialmente foram identificadas 154,189 tempestades elétricas, pelo instrument
 
 Portanto, foi feita uma redivisão nos sistemas enormes considerando a temperatura de brilho de 221 K. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}. 
 
-Com a recategorização dos sistemas enormes, portanto o número total de tempestades elétricas identificadas nesta pesquisa é de 157,599.
+Com a recategorização dos sistemas enormes, portanto o número total de tempestades elétricas identificadas nesta pesquisa é de 157,592.
 
 
 \section{A TAXA DE RAIOS}
@@ -207,79 +211,97 @@ O que se torna fundamental na construção destes mapas é considerar quantas ve
 Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua orbita inclinada 35$^{\circ}$ e velocidade, entre o período de 1998--2011 o satélite passou 10,000 vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT}, que ilustra o número de orbitas cobertas pelo sensor VIRS em uma grade regular de 0.25$^{\circ}$  $\times$ 0.25$^{\circ}$ na América do Sul.
 
 
-\begin{figure}[!ht]
-  \centering{
-  \subfloat[Tempo de visada do LIS (0.25$^{\circ}$  $\times$ 0.25$^{\circ}$).]{{\includegraphics[height=10.65cm]{img/grids/vt_trmm}} \label{lisVT}}\\
-  \subfloat[Número de passagens do VIRS (0.25$^{\circ}$  $\times$ 0.25$^{\circ}$).]{{\includegraphics[height=10.65cm]{img/grids/passagens_virs_1998-2011}} \label{VirsVT}}
-  }
-\caption{Amostragem do LIS e VIRS sobre a América do Sul durando os 14 anos.}
-\label{gridAmostragem} 
+\begin{figure}[!hb]
+  \centering
+  {{\includegraphics[height=13.5cm]{img/grids/passagens_virs_1998-2011}}}
+\caption{Número de passagens do VIRS (0.25$^{\circ}$  $\times$ 0.25$^{\circ}$).}
+\label{VirsVT}
 \end{figure} 
 
-Levando em consideração tempo de amostragem do LIS na superfície terrestre (\textit{view time}), o número de dias de amostragem na região de estudo pode ser observado na figura \ref{lisVT}. Observa-se que em 14 anos o LIS observou 10 dias a mais na latitude -34°S do que em 0°.
 
-Nos painéis da figura  \ref{gridAmostragem}, estão representadas duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0.25$^{\circ}$ de resolução, projetada sobe a América do Sul. A matriz ($\mathbf{VT}_{lis}$), figura \ref{lisVT}, do tempo total de amostragem do sensor LIS sobre a superfície e a matriz ($\mathbf{VT}_{virs}$), figura \ref{VirsVT} do número de vezes que o satélite passou conforme o tamanho da varredura do radiômetro VIRS na superfície, as quais são utilizadas para normalizar as medidas de raios e de tempestades elétricas definidas pelo VIRS.  
+
+%\label{gridAmostragem} 
+
+Levando em consideração tempo de amostragem do LIS na superfície terrestre (\textit{view time}), o número de dias de amostragem na região de estudo pode ser observado na figura \ref{lisVT}. Observa-se que em 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ S do que em 0$^{\circ}$.
+
+
+\begin{figure}[!ht]
+  \centering
+  {{\includegraphics[height=13.5cm]{img/grids/vt_trmm}} }
+  \caption{Tempo de amostragem (\textit{View time}) do LIS (0.25$^{\circ}$  $\times$ 0.25$^{\circ}$).}
+\label{lisVT}
+\end{figure} 
+
+As figuras  \ref{lisVT} e \ref{VirsVT} representam duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0.25$^{\circ}$ de resolução, projetada sobe a América do Sul. A matriz ($\mathbf{VT}_{lis}$), figura \ref{lisVT}, do tempo total de amostragem do sensor LIS sobre a superfície e a matriz ($\mathbf{VT}_{virs}$), figura \ref{VirsVT} do número de vezes que o satélite passou conforme o tamanho da varredura do radiômetro VIRS na superfície, as quais são utilizadas para normalizar as medidas de raios e de tempestades elétricas definidas pelo VIRS.  
 
 \simbolo{name={$\mathbf{VT}_{lis}$},description={Matriz do tempo total da visada do sensor LIS sobre a superfície}}
 
-
-Neste sentido podemos calcular a densidade de raios e a densidade de tempestades elétricas em função do tempo de observação.
+Neste sentido podemos calcular a densidade de raios ($\mathbf{DE}_{fl}$) e a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) em função do tempo de amostragem.
 
 Para tanto, é necessário calcular o número total de raios observados ($\mathbf{FL}_{lis}$) e o número total de tempestades elétricas ($\mathbf{P}_{te}$) em cada ponto da grade de 0.25$^{\circ}$ $\times$ 0.25$^{\circ}$. Logo é possível identificar as regiões com a maior número de amostragem de raios, na figura \ref{taxatotalraios}, e de amostragem de tempestades elétricas, na figura \ref{taxaTotalTe}.
 
 %Com as mesmas dimensões e resolução de grade que o tempo de observação e o número de passagens do satélite foram acumulados em duas matrizes, os raios foram acumulados na matriz ($\mathbf{FL}_{lis}$) e todos os píxeis do VIRS com radiância espectral associada com temperaturas de brilho inferiores a 258 K e que definiram as áreas das tempestades elétricas, foram acumulados na matriz ($\mathbf{P}_{te}$) que representa os locais com maior cobertura de nuvens de tempestades elétricas.
-
 %A matriz $\mathbf{FL}_{lis}$ projeta sobre a América do Sul está representada na figura \ref{gridFL} e a matriz $\mathbf{P}_{te}$, na figura \ref{gridTe}.
 
 Na figura \ref{taxaTotalTe} é notável o alto número de sistemas na região Sul da AS, com mesma ordem de magnitude do que em locais ao Norte aonde atua a Zona de Convergência Intertropical. Mas esse máximo no Sul da AS não indica maior ocorrência de tempestades elétricas e sim maior frequência de passagem do satélite TRMM. 
 
-Portanto, faz-se necessário normalizar o número de amostragem pelo tempo de observação.
+%Portanto, faz-se necessário normalizar as medidas do TRMM pelo tempo de amostragem ou número de passagens.
 
 \begin{figure}[!ht]
-  \centering{
-  \subfloat[Acumulado de raios observados pelo LIS (0,25°).]{{\includegraphics[height=10.65cm]{img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill}} \label{taxatotalraios}}\\
-  \subfloat[Acumulado das áreas de tempestade elétrica (0,25°).]{{\includegraphics[height=10.65cm]{img/grids/densEspacial19982011acumuladoTempestadesPolyfill}} \label{taxaTotalTe}}
-  }
-
-\caption{Acumulados dos raios e áreas das 157,599 tempestades elétricas identificadas.}
-\label{gridSistemas} 
+  \centering
+  \subfloat[]{{\includegraphics[height=13.5cm]{img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill}} } 
+\caption{Acumulado de raios (\textit{flashes}) observados pelo LIS (0.25$^{\circ}$  $\times$ 0.25$^{\circ}$).}
+\label{taxatotalraios}
+\end{figure}   
+  
+\begin{figure}[!ht]
+  \centering 
+  {{\includegraphics[height=13.5cm]{img/grids/densEspacial19982011acumuladoTempestadesPolyfill}}}
+\caption{Acumulado das 157,592 tempestade elétrica (0.25$^{\circ}$  $\times$ 0.25$^{\circ}$).}
+\label{taxaTotalTe}
 \end{figure} 
 
-Mesmo que as matrizes representem pontos em uma grade com espaçamento angular regular, as áreas de cada ponto de grade não são iguais, pois a  o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades superficiais.
+Mesmo que as matrizes representem pontos em uma grade com espaçamento angular regular, as áreas de cada ponto de grade não são iguais, pois a  o comprimento de arco de 0.25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
 
 
-Portanto, a densidade espacial de raios ($\mathbf{DE}_{fl}$) é calculada conforme a equação \ref{defl}. Note que a razão de $\mathbf{FL}_{lis}$ por $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ é multiplicada por $24\times60\times60\times365,25$, o que converte o tempo de observação do LIS de segundos para anos. Então as densidades espaciais de raios, possuem dimensões de número de [raios] por [tempo] por [quilômetro quadrado].
-
-No mesmo caminho as densidades espacias de tempestades elétricas ($\mathbf{DE}_{te}$) foram obtidas conforme a equação \ref{dete}. Porém a constante de conversão de tempo na equação \ref{dete} é diferente da equação \ref{defl}, pois o tempo que o VIRS observou a AS, foi estimado a partir do número de vezes que o satélite passou sobre a AS e considerando que cada ponto de grade na orbita foi observado por 90 segundos. 
-
-Portanto ao converter a matriz $\mathbf{VT}_{virs}$ para segundos de observação, temos um fator de 90 no denominador, que está implícito na equação \ref{dete}. 
-
+A densidade de raios ($\mathbf{DE}_{fl}$) foi calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$ e o $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$, multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365.25 dias, o que converte o tempo de observação do LIS de segundos para anos. Então as densidades de raios, possuem dimensões de número de [raios] por [tempo] por [quilômetro quadrado] (raios ano$^{-1}$ km$^{-2}$).
 
 \begin{equation}
-\mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600 ~[raios~ano^{-1}~km^{-2}]    
+\mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600     
 \label{defl}
 \end{equation}
 
+No mesmo caminho as densidades de tempestades elétricas ($\mathbf{DE}_{te}$) foram obtidas conforme a equação \ref{dete}. Mas, note que, conforme descrito em \ref{metodologiaTRMM} o tempo de amostragem do LIS e do VIRS são bem distintos. Enquanto o LIS é um sistema de imageamento, o VIRS é um radiômetro que realiza varreduras durante a trajetória do satélite. 
+
+%Na figura \ref{VirsVT} temos apenas o acumulado de passagens do VIRS, porém, é conveniente converter o número de vezes que o VIRS observou cada ponto da grade de 0.25$^{\circ}$  $\times$ 0.25$^{\circ}$ em unidade de tempo, pois desta forma teremos as mesmas dimensões físicas tanto para a $\mathbf{DE}_{te}$ quanto para a $\mathbf{DE}_{fl}$.
+%Conforme descrito em \ref{metodologiaTRMM}, em função da velocidade e órbita do satélite TRMM, é possível sobrevoar uma mesma região tropical duas vezes por dia. Então podemos considerar que cada ponto da grande de 0.25$^{\circ}$  $\times$ 0.25$^{\circ}$ da figura \ref{VirsVT} é observado pelo VIRS 2 vezes por dia, portanto se multiplicarmos 2 passagens por 365.25 dias podemos concluir o satélite observa cada ponto da grade aproximadamente 730.5 vezes por ano.
+%Porém a constante de conversão de tempo na equação \ref{dete} é diferente da equação \ref{defl}, pois o tempo que o VIRS observou a AS, foi estimado a partir do número de vezes que o satélite passou sobre a AS e considerando que cada ponto de grade na orbita foi observado por 90 segundos. 
+
+Portanto, a densidade de tempestades elétricas $\mathbf{DE}_{te}$, como descreve a equação \ref{dete} é normalizada pelo número de vezes que o VIRS sobrevoou cada ponto da grade de 0.25$^{\circ}$  $\times$ 0.25$^{\circ}$, o que corresponde a dimensão física do número de [sistemas] por [observação] por [quilômetro quadrado] (sistemas observaçoes$^{-1}$ km$^{-2}$). Essa grandeza revela, por exemplo, que a cada 10,000 observações do VIRS, temos entre 1-4 tempestades elétricas observadas na América do Sul.
+
 \begin{equation}
-\mathbf{DE}_{te} = \frac{\mathbf{P}_{te}}{\mathbf{VT}_{virs} \mathbf{A}_g} 350640 ~[sistemas~ano^{-1}~km^{-2}]    
+\mathbf{DE}_{te} = \frac{\mathbf{P}_{te}}{\mathbf{VT}_{virs} \mathbf{A}_g}    
 \label{dete}
 \end{equation}
 
-\section{MORFOLOGIA DA ESTRUTURA 3D DA PRECIPITAÇÃO}
-
+\section{MORFOLOGIA DA ESTRUTURA TRIDIMENSIONAL DA PRECIPITAÇÃO}
 
 O estudo para descrever a morfologia da precipitação foi realizado com base nas observações do PR, buscando avaliar como a precipitação está distribuída nos níveis de altitude e como os perfis de $Z_c$ estão associados com os processos de crescimento de hidrometeoros e de eletrificação.  
 
-A partir dos perfis de $Z_c$ selecionados pelo algoritmo de identificação de tempestades elétricas, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude. Desta forma, foram obtidos Diagramas de Contorno de Frequência por Altitude, os CFADs.\sigla{name={CFAD},description={Diagrama de Contorno de Frequência por Altitude}}
 
-Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de altitude do PR. A função $f_{pdf}(x,y)$, foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude.
+
+\subsection{Distribuições de probabilidades com a altitude}
+
+A partir dos perfis de $Z_c$ selecionados pelo algoritmo de identificação de tempestades elétricas, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude. Desta forma, foram obtidos Diagramas de Contorno de Frequência por Altitude, os CFADs \cite{yuter1995}.\sigla{name={CFAD},description={Diagrama de Contorno de Frequência por Altitude}}
+
+Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de altitude do PR. A função $f_{pdf}(x,y)$, foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude \cite{yuter1995}.
 
 \simbolo{name={$f_{pdf}(x,y)$},description={Função densidade de probabilidade com duas variáveis}}
 
 
 Para a obtenção dos diagramas de probabilidade normalizados por nível de altitude, cada nível $y$ da função $f_{pdf}(x,y)$ foi normalizado pelo número total de ocorrências de valores de $Z_c$ distribuídos em $x$. Os níveis $y$ de altitude com número total de ocorrência de $Z_c$ em $x$, menor do que 10\% do nível de máxima ocorrência, foram desconsiderados dos contornos de probabilidade em todos os CFADs.
 
-Com base na função de densidade de probabilidade ($f_{pdf}(x,y)$) que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa ($f_{cdf}(x,y)$) de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
+Com base na ($f_{pdf}(x,y)$) que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa ($f_{cdf}(x,y)$) de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
 
 
 \simbolo{name={$f_{cdf}(x,y)$},description={Função densidade de probabilidade cumulativa com duas variáveis}}
@@ -287,45 +309,20 @@ Com base na função de densidade de probabilidade ($f_{pdf}(x,y)$) que definiu 
 Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ associados à diferentes quantis da amostra de probabilidade, elucidando ainda mais as informações contidas nos CFADs.
 
 
-\subsection{Estrutura tridimensional da precipitação na óptica dos processos microfísicos}
-
-\label{chuvaEtemperatura}
+%Então, objetivando uma análise dos processos de crescimento de hidrometeoros no perfil atmosférico e na mesma óptica de trabalhos como \citeonline{Takahashi1978,Saunders1999,Takahashi2002,avila2009}, ou seja, em função de diferentes condições de temperatura, nesta pesquisa construímos o diagrama denominado como Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}.
 
 
-Em \citeonline{Fabry1995}, é mostrado que processos como a agregação, acreção e colisão coalescência, podem ser estudados em função da espessura da camada de derretimento e flutuações nos valores do fator de refletividade no perfil atmosférico. 
 
-Pois, sendo o fator de refletividade do radar proporcional ao diâmetro das gotas no volume iluminado elevado a 6 potência, os processos de crescimento de flocos de neves, granizo e gotas, são marcados por aumentos abruptos no fator de refletividade do radar. 
+\subsection{Distribuições de probabilidades com a temperatura}
+A distribuição de probabilidade da precipitação com a altitude associa-se com o desenvolvimento vertical, porém o tipo de hidrometeoro de determinada altitude é função da temperatura e da razão de saturação naquela altura \cite{Takahashi1978,Saunders1999}. 
 
-E considerando um regime de precipitação estratiforme, o qual é muito mais governado por processos de agregação do que acreção, será observado um aumento acentuado no fator de refletividade do radar em torno da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve. \simbolo{name={$^{\circ}$C},description={Grau Celcius}} Como o índice de refração de micro-ondas no gelo é de $\sim$0,1 e na água líquida de $\sim$0,9, a transição de fase sólida para líquida representa um aumento de 7 dBZ na potência do sinal do radar.
-
-
-% durante o caminho que a precipitação percorre até a superfície ou temperaturas acima de 0°C.
-%Na figura \ref{fabry}, \citeonline{Fabry1995}
-%e o trabalho de 
-%\begin{figure}[hbp]
-%  \centering{
-%  \subfloat[\cite{Fabry1995}]{{\includegraphics[scale=0.25]{img/ilustracoes/fabry}} \label{fabry}}
-%  \subfloat[\cite{Takahashi2002}]{{\includegraphics[scale=0.35]{img/ilustracoes/takahashi}} \label{taka}}
-%  }
-%\caption{Fabry Taka}
-%\label{fabyTaka} 
-%\end{figure} 
-
-Em um ambiente de precipitação convectiva a transição de fase é perturbada por correntes ascendentes e os processos de agregação, acreção e colisão coalescência, os quais são os maiores responsáveis pelo aumento do diâmetro dos hidrometeoros de nuvem, tornam-se mais eficientes. 
-
-A mudança do índice de refração da água não ocorre em torno de 0 $^{\circ}$C, pois no ambiente convectivo teremos água super-resfriada em temperaturas de -15 $^{\circ}$C, o que intensifica o processo de acreção podendo gerar gelo sólido que cai até a superfície.
-
-Portanto, quanto maior a espessura da camada de derretimento, podemos pressupor que, o ambiente terá maior intensidade convectiva, pois terá processos de crescimento de granizo mais ativos.
-
-Consequentemente, a taxa de raios associa-se com a intensidade convectiva devido a acreção\footnote{A acreção é o processo de \textit{rimming} descrito no trabalho de \citeonline{Takahashi1978}.} ser o processo mais eficiente de eletrificação de nuvens, principalmente quando há presença de flocos de neve embebidos na região de fase mista \cite{Takahashi1978,Takahashi2002}. 
-
-Então, objetivando uma análise dos processos de crescimento de hidrometeoros no perfil atmosférico e na mesma óptica de trabalhos como \citeonline{Takahashi1978,Saunders1999,Takahashi2002,avila2009}, ou seja, em função de diferentes condições de temperatura, nesta pesquisa construímos o diagrama denominado como Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}.
+Objetivando uma análise dos processos de crescimento de hidrometeoros no perfil atmosférico, na mesma óptica de trabalhos como \citeonline{Takahashi1978,Saunders1999,Takahashi2002,avila2009}, ou seja, em função de diferentes condições de temperatura e valores de $Z_c$, nesta pesquisa, foi  construído o  Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}. 
 
 Nos CFTDs, os níveis de temperatura não correspondem as condições controladas em laboratório, e sim às variações de temperatura do perfil atmosférico. 
 
-Foram utilizados os dados de reanálises II do NCEP entre 1998 e 2011, mais especificamente os dados em 17 níveis de pressão, de altura geopotencial e temperatura \cite{kanamitsu}. 
+Foram utilizados os dados de reanálises (R2) do NCEP-DOE  entre 1998 e 2011, mais especificamente os dados em 17 níveis de pressão, de altura geopotencial e temperatura \cite{kanamitsu}. 
 
-Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo TRMM, foram extraídos. Utilizando interpolação de dados, os 80 níveis de altitudes referentes as observações do PR, foram convertidos em 80 níveis de temperatura.
+Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo VIRS, foram extraídos. A partir dos 17 níveis verticais das R2, os 80 níveis de temperaturas associados aos 80 níveis de altitude das observações do PR foram obtidos por interpolação por método de mínimos quadrados.
 
 Desta maneira, obteve-se a função $f_{pdf}(x,y)$, cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de temperaturas estimados a partir das reanálises II do NCEP. A função $f_{pdf}(x,y)$ de $Z_c$ por temperatura, foi representada por uma matriz bidimensional com a granularidade de 1 dBZ para cada 2 $^{\circ}$C. Nos CFTDs, os níveis superiores e inferiores foram definidos para temperaturas entre 20° C e -50° C.
 
