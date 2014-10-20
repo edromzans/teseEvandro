@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2014.10.8)  17 OCT 2014 12:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.10.8)  20 OCT 2014 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -212,10 +212,18 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
@@ -241,22 +249,21 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yc=\dimen123
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count102
-\c@pgf@countb=\count103
-\c@pgf@countc=\count104
-\c@pgf@countd=\count105
+\c@pgf@counta=\count103
+\c@pgf@countb=\count104
+\c@pgf@countc=\count105
+\c@pgf@countd=\count106
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-dvips.def on input line 900.
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-dvips.def
-File: pgfsys-dvips.def 2008/04/03  (rcs-revision 1.20)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
-File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
-\pgf@objectcount=\count106
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
@@ -272,8 +279,9 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -456,12 +464,8 @@ File: tikzlibraryfadings.code.tex 2009/11/15 v2.10 (rcs-revision 1.2)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2008/02/07 v2.10 (rcs-revision 1.3)
-
-
-Package pgf Warning: Your graphic driver pgfsys-dvips.def does not support fadi
-ngs. This warning is given only once on input line 31.
-
-))) (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+)))
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 \arrowsize=\dimen159
 )
@@ -600,15 +604,15 @@ Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -621,7 +625,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -688,17 +692,10 @@ LaTeX Info: Redefining \pageref on input line 5847.
 \c@Hfootnote=\count141
 )
 
-Package hyperref Message: Driver (default): hdvips.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2012/05/13 v6.82q Hyperref driver for dvips
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2012/05/13 v6.82q Hyperref definitions for pdfmark specials
-\pdf@docset=\toks34
-\pdf@box=\box63
-\pdf@toks=\toks35
-\pdf@defaulttoks=\toks36
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
 \Fld@listcount=\count142
 \c@bookmark@seq@number=\count143
 
@@ -708,7 +705,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip55
-))
+)
 (/usr/share/texmf/tex/latex/abntex/abntcite.sty
 (/usr/share/texmf/tex/latex/abntex/cvs-id.def)
 Package: abntcite 2006/04/25 v1.30 Chamadas de referencias no texto (NBR10520, 
@@ -726,7 +723,7 @@ File: nbr10520-2002.def 2006/04/25 v1.4 Definicoes para abntcite (NBR10520:2002
 \biblabelsep=\skip58
 LaTeX Info: Redefining \newblock on input line 466.
 LaTeX Info: Redefining \cite on input line 493.
-\ABCItoken=\toks37
+\ABCItoken=\toks34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
@@ -764,8 +761,8 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \c@r@tfl@t=\count154
 \rotFPtop=\skip64
 \rotFPbot=\skip65
-\rot@float@box=\box64
-\rot@mess@toks=\toks38
+\rot@float@box=\box63
+\rot@mess@toks=\toks35
 )
 (/usr/share/texlive/texmf-dist/tex/latex/marvosym/marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
@@ -773,8 +770,8 @@ Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/remreset.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count155
-\lst@gtempboxa=\box65
-\lst@token=\toks39
+\lst@gtempboxa=\box64
+\lst@token=\toks36
 \lst@length=\count156
 \lst@currlwidth=\dimen179
 \lst@column=\count157
@@ -789,7 +786,7 @@ Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count161
 \lst@skipnumbers=\count162
-\lst@framebox=\box66
+\lst@framebox=\box65
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
@@ -803,8 +800,8 @@ Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks40
-\XKV@tempa@toks=\toks41
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
 \XKV@depth=\count163
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
@@ -817,16 +814,16 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box67
+\collectedbox=\box66
 )
 \tc@llx=\dimen183
 \tc@lly=\dimen184
 \tc@urx=\dimen185
 \tc@ury=\dimen186
-Package trimclip Info: Using driver 'tc-dvips.def'.
+Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-dvips.def
-File: tc-dvips.def 2012/05/13 v1.0 Clipping driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen187
 \adjbox@Height=\dimen188
@@ -839,7 +836,7 @@ Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box68
+\@vwid@box=\box67
 \sift@deathcycles=\count165
 \@vwid@loff=\dimen191
 \@vwid@roff=\dimen192
@@ -855,21 +852,13 @@ Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2012/04/03 v0.4s Pdfpages driver for pdfTeX (AM)
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
-File: ppnull.def 2012/04/03 v0.4s Pdfpages dummy driver (AM)
-
-
-Package pdfpages Warning: I will use a dummy \includepdf command
-(pdfpages)                which will NOT insert any pages, because
-(pdfpages)                you are producing DVI output.
-
-))
-\AM@pagebox=\box69
-\AM@toc@title=\toks42
+)
+\AM@pagebox=\box68
+\AM@toc@title=\toks39
 \c@AM@survey=\count166
-\AM@templatesizebox=\box70
-) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+\AM@templatesizebox=\box69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
@@ -879,7 +868,7 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen194
 \extrarowheight=\dimen195
-\NC@list=\toks43
+\NC@list=\toks40
 \extratabsurround=\skip66
 \backup@length=\skip67
 )
@@ -889,11 +878,11 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@target=\dimen199
 \TX@delta=\dimen200
 \TX@cols=\count167
-\TX@ftn=\toks44
+\TX@ftn=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks45
+\everycr=\toks42
 \minrowclearance=\skip68
 ) (./glossary.sty
 Package: glossary 2006/07/20 2.4 (NLCT)
@@ -907,15 +896,15 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTpost=\skip72
 \LTchunksize=\count169
 \LTcapwidth=\dimen201
-\LT@head=\box71
-\LT@firsthead=\box72
-\LT@foot=\box73
-\LT@lastfoot=\box74
+\LT@head=\box70
+\LT@firsthead=\box71
+\LT@foot=\box72
+\LT@lastfoot=\box73
 \LT@cols=\count170
 \LT@rows=\count171
 \c@LT@tables=\count172
 \c@LT@chunks=\count173
-\LT@p@ftn=\toks46
+\LT@p@ftn=\toks43
 )
 \descriptionwidth=\skip73
 \istfile=\write4
@@ -970,8 +959,8 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 LaTeX Warning: Unused global option(s):
     [appendix=nobox].
 
-(./teseEvandro.aux (./capitulos/Introducao.aux) (./capitulos/Metodologia.aux)
-(./capitulos/MarcoDasTempestadesEletricas.aux) (./capitulos/Severidade.aux))
+(./teseEvandro.aux (./capitulos/Introducao.aux)
+(./capitulos/MarcoDasTempestadesEletricas.aux))
 \openout1 = `teseEvandro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -998,6 +987,34 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 ABD: EveryShipout initializing macros
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count174
+\scratchdimen=\dimen202
+\scratchbox=\box74
+\nofMPsegments=\count175
+\nofMParguments=\count176
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count177
+\MPscratchDim=\dimen203
+\MPnumerator=\count178
+\makeMPintoPDFobject=\count179
+\everyMPtoPDFconversion=\toks45
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box75
 Package hyperref Info: Link coloring OFF on input line 109.
 
@@ -1007,7 +1024,7 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count174
+\c@section@level=\count180
 )
 LaTeX Info: Redefining \ref on input line 109.
 LaTeX Info: Redefining \pageref on input line 109.
@@ -1017,20 +1034,17 @@ LaTeX Info: Redefining \nameref on input line 109.
 \@outlinefile=\write7
 \openout7 = `teseEvandro.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
+
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count175
+\c@lstlisting=\count181
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 118.
 
 
@@ -1073,394 +1087,356 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 \openout4 = `teseEvandro.ist'.
 
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 3375) in paragraph at lines 119--119
 []\OT1/lmr/m/n/12 Tese ao de-par-ta-mento de Ci^encias At-
  []
 
-[1] [2
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119 \folhaderosto
+                    [1]pdfTeX warning (ext4): destination with the same identif
+ier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.135 \pretextualchapter
+                        {AGRADECIMENTOS} [2
 
-] [3
+]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \begin{resumo}
+                     [3
 
-] [4
-
-
-] [5
-
-
-] (./teseEvandro.lof
-Overfull \hbox (146.55128pt too wide) in paragraph at lines 3--3
- [][] [] [][]  
- []
-
-
-Overfull \hbox (5.41498pt too wide) in paragraph at lines 12--12
- [][] [] [][]  
- []
-
-
-Overfull \hbox (467.58757pt too wide) in paragraph at lines 15--15
- [][] [] [][]  
- []
-
-
-Overfull \hbox (787.70772pt too wide) in paragraph at lines 18--18
- [][] [] [][]  
- []
+]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \end{resumo}
+                   [4
 
 
-Overfull \hbox (1606.22241pt too wide) in paragraph at lines 19--19
- [][] [] [][]  
- []
+]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 \end{abstract}
+                     [5
 
 
-Overfull \hbox (499.92964pt too wide) in paragraph at lines 20--20
- [][] [] [][]  
- []
-
-
-Overfull \hbox (396.85706pt too wide) in paragraph at lines 21--21
- [][] [] [][]  
- []
-
-
-Overfull \hbox (20.3896pt too wide) in paragraph at lines 33--33
- [][] [] [][]  
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 36.
-
-Overfull \hbox (580.84645pt too wide) in paragraph at lines 36--36
- [][] [] [][]  
- []
-
-
-Overfull \hbox (93.26036pt too wide) in paragraph at lines 42--42
- [][] [] [][]  
- []
-
-
-Overfull \hbox (72.38036pt too wide) in paragraph at lines 43--43
- [][] [] [][]  
- []
-
-
-Overfull \hbox (80.2092pt too wide) in paragraph at lines 44--44
- [][] [] [][]  
- []
-
-[6
-
-]
-Overfull \hbox (292.97038pt too wide) in paragraph at lines 50--50
- [][] [] [][]  
- []
-
-
-Overfull \hbox (291.43849pt too wide) in paragraph at lines 51--51
- [][] [] [][]  
- []
-
-
-Overfull \hbox (412.91026pt too wide) in paragraph at lines 52--52
- [][] [] [][]  
- []
-
-
-Overfull \hbox (405.08142pt too wide) in paragraph at lines 55--55
- [][] [] [][]  
- []
-
-
-Overfull \hbox (410.9564pt too wide) in paragraph at lines 58--58
- [][] [] [][]  
- []
-
-
-Overfull \hbox (410.9564pt too wide) in paragraph at lines 61--61
- [][] [] [][]  
- []
-
-)
+] (./teseEvandro.lof)
 \tf@lof=\write8
 \openout8 = `teseEvandro.lof'.
 
- [7] (./teseEvandro.lot
-Overfull \hbox (430.86284pt too wide) in paragraph at lines 2--2
- [][] [] [][]  
- []
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 \listoftables
+                    [6
 
-
-Overfull \hbox (236.82602pt too wide) in paragraph at lines 3--3
- [][] [] [][]  
+] (./teseEvandro.lot
+Overfull \hbox (7.05008pt too wide) in paragraph at lines 3--3
+ [][] [][]\OT1/lmr/m/n/12 Total de tem-pes-ta-des el^^Setricas ob-ser-va-das en
+-tre 1998-2011, para cada per^^S^^Podo 
  []
 
 )
 \tf@lot=\write9
 \openout9 = `teseEvandro.lot'.
 
- [8
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 \cleardoublepage
+                       [7
 
-] (./teseEvandro.toc
-Overfull \hbox (41.48346pt too wide) in paragraph at lines 18--18
- [][] [] [][]  
- []
-
-
-Overfull \hbox (8.74832pt too wide) in paragraph at lines 19--19
- [] [] []  
- []
-
-[9
-
-
-]
-Overfull \hbox (25.58408pt too wide) in paragraph at lines 25--25
- [][] [] [][]  
- []
-
-)
+] (./teseEvandro.toc)
 \tf@toc=\write10
 \openout10 = `teseEvandro.toc'.
 
- [10]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.162 \tableofcontents
+                       [8
+
+
+]
 \@siglafile=\write11
 \openout11 = `teseEvandro.sig'.
 
 
 Writing sigla file teseEvandro.sig 
-(./teseEvandro.sgl [11
-
-
-
-])
+(./teseEvandro.sgl)
 \@simbolofile=\write12
 \openout12 = `teseEvandro.sim'.
 
 
 Writing simbolo file teseEvandro.sim 
-[12] (./teseEvandro.sbl
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
-[]|\OT1/lmr/m/n/12 Taxa de raios por tempo por ^^Sarea
- []
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \cleardoublepage
+                       [9
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 59--61
-[]|\OT1/lmr/m/n/12 Nos di-a-gra-mas, CFAD, CC-FAD, CFTD
- []
+
+] (./teseEvandro.sbl)pdfTeX warning (ext4): destination with the same identifie
+r (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 \include{capitulos/Introducao}
+                                     [10
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 59--61
-\OT1/lmr/m/n/12 e CCFTD, re-pre-sen-tam: o n^^Sumero de
- []
+]
+\openout2 = `capitulos/Introducao.aux'.
 
-
-Underfull \hbox (badness 1067) in paragraph at lines 59--61
-\OT1/lmr/m/n/12 ocorr^encia de $\OML/lmm/m/it/12 Z[]$ \OT1/lmr/m/n/12 no n^^S^^
-Pvel de al-ti-tude de
- []
-
-[13
-
-
-]) [14]
-\openout2 = `capitulos/Metodologia.aux'.
-
- (./capitulos/Metodologia.tex
+ (./capitulos/Introducao.tex
 Cap\'{\i }tulo 1.
-[15
-
-
-]
-
-! LaTeX Error: File `img/TRMM/PRTRMM' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...degraphics[height=11.1cm]{img/TRMM/PRTRMM}
-                                                  }}
-? 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 51.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 51.
-[16]
-
-! LaTeX Error: File `img/TRMM/time0' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...t=3.3cm]{img/TRMM/time0}} \label{evgrfla}}
-                                                  
-? 
-
-Overfull \hbox (30.07529pt too wide) in paragraph at lines 64--64
-[]\OT1/lmr/m/n/10.95 (a)|| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]
- []
-
-
-! LaTeX Error: File `img/TRMM/time100' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 ...graphics[height=3.3cm]{img/TRMM/time100}}}
-                                                  
-? 
-
-Overfull \hbox (34.60016pt too wide) in paragraph at lines 65--65
-[]\OT1/lmr/m/n/10.95 (b)|| 
- []
-
-
-! LaTeX Error: File `img/TRMM/time350' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67 ...raphics[height=3.3cm]{img/TRMM/time350}} }
-                                                  
-? 
-
-Overfull \hbox (29.46703pt too wide) in paragraph at lines 67--67
-[]\OT1/lmr/m/n/10.95 (c)|| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]
- []
-
-
-! LaTeX Error: File `img/TRMM/time400' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 ...raphics[height=3.3cm]{img/TRMM/time400}} }
-                                                  
-? 
-
-Overfull \hbox (30.68355pt too wide) in paragraph at lines 68--68
-[]\OT1/lmr/m/n/10.95 (d)|| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-[]
- []
-
-
-! LaTeX Error: File `img/TRMM/time700' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ...3.3cm]{img/TRMM/time700}} \label{evgrfle}}
-                                                  
-? 
-
-Overfull \hbox (29.46703pt too wide) in paragraph at lines 70--70
-[]\OT1/lmr/m/n/10.95 (e)|| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]
- []
-
-[17]
-Overfull \hbox (49.25835pt too wide) in paragraph at lines 106--107
-\OT1/lmr/m/n/12 tir do ser-vi-dor de FTP da NASA (ftp://disc2.nascom.nasa.gov) 
-e do NCEP (ftp://ftp.cdc.noaa.gov). 
- []
-
-[18]
-Overfull \hbox (18.2841pt too wide) in paragraph at lines 163--164
-[]\OT1/lmr/m/n/12 Inicialmente fo-ram iden-ti-fi-ca-das 154,189 tem-pes-ta-des 
-el^^Setricas, pelo ins-tru-mento num^^Serico
- []
-
-
-LaTeX Warning: Citation `Maddox1980' on page 19 undefined on input line 165.
-
-[19]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 181.
-
- (/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 181.
- [20]
-File: img/grids/passagens_virs_1998-2011.ps Graphic file (type eps)
-
-<img/grids/passagens_virs_1998-2011.ps>
-Overfull \hbox (6.80579pt too wide) in paragraph at lines 216--217
- [][] 
- []
-
-[21]
-File: img/grids/vt_trmm.ps Graphic file (type eps)
- <img/grids/vt_trmm.ps>
-Overfull \hbox (6.80579pt too wide) in paragraph at lines 230--231
- [][] 
- []
-
-[22]
-File: img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.ps Graphic file
- (type eps)
- <img/grids/densEspacial_19982011acumuladoTaxaFlashPolyfill.ps>
-Overfull \hbox (4.29771pt too wide) in paragraph at lines 252--253
- [][] 
- []
-
-File: img/grids/densEspacial19982011acumuladoTempestadesPolyfill.ps Graphic fil
-e (type eps)
-<img/grids/densEspacial19982011acumuladoTempestadesPolyfill.ps> [23] [24]
-[25]
-Overfull \hbox (15.04251pt too wide) in paragraph at lines 317--318
-\OT1/lmr/m/n/12 tem-pe-ra-tura e da raz~ao de sa-tura^^Xc~ao na-quela al-tura (
-[][][][], [][][][]; [][][][],
- []
-
-) [26] (./teseEvandro.bbl [27
-
-
-
-]
-Overfull \hbox (219.82797pt too wide) in paragraph at lines 110--119
-[][][][]\OT1/lmr/m/n/12 . 
- []
-
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2012/04/20 UCS: Unicode data U+2000..U+20FF
-)
-Underfull \hbox (badness 1048) in paragraph at lines 175--182
-[]\OT1/lmr/m/n/12 NASA. \OT1/lmr/bx/n/12 TRMM Pro-duct Le-vel 2A Pre-ci-pi-ta-t
-ion Ra- 
+) [11
+
+
+]
+Overfull \hbox (2.61873pt too wide) in paragraph at lines 24--25
+[]\OT1/lmr/m/n/12 Um es-tudo so-bre a mor-fo-lo-gia de sis-te-mas in-di-vi-du-a
+l-mente, para a regi~ao Sul- amaz^onia
+ []
+
+[12]
+Overfull \hbox (5.63904pt too wide) in paragraph at lines 28--29
+[]\OT1/lmr/m/n/12 Morales C. A. e Anag-nos-tou E. M., (2002) de-sen-vol-ve-ram 
+um al-go-ritmo hidro-estimador
+ []
+
+[13]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 81.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 111.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 111.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 111.
+) [14] [15]
+\openout2 = `capitulos/MarcoDasTempestadesEletricas.aux'.
+
+ (./capitulos/MarcoDasTempestadesEletricas.tex
+Cap\'{\i }tulo 2.
+<img/ciclos/ciclodiurno19982011total.pdf, id=238, 226.8475pt x 141.52875pt>
+File: img/ciclos/ciclodiurno19982011total.pdf Graphic file (type pdf)
+
+<use img/ciclos/ciclodiurno19982011total.pdf>
+Package pdftex.def Info: img/ciclos/ciclodiurno19982011total.pdf used on input 
+line 12.
+(pdftex.def)             Requested size: 228.04459pt x 142.26378pt.
+
+<img/ciclos/cicloanual19982011total.pdf, id=239, 226.8475pt x 141.52875pt>
+File: img/ciclos/cicloanual19982011total.pdf Graphic file (type pdf)
+
+<use img/ciclos/cicloanual19982011total.pdf>
+Package pdftex.def Info: img/ciclos/cicloanual19982011total.pdf used on input l
+ine 13.
+(pdftex.def)             Requested size: 228.04459pt x 142.26378pt.
+
+Overfull \hbox (8.67828pt too wide) in paragraph at lines 12--15
+ [][][][] 
+ []
+
+[16
+
+
+
+ <./img/ciclos/ciclodiurno19982011total.pdf> <./img/ciclos/cicloanual19982011to
+tal.pdf>]
+<img/ciclos/ciclodiurno10x1019982011localtime.pdf, id=254, 255.95625pt x 223.83
+624pt>
+File: img/ciclos/ciclodiurno10x1019982011localtime.pdf Graphic file (type pdf)
+ <use img/ciclos/ciclodiurno10x1019982011localtime.pdf>
+Package pdftex.def Info: img/ciclos/ciclodiurno10x1019982011localtime.pdf used 
+on input line 29.
+(pdftex.def)             Requested size: 439.27538pt x 384.1122pt.
+ [17 <./img/ciclos/ciclodiurno10x1019982011localtime.pdf>] [18]
+<img/ciclos/cicloanual10x1019982011localtime.pdf, id=274, 255.95625pt x 223.836
+24pt>
+File: img/ciclos/cicloanual10x1019982011localtime.pdf Graphic file (type pdf)
+ <use img/ciclos/cicloanual10x1019982011localtime.pdf>
+Package pdftex.def Info: img/ciclos/cicloanual10x1019982011localtime.pdf used o
+n input line 57.
+(pdftex.def)             Requested size: 439.27538pt x 384.1122pt.
+ [19 <./img/ciclos/cicloanual10x1019982011localtime.pdf>] [20]
+
+LaTeX Warning: Reference `metodoPass' on page 21 undefined on input line 138.
+
+
+LaTeX Warning: Reference `dete' on page 21 undefined on input line 138.
+
+
+LaTeX Warning: Reference `defl' on page 21 undefined on input line 138.
+
+[21]
+<img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png, id=
+315, 3559.2975pt x 2991.175pt>
+File: img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png
+ Graphic file (type png)
+
+<use img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011TotalTemp
+estadesPolyfill.png used on input line 146.
+(pdftex.def)             Requested size: 457.02232pt x 384.1122pt.
+
+Overfull \hbox (1.77821pt too wide) in paragraph at lines 146--147
+ [][] 
  []
 
 
-Overfull \hbox (111.65347pt too wide) in paragraph at lines 175--182
-[][][][]\OT1/lmr/m/n/12 . 
+<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=316, 255.956
+25pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf Graphic fil
+e (type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyf
+ill.pdf used on input line 154.
+(pdftex.def)             Requested size: 455.6241pt x 384.1122pt.
+
+
+LaTeX Warning: Reference `tempesRaios' on page 22 undefined on input line 165.
+
+[22 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pn
+g>]
+<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=331, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
+l.pdf used on input line 176.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=333, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfil
+l.pdf used on input line 177.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+Overfull \hbox (6.08075pt too wide) in paragraph at lines 176--178
+ [][][][] 
  []
 
-[28] [29]) [30]
+
+<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=335, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
+l.pdf used on input line 179.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=337, 255.95625
+pt x 215.80624pt>
+File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf Graphic file 
+(type pdf)
+
+<use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf>
+Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfil
+l.pdf used on input line 180.
+(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+
+Overfull \hbox (6.08075pt too wide) in paragraph at lines 179--182
+ [][][][] 
+ []
+
+[23 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf> <./img/Taxa
+Flash/densEspacial_19982011mamTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspac
+ial_19982011jjaTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_19982011son
+TaxaFlashPolyfill.pdf>] [25]
+<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=40
+3, 3559.2975pt x 2991.175pt>
+File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png G
+raphic file (type png)
+
+<use img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
+tadesPolyfill.png used on input line 229.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+
+<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=40
+5, 3559.2975pt x 2991.175pt>
+File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png G
+raphic file (type png)
+
+<use img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011mamTempes
+tadesPolyfill.png used on input line 230.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+
+<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=40
+7, 3559.2975pt x 2991.175pt>
+File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png G
+raphic file (type png)
+
+<use img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011jjaTempes
+tadesPolyfill.png used on input line 232.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+
+<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=40
+9, 3559.2975pt x 2991.175pt>
+File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png G
+raphic file (type png)
+
+<use img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>
+Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011sonTempes
+tadesPolyfill.png used on input line 233.
+(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+
+[26 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
+ <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png> <.
+/img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png> <./im
+g/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>]
+<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=427, 4270.
+95625pt x 3589.41pt>
+File: img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png Graphic f
+ile (type png)
+
+<use img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>
+Package pdftex.def Info: img/eficiencia/densEspacial_19982011totalEficienciaPol
+yfill.png used on input line 249.
+(pdftex.def)             Requested size: 457.03343pt x 384.1122pt.
+
+Overfull \hbox (1.78932pt too wide) in paragraph at lines 249--250
+ [][] 
+ []
+
+) [27 <./img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>]
+(./teseEvandro.bbl [28
+
+
+
+]) [29]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
@@ -1468,18 +1444,13 @@ No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
-(./teseEvandro.aux (./capitulos/Metodologia.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 199.
+(./teseEvandro.aux (./capitulos/Introducao.aux)
+(./capitulos/MarcoDasTempestadesEletricas.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
+Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
+(rerunfilecheck)             Checksum: 8411CB94933C41E796228F0854F9E9FF;689.
 
-
-Package rerunfilecheck Warning: File `teseEvandro.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `teseEvandro.out':
-(rerunfilecheck)             Before: 26AF95EB15A4A1B4D1F61D6096B57280;2528
-(rerunfilecheck)             After:  4276D879E7533CF6F86A41FC785407FD;1526.
 
 LaTeX Warning: There were undefined references.
 
@@ -1489,12 +1460,28 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 21523 strings out of 495040
- 363998 string characters out of 3181272
- 493838 words of memory out of 3000000
- 24117 multiletter control sequences out of 15000+200000
- 84285 words of font info for 93 fonts, out of 3000000 for 9000
+ 21959 strings out of 495039
+ 373740 string characters out of 3181249
+ 541349 words of memory out of 3000000
+ 24459 multiletter control sequences out of 15000+200000
+ 70854 words of font info for 88 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 56i,14n,86p,928b,539s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,14n,86p,1070b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
+lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on teseEvandro.pdf (30 pages, 5407183 bytes).
+PDF statistics:
+ 512 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on teseEvandro.dvi (31 pages, 146812 bytes).
