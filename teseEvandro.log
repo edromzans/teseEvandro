@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.10.8)  20 OCT 2014 16:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.10.8)  24 OCT 2014 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1234,209 +1234,203 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  (./capitulos/MarcoDasTempestadesEletricas.tex
 Cap\'{\i }tulo 2.
-<img/ciclos/ciclodiurno19982011total.pdf, id=238, 226.8475pt x 141.52875pt>
+
+Overfull \hbox (21.80821pt too wide) in paragraph at lines 7--8
+[]\OT1/lmr/m/n/12 Utilizando a base de da-dos de tem-pes-ta-des el^^Setricas co
+ns-tru^^S^^Pda nesta pes-quisa, determinou-
+ []
+
+<img/ciclos/ciclodiurno19982011total.pdf, id=245, 226.8475pt x 141.52875pt>
 File: img/ciclos/ciclodiurno19982011total.pdf Graphic file (type pdf)
 
 <use img/ciclos/ciclodiurno19982011total.pdf>
 Package pdftex.def Info: img/ciclos/ciclodiurno19982011total.pdf used on input 
-line 12.
-(pdftex.def)             Requested size: 228.04459pt x 142.26378pt.
-
-<img/ciclos/cicloanual19982011total.pdf, id=239, 226.8475pt x 141.52875pt>
-File: img/ciclos/cicloanual19982011total.pdf Graphic file (type pdf)
-
-<use img/ciclos/cicloanual19982011total.pdf>
-Package pdftex.def Info: img/ciclos/cicloanual19982011total.pdf used on input l
-ine 13.
-(pdftex.def)             Requested size: 228.04459pt x 142.26378pt.
-
-Overfull \hbox (8.67828pt too wide) in paragraph at lines 12--15
- [][][][] 
- []
-
-[16
+line 11.
+(pdftex.def)             Requested size: 342.06688pt x 213.39566pt.
+ [16
 
 
 
- <./img/ciclos/ciclodiurno19982011total.pdf> <./img/ciclos/cicloanual19982011to
-tal.pdf>]
+ <./img/ciclos/ciclodiurno19982011total.pdf>]
 <img/ciclos/ciclodiurno10x1019982011localtime.pdf, id=254, 255.95625pt x 223.83
 624pt>
 File: img/ciclos/ciclodiurno10x1019982011localtime.pdf Graphic file (type pdf)
  <use img/ciclos/ciclodiurno10x1019982011localtime.pdf>
 Package pdftex.def Info: img/ciclos/ciclodiurno10x1019982011localtime.pdf used 
-on input line 29.
+on input line 24.
 (pdftex.def)             Requested size: 439.27538pt x 384.1122pt.
  [17 <./img/ciclos/ciclodiurno10x1019982011localtime.pdf>] [18]
-<img/ciclos/cicloanual10x1019982011localtime.pdf, id=274, 255.95625pt x 223.836
+<img/ciclos/cicloanual19982011total.pdf, id=280, 226.8475pt x 141.52875pt>
+File: img/ciclos/cicloanual19982011total.pdf Graphic file (type pdf)
+
+<use img/ciclos/cicloanual19982011total.pdf>
+Package pdftex.def Info: img/ciclos/cicloanual19982011total.pdf used on input l
+ine 60.
+(pdftex.def)             Requested size: 342.06688pt x 213.39566pt.
+ [19 <./img/ciclos/cicloanual19982011total.pdf>]
+<img/ciclos/cicloanual10x1019982011localtime.pdf, id=290, 255.95625pt x 223.836
 24pt>
 File: img/ciclos/cicloanual10x1019982011localtime.pdf Graphic file (type pdf)
  <use img/ciclos/cicloanual10x1019982011localtime.pdf>
 Package pdftex.def Info: img/ciclos/cicloanual10x1019982011localtime.pdf used o
-n input line 57.
+n input line 78.
 (pdftex.def)             Requested size: 439.27538pt x 384.1122pt.
- [19 <./img/ciclos/cicloanual10x1019982011localtime.pdf>] [20]
+ [20] [21 <./img/ciclos/cicloanual10x1019982011localtime.pdf>] [22]
 
-LaTeX Warning: Reference `metodoPass' on page 21 undefined on input line 138.
-
-
-LaTeX Warning: Reference `dete' on page 21 undefined on input line 138.
+LaTeX Warning: Reference `metodoPass' on page 23 undefined on input line 161.
 
 
-LaTeX Warning: Reference `defl' on page 21 undefined on input line 138.
+LaTeX Warning: Reference `dete' on page 23 undefined on input line 161.
 
-[21]
+
+LaTeX Warning: Reference `defl' on page 23 undefined on input line 161.
+
+
 <img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png, id=
-315, 3559.2975pt x 2991.175pt>
+333, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png
  Graphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011TotalTemp
-estadesPolyfill.png used on input line 146.
-(pdftex.def)             Requested size: 457.02232pt x 384.1122pt.
+estadesPolyfill.png used on input line 167.
+(pdftex.def)             Requested size: 457.06279pt x 384.1122pt.
 
-Overfull \hbox (1.77821pt too wide) in paragraph at lines 146--147
+Overfull \hbox (1.81868pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
 
-<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf, id=316, 255.956
-25pt x 215.80624pt>
-File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf Graphic fil
-e (type pdf)
+<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png, id=334, 6761.26
+pt x 5681.225pt>
+File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png Graphic fil
+e (type png)
 
-<use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>
+<use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyf
-ill.pdf used on input line 154.
-(pdftex.def)             Requested size: 455.6241pt x 384.1122pt.
+ill.png used on input line 174.
+(pdftex.def)             Requested size: 457.03596pt x 384.1122pt.
 
+Overfull \hbox (1.79185pt too wide) in paragraph at lines 174--175
+ [][] 
+ []
 
-LaTeX Warning: Reference `tempesRaios' on page 22 undefined on input line 165.
-
-[22 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pn
+[23 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pn
 g>]
-<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf, id=331, 255.95625
-pt x 215.80624pt>
-File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf Graphic file 
-(type pdf)
 
-<use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf>
+LaTeX Warning: Reference `tempesRaios' on page 24 undefined on input line 185.
+
+[24 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>]
+<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png, id=355, 6761.26pt
+ x 5681.225pt>
+File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png Graphic file 
+(type png)
+
+<use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
-l.pdf used on input line 176.
-(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+l.png used on input line 196.
+(pdftex.def)             Requested size: 220.36768pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf, id=333, 255.95625
-pt x 215.80624pt>
-File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf Graphic file 
-(type pdf)
+<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png, id=357, 6761.26pt
+ x 5681.225pt>
+File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png Graphic file 
+(type png)
 
-<use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.pdf>
+<use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfil
-l.pdf used on input line 177.
-(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
+l.png used on input line 197.
+(pdftex.def)             Requested size: 220.36768pt x 184.9429pt.
 
-Overfull \hbox (6.08075pt too wide) in paragraph at lines 176--178
- [][][][] 
- []
-
-
-<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf, id=335, 255.95625
+<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png, id=359, 255.95625
 pt x 215.80624pt>
-File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf Graphic file 
-(type pdf)
+File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png Graphic file 
+(type png)
 
-<use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.pdf>
+<use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
-l.pdf used on input line 179.
+l.png used on input line 199.
 (pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf, id=337, 255.95625
-pt x 215.80624pt>
-File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf Graphic file 
-(type pdf)
+<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png, id=361, 6761.26pt
+ x 5681.225pt>
+File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png Graphic file 
+(type png)
 
-<use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.pdf>
+<use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfil
-l.pdf used on input line 180.
-(pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
-
-Overfull \hbox (6.08075pt too wide) in paragraph at lines 179--182
- [][][][] 
- []
-
-[23 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.pdf> <./img/Taxa
-Flash/densEspacial_19982011mamTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspac
-ial_19982011jjaTaxaFlashPolyfill.pdf> <./img/TaxaFlash/densEspacial_19982011son
-TaxaFlashPolyfill.pdf>] [25]
-<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=40
-3, 3559.2975pt x 2991.175pt>
+l.png used on input line 200.
+(pdftex.def)             Requested size: 220.36768pt x 184.9429pt.
+ [25 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png> <./img/Tax
+aFlash/densEspacial_19982011mamTaxaFlashPolyfill.png> <./img/TaxaFlash/densEspa
+cial_19982011jjaTaxaFlashPolyfill.png (PNG copy)> <./img/TaxaFlash/densEspacial
+_19982011sonTaxaFlashPolyfill.png>] [26]
+<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=41
+0, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
-tadesPolyfill.png used on input line 229.
-(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+tadesPolyfill.png used on input line 249.
+(pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=40
-5, 3559.2975pt x 2991.175pt>
+<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=41
+2, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011mamTempes
-tadesPolyfill.png used on input line 230.
-(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+tadesPolyfill.png used on input line 250.
+(pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=40
-7, 3559.2975pt x 2991.175pt>
+<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=41
+4, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011jjaTempes
-tadesPolyfill.png used on input line 232.
-(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+tadesPolyfill.png used on input line 252.
+(pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=40
-9, 3559.2975pt x 2991.175pt>
+<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=41
+6, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011sonTempes
-tadesPolyfill.png used on input line 233.
-(pdftex.def)             Requested size: 220.55469pt x 184.9429pt.
+tadesPolyfill.png used on input line 253.
+(pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-[26 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
- <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png> <.
-/img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png> <./im
-g/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>]
-<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=427, 4270.
+<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=419, 4270.
 95625pt x 3589.41pt>
 File: img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png Graphic f
 ile (type png)
 
 <use img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>
 Package pdftex.def Info: img/eficiencia/densEspacial_19982011totalEficienciaPol
-yfill.png used on input line 249.
+yfill.png used on input line 269.
 (pdftex.def)             Requested size: 457.03343pt x 384.1122pt.
 
-Overfull \hbox (1.78932pt too wide) in paragraph at lines 249--250
+Overfull \hbox (1.78932pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
-) [27 <./img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>]
-(./teseEvandro.bbl [28
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [27] [28 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfi
+ll.png> <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.
+png> <./img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png
+> <./img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>]
+[29 <./img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>]
+(./teseEvandro.bbl [30
 
 
 
-]) [29]
+] [31]) [32]
 No file teseEvandro.ind.
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
@@ -1449,7 +1443,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
-(rerunfilecheck)             Checksum: 8411CB94933C41E796228F0854F9E9FF;689.
+(rerunfilecheck)             Checksum: 137FF1DCC41080728F1CF6CB4D9B739D;762.
 
 
 LaTeX Warning: There were undefined references.
@@ -1460,13 +1454,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 21959 strings out of 495039
- 373740 string characters out of 3181249
- 541349 words of memory out of 3000000
- 24459 multiletter control sequences out of 15000+200000
+ 21978 strings out of 495039
+ 374215 string characters out of 3181249
+ 543349 words of memory out of 3000000
+ 24472 multiletter control sequences out of 15000+200000
  70854 words of font info for 88 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 56i,14n,86p,1070b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,14n,86p,1079b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
@@ -1478,10 +1472,10 @@ nts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
 /public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on teseEvandro.pdf (30 pages, 5407183 bytes).
+Output written on teseEvandro.pdf (33 pages, 5438745 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
