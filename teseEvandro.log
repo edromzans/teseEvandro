@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2014.11.3)  5 NOV 2014 01:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2014.11.3)  7 NOV 2014 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,7 +1212,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 ... de raios.\relax }}{38}{figure.caption.26}
+l.20 ... de raios.\relax }}{36}{figure.caption.26}
                                                    [6
 
 ])
@@ -1640,182 +1640,181 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 134.
  [31 <./img/ciclos/cicloanual10x1019982011localtime.pdf>]
+
+LaTeX Warning: Citation `zipser2006' on page 32 undefined on input line 140.
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
- [32]
+[32]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 158.
  [33]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 190.
  [34]
 <img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png, id=
-683, 6405.9325pt x 5383.11125pt>
+684, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png
  Graphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011TotalTemp
-estadesPolyfill.png used on input line 203.
+estadesPolyfill.png used on input line 197.
 (pdftex.def)             Requested size: 457.06279pt x 384.1122pt.
 
-Overfull \hbox (1.81868pt too wide) in paragraph at lines 203--204
+Overfull \hbox (1.81868pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
-
-<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png, id=684, 6761.26
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+[35 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.pn
+g>]
+<img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png, id=694, 6761.26
 pt x 5681.225pt>
 File: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png Graphic fil
 e (type png)
 
 <use img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyf
-ill.png used on input line 210.
+ill.png used on input line 208.
 (pdftex.def)             Requested size: 457.03596pt x 384.1122pt.
 
-Overfull \hbox (1.79185pt too wide) in paragraph at lines 210--211
+Overfull \hbox (1.79185pt too wide) in paragraph at lines 208--209
  [][] 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
-[35]
-<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png, id=699, 6761.26pt
+(babel)             in language  on input line 219.
+[36 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>]
+<img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png, id=710, 6761.26pt
  x 5681.225pt>
 File: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png Graphic file 
 (type png)
 
 <use img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfil
-l.png used on input line 240.
+l.png used on input line 230.
 (pdftex.def)             Requested size: 220.36768pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png, id=701, 6761.26pt
+<img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png, id=712, 6761.26pt
  x 5681.225pt>
 File: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png Graphic file 
 (type png)
 
 <use img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfil
-l.png used on input line 241.
+l.png used on input line 231.
 (pdftex.def)             Requested size: 220.36768pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png, id=703, 255.95625
+<img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png, id=714, 255.95625
 pt x 215.80624pt>
 File: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png Graphic file 
 (type png)
 
 <use img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfil
-l.png used on input line 243.
+l.png used on input line 233.
 (pdftex.def)             Requested size: 226.74582pt x 184.9429pt.
 
-<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png, id=705, 6761.26pt
+<img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png, id=716, 6761.26pt
  x 5681.225pt>
 File: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png Graphic file 
 (type png)
 
 <use img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill.png>
 Package pdftex.def Info: img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfil
-l.png used on input line 244.
+l.png used on input line 234.
 (pdftex.def)             Requested size: 220.36768pt x 184.9429pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 252.
- [36 <./img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill.p
-ng>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 280.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 280.
-[37 <./img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
- [38 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png> <./img/Tax
-aFlash/densEspacial_19982011mamTaxaFlashPolyfill.png> <./img/TaxaFlash/densEspa
-cial_19982011jjaTaxaFlashPolyfill.png (PNG copy)> <./img/TaxaFlash/densEspacial
-_19982011sonTaxaFlashPolyfill.png>]
-<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=75
+(babel)             in language  on input line 255.
+ [37]
+<img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png, id=72
 6, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011djfTempes
-tadesPolyfill.png used on input line 293.
+tadesPolyfill.png used on input line 281.
 (pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=75
+<img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png, id=72
 8, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011mamTempes
-tadesPolyfill.png used on input line 294.
+tadesPolyfill.png used on input line 282.
 (pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=76
+<img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png, id=73
 0, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011jjaTempes
-tadesPolyfill.png used on input line 296.
+tadesPolyfill.png used on input line 284.
 (pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 
-<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=76
+<img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png, id=73
 2, 6405.9325pt x 5383.11125pt>
 File: img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png G
 raphic file (type png)
 
 <use img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>
 Package pdftex.def Info: img/DensidadeTempestades/densEspacial19982011sonTempes
-tadesPolyfill.png used on input line 297.
+tadesPolyfill.png used on input line 285.
 (pdftex.def)             Requested size: 220.32068pt x 184.9429pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 294.
 
-[39]
+[38 <./img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill.png> <./img/Taxa
+Flash/densEspacial_19982011mamTaxaFlashPolyfill.png> <./img/TaxaFlash/densEspac
+ial_19982011jjaTaxaFlashPolyfill.png (PNG copy)> <./img/TaxaFlash/densEspacial_
+19982011sonTaxaFlashPolyfill.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 310.
+(babel)             in language  on input line 298.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 310.
- [40 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png
+(babel)             in language  on input line 298.
+ [39 <./img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill.png
 > <./img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill.png> <
 ./img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill.png> <./i
 mg/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill.png>]
-<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=790, 4270.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 310.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 310.
+ [40]
+<img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png, id=792, 4270.
 95625pt x 3589.41pt>
 File: img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png Graphic f
 ile (type png)
 
 <use img/eficiencia/densEspacial_19982011totalEficienciaPolyfill.png>
 Package pdftex.def Info: img/eficiencia/densEspacial_19982011totalEficienciaPol
-yfill.png used on input line 313.
+yfill.png used on input line 315.
 (pdftex.def)             Requested size: 457.03343pt x 384.1122pt.
 
-Overfull \hbox (1.78932pt too wide) in paragraph at lines 313--314
+Overfull \hbox (1.78932pt too wide) in paragraph at lines 315--316
  [][] 
  []
 
@@ -1870,18 +1869,21 @@ Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
 (rerunfilecheck)             Checksum: 2AC167B316FCFC50C602ADC38935DF3A;1893.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 24359 strings out of 494955
- 436903 string characters out of 6179474
- 581977 words of memory out of 5000000
- 26763 multiletter control sequences out of 15000+600000
+ 24362 strings out of 494955
+ 436949 string characters out of 6179474
+ 581978 words of memory out of 5000000
+ 26766 multiletter control sequences out of 15000+600000
  84285 words of font info for 93 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 55i,14n,87p,1094b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,87p,1191b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/
@@ -1894,10 +1896,10 @@ pe1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on teseEvandro.pdf (46 pages, 5994313 bytes).
+Output written on teseEvandro.pdf (46 pages, 5995371 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 757 compressed objects within 8 object streams
+ 918 PDF objects out of 1000 (max. 8388607)
+ 759 compressed objects within 8 object streams
  183 named destinations out of 1000 (max. 500000)
  442 words of extra memory for PDF output out of 10000 (max. 10000000)
 
