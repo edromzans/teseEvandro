@@ -51,7 +51,7 @@ O produto 2A25 possui também as informações sobe o tipo de chuva, as quais s�
 
 O imageador de raios -- LIS  é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
 
-O sistema de imageamento do LIS é constituído por um telescópio f/1.6 que expande o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777.4 nm e com largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{O CCD (\textit{charge-coupled device}) é um dispositivo eletrônico que mede corrente elétrica gerada por efeito fotoelétrico amplamente utilizado para obter imagens digitalmente.}. Acoplada a a matriz de CCDs, uma lente angular proporciona um campo de visão panorâmico de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 600 km $\times$ 600 km. Um pixel do campo de visão do LIS, possui resolução entre 5-10km. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo. \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+O sistema de imageamento do LIS é constituído por um telescópio f/1.6 que expande o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777.4 nm e com largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{O CCD (\textit{charge-coupled device}) é um dispositivo eletrônico que mede corrente elétrica gerada por efeito fotoelétrico amplamente utilizado para obter imagens digitalmente.}. Acoplada a matriz de CCDs, uma lente angular proporciona um campo de visão panorâmico de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 600 km $\times$ 600 km. Um pixel do campo de visão do LIS, possui resolução entre 5-10km. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo. \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
 
 %\begin{figure}[!hb]
 %  \centering
@@ -61,7 +61,7 @@ O sistema de imageamento do LIS é constituído por um telescópio f/1.6 que exp
 %\end{figure} 
 
 
-Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica  eventos, grupos e os raios. Os eventos são as posições da CCD que "brilham", os grupos são os agrupamentos de eventos que podem ser caracterizados com descargas de retorno. O raio é o agrupamento espaço-temporal de grupos de eventos.
+Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica  eventos, grupos e os raios. Os eventos são as posições das CCDs que ``brilham", os grupos são os agrupamentos de eventos que podem ser caracterizados como descargas de retorno -- \textit{stroke}. O raio é o agrupamento espaço-temporal de grupos de eventos.
 
 
 A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  eventos, grupos até a caracterização de um raio. Observe, na figura \ref{evgrfla} que em $t=0$ ms, as CCDs, 1, 2 e 3  foram sensibilizadas e o algoritmo definiu o grupo de evento $a$ candidato a ser um raio $A$.  Quanto $t=100$ ms, as CCDs, 4, 5 e 6, são sensibilizadas e temos 2 grupos de eventos, $a$ e $b$, espacialmente e temporalmente ($<$330 ms) próximos, portanto, os grupos $a$ e $b$ integram o mesmo raio $A$, como ilustra a figura \ref{evgrflb}. Quando $t = 350$ ms, as CCDs 9 e 10 são sensibilizadas como mostra a figura \ref{evgrflc}. As CCDs 9 e 10 não estão próximas dos grupos $a$ e $b$ que compõe o raio $A$, portanto, o algoritmo define o grupo $d$ e um novo candidato a raio $B$. Na figura \ref{evgrfld} o raio $B$ possui mais dois grupos, $e$ e $f$. Na figura \ref{evgrfle}, note que a CCD 13 coincide com a posição 2, inicialmente em \ref{evgrfla}, mas como o intervalo de tempo entre as figuras \ref{evgrfla} e \ref{evgrfle} é superior a 330 ms, o grupo $g$ também definiu o novo raio $C$ \cite{christian2000LISalgorithm}.  
@@ -87,7 +87,7 @@ O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tan
 
 \subsection{Radiômetro no visível e infravermelho}
 
-O Radiômetro no visível e infravermelho -- VIRS -- é um radiômetro de varredura transversal de $\pm$45$^{\circ}$, fazendo que o seja observada uma faixa de 720 km superfície com resolução de 2,11 km no nadir. Após a elevação do satélite, o VIRS passou a observar uma faixa de 833 km e 2.4 km de resolução no nadir. O VIRS mede a radiância em 5 bandas espectrais entre 0.63--12 $\mu$m, conforme mostra a tabela \ref{canaisVirs} \cite{kummerok1998}.
+O Radiômetro no visível e infravermelho -- VIRS -- é um radiômetro de varredura transversal de $\pm$45$^{\circ}$, fazendo que o seja observada uma faixa de 720 km  na superfície com resolução de 2.11 km no nadir. Após a elevação do satélite, o VIRS passou a observar uma faixa de 833 km e 2.4 km de resolução no nadir. O VIRS mede a radiância em 5 bandas espectrais entre 0.63--12 $\mu$m, conforme mostra a tabela \ref{canaisVirs} \cite{kummerok1998}.
 %: com comprimentos de onda de 0.63 $\mu$m e  1.61 $\mu$m, faixa do visível; 3.75 $\mu$m, infravermelho próximo; 10.8 $\mu$m e 12 $\mu$m, infravermelho. 
 
 \begin{table}[!ht]
@@ -287,7 +287,7 @@ Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}
 \label{lisVT}
 \end{figure} 
 
-As figuras  \ref{lisVT} e \ref{VirsVT} representam duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0.25$^{\circ}$ de resolução, projetada sobe a América do Sul. A matriz $\mathbf{VT}_{lis}$, figura \ref{lisVT}, do tempo de amostragem do sensor LIS sobre a superfície e a matriz $\mathbf{VT}_{virs}$, figura \ref{VirsVT}, do número de vezes que o VIRS sobrevoou cada ponto de grade na superfície, as quais são utilizadas para normalizar as medidas de raios observados pelo LIS e de tempestades elétricas definidas pela radiância observada no VIRS.  
+As figuras  \ref{lisVT} e \ref{VirsVT} representam duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0.25$^{\circ}$ de resolução, projetada sobre a América do Sul. A matriz $\mathbf{VT}_{lis}$, figura \ref{lisVT}, do tempo de amostragem do sensor LIS sobre a superfície e a matriz $\mathbf{VT}_{virs}$, figura \ref{VirsVT}, do número de vezes que o VIRS sobrevoou cada ponto de grade na superfície, as quais são utilizadas para normalizar as medidas de raios observados pelo LIS e de tempestades elétricas definidas pela radiância observada no VIRS.  
 
 \simbolo{name={$\mathbf{VT}_{lis}$},description={Matriz do tempo total da visada do sensor LIS sobre a superfície}}
 
@@ -372,7 +372,7 @@ Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ as
 
 A distribuição de probabilidade da precipitação com a altitude associa-se com o desenvolvimento vertical, porém o tipo de hidrometeoro de determinada altitude é função da temperatura, probabilidade de colisão  e da razão de saturação naquela altura \cite[p.~263]{mason1971_2ed}. 
 
-Os processos de eletrificação por outro lado dependem do conteúdo de água líquida, temperatura, velocidade terminal, velocidade vertical, tamanho e tipo das partículas \cite{Takahashi1978,Saunders1999,Takahashi2002,avila2009}. Portanto saber como o perfil da precipitação varia com a temperatura é preponderante para identificar que mecanismo de crescimento dos hidrometeoros estão dominando. Dessa maneira elabora-se o Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}. 
+Os processos de eletrificação por outro lado dependem do conteúdo de água líquida, temperatura, velocidade terminal, velocidade vertical, tamanho e tipo das partículas \cite{Takahashi1978,Saunders1999,Takahashi2002,avila2009}. Portanto saber como o perfil da precipitação varia com a temperatura é preponderante para identificar qual mecanismo de crescimento dos hidrometeoros está dominando. Neste sentido foi elaborado o Diagrama de Contorno de Frequência por Temperatura (CFTD). \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}} 
 
 %Nos CFTDs, os níveis de temperatura não correspondem as condições controladas em laboratório, e sim às variações de temperatura do perfil atmosférico. 
 
@@ -381,7 +381,6 @@ Para converter os níveis de altitude do PR em níveis de temperatura, foram uti
 
 Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo VIRS, foram extraídos. A partir dos 17 níveis verticais das R2, os 80 níveis de temperaturas associados aos 80 níveis de altitude das observações do PR foram calculados através de um método de mínimos quadrados.
 
-Desta maneira, obteve-se a função $f_{pdf}(x,y)$, cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de temperaturas estimados a partir das reanálises II do NCEP. A função $f_{pdf}(x,y)$ de $Z_c$ por temperatura, foi representada por uma matriz bidimensional com a granularidade de 1 dBZ para cada 2 $^{\circ}$C. Nos CFTDs, os níveis superiores e inferiores foram definidos para temperaturas entre 20° C e -50° C.
-
+Desta maneira, obteve-se a função $f_{pdf}(x,y)$, cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de temperaturas estimados a partir das R2 do NCEP--DOE. A função $f_{pdf}(x,y)$ de $Z_c$ por temperatura, foi representada por uma matriz bidimensional com a granularidade de 1 dBZ para cada 2 $^{\circ}$C. Nos CFTDs, os níveis superiores e inferiores foram definidos para temperaturas entre 20° C e -50° C.
 
 Também foi calculada a função $f_{cdf}(x,y)$ de $Z_c$ por temperatura, que originaram os Diagramas de Contorno de Frequência Cumulativa por Temperatura (CCFTD).  \sigla{name={CCFTD},description={Diagramas de Contorno de Frequência Cumulativa por Temperatura}}   
