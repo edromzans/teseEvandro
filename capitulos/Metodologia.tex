@@ -16,7 +16,16 @@ O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM \sigla{name={TR
 
 O satélite TRMM foi lançado em 28 de novembro de 1997 entrando em órbita circular de 350 km de altitude com inclinação de 35$^{\circ}$ e período de 90 minutos. Originalmente a missão teria 3 anos, porém, em agosto de 2011 sua órbita foi elevada até 402.5 km de altitude e o tempo  de vida da missão foi prolongado. Devido as suas características orbitais, o TRMM sobrevoa 2 vezes ao dia em uma região de 10$^{\circ}$ $\times$ 10$^{\circ}$ de latitude e longitude \cite{simpson1988}.  
   
-Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipitation Radar} -- PR), radiômetro de microondas (\textit{TRMM Microwave Imager} -- TMI), radiômetro no visível e no infravermelho (\textit{Visible and Infrared Scanner} -- VIRS), radiômetro para medir a energia radiante da terra e das nuvens (\textit{Clouds and the Earth's Radiant Energy System} -- CERES) e sensor para imageamento de relâmpagos (\textit{Lightning Imaging Sensor} -- LIS) \cite{kummerok1998}.
+Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipitation Radar} -- PR), radiômetro de microondas (\textit{TRMM Microwave Imager} -- TMI), radiômetro no visível e no infravermelho (\textit{Visible and Infrared Scanner} -- VIRS), radiômetro para medir a energia radiante da terra e das nuvens (\textit{Clouds and the Earth's Radiant Energy System} -- CERES) e sensor para imageamento de relâmpagos (\textit{Lightning Imaging Sensor} -- LIS). A figura \ref{figtrmm}, ilustra algumas das principais características de varreduras \cite{kummerok1998}.
+
+\begin{figure}[!hb]
+  \centering{
+  {{\includegraphics[height=9.6cm]{img/TRMM/sensorPackage}}}
+  }
+\caption{Ilustração do satélite TRMM e as  principais características de varredura dos sensores (adaptada de \citeonline{kummerok1998})}
+\label{figtrmm} 
+\end{figure} 
+
 
 \subsection{Radar de Precipitação}
 
@@ -24,15 +33,16 @@ O radar de precipitação -- PR -- é o principal instrumento do satélite TRMM.
 
 
 
-A antena do PR possui uma largura de feixe de 0.71$^{\circ}$ $\times$ 0.71$^{\circ}$ disposta em um painel com abertura de 2.0 m $\times$ 2.0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5.0/4.3 km. Verticalmente, o PR observa uma faixa de 20 km a partir da superfície, com resolução de 250 m. Portanto, a precipitação observada em cada varredura ($\simeq$9150 por órbita) corresponde a uma matriz bidimensional de 49 $\times$ 80 posições: 49 feixes na varredura horizontal, com 80 níveis verticais. As principais características técnicas do PR são apresentadas na figura \ref{prtrmm}.
+A antena do PR possui uma largura de feixe de 0.71$^{\circ}$ $\times$ 0.71$^{\circ}$ disposta em um painel com abertura de 2.0 m $\times$ 2.0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5.0/4.3 km. Verticalmente, o PR observa uma faixa de 20 km a partir da superfície, com resolução de 250 m. Portanto, a precipitação observada em cada varredura ($\simeq$9150 por órbita) corresponde a uma matriz bidimensional de 49 $\times$ 80 posições: 49 feixes na varredura horizontal, com 80 níveis verticais. 
 
-\begin{figure}[!hb]
-  \centering{
-  {{\includegraphics[height=9.1cm]{img/TRMM/PRTRMM}}}
-  }
-\caption{Principais características das observações do PR \cite{trmmhandbook}}
-\label{prtrmm} 
-\end{figure} 
+%As principais características técnicas do PR são apresentadas na figura \ref{prtrmm}.
+%\begin{figure}[!hb]
+%  \centering{
+%  {{\includegraphics[height=9.1cm]{img/TRMM/PRTRMM}}}
+%  }
+%\caption{Principais características das observações do PR %\cite{trmmhandbook}}
+%\label{prtrmm} 
+%\end{figure} 
 
 Conforme as varreduras do PR, as medidas de  potência recebida ($P_r$) são armazenadas no produto 1B21, assim como indicativos de ruídos no sinal. A equação do radar conforme as características físicas do PR é aplicada nos dados de $P_r$ no produto 1C21 em que é obtido o fator de refletividade $Z_m$ e este é convertido em dBZ. 
 
