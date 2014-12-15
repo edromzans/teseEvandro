@@ -1,15 +1,19 @@
-\chapter{A SEVERIDADE DOS SISTEMAS}
+\chapter{TEMPESTADES ELÉTRICAS SEVERAS}
 
-Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa, estão associadas aos índices FTA e FT.  Nesta seção identificamos qual desses índices representaram tempestades elétricas com maior intensidade convectiva, ou seja, os sistemas com as maiores taxas de raios por minuto ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado de sua extensão. 
 
-Ao aplicar as equações \ref{eqFT} e \ref{eqFTA} na base de dados de 94,711 tempestades elétricas, as quais tiveram pelo menos um pixel da varredura do PR contida na área do sistema e com tempo médio de visada do LIS maior ou igual a 1 minuto, foram estudadas as distribuições de probabilidades dos índices FTA e FT. Conforme mostra a figura \ref{seriesFtaFt}, trata-se de distribuições exponenciais de probabilidade. 
+
+
+
+Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa, estão associadas aos índices FTA e FT.  Nesta seção identificamos qual desses índices representaram tempestades elétricas com maior intensidade convectiva, ou seja, os sistemas com as maiores taxas de raios por minuto (FT) ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado de sua extensão. 
+
+Ao aplicar as equações \ref{eqFT} e \ref{eqFTA} na base de dados de 94,733 tempestades elétricas, as quais tiveram pelo menos um pixel da varredura do PR contida na área do sistema e com tempo médio de visada do LIS maior ou igual a 1 minuto, foram estudadas as distribuições de probabilidades dos índices FTA e FT. Conforme mostra a figura \ref{seriesFtaFt}, trata-se de distribuições exponenciais de probabilidade. 
 
 \begin{figure}[!hb]
   \centering 
-  \subfloat[FTA] { \includegraphics[height=5cm]{img/FtaFt/pdfFta} \label{pdfFta}} 
-  \subfloat[FT]{ \includegraphics[height=5cm]{img/FtaFt/pdfFt} \label{pdfFt}} 
-   \caption{Densidade de probabilidade dos valores da série referente aos índices FTA e FT.}
-   \label{seriesFtaFt}
+  \subfloat[Densidade de probabilidade de FTA e FT.]{ \includegraphics[height=7.5cm]{img/FtaFt/pdf_FTA_FT}\label{pdfFta}} \\
+  \subfloat[Densidade de probabilidade cumulativa de FTA e FT]{\includegraphics[height=7.5cm]{img/FtaFt/cdf_FTA_FT}\label{pdfFt}} 
+  \caption{Densidade de probabilidade e probabilidade cumulativa dos valores da série referente aos índices FTA e FT.}
+  \label{seriesFtaFt}
 \end{figure}
 
 Os sistemas potencialmente severos foram selecionados pelo 90\textsuperscript{\underline{o}} percentil, associado aos máximos valores de FTA e FT. A linha vermelha nas figuras \ref{pdfFta} e \ref{pdfFt} marca o limite cuja os índices são considerados extremos. Os valores de FTA e FT a direita da linha vermelha correspondem ao conjunto dos 9472 sistemas, que correspondem aos 10\% mais raros da amostragem nos 14 anos de observação do TRMM.  
@@ -31,11 +35,9 @@ Portanto será investigada a severidade apenas dos sistemas com índices FTA e F
 
 Observa-se que os extremos de FT e FTA correspondem a sistemas com tamanhos bem distintos. Conforme é mostrado na figura \ref{size}, verifica-se que as máximas probabilidades de ocorrência de tempestades elétricas associadas com os extremos de FTA, ocorrem em sistemas com área 3 ordens de grandeza menor do que nos extremos de FT.
 
-
-
 \begin{figure}[!hb]
   \centering{  
-  \subfloat[Densidade de probabilidade de extensão em área.] { \includegraphics[scale=1.1,trim=0 0 215 0,clip]{img/tb/TbAreas} \label{size}} 
+  \subfloat[Densidade de probabilidade de extensão em área.] { \includegraphics[height=7.5cm,trim=0 0 215 0,clip]{img/tb/TbAreas} \label{size}} \\
   \subfloat[Densidade de probabilidade de temperatura de brilho em infravermelho.]{ \includegraphics[scale=1.1,trim=220 0 0 0,clip]{img/tb/TbAreas} \label{tb}} 
   }
   \label{t_tb}
@@ -43,7 +45,19 @@ Observa-se que os extremos de FT e FTA correspondem a sistemas com tamanhos bem 
 \end{figure}
 
 
-As tempestades elétricas ordenadas pelo índice FT são maiores em extensão por que conforme aumenta a área do sistema, maior a probabilidade de haver raios na região. Uma tempestade elétrica com 10$^5$ km$^2$, provavelmente terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$. 
+As tempestades elétricas ordenadas pelo índice FT são maiores em extensão por que conforme aumenta a área do sistema, maior a probabilidade de haver raios na região. Uma tempestade elétrica com 10$^5$ km$^2$, provavelmente terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$.
+
+
+
+\begin{figure}[!hb]
+  \centering 
+  \subfloat[areas versus taxa de raios]{ \includegraphics[height=7.5cm]{img/FtaFt/area_FTA_FT}\label{areaFTAFTA}} \\
+  \subfloat[volume de chuva]{\includegraphics[height=7.5cm]{img/FtaFt/volChuva_FTA_FT}\label{pdfFt}} 
+  \caption{Dispersão referente aos índices FTA e FT.}
+  \label{seriesFtaFt}
+\end{figure}
+
+ 
 
 %Quando a densidade espacial de descargas aumenta muito em uma região com centenas de quilômetros quadrados, em torno de 100 descargas intranuvens para uma nuven-solo, como por exemplo os maiores valores de $Z=IC/CG$ mostrados por \cite{evandro2009} na região de Campo Grande - MS no Brasil, a capacidade do LIS de identificar brilhos transientes provavelmente fica comprometida devido a resolução horizontal da CCD.
 
