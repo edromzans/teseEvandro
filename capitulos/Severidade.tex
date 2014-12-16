@@ -1,9 +1,5 @@
 \chapter{TEMPESTADES ELÉTRICAS SEVERAS}
 
-
-
-
-
 Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa, estão associadas aos índices FTA e FT.  Nesta seção identificamos qual desses índices representaram tempestades elétricas com maior intensidade convectiva, ou seja, os sistemas com as maiores taxas de raios por minuto (FT) ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado de sua extensão. 
 
 Ao aplicar as equações \ref{eqFT} e \ref{eqFTA} na base de dados de 94,733 tempestades elétricas, as quais tiveram pelo menos um pixel da varredura do PR contida na área do sistema e com tempo médio de visada do LIS maior ou igual a 1 minuto, foram estudadas as distribuições de probabilidades dos índices FTA e FT. Conforme mostra a figura \ref{seriesFtaFt}, trata-se de distribuições exponenciais de probabilidade. 
@@ -19,7 +15,6 @@ Ao aplicar as equações \ref{eqFT} e \ref{eqFTA} na base de dados de 94,733 tem
 Os sistemas potencialmente severos foram selecionados pelo 90\textsuperscript{\underline{o}} percentil, associado aos máximos valores de FTA e FT. A linha vermelha nas figuras \ref{pdfFta} e \ref{pdfFt} marca o limite cuja os índices são considerados extremos. Os valores de FTA e FT a direita da linha vermelha correspondem ao conjunto dos 9472 sistemas, que correspondem aos 10\% mais raros da amostragem nos 14 anos de observação do TRMM.  
 
 Portanto será investigada a severidade apenas dos sistemas com índices FTA e FT extremos, os quais possuem valores acima de 18.0 $\times$ 10$^{-4}$ raios por minuto por quilômetro quadrado, como mostra a figura \ref{pdfFta}, ou acima de 6.3 raios por minutos, como mostra a figura \ref{pdfFt}. Porém, os máximos valores de FTA e FT das tempestades elétricas foram de 1258.8 $\times$ 10$^{-4}$ raios por minuto por quilômetro quadrado e 1283.6 raios por minuto respectivamente. 
-
 
 % Na figura \ref{percetilFtaFt}, temos a série de FTA e FT ordenada, e a linha tracejada vertical corta o 90\% percentil dos índices. 
 
@@ -38,7 +33,7 @@ Observa-se que os extremos de FT e FTA correspondem a sistemas com tamanhos bem 
 \begin{figure}[!hb]
   \centering{  
   \subfloat[Densidade de probabilidade de extensão em área.] { \includegraphics[height=7.5cm,trim=0 0 215 0,clip]{img/tb/TbAreas} \label{size}} \\
-  \subfloat[Densidade de probabilidade de temperatura de brilho em infravermelho.]{ \includegraphics[scale=1.1,trim=220 0 0 0,clip]{img/tb/TbAreas} \label{tb}} 
+  \subfloat[Densidade de probabilidade de temperatura de brilho em infravermelho.]{ \includegraphics[height=7.5cm,trim=220 0 0 0,clip]{img/tb/TbAreas} \label{tb}} 
   }
   \label{t_tb}
   \caption{Estudo das frequências de ocorrências de tempestades elétricas selecionas pelo 90\textsuperscript{\underline{o}} percentil dos índices de FT e FTA, por extensão em área e por temperatura de brilho de topo das nuvens.}
@@ -47,25 +42,19 @@ Observa-se que os extremos de FT e FTA correspondem a sistemas com tamanhos bem 
 
 As tempestades elétricas ordenadas pelo índice FT são maiores em extensão por que conforme aumenta a área do sistema, maior a probabilidade de haver raios na região. Uma tempestade elétrica com 10$^5$ km$^2$, provavelmente terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$.
 
-
-
 \begin{figure}[!hb]
   \centering 
   \subfloat[areas versus taxa de raios]{ \includegraphics[height=7.5cm]{img/FtaFt/area_FTA_FT}\label{areaFTAFTA}} \\
   \subfloat[volume de chuva]{\includegraphics[height=7.5cm]{img/FtaFt/volChuva_FTA_FT}\label{pdfFt}} 
   \caption{Dispersão referente aos índices FTA e FT.}
   \label{seriesFtaFt}
-\end{figure}
-
- 
+\end{figure} 
 
 %Quando a densidade espacial de descargas aumenta muito em uma região com centenas de quilômetros quadrados, em torno de 100 descargas intranuvens para uma nuven-solo, como por exemplo os maiores valores de $Z=IC/CG$ mostrados por \cite{evandro2009} na região de Campo Grande - MS no Brasil, a capacidade do LIS de identificar brilhos transientes provavelmente fica comprometida devido a resolução horizontal da CCD.
 
 Ao normalizar a taxa de raios no tempo por $A_t$, o número de raios fica diluído na extensão do sistema, evidenciando que os maiores valores de FTA correspondem aos sistemas com as maiores densidades espaciais de raios, cuja a extensão em área e o número de raios possuem maior probabilidade de ser menor do que nos sistemas com extremos de FT.
 
 A frequência de ocorrência das temperaturas de brilho associadas a radiância espectral observada no canal 4 do VIRS para todos os pixeis que definiram as áreas dos sistemas, é mostrada na figura \ref{tb}. Observa-se que o maior valor de probabilidade para a curva das tempestades elétricas com índice extremo de FTA, possui temperatura de topo de nuvens aproximadamente 10 K mais frias do que nas tempestades elétricas com extremos de FT, indicando que a convecção nos sistemas ordenados por FTA é mais profunda na maioria das situações.
-
-
 
 \citeonline{morales2003} ao desenvolver a \textit{Sferics Infrared Rainfall Technique} (SIRT), mostram que as regiões com temperatura de brilho inferior a 215 K e com ocorrência de \textit{sferics} foram as regiões categorizadas como de maior precipitação associada.\sigla{name={SIRT},description={\textit{Sferics Infrared Rainfall Technique} }}
 
@@ -89,20 +78,35 @@ Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$
 
 Nas figuras \ref{ftacfadwith}, \ref{ftacfadwithout}, \ref{ftcfadwith} e \ref{ftcfadwithout} foram calculados os CFADs para as tempestades elétricas com índices FTA e FT extremos, distribuídas conforme cada região de 10 por 10 graus na superfície terrestre. Para localizar a caixa de 10 por 10 graus em que cada sistema esteve contido, foi considerado a latitude e longitude do centro geométrico da área definida por cada sistema.
 
-
-\begin{figure}[!ht]
+%----------------------------------------
+\begin{sidewaysfigure}%[!H]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_semraio_topFTA}
- \caption{CFADs para os extremos de FTA. Porção da precipitação sem raios.}
- \label{ftacfadwithout}
-\end{figure} 
+  \includegraphics[width=19.0cm]  {img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil}
+  \caption{CFADs para os extremos de FTA. Porção da precipitação sem raios.}
+  \label{ftacfadwithout_land}
+\end{sidewaysfigure} 
+%----------------------------------------
 
-\begin{figure}[!ht]
+%\begin{figure}[!ht]
+%  \centering
+%  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil}
+% \caption{CFADs para os extremos de FTA. Porção da precipitação sem raios.}
+% \label{ftacfadwithout}
+%\end{figure} 
+
+\begin{sidewaysfigure}%[!H]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_comraio_topFTA}
+  \includegraphics[width=19.0cm]{img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFTA_percentil}
   \caption{CFADs para os extremos de FTA. Porção da precipitação com raios.}
   \label{ftacfadwith}   
-\end{figure} 
+\end{sidewaysfigure} 
+
+%\begin{figure}[!ht]
+%  \centering
+%  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFTA_percentil}
+%  \caption{CFADs para os extremos de FTA. Porção da precipitação com raios.}
+%  \label{ftacfadwith}   
+%\end{figure} 
 
 As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0.05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. Os CFADs foram calculados para a porção da chuva com, figuras \ref{ftacfadwith} e \ref{ftcfadwith}, e sem, figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}, atividade elétrica de nuvem.
 
@@ -114,7 +118,7 @@ Comparando os CFADs da chuva com e sem raios, representados para os extremos de 
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_semraio_topFT}
+  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFT_percentil}
  \caption{CFADs para os extremos de FT. Porção da precipitação sem raios.}
  \label{ftcfadwithout}
 \end{figure} 
@@ -122,16 +126,10 @@ Comparando os CFADs da chuva com e sem raios, representados para os extremos de 
 \begin{figure}[!ht]
   \centering
    \adjustbox{trim={0\width} {0.435\height} {0\width} {0\height} , clip}%
-   {\includegraphics[width=\textwidth]{img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT}}
+   {\includegraphics[width=\textwidth]{img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTpercentil}}
  \caption{CCFDs para os extremos de FT entre 20S-10N e 90W-30W. Porção da precipitação sem raios.}
  \label{ftccfadwithout}
 \end{figure} 
-
-
-
-
-
-
 
 A porção eletricamente ativa possui maior percentual de perfis convectivos e com maiores valores de $Z_c$ associado aos contornos de probabilidade, confirmando a correlação positiva entre descargas elétricas e a produção de precipitação \cite{Petersen1998}.
 
@@ -164,7 +162,7 @@ Entre 40-20S e 70-50W, a porção sem raios da chuva dos extremos de FTA mostra 
 \begin{figure}[!ht]
   \centering  
   \adjustbox{trim={.349\width} {.045\height} {.322\width} {.565\height},clip}%
-  {\includegraphics[width=27cm] {img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFT}}
+  {\includegraphics[width=27cm] {img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTpercentil}}
  \caption{CCFDs para os extremos de FT entre 40-20S e 70-50W. Porção da precipitação sem raios.}
  \label{ftccfdsubtrop}
 \end{figure} 
@@ -174,7 +172,7 @@ Entre 40-20S e 70-50W, a porção sem raios da chuva dos extremos de FTA mostra 
 %  \adjustbox{trim={.0\width} {.04\height} {0\width} {.565\height},clip}%
   \centering  
   \adjustbox{trim={.349\width} {.045\height} {.322\width} {.565\height},clip}%  
-  {\includegraphics[width=27cm] {img/precipitacao3d/severo/cfad/cCumFad_10deg_semraio_topFTA}}
+  {\includegraphics[width=27cm] {img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTApercentil}}
  \caption{CCFDs para os extremos de FTA entre 40-20S e 70-50W. Porção da precipitação sem raios.}
  \label{ftaccfdsubtrop}
 \end{figure} 
@@ -189,7 +187,7 @@ Os CFADs referentes as tempestades elétricas selecionadas por FTA possuem conto
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cfad/cfad10_comraio_topFT}
+  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFT_percentil}
   \caption{CFADs para os extremos de FT. Porção da precipitação com raios.}
   \label{ftcfadwith}   
 \end{figure} 
@@ -227,14 +225,14 @@ A partir dos CCFTDs das figuras \ref{ccftd_fta_com} e \ref{ccftd_ft_com}, iremos
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFTA}
+  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTApercentil}
  \caption{CFTDs para os extremos de FTA. Porção da precipitação com raios.}
  \label{cftd_fta_com}
 \end{figure} 
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFTA}
+  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTApercentil}
   \caption{CCFTDs para os extremos de FTA. Porção da precipitação com raios.}
   \label{ccftd_fta_com}   
 \end{figure} 
@@ -244,14 +242,14 @@ A partir dos CCFTDs das figuras \ref{ccftd_fta_com} e \ref{ccftd_ft_com}, iremos
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cftd/cftd_10deg_comraio_topFT}
+  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercentil}
  \caption{CFTDs para os extremos de FT. Porção da precipitação com raios.}
  \label{cftd_ft_com}
 \end{figure} 
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/cftd/ccftd_10deg_comraio_topFT}
+  \includegraphics[height=13.5cm]{img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercentil}
   \caption{CCFTDs para os extremos de FT. Porção da precipitação com raios.}
   \label{ccftd_ft_com}   
 \end{figure} 
@@ -302,7 +300,7 @@ Nas figuras \ref{extremosInfFTA} e \ref{extremosInfFT}, temos os valores de FTA 
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[5\textsuperscript{\underline{o}} percentil de FTA]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor005thFta}} \label{5oFta}}
+  \subfloat[5\textsuperscript{\underline{o}} percentil de FTA]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor005thFta}} \label{5oFta}}\\
   \subfloat[10\textsuperscript{\underline{o}} percentil de FTA]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor010thFta}} \label{10oFta}}
   }    
   \caption{Distribuição espacial dos valores do 5\textsuperscript{\underline{o}} e 10\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FTA a cada região de 2.5 por 2.5 graus de latitude e longitude.}
@@ -321,7 +319,7 @@ Os valores de FT associados ao 5\textsuperscript{\underline{o}} e 10\textsupersc
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[5\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor005thFt}} \label{5oFt}}
+  \subfloat[5\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor005thFt}} \label{5oFt}}\\
   \subfloat[10\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor010thFt}} \label{10oFt}}
   }    
   \caption{Distribuição espacial dos valores do 5\textsuperscript{\underline{o}} e 10\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
@@ -330,11 +328,6 @@ Os valores de FT associados ao 5\textsuperscript{\underline{o}} e 10\textsupersc
 
 Para avaliar a distribuição geográfica dos extremos superiores dos índices FTA e FT, verificou-se os valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil das amostragens, os quais são expostos nos mapas das figuras \ref{extremosSupFTA} e \ref{extremosSupFT}.
 
-
-
-
-
-
 %: regionalizadas, representados nas cores das figuras \ref{extremosSupFTA} e \ref{extremosSupFT}; e totais (ver figura \ref{seriesFtaFt}), representados pela linha de contorno das figuras \ref{extremosSupFTA} e \ref{extremosSupFT}.
 
 Observa-se na figura \ref{95oFta} que os sistemas com índice FTA  superior à 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$
@@ -342,16 +335,20 @@ km$^{-2}$, são considerados de severidade extrema, pois correspondem a valores 
 %, mostrando que nestas regiões, valores de 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$ são mais frequentes do que nas regiões em que passa a linha de contorno de 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$.
 %raios por minutos por quilômetros quadrado
 
-
-
 \begin{figure}[!ht]
-  \centering{
-  \subfloat[95\textsuperscript{\underline{o}} percentil de FTA]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor095thFta}} \label{95oFta}}
-  \subfloat[99\textsuperscript{\underline{o}} percentil de FTA]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor099thFta}} \label{99oFta}}
-  }    
-  \caption{Distribuição espacial dos valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
-\label{extremosSupFTA}
+\centering
+{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor095thFta}} 
+\caption{Distribuição espacial dos valores do 95\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FTA a cada região de 2.5 por 2.5 graus de latitude e longitude.}
+\label{95oFta}
 \end{figure} 
+  
+\begin{figure}[!ht]
+\centering  
+{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor099thFta}}
+\caption{Distribuição espacial dos valores do  99\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FTA a cada região de 2.5 por 2.5 graus de latitude e longitude.}
+\label{99oFta}
+\end{figure} 
+
 
 Os valores do 99\textsuperscript{\underline{o}} percentil na figura \ref{99oFta}, mostram que no Leste do estado do Amazonas, no Acre e Tocantis e Sudeste do Peru e Norte da Bolívia, regiões estas que compõem o Oceano Verde, a severidade extrema de FTA possui valores entre 148.93-230.00  $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$,  valores que correspondem aos mais extremos do continente Sul-americano. 
 
@@ -364,22 +361,24 @@ Observa-se que os sistemas mais severos da América do Sul ocorrem associados ao
 Note que para saber aproximadamente o número de raios produzidos pelos sistemas extremos de FTA temos que multiplicar o índice FTA pela área do sistema. Por exemplo, a equação \ref{FTAkm2}, descreve que nas regiões em que os sistemas extremos possuem 100 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$, um sistemas severo com área de 10$^3$ km$^2$ então possui 10 raios observados pelo LIS em 1 minuto.  
 
 \begin{equation}
-100 \times 10^{-4} \left[ \frac{raios}{minutos ~ km^2} \right]  10^3 [ km^2 ] = 10 \left[ \frac{raios}{minutos } \right]  
+100 \times 10^{-4} \left[ \frac{\mathrm{raios}}{\mathrm{minutos}~\mathrm{km}^2} \right]  10^3 [ \mathrm{km}^2 ] = 10 \left[ \frac{\mathrm{raios}}{\mathrm{minutos}}\right]  
 \label{FTAkm2}
 \end{equation}
 
 Os mapas das figuras \ref{95oFt} e \ref{99oFt}, mostam que nas Bacias: do Rio da Prata principalmente, do Rio Araguaia, Rio Xingu e Rio Tocantis, são locais em que os sistemas possuem os maiores índices de FT tanto no 95\textsuperscript{\underline{o}} quanto no 99\textsuperscript{\underline{o}} percentil.
 
-
 \begin{figure}[!ht]
-  \centering{
-  \subfloat[95\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor095thFt}} \label{95oFt}}
-  \subfloat[99\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor099thFt}} \label{99oFt}}
-  }    
-  \caption{Distribuição espacial dos valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
-\label{extremosSupFT}
+\centering
+{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor095thFt}} 
+\caption{Distribuição espacial dos valores do 95\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
+\label{95oFt}
 \end{figure} 
-
+  
+\begin{figure}[!ht]
+\centering  
+{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor099thFt}}
+\caption{Distribuição espacial dos valores do  99\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
+\label{99oFt}
+\end{figure}
 
 Os maiores valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil do índice FT, figuras \ref{95oFt} e \ref{99oFt},  ficam situados na região Sul da América do Sul, compatível com a região em que \citeonline{cecil2005}, apontam como o local das tempestades categoria 5, ou seja, das mais severas do globo.
-
