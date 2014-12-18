@@ -43,14 +43,14 @@ Observa-se que os extremos de FTA e FT correspondem a sistemas com tamanhos bem 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=9cm,trim=0 0 215 0,clip]{img/tb/TbAreas}   
-  \caption{Densidade de probabilidade de extensão em área.}
+  \caption{Densidade de probabilidade de extensão em área das tempestades elétricas com extremos de FTA e FT.}
   \label{size}  
 \end{figure}
 
 \begin{figure}[!hb]
   \centering 
   \includegraphics[height=9cm,trim=220 0 0 0,clip]{img/tb/TbAreas}
-  \caption{Densidade de probabilidade de temperatura de brilho em infravermelho do topo das nuvens.}
+  \caption{Densidade de probabilidade de temperatura de brilho em infravermelho do topo das nuvens das tempestades elétricas com extremos de FTA e FT.}
   \label{tb}
 \end{figure}
 
@@ -63,20 +63,23 @@ Observa-se que os extremos de FTA e FT correspondem a sistemas com tamanhos bem 
 %  \caption{Estudo das frequências de ocorrências de tempestades elétricas selecionas pelo 90\textsuperscript{\underline{o}} percentil dos índices de FT e FTA, por extensão em área e por temperatura de brilho de topo das nuvens.}
 %\end{figure}
 
-As tempestades elétricas ordenadas pelo índice FT são maiores em extensão por que conforme aumenta a área do sistema, maior a probabilidade de haver raios na região. Uma tempestade elétrica com 10$^5$ km$^2$, provavelmente terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$.
+%As tempestades elétricas com valores extremos de FT são maiores em extensão.
+Na figura \ref{areaFTAFTA}, pode-se observar que os sistemas com tamanho entre 10$^2$--10$^3$ km$^2$, não ultrapassam 20 raios por minuto (FT). As tempestades elétricas com FT superior a 100 raios por minuto, possuíram tamanho entre 10$^{4}$--10$^{6}$ km$^2$. Note que há um aumento exponencial de FT conforme aumenta a extensão das tempestades elétricas. No entanto FTA diminui exponencialmente com o aumento da área das tempestades elétricas.
+
+%Uma tempestade elétrica com 10$^5$ km$^2$, terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=9cm]{img/FtaFt/area_FTA_FT}   
-  \caption{Dispersão entre a áreas das tempestades elétricas e os valores de FTA e FT.}
+  \caption{Dispersão entre a áreas das tempestades elétricas e os valores de FTA e FT. As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
   \label{areaFTAFTA}  
 \end{figure}
 
 \begin{figure}[!hb]
   \centering 
   \includegraphics[height=9cm]{img/FtaFt/volChuva_FTA_FT}
-  \caption{Dispersão entre o volume de chuva das tempestades elétricas e os valores de FTA e FT.}
-  \label{areaFTAFT}
+  \caption{Dispersão entre o volume de chuva das tempestades elétricas e os valores de FTA e FT.  As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{volchuvaFTAFT}
 \end{figure}
 
 %\begin{figure}[!hb]
@@ -88,8 +91,9 @@ As tempestades elétricas ordenadas pelo índice FT são maiores em extensão po
 %\end{figure} 
 %Quando a densidade espacial de descargas aumenta muito em uma região com centenas de quilômetros quadrados, em torno de 100 descargas intranuvens para uma nuven-solo, como por exemplo os maiores valores de $Z=IC/CG$ mostrados por \cite{evandro2009} na região de Campo Grande - MS no Brasil, a capacidade do LIS de identificar brilhos transientes provavelmente fica comprometida devido a resolução horizontal da CCD.
 
+Ao normalizar a taxa de raios no tempo por $A_t$, o número de raios fica diluído na extensão do sistema, evidenciando que os maiores valores de FTA correspondem aos sistemas com as maiores densidades espaciais de raios, cuja a área e o número de raios são menores do que nos sistemas com extremos de FT.
 
-Ao normalizar a taxa de raios no tempo por $A_t$, o número de raios fica diluído na extensão do sistema, evidenciando que os maiores valores de FTA correspondem aos sistemas com as maiores densidades espaciais de raios, cuja a extensão em área e o número de raios possuem maior probabilidade de ser menor do que nos sistemas com extremos de FT.
+Na figura \ref{volchuvaFTAFT}, observa-se que conforme aumenta FT o volume de chuva das tempestades elétricas também aumenta exponencialmente, de maneira semelhante ao aumento de FT com a área (figura \ref{areaFTAFTA}). Para FTA, há um comportamento inverso. Conforme aumenta FTA, o volume de chuva dos sistemas diminui.  
 
 A frequência de ocorrência das temperaturas de brilho associadas a radiância espectral observada no canal 4 do VIRS para todos os pixeis que definiram as áreas dos sistemas, é mostrada na figura \ref{tb}. Observa-se que o maior valor de probabilidade para a curva das tempestades elétricas com índice extremo de FTA, possui temperatura de topo de nuvens aproximadamente 10 K mais frias do que nas tempestades elétricas com extremos de FT, indicando que a convecção nos sistemas ordenados por FTA é mais profunda na maioria das situações.
 
@@ -97,10 +101,51 @@ A frequência de ocorrência das temperaturas de brilho associadas a radiância 
 
 Neste trabalho de pesquisa, ao selecionar as tempestades elétricas com índice extremo de FTA, os maiores valores de probabilidade de ocorrência, conforme é mostrado na figura \ref{tb}, concentram-se em temperaturas de brilho abaixo de 215 K.
 
-Os sistemas selecionados pelo 90\textsuperscript{\underline{o}} percentil do índice FT possuem maior extensão em área e maior volume de chuva. São sistemas com vasta extensão estratiforme conforme descrevem \citeonline{Rasmussen2011}. As regiões das tempestades elétricas com precipitação convectiva, as quais são capazes de gerar chuva de granizo, frentes de rajada, tornados, enchentes rápidas, ocupam área bem menor do que as áreas estratiformes \cite{Jr2007}.
+Os sistemas selecionados pelo 90\textsuperscript{\underline{o}} percentil do índice FT possuem maior extensão em área e maior volume de chuva. São sistemas com vasta extensão estratiforme conforme descrevem \citeonline{Rasmussen2011}. As regiões das tempestades elétricas com precipitação convectiva, as quais tem potencial de gerar chuva de granizo, frentes de rajada e tornados, ocupam área bem menor do que as áreas com  precipitação estratiforme \cite{Jr2007}.
 
-Avaliando a densidade de probabilidade de fração de chuva total, convectiva e estratiforme das tempestades elétricas, os máximos valores de ocorrência associados aos extremos valores de FTA concentraram-se nas tempestades elétricas com 70\% de área convectiva e 40\% de área estratiforme, enquanto que para os extremos de FT possuíram 20\% de fração convectiva e 75\% de fração estratiforme.
+Nas figuras \ref{pdffracaoFTA}, \ref{cdffracaoFTA} e \ref{pdffracaoFTA},  \ref{cdffracaoFTA}, apresenta-se o estudo das probabilidades das frações de chuva para as tempestades elétricas com valores extremos de FTA e FT. As curvas denominadas como convectivo, estratiforme e outros, correspondem a fração de perfis do PR classificados como convectivo, estratiforme e outros em relação a toda a área de chuva. A curva denominada na legenda como chuva total corresponde a fração da área de chuva em relação a área total da tempestade elétrica. A curva denominada como varredura do PR, mostra a fração da área da tempestade elétrica que esteve dentro da varredura do PR.
+
+Avaliando a densidade de probabilidade da fração convectiva e fração estratiforme das tempestades elétricas, figuras \ref{pdffracaoFTA} e \ref{pdffracaoFT}, verifica-se que os extremos de FTA associam-se com tempestades elétricas com 70\% de área convectiva e 30\% de área estratiforme, enquanto que para os extremos de FT possuíram 20\% de fração convectiva e 75\% de fração estratiforme.
 %juntamente com a as respectivas distribuições de probabilidade acumulativa,
+
+Como os sistemas extremos de FT possuem maior área do que os extremos de FTA, verifica-se nas figuras \ref{pdffracaoFT} e \ref{cdffracaoFT}, que o PR observou com maior frequência apenas uma porção de 25\% da área das tempestades elétricas com extremo de FT. Quando observa-se as figuras \ref{pdffracaoFTA} e \ref{cdffracaoFTA}, o PR observou com maior frequência 100\% da área das tempestades elétricas com extremo de FTA. Portanto a fração de chuva total dos extremos de FT (figura \ref{pdffracaoFT}) possui um valor de apenas $\simeq$10\% devido a varredura do PR ser menor do que a do VIRS e as tempestades elétricas abrangerem uma extensão que ultrapassa o alcance do PR. 
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_pdf_topFTA}   
+  \caption{Dispersão entre a áreas das tempestades elétricas e os valores de FTA e FT. As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{pdffracaoFTA}  
+\end{figure}
+
+\begin{figure}[!hb]
+  \centering 
+  \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_cdf_topFTA}
+  \caption{Dispersão entre o volume de chuva das tempestades elétricas e os valores de FTA e FT.  As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{cdffracaoFTA}
+\end{figure}
+
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_pdf_topFT}   
+  \caption{Dispersão entre a áreas das tempestades elétricas e os valores de FTA e FT. As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{pdffracaoFT}  
+\end{figure}
+
+\begin{figure}[!hb]
+  \centering 
+  \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_cdf_topFT}
+  \caption{Dispersão entre o volume de chuva das tempestades elétricas e os valores de FTA e FT.  As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{cdffracaoFT}
+\end{figure}
+
+
+
+
+
+
+
+
 
 Talvez alguns sistemas com extremos valores de FTA estejam em estágio de maturação e conforme vão se dissipando vão ganhando área de chuva estratiforme e se enquadrando no grupo dos maiores índice de FT. 
 
