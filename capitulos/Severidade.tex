@@ -163,6 +163,21 @@ Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$
 
 Nas figuras \ref{ftacfadwithout}, \ref{ftcfadwithout},  \ref{ftacfadwith} e \ref{ftcfadwith} foram calculados os CFADs das tempestades elétricas com índices FTA e FT extremos, para cada região de 10 por 10 graus na superfície sobre a AS. Para localizar a caixa de 10 por 10 graus em que cada sistema esteve contido, foi considerado a latitude e longitude do centro geométrico da área definida por cada sistema. Desta forma, foram obtidas as amostragens de probabilidade de FTA e FT, da mesma maneira que mostrado na figura \ref{pdfFTAFT} ou \ref{cdfFTAFT}, porém para cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$. Assim, o estudo da precipitação tridimensional é feito apenas para as tempestades elétricas com valores de FTA ou FT extremos referentes a cada região, ou seja, referente ao 90\textsuperscript{\underline{o}} percentil de cada  amostragem de FTA e FT regionalizada a cada 10$^{\circ}$ $\times$ 10$^{\circ}$.
 
+
+\begin{figure}[!ht]
+  \centering{  
+  \subfloat[]{\includegraphics[height=1.0cm]{img/grids/nucleosRaios/colorbar_virs}\label{barravirs}}\\
+  \subfloat[]{\includegraphics[height=6.cm,trim=0 47cm 0 0,clip]{img/grids/nucleosRaios/001_topFTA_25471_0003} \label{nr1}} 
+  \subfloat[]{\includegraphics[height=6.cm,trim=0 47cm 0 0,clip]{img/grids/nucleosRaios/002_topFTA_36502_0001} \label{nr2}} \\
+  \subfloat[]{\includegraphics[height=6.cm,trim=0 47cm 0 0,clip]{img/grids/nucleosRaios/003_topFTA_03444_0001} \label{nr3}} 
+  \subfloat[]{\includegraphics[height=6.cm,trim=0 47cm 0 0,clip]{img/grids/nucleosRaios/004_topFTA_05694_0005} \label{nr4}} 
+  }
+  \caption{Núcleos de raios das tempestades elétricas. Os pontos na cor  verde são os eventos e os símbolos de positivo na cor preta são os raios. Os pixeis em vermelho são as regiões dos núcleos de raios, definidas a partir da projeção dos eventos em uma grade regular de 0.05$^{\circ}$.} %(0.05$^{\circ}$ $\times$ 0.05$^{\circ}$)
+\label{nucleosRaios}
+\end{figure}
+
+
+
 %----------------------------------------
 \begin{sidewaysfigure}%[!H]
 \centering
@@ -209,15 +224,20 @@ Nas figuras \ref{ftacfadwithout}, \ref{ftcfadwithout},  \ref{ftacfadwith} e \ref
 %  \label{ftacfadwith}   
 %\end{figure} 
 
-As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0.05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. Os CFADs foram calculados para a porção da chuva com, figuras \ref{ftacfadwith} e \ref{ftcfadwith}, e sem, figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}, atividade elétrica de nuvem.
+	
 
-Note que no canto superior direito de cada CFAD temos alguns valores estatísticos que representam: (\%)  a porcentagem de perfis convectivos, estratiformes e outros, respectivamente; (P) o número de perfis do PR computados; (L) o número de ocorrência de $Z_c$ no nível de altitude de máxima ocorrência; (H) o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$; (N) o número de tempestades elétricas no grupo dos extremos contidas na região de 10$^{\circ}$ $\times$ 10$^{\circ}$.
+As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0.05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. A figura \ref{nucleosRaios}, mostra as regiões dos núcleos de raios das tempestades elétricas. Observe que na parte superior e inferior das figuras \ref{nr1}, \ref{nr2}, \ref{nr3} e \ref{nr4}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semi-eixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema. A barra de cores na figura \ref{barravirs}, corresponde as temperaturas de brilho ($<$258K) associada a radiância espectral em infravermelho observada pelo VIRS.
+
+
+Os CFADs foram calculados para a precipitação dos núcleos de raios das tempestades elétricas, figuras \ref{ftacfadwith} e \ref{ftcfadwith}, como também para a precipitação fora dos núcleos de raios, figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}.
+
+Note que no canto superior direito de cada CFAD temos alguns valores estatísticos que representam: (\%)  a porcentagem de perfis convectivos, estratiformes e outros, respectivamente; (P) o número de perfis do PR computados; (L) o número de ocorrência de $Z_c$ no nível de altitude de máxima ocorrência; (H) o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$; (N) o número de tempestades elétricas computadas.
 
 \simbolo{name={\%},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: a porcentagem de perfis convectivos, estratiformes e outros, respectivamente}}
 \simbolo{name={P},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: número de perfis do PR computados}}
 \simbolo{name={L},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o número de ocorrência de $Z_c$ no nível de altitude de máxima ocorrência}}
 \simbolo{name={H},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$}}
-\simbolo{name={N},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o número de tempestades elétricas no grupo dos extremos contida na região de 10$^{\circ}$ $\times$ 10$^{\circ}$}}
+\simbolo{name={N},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o número de tempestades elétricas computadas}}
 
 Comparando os CFADs da chuva com e sem raios, representados para os extremos de FTA nas figuras \ref{ftacfadwithout} e \ref{ftacfadwith} e para os extremos de FT, nas figuras \ref{ftacfadwithout} e \ref{ftcfadwithout}, é evidente que a fração das tempestades elétricas sem raios é a porção de menor intensidade convectiva e a fração eletricamente ativa é a região de maior velocidade vertical. Os níveis de contorno de probabilidades dos CFADs da precipitação sem raios possuem suas máximas altitudes aproximadamente 3 quilômetros abaixo das máximas altitudes atingidas pelos contornos dos CFADs da precipitação com raios. A porção sem raios dos sistemas possuíram maior percentual de perfis estratiformes e menores valores de $Z_c$ com os contornos de probabilidades entre 1-10\%, em todos os níveis de altitude.
 
