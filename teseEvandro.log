@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.10.8)  6 JAN 2015 19:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.2)  16 JAN 2015 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**teseEvandro.tex
+**teseEvandro
 (./teseEvandro.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, po
@@ -961,11 +961,7 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 LaTeX Warning: Unused global option(s):
     [appendix=nobox].
 
-(./teseEvandro.aux (./capitulos/Severidade.aux
-
-LaTeX Warning: Label `cftd_fta_com' multiply defined.
-
-))
+(./teseEvandro.aux (./capitulos/Severidade.aux))
 \openout1 = `teseEvandro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -984,7 +980,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 109.
 
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -1138,14 +1135,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11 ...mos de FT.\relax }}{19}{figure.caption.21}
+l.11 ...mos de FT.\relax }}{18}{figure.caption.21}
                                                    [6
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 ...longitude.\relax }}{42}{figure.caption.37}
+l.38 ...longitude.\relax }}{42}{figure.caption.37}
                                                    [7])
 \tf@lof=\write8
 \openout8 = `teseEvandro.lof'.
@@ -1237,14 +1234,14 @@ LaTeX Warning: Reference `eqFT' on page 13 undefined on input line 8.
 
 LaTeX Warning: Reference `eqFTA' on page 13 undefined on input line 8.
 
-<img/FtaFt/pdf_FTA_FT.png, id=232, 1883.035pt x 1177.39874pt>
+<img/FtaFt/pdf_FTA_FT.png, id=225, 1883.035pt x 1177.39874pt>
 File: img/FtaFt/pdf_FTA_FT.png Graphic file (type png)
 
 <use img/FtaFt/pdf_FTA_FT.png>
 Package pdftex.def Info: img/FtaFt/pdf_FTA_FT.png used on input line 12.
 (pdftex.def)             Requested size: 409.52808pt x 256.0748pt.
 
-<img/FtaFt/cdf_FTA_FT.png, id=233, 1861.95625pt x 1179.40625pt>
+<img/FtaFt/cdf_FTA_FT.png, id=226, 1861.95625pt x 1179.40625pt>
 File: img/FtaFt/cdf_FTA_FT.png Graphic file (type png)
 
 <use img/FtaFt/cdf_FTA_FT.png>
@@ -1254,65 +1251,65 @@ Package pdftex.def Info: img/FtaFt/cdf_FTA_FT.png used on input line 19.
 
 
 ] [14 <./img/FtaFt/pdf_FTA_FT.png> <./img/FtaFt/cdf_FTA_FT.png>] <img/tb/TbArea
-s.pdf, id=258, 426.59375pt x 141.52875pt>
+s.pdf, id=251, 426.59375pt x 141.52875pt>
 File: img/tb/TbAreas.pdf Graphic file (type pdf)
 
 <use img/tb/TbAreas.pdf>
-Package pdftex.def Info: img/tb/TbAreas.pdf used on input line 49.
+Package pdftex.def Info: img/tb/TbAreas.pdf used on input line 47.
 (pdftex.def)             Requested size: 381.46185pt x 256.0748pt.
 
-<img/FtaFt/area_FTA_FT.png, id=261, 1839.87375pt x 1172.38pt>
+<img/FtaFt/area_FTA_FT.png, id=254, 1839.87375pt x 1172.38pt>
 File: img/FtaFt/area_FTA_FT.png Graphic file (type png)
 
 <use img/FtaFt/area_FTA_FT.png>
-Package pdftex.def Info: img/FtaFt/area_FTA_FT.png used on input line 71.
+Package pdftex.def Info: img/FtaFt/area_FTA_FT.png used on input line 69.
 (pdftex.def)             Requested size: 401.85376pt x 256.0748pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 72.
+(Font)              <10.95> on input line 70.
 
-<img/FtaFt/volChuva_FTA_FT.png, id=262, 1839.87375pt x 1172.38pt>
+<img/FtaFt/volChuva_FTA_FT.png, id=255, 1839.87375pt x 1172.38pt>
 File: img/FtaFt/volChuva_FTA_FT.png Graphic file (type png)
 
 <use img/FtaFt/volChuva_FTA_FT.png>
-Package pdftex.def Info: img/FtaFt/volChuva_FTA_FT.png used on input line 78.
+Package pdftex.def Info: img/FtaFt/volChuva_FTA_FT.png used on input line 76.
 (pdftex.def)             Requested size: 401.85376pt x 256.0748pt.
  [15 <./img/tb/TbAreas.pdf>] [16 <./img/FtaFt/area_FTA_FT.png> <./img/FtaFt/vol
 Chuva_FTA_FT.png>]
 File: img/tb/TbAreas.pdf Graphic file (type pdf)
  <use img/tb/TbAreas.pdf>
-Package pdftex.def Info: img/tb/TbAreas.pdf used on input line 100.
+Package pdftex.def Info: img/tb/TbAreas.pdf used on input line 98.
 (pdftex.def)             Requested size: 372.37938pt x 256.0748pt.
 
-<img/FtaFt/fracaoChuva_pdf_topFTA.png, id=287, 1845.89626pt x 1172.38pt>
+<img/FtaFt/fracaoChuva_pdf_topFTA.png, id=280, 1845.89626pt x 1172.38pt>
 File: img/FtaFt/fracaoChuva_pdf_topFTA.png Graphic file (type png)
 
 <use img/FtaFt/fracaoChuva_pdf_topFTA.png>
 Package pdftex.def Info: img/FtaFt/fracaoChuva_pdf_topFTA.png used on input lin
-e 113.
+e 111.
 (pdftex.def)             Requested size: 403.16916pt x 256.0748pt.
 
-<img/FtaFt/fracaoChuva_cdf_topFTA.png, id=288, 1859.94875pt x 1173.38374pt>
+<img/FtaFt/fracaoChuva_cdf_topFTA.png, id=281, 1859.94875pt x 1173.38374pt>
 File: img/FtaFt/fracaoChuva_cdf_topFTA.png Graphic file (type png)
 
 <use img/FtaFt/fracaoChuva_cdf_topFTA.png>
 Package pdftex.def Info: img/FtaFt/fracaoChuva_cdf_topFTA.png used on input lin
-e 120.
+e 118.
 (pdftex.def)             Requested size: 405.89786pt x 256.0748pt.
 
-<img/FtaFt/fracaoChuva_pdf_topFT.png, id=289, 1845.89626pt x 1172.38pt>
+<img/FtaFt/fracaoChuva_pdf_topFT.png, id=282, 1845.89626pt x 1172.38pt>
 File: img/FtaFt/fracaoChuva_pdf_topFT.png Graphic file (type png)
 
 <use img/FtaFt/fracaoChuva_pdf_topFT.png>
 Package pdftex.def Info: img/FtaFt/fracaoChuva_pdf_topFT.png used on input line
- 128.
+ 126.
 (pdftex.def)             Requested size: 403.16916pt x 256.0748pt.
 
-<img/FtaFt/fracaoChuva_cdf_topFT.png, id=290, 1859.94875pt x 1173.38374pt>
+<img/FtaFt/fracaoChuva_cdf_topFT.png, id=283, 1859.94875pt x 1173.38374pt>
 File: img/FtaFt/fracaoChuva_cdf_topFT.png Graphic file (type png)
 
 <use img/FtaFt/fracaoChuva_cdf_topFT.png>
 Package pdftex.def Info: img/FtaFt/fracaoChuva_cdf_topFT.png used on input line
- 135.
+ 133.
 (pdftex.def)             Requested size: 405.89786pt x 256.0748pt.
  [17]
 
@@ -1324,99 +1321,99 @@ A.png>]
 LaTeX Warning: Text page 19 contains only floats.
 
 [19 <./img/FtaFt/fracaoChuva_pdf_topFT.png> <./img/FtaFt/fracaoChuva_cdf_topFT.
-png>] [20]
-<img/grids/nucleosRaios/colorbar_virs.png, id=335, 1135.24126pt x 162.6075pt>
+png>]
+<img/grids/nucleosRaios/colorbar_virs.png, id=321, 1135.24126pt x 162.6075pt>
 File: img/grids/nucleosRaios/colorbar_virs.png Graphic file (type png)
 
 <use img/grids/nucleosRaios/colorbar_virs.png>
 Package pdftex.def Info: img/grids/nucleosRaios/colorbar_virs.png used on input
- line 163.
+ line 161.
 (pdftex.def)             Requested size: 198.63554pt x 28.45274pt.
 
-<img/grids/nucleosRaios/001_topFTA_25471_0003.png, id=336, 1820.8025pt x 2710.1
+<img/grids/nucleosRaios/001_topFTA_25471_0003.png, id=322, 1820.8025pt x 2710.1
 25pt>
 File: img/grids/nucleosRaios/001_topFTA_25471_0003.png Graphic file (type png)
  <use img/grids/nucleosRaios/001_topFTA_25471_0003.png>
 Package pdftex.def Info: img/grids/nucleosRaios/001_topFTA_25471_0003.png used 
-on input line 164.
+on input line 162.
 (pdftex.def)             Requested size: 226.40508pt x 170.71652pt.
 
-<img/grids/nucleosRaios/002_topFTA_36502_0001.png, id=338, 1820.8025pt x 2710.1
+<img/grids/nucleosRaios/002_topFTA_36502_0001.png, id=324, 1820.8025pt x 2710.1
 25pt>
 File: img/grids/nucleosRaios/002_topFTA_36502_0001.png Graphic file (type png)
  <use img/grids/nucleosRaios/002_topFTA_36502_0001.png>
 Package pdftex.def Info: img/grids/nucleosRaios/002_topFTA_36502_0001.png used 
-on input line 165.
+on input line 163.
 (pdftex.def)             Requested size: 226.40508pt x 170.71652pt.
 
-Overfull \hbox (5.39926pt too wide) in paragraph at lines 164--165
+Overfull \hbox (5.39926pt too wide) in paragraph at lines 162--163
  [][][][] 
  []
 
 
-<img/grids/nucleosRaios/003_topFTA_03444_0001.png, id=340, 1899.095pt x 2710.12
+<img/grids/nucleosRaios/003_topFTA_03444_0001.png, id=326, 1899.095pt x 2710.12
 5pt>
 File: img/grids/nucleosRaios/003_topFTA_03444_0001.png Graphic file (type png)
  <use img/grids/nucleosRaios/003_topFTA_03444_0001.png>
 Package pdftex.def Info: img/grids/nucleosRaios/003_topFTA_03444_0001.png used 
-on input line 166.
+on input line 164.
 (pdftex.def)             Requested size: 236.14024pt x 170.71652pt.
 
-<img/grids/nucleosRaios/004_topFTA_05694_0005.png, id=342, 1899.095pt x 2710.12
+<img/grids/nucleosRaios/004_topFTA_05694_0005.png, id=328, 1899.095pt x 2710.12
 5pt>
 File: img/grids/nucleosRaios/004_topFTA_05694_0005.png Graphic file (type png)
  <use img/grids/nucleosRaios/004_topFTA_05694_0005.png>
 Package pdftex.def Info: img/grids/nucleosRaios/004_topFTA_05694_0005.png used 
-on input line 167.
+on input line 165.
 (pdftex.def)             Requested size: 236.14024pt x 170.71652pt.
 
-Overfull \hbox (24.8696pt too wide) in paragraph at lines 166--169
+Overfull \hbox (24.8696pt too wide) in paragraph at lines 164--167
  [][][][] 
  []
 
-
+[20]
 <img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil.png, 
-id=344, 2200.22pt x 1880.02374pt>
+id=337, 2200.22pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil.
 png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil.p
 ng>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cfad10_semrai
-o_topFTA_percentil.png used on input line 178.
+o_topFTA_percentil.png used on input line 176.
 (pdftex.def)             Requested size: 554.82874pt x 474.07831pt.
 
 <img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFT_percentil.png, i
-d=345, 2200.22pt x 1880.02374pt>
+d=338, 2200.22pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFT_percentil.p
 ng Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFT_percentil.pn
 g>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cfad10_semrai
-o_topFT_percentil.png used on input line 186.
+o_topFT_percentil.png used on input line 184.
 (pdftex.def)             Requested size: 554.82874pt x 474.07831pt.
 
 <img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFTA_percentil.png, 
-id=346, 2200.22pt x 1880.02374pt>
+id=339, 2200.22pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFTA_percentil.
 png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFTA_percentil.p
 ng>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cfad10_comrai
-o_topFTA_percentil.png used on input line 201.
+o_topFTA_percentil.png used on input line 199.
 (pdftex.def)             Requested size: 554.82874pt x 474.07831pt.
 
 <img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFT_percentil.png, i
-d=347, 2200.22pt x 1880.02374pt>
+d=340, 2200.22pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFT_percentil.p
 ng Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFT_percentil.pn
 g>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cfad10_comrai
-o_topFT_percentil.png used on input line 209.
+o_topFT_percentil.png used on input line 207.
 (pdftex.def)             Requested size: 554.82874pt x 474.07831pt.
  [21 <./img/grids/nucleosRaios/001_topFTA_25471_0003.png> <./img/grids/nucleosR
 aios/002_topFTA_36502_0001.png> <./img/grids/nucleosRaios/003_topFTA_03444_0001
@@ -1427,223 +1424,215 @@ h/cfad10_semraio_topFT_percentil.png>] [24 <./img/precipitacao3d/severo/percent
 il/90th/cfad10_comraio_topFTA_percentil.png>] [25 <./img/precipitacao3d/severo/
 percentil/90th/cfad10_comraio_topFT_percentil.png>] [26]
 <img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTApercentil
-.png, id=419, 2200.22pt x 1880.02374pt>
+.png, id=411, 2200.22pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTAperc
 entil.png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTAperce
 ntil.png>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cCumFad_10deg
-_semraio_topFTApercentil.png used on input line 274.
+_semraio_topFTApercentil.png used on input line 273.
 (pdftex.def)             Requested size: 554.82874pt x 474.07831pt.
 
 <img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTpercentil.
-png, id=420, 2200.22pt x 1880.02374pt>
+png, id=412, 2200.22pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTperce
 ntil.png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTpercen
 til.png>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cCumFad_10deg
-_semraio_topFTpercentil.png used on input line 281.
+_semraio_topFTpercentil.png used on input line 280.
 (pdftex.def)             Requested size: 554.82874pt x 474.07831pt.
-
-
-LaTeX Warning: Reference `ftccfdsubtrop' on page 27 undefined on input line 300
-.
-
-
-LaTeX Warning: Reference `ftccfdsubtrop' on page 27 undefined on input line 300
-.
-
-[27] [28 <./img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topF
-TApercentil.png>] [29 <./img/precipitacao3d/severo/percentil/90th/cCumFad_10deg
-_semraio_topFTpercentil.png>]
-
-LaTeX Warning: Reference `ftccfdsubtrop' on page 30 undefined on input line 316
-.
-
-[30]
-
-LaTeX Warning: Reference `chuvaEtemperatura' on page 31 undefined on input line
- 355.
-
-
-LaTeX Warning: Reference `ccftd_fta_com' on page 31 undefined on input line 355
-.
-
-
-LaTeX Warning: Reference `ccftd_fta_com' on page 31 undefined on input line 357
-.
-
-
+ [27] [28 <./img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_top
+FTApercentil.png>] [29 <./img/precipitacao3d/severo/percentil/90th/cCumFad_10de
+g_semraio_topFTpercentil.png>] [30]
 <img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTApercentil.pn
-g, id=472, 2221.29875pt x 1880.02374pt>
+g, id=464, 2221.29875pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTApercent
 il.png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTApercenti
 l.png>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cftd_10deg_co
-mraio_topFTApercentil.png used on input line 361.
+mraio_topFTApercentil.png used on input line 355.
 (pdftex.def)             Requested size: 554.82874pt x 469.57448pt.
 
 <img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTApercentil.p
-ng, id=473, 2221.29875pt x 1880.02374pt>
+ng, id=465, 2221.29875pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTApercen
 til.png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTApercent
 il.png>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/ccftd_10deg_c
-omraio_topFTApercentil.png used on input line 368.
+omraio_topFTApercentil.png used on input line 362.
 (pdftex.def)             Requested size: 554.82874pt x 469.57448pt.
 
 <img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercentil.png
-, id=474, 2221.29875pt x 1880.02374pt>
+, id=466, 2221.29875pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercenti
 l.png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercentil
 .png>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/cftd_10deg_co
-mraio_topFTpercentil.png used on input line 375.
+mraio_topFTpercentil.png used on input line 369.
 (pdftex.def)             Requested size: 554.82874pt x 469.57448pt.
 
 <img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercentil.pn
-g, id=475, 2221.29875pt x 1880.02374pt>
+g, id=467, 2221.29875pt x 1880.02374pt>
 File: img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercent
 il.png Graphic file (type png)
 
 <use img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercenti
 l.png>
 Package pdftex.def Info: img/precipitacao3d/severo/percentil/90th/ccftd_10deg_c
-omraio_topFTpercentil.png used on input line 382.
+omraio_topFTpercentil.png used on input line 376.
 (pdftex.def)             Requested size: 554.82874pt x 469.57448pt.
- [31] [32 <./img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTA
-percentil.png>] [33 <./img/precipitacao3d/severo/percentil/90th/ccftd_10deg_com
-raio_topFTApercentil.png>] [34 <./img/precipitacao3d/severo/percentil/90th/cftd
-_10deg_comraio_topFTpercentil.png>] [35 <./img/precipitacao3d/severo/percentil/
-90th/ccftd_10deg_comraio_topFTpercentil.png>]
-<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png, id=503, 800.9925pt
- x 920.43875pt>
+
+
+LaTeX Warning: Reference `metodologiaPrec3D' on page 31 undefined on input line
+ 381.
+
+
+<img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_2_1.png, id=469, 1402.2
+3875pt x 1561.835pt>
+File: img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_2_1.png Graphic fi
+le (type png)
+
+<use img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_2_1.png>
+Package pdftex.def Info: img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf
+_2_1.png used on input line 395.
+(pdftex.def)             Requested size: 229.90445pt x 256.0748pt.
+
+<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png, id=470, 1412.27625
+pt x 1577.895pt>
 File: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png Graphic file (
 type png)
 
 <use img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png>
 Package pdftex.def Info: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1
-.png used on input line 391.
-(pdftex.def)             Requested size: 222.84637pt x 256.0748pt.
+.png used on input line 396.
+(pdftex.def)             Requested size: 229.1797pt x 256.0748pt.
+
+Overfull \hbox (11.67326pt too wide) in paragraph at lines 395--397
+ [][][][] 
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 404.
+(Font)              <10> on input line 403.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 404.
- [36 <./img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1.png>]
-<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png, id=525, 800.9925pt
- x 920.43875pt>
+(Font)              <7> on input line 403.
+[31] [32 <./img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTAp
+ercentil.png>] [33 <./img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comr
+aio_topFTApercentil.png>] [34 <./img/precipitacao3d/severo/percentil/90th/cftd_
+10deg_comraio_topFTpercentil.png>] [35 <./img/precipitacao3d/severo/percentil/9
+0th/ccftd_10deg_comraio_topFTpercentil.png>] [36 <./img/precipitacao3d/deriv_cc
+ftd/Contornos_contornos_cdf_2_1.png> <./img/precipitacao3d/deriv_ccftd/deriv_co
+ntornos_cdf_2_1.png>] [37]
+<img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3.png, id=566, 1402.2
+3875pt x 1561.835pt>
+File: img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3.png Graphic fi
+le (type png)
+
+<use img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3.png>
+Package pdftex.def Info: img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf
+_3_3.png used on input line 433.
+(pdftex.def)             Requested size: 229.90445pt x 256.0748pt.
+
+<img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png, id=567, 1412.27625
+pt x 1577.895pt>
 File: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png Graphic file (
 type png)
 
 <use img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png>
 Package pdftex.def Info: img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3
-.png used on input line 411.
-(pdftex.def)             Requested size: 222.84637pt x 256.0748pt.
+.png used on input line 434.
+(pdftex.def)             Requested size: 229.1797pt x 256.0748pt.
+
+Overfull \hbox (7.75665pt too wide) in paragraph at lines 433--435
+ [][][][] 
+ []
+
+[38] [39 <./img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3.png> <./
+img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png>]
+
+LaTeX Warning: Reference `5oFta' on page 40 undefined on input line 456.
 
 
-LaTeX Warning: Reference `ccftd_fta_com' on page 37 undefined on input line 416
-.
+LaTeX Warning: Reference `10oFta' on page 40 undefined on input line 456.
 
-[37 <./img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3.png>] [38]
-<img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png, id=544, 2136.9837
-5pt x 1876.00874pt>
-File: img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png Graphic file 
-(type png)
 
-<use img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png>
-Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor005thFt
-a.png used on input line 432.
-(pdftex.def)             Requested size: 210.64577pt x 184.9429pt.
-
-<img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png, id=546, 2135.98pt
- x 1876.00874pt>
-File: img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png Graphic file 
-(type png)
-
-<use img/DistEspacialPercentis/FTA/distEspacialValor010thFta.png>
-Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor010thFt
-a.png used on input line 433.
-(pdftex.def)             Requested size: 210.54683pt x 184.9429pt.
- [39 <./img/DistEspacialPercentis/FTA/distEspacialValor005thFta.png> <./img/Dis
-tEspacialPercentis/FTA/distEspacialValor010thFta.png>]
-<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=569, 2135.98pt x
+<img/DistEspacialPercentis/FT/distEspacialValor005thFt.png, id=596, 2135.98pt x
  1878.01625pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor005thFt.png Graphic file (t
 ype png)
  <use img/DistEspacialPercentis/FT/distEspacialValor005thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor005thFt.
-png used on input line 450.
+png used on input line 463.
 (pdftex.def)             Requested size: 210.31868pt x 184.9429pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=571, 2137.9875pt
+<img/DistEspacialPercentis/FT/distEspacialValor010thFt.png, id=598, 2137.9875pt
  x 1877.0125pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor010thFt.png Graphic file (t
 ype png)
 
 <use img/DistEspacialPercentis/FT/distEspacialValor010thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor010thFt.
-png used on input line 451.
+png used on input line 464.
 (pdftex.def)             Requested size: 210.64684pt x 184.9429pt.
 
 
-LaTeX Warning: Reference `extremosSupFTA' on page 40 undefined on input line 45
-7.
+LaTeX Warning: Reference `extremosSupFTA' on page 40 undefined on input line 47
+0.
 
 
-LaTeX Warning: Reference `extremosSupFT' on page 40 undefined on input line 457
+LaTeX Warning: Reference `extremosSupFT' on page 40 undefined on input line 470
 .
 
 
-LaTeX Warning: Reference `pdfFta' on page 40 undefined on input line 462.
+LaTeX Warning: Reference `pdfFta' on page 40 undefined on input line 475.
 
 
-<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=574, 2135.98pt
+<img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png, id=601, 2135.98pt
  x 1876.00874pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png Graphic file 
 (type png)
 
 <use img/DistEspacialPercentis/FTA/distEspacialValor095thFta.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor095thFt
-a.png used on input line 468.
+a.png used on input line 481.
 (pdftex.def)             Requested size: 437.32466pt x 384.1122pt.
 
-<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=576, 2135.98pt
+<img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png, id=603, 2135.98pt
  x 1876.00874pt>
 File: img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png Graphic file 
 (type png)
 
 <use img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FTA/distEspacialValor099thFt
-a.png used on input line 475.
+a.png used on input line 488.
 (pdftex.def)             Requested size: 437.32466pt x 384.1122pt.
  [40] [41 <./img/DistEspacialPercentis/FT/distEspacialValor005thFt.png> <./img/
 DistEspacialPercentis/FT/distEspacialValor010thFt.png>] [42 <./img/DistEspacial
 Percentis/FTA/distEspacialValor095thFta.png>]
-<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=613, 2135.98pt x
+<img/DistEspacialPercentis/FT/distEspacialValor095thFt.png, id=637, 2135.98pt x
  1876.00874pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor095thFt.png Graphic file (t
 ype png)
  <use img/DistEspacialPercentis/FT/distEspacialValor095thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor095thFt.
-png used on input line 500.
+png used on input line 513.
 (pdftex.def)             Requested size: 437.32466pt x 384.1122pt.
 
-<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=615, 2135.98pt x
+<img/DistEspacialPercentis/FT/distEspacialValor099thFt.png, id=639, 2135.98pt x
  1876.00874pt>
 File: img/DistEspacialPercentis/FT/distEspacialValor099thFt.png Graphic file (t
 ype png)
  <use img/DistEspacialPercentis/FT/distEspacialValor099thFt.png>
 Package pdftex.def Info: img/DistEspacialPercentis/FT/distEspacialValor099thFt.
-png used on input line 507.
+png used on input line 520.
 (pdftex.def)             Requested size: 437.32466pt x 384.1122pt.
 ) [43 <./img/DistEspacialPercentis/FTA/distEspacialValor099thFta.png>] [44 <./i
 mg/DistEspacialPercentis/FT/distEspacialValor095thFt.png>] [45 <./img/DistEspac
@@ -1666,24 +1655,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `teseEvandro.out' has not changed.
-(rerunfilecheck)             Checksum: 471C128DDDAB5F39F7E252AA16A96758;743.
+(rerunfilecheck)             Checksum: 36EB2ACEC5641785F743E4390131D9C7;725.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 22069 strings out of 495039
- 377726 string characters out of 3181249
- 499349 words of memory out of 3000000
- 24529 multiletter control sequences out of 15000+200000
+ 22125 strings out of 495039
+ 378896 string characters out of 3181249
+ 501349 words of memory out of 3000000
+ 24573 multiletter control sequences out of 15000+200000
  66636 words of font info for 87 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 56i,15n,86p,1023b,588s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,15n,86p,1302b,588s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -1697,10 +1686,10 @@ ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr
 c/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy8.pfb>
-Output written on teseEvandro.pdf (48 pages, 7511495 bytes).
+Output written on teseEvandro.pdf (48 pages, 7451673 bytes).
 PDF statistics:
- 731 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 427 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 759 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 415 words of extra memory for PDF output out of 10000 (max. 10000000)
 

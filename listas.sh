@@ -3,4 +3,4 @@ makeindex -s teseEvandro.ist -t teseEvandro.sgl -o teseEvandro.sbl teseEvandro.s
 makeindex -s teseEvandro.ist -t teseEvandro.agl -o teseEvandro.sgl teseEvandro.sig
 
 
-#find ./ -name '*.ps' -exec pstoimg -type png -crop a -density 600 -aaliastext -color 24 -debug  {} \;
+#find ./ -maxdepth 1 -name '*.ps' -exec pstoimg -type png -crop a -density 600 -aaliastext -color 24 -debug  {} \;
