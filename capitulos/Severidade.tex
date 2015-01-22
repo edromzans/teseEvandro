@@ -24,7 +24,33 @@ As equações \ref{eqFT} e \ref{eqFTA} foram aplicadas nas 94,733 tempestades el
 
 Os sistemas potencialmente severos são selecionados pelo 90\textsuperscript{\underline{o}} percentil das amostras de probabilidades de FTA e FT, que estão associado aos maiores e mais raros valores ocorridos. Portanto, pressupõe-se que as tempestades elétricas as quais provavelmente causaram chuva de granizo, rajadas de ventos com queda de árvores e construções ou tornados estão associadas aos sistemas com valores extremos de FTA ou FT.
 
-O grupo das tempestades elétricas com FTA extremo, possuíram valores entre {29.3--1258.7 $\times$ 10$^{-4}$} raios por minuto por quilômetro quadrado (minuto$^{-1}$ km$^{-2}$), enquanto as tempestades elétricas com extremos de FT possuíram valores entre {47.2--1283.6} raios por minuto (minuto$^{-1}$). 
+O grupo das tempestades elétricas com FTA extremo, possuíram valores entre {29.3--1258.7 $\times$ 10$^{-4}$} raios por minuto por quilômetro quadrado (minuto$^{-1}$ km$^{-2}$), enquanto as tempestades elétricas com extremos de FT possuíram valores entre {47.2--1283.6} raios por minuto (minuto$^{-1}$). Nas figuras \ref{topFTA} e \ref{topFT} ilustram as medidas do TRMM para as 4 tempestades elétricas com FTA e FT mais intensos, as quais possuíram pelo menos 50\% da sua área dentro da visada do PR.  
+
+
+\begin{figure}[!hb]
+  \centering  
+  \subfloat[]{\includegraphics[height=1.cm]{img/grids/nucleosRaios/colorbar_virs}\label{barravirs_fta}}\\
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFTA/001_topFTA_10801_0006} \label{fta1}} 
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFTA/002_topFTA_58133_0007} \label{fta2}} \\
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFTA/003_topFTA_28799_0006} \label{fta3}} 
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFTA/004_topFTA_29770_0008} \label{fta4}} 
+  \caption{Visualização das Tempestades elétricas com os maiores valores de FTA.} %(0.05$^{\circ}$ $\times$ 0.05$^{\circ}$)
+\label{topFTA}
+\end{figure}
+
+\begin{figure}[!hb]
+  \centering 
+  \subfloat[]{\includegraphics[height=1.cm]{img/grids/nucleosRaios/colorbar_virs}\label{barravirs_ft}}\\
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFT/001_topFT_02837_00010002} \label{ft1}} 
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFT/002_topFT_14893_00010002} \label{ft2}} \\
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFT/003_topFT_05694_0005} \label{ft3}} 
+  \subfloat[]{\includegraphics[width=0.4\textwidth]{img/topSevero/topFT/004_topFT_03444_0001} \label{ft4}} 
+  \caption{Visualização das Tempestades elétricas com os maiores valores de FT.} %(0.05$^{\circ}$ $\times$ 0.05$^{\circ}$)
+\label{topFT}
+\end{figure}
+
+
+Note que, na parte superior e inferior de cada tempestade elétrica nas figuras \ref{topFTA} e \ref{topFT}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semi-eixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema. A barra de cores nas figura \ref{barravirs_fta} e \ref{barravirs_ft}, corresponde as temperaturas de brilho ($<$258K) associada a radiância espectral em infravermelho observada pelo VIRS. O gráfico abaixo da ilustração de cada sistema são as médias dos perfis de $Z_c$, classificados como convectivos e estratiformes, nas cores vermelho e azul respectivamente e o perfil médio de $Z_c$ considerando todos os perfis, convectivo, estratiforme e outos, que é representada pela curva na cor preta.
 
 Observe que o valor mínimo de FT foi de 0.6 raios por minuto. Em \citeonline{cecil2005}, considera-se que, a mínima taxa de raios no tempo para as PFs é de 0.7 raios por minutos. Porém a resolução espacial da projeção do tempo de visada do LIS utilizada nesta tese possui resolução de 0.25$^{\circ}$ $\times$ 0.25$^{\circ}$  \cite{albrecht2009tropical,albrecht2011b}. Ao considerar a velocidade e altura da órbita do satélite, o tempo de observação do LIS em um ponto de 0.25$^{\circ}$ $\times$ 0.25$^{\circ}$ na superfície terrestre pode atingir até 102 segundos na região zenital. Então, as tempestades elétricas que possuíram apenas 1 raio e $VT_m$ de $\simeq$100 segundos, tiveram o mínimo valor de FT de 0.6 raios min$^{-1}$, sendo esta, a mínima taxa de raios no tempo detectável em uma tempestades elétricas do TRMM desta pesquisa.
 
@@ -36,7 +62,6 @@ Observe que o valor mínimo de FT foi de 0.6 raios por minuto. Em \citeonline{ce
 %  \caption{90\textsuperscript{\underline{o}} percentil de FTA e FT.}
 %  \label{percetilFtaFt}
 %\end{figure}
-
 
 \section{ÁREA E TEMPERATURA DO TOPO DA NUVEM}
 
@@ -424,12 +449,11 @@ Portanto, além da microfísica de eletrificação descrita em \citeonline{Takah
 
 Os maiores valores de $Z_c$ em temperaturas inferiores a -10\textsuperscript{o}C para diferentes quantis da amostragem da probabilidade de $Z_c$ por temperatura dos extremos de FTA, indicam que a velocidade vertical no ambiente das tempestades elétricas com índice FTA extremo são maiores do que para os sistemas com índice FT extremo, pois os maiores valores de FTA mostram perfis de $Z_c$ com maior quantidade de gelo de nuvem, portanto, espera-se correntes ascendentes mais intensas nas tempestades elétricas selecionadas pelos extremos de FTA na região dos núcleos de raios para que seja possível elevar maior quantidade de água em regiões mais frias da atmosfera do que nos casos das tempestades elétricas com FT extremo. 
 
-O fato das taxas de crescimento em dBZ~\textsuperscript{o}C$^{-1}$ para a precipitação dos núcleos de raios das tempestades elétricas com FTA extremo serem maiores  em regiões mais frias do que observa-se para as tempestades elétricas com extremos de FT, sugere maior interação entre o \textit{graupel}, granizo compacto ou poroso e cristais gelo. Conforme \cite{Takahashi1978}, a interação entre cristais de gelo e o \textit{graupel} é o processo de maior eficiência na transferência de cargas entre os hidrometeoros. 
+O fato das taxas de crescimento em dBZ~\textsuperscript{o}C$^{-1}$ para a precipitação dos núcleos de raios das tempestades elétricas com FTA extremo serem maiores  em regiões mais frias do que observa-se para as tempestades elétricas com extremos de FT, sugere que nos extremos de FTA há maior interação entre o \textit{graupel} e neve seca, com possível formação de granizo compacto ou poroso, e menor interação entre o \textit{graupel} e neve molhada do que em relação aos extremos de FT. Conforme \cite{Takahashi1978}, a interação entre cristais de gelo e o \textit{graupel} é o processo de maior eficiência na transferência de cargas entre os hidrometeoros. 
 
-Nos sistemas com FT extremos, a acresção ocorreu preferencialmente em temperaturas superiores a -10\textsuperscript{o}C, ambiente  supostamente com maior quantidade de gotículas de água superesfriadas, sugerindo formação de granizo esponjoso\footnote{Granizo em que parte das gotículas de água super-resfriadas coletadas não congelam. Também denominado como granizo molhado.}, processo de crescimento de hidrometeoros pouco eficiente na eletrização \cite{jayaratne1983}. 
+Nos sistemas com FT extremos entre 10-0S e 70-60W, a acresção ocorreu preferencialmente em temperaturas superiores a -10\textsuperscript{o}C, ambiente supostamente com maior quantidade de gotículas de água superesfriadas do que em regiões com temperaturas entre -20\textsuperscript{o}C e -10\textsuperscript{o}C, sugerindo maior formação de granizo esponjoso\footnote{Granizo em que parte das gotículas de água super-resfriadas coletadas não congelam. Também denominado como granizo molhado ou granizo macio.}, processo de crescimento de hidrometeoro pouco eficiente para a eletrização \cite{jayaratne1983}. 
 
 %Portanto, mesmo que a estrutura 3D da precipitação dos extremos de FT esteja associada a sistemas com maior número de raios, a precipitação dos sistemas com as maiores densidades de raios por área (extremos de FTA), sugere processos de eletrificação mais eficientes.
-
 
 %para as tempestades elétricas  como mostra a figura %\ref{contornosAmazonas},
 % e a menor taxa de crescimento de dBZ~\textsuperscript{o}C$^{-1}$ %em 0\textsuperscript{o}C para as tempestades elétricas com FTA %extremo em relação aos extremos de FT, indicam maior intensidade %convectiva nos sistemas com FTA extremo entre 10-0S e 70-60W, %pois além de evidenciar mostra maior quantidade de
@@ -441,81 +465,59 @@ Observe na figura \ref{deriv_amazonas}, que logo abaixo de 10\textsuperscript{o}
 
 %Note na figura \ref{deriv_amazonas}, como a precipitação do 95\textsuperscript{\underline{o}} percentil de probabilidade de ocorrência tanto para FTA quanto para FT, é o regime de precipitação mais severa. Pois, há o crescimento de $Z_c$ em torno de -10 \textsuperscript{o}C e -15 \textsuperscript{o}C e não há banda brilhante, indicando precipitação a partir de granizo\footnote{Em \cite{Fabry1995}, este tipo de perfil é discutido como chuva a partir de gelo compacto.}. No 30\textsuperscript{\underline{o}}, 50\textsuperscript{\underline{o}} e 70\textsuperscript{\underline{o}} percentil dos extremos de FT, o efeito da banda brilhante associada ao derretimento é mais evidente do que para os extremos de FTA. 
 
-Quando comparamos a região central da Bacia do Rio Amazonas, figura \ref{deriv_amazonas}, com a região central da Bacia do Rio da Prata, entre 30-20S e 60-50W na figura \ref{deriv_prata}, a microfísica de eletrificação se mostra diferente em cada local. Observa-se que no 50\textsuperscript{\underline{o}} percentil, a taxa de crescimento em dBZ~\textsuperscript{o}C$^{-1}$ entre -40 \textsuperscript{o}C e -20 \textsuperscript{o}C é maior para a região da Bacia do Prata, do que para a região da Bacia Amazônica, tanto para os sistemas extremos de FTA quando para os sistemas extremos de FT, indicando maior crescimento de flocos de neve na estrutura 3D da precipitação severa sobre a Bacia do Prata do que sobre a Bacia Amazônica. 
-
-Comparando as linhas de contorno entre as figuras \ref{contornosAmazonas} e \ref{contornosPrata}, observa-se que em todos os quantis analisados, tanto para a chuva dos extremos de FTA quanto FT, mostram valores de $Z_c$ mais intensos para as tempestades elétricas na região que abrange parte central da bacia do Prata.  
+Quando comparamos a região central da Bacia do Rio Amazonas, figura \ref{deriv_amazonas}, com a região entre 30-20S e 60-50W que abrange parte central da Bacia do Rio da Prata, figura \ref{deriv_prata}, a microfísica de eletrificação se mostra diferente em cada local. Observa-se que no 50\textsuperscript{\underline{o}} percentil, a taxa de crescimento em dBZ~\textsuperscript{o}C$^{-1}$ entre -40 \textsuperscript{o}C e -20 \textsuperscript{o}C é maior para a região da Bacia do Prata, do que para a região da Bacia Amazônica, tanto para os sistemas extremos de FTA quanto para os sistemas extremos de FT. Na atmosfera, entre -40 \textsuperscript{o}C e -20 \textsuperscript{o}C as condições de temperatura e supersaturação em relação ao gelo são favoráveis para o crescimento de cristais de gelo, mostrando que o processo de agregação é mais intenso sobre a Bacia do Prata do que sobre a Bacia Amazônica.
 
 
 \begin{figure}[!ht]
 \centering
 \subfloat[Linhas de contorno dos CCFTDs.]{\includegraphics[height=9cm]{img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3} \label{contornosPrata}}
 \subfloat[Derivadas das linhas de contorno dos CCFTDs.]{\includegraphics[height=9cm]{img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3} \label{derivaPrata}}
-\caption{Região central da Bacia do Rio da Prata, entre 30-20S e 60-50W.}
+\caption{Quadrante que abrange a região central da Bacia do Rio da Prata, entre 30-20S e 60-50W.}
 \label{deriv_prata}
 \end{figure}
 
-Apesar do 95\textsuperscript{\underline{o}} percentil mostrar maiores taxas de de crescimento em dBZ por \textsuperscript{o}C, em -15 \textsuperscript{o}C tanto para FTA quanto FT sobre a Bacia do Rio Amazonas, do que sobre a Bacia do Rio da Prata,  os contorno de probabilidade acumulativa de 95\% nos CCFTD das figuras \ref{ccftd_fta_com} e \ref{ccftd_ft_com}, em -15 \textsuperscript{o}C, mostram valores de $Z_c$ de aproximadamente 3 dBZ superiores na região da Bacia Platina. Mesmo que o 95\textsuperscript{\underline{o}} percentil mostre maior crescimento de hidrometeoros na região mista sobre a Bacia Amazônica, a precipitação do 95\textsuperscript{\underline{o}} percentil na Bacia do Prata foi mais severa, pois possui maiores valores de $Z_c$.
 
-O aumento abrupto de $Z_c$ associado a fusão da água, entre 30-20S e 60-50W, figura \ref{deriv_prata}, principalmente do 50\textsuperscript{\underline{o}} e 70\textsuperscript{\underline{o}} percentil, ocorrem em -4 \textsuperscript{o}C, enquanto que, entre 10-0S e 70-60W, figura \ref{deriv_amazonas}, o aumento de $Z_c$ ocorre mais próximo de 0 \textsuperscript{o}C, o que indica maior presença de água super-resfriada associada ao processo de derretimento da precipitação entre 30-20S e 60-50W, região da Bacia do Rio da Prata.  
+Conforme \citeonline[p.~263]{mason1971_2ed}, as diferentes formas geométricas dos cristais de gelo irão depender da temperatura e supersaturação do ambiente atmosférico em relação ao gelo. Portanto, espera-se maior quantidade e diversidade de cristais de gelo associada a precipitação tridimensional dos núcleos de raios  da região da Bacia do Prata.
 
-Na região da Bacia do Prata, representada na figura \ref{deriv_prata}, o efeito de banda brilhante também é mais pronunciado para a precipitação com raios dos extremos de FT, o que mostra que as regiões eletricamente ativas da precipitação dos sistemas com índice extremo de FTA é menos estratificada do que nos extremos de FT, em ambas as Bacias Hidrológicas: da Prata e do Amazonas.
+Comparando as derivadas do contorno referente ao 95\textsuperscript{\underline{o}} percentil entre as figuras \ref{derivaAmazonas} e \ref{derivaPrata}, observa-se que para ambos os extremos de FTA ou FT, o crescimento de $Z_c$ em torno de -15 \textsuperscript{o}C é maior para a região da Bacia do Rio Amazonas, o que indica maior formação de granizo. Provavelmente, para os perfis de $Z_c$ mais raros e intensos entre 10-0S e 70-60W a eficiência de coleta de gotículas super-resfriadas no processo de acreção é mais eficiente do que entre 30-20S e 60-50W. 
 
-\newpage
+Porém, nas linhas de contorno das figuras \ref{contornosAmazonas} e \ref{contornosPrata}, observa-se que para todos os quantis analisados, tanto para a chuva dos extremos de FTA quanto FT, os valores de $Z_c$ são mais intensos nas tempestades elétricas da região que abrange a parte central da Bacia do Prata. Então pode-se afirmar que a intensidade convectiva dos núcleos de raios entre 30-20S e 60-50W é maior do que entre 10-0S e 70-60W. 
+
+%Apesar do 95\textsuperscript{\underline{o}} percentil mostrar maiores taxas de de crescimento em dBZ por \textsuperscript{o}C, em -15 \textsuperscript{o}C tanto para FTA quanto FT sobre a Bacia do Rio Amazonas, do que sobre a Bacia do Rio da Prata,  os contorno de probabilidade acumulativa de 95\% nos CCFTD das figuras \ref{ccftd_fta_com} e \ref{ccftd_ft_com}, em -15 \textsuperscript{o}C, mostram valores de $Z_c$ de aproximadamente 3 dBZ superiores na região da Bacia Platina. 
+%Mesmo que o 95\textsuperscript{\underline{o}} percentil mostre maior crescimento de hidrometeoros na região mista sobre a Bacia Amazônica, a precipitação do 95\textsuperscript{\underline{o}} percentil na Bacia do Prata foi mais severa, pois possui maiores valores de $Z_c$.
+
 \section{SEVERIDADE REGIONALIZADA}
 
-Aqui, o estudo da densidade de probabilidade de FTA e FT, conforme mostrado na figura \ref{pdfFTAFT}, foi feito para os sistemas ocorridos em cada região de 2.5 por 2.5 graus de latitude e longitude entre 40N-10S e 90-30W. Verifica-se a distribuição geográfica, dos valores de FTA e FT mais frequentes e mais raros conforme cada localidade.
 
+O estudo da densidade de probabilidade de FTA e FT, conforme mostrado na figura \ref{pdfFTAFT}, foi feito para as tempestades elétricas ocorridas em cada região de 2.5 por 2.5 graus de latitude e longitude entre 40N-10S e 90-30W. Desta forma, verifica-se quais são os valores extremos de FTA e FT em cada região de 2.5$^{\circ}$ $\times$ 2.5$^{\circ}$ sobre a América do Sul. 
 
-A linha de contorno na cor preta em cada mapa apresentado nesta seção, corresponde ao valor do percentil determinado para a análise regional, porém, é referente a amostragem total exposta na figura \ref{cdfFTAFT}.
+%Os mapas mostrados nesta seção são semelhantes aos mapas globais de valores extremos regionalizados das medidas relacionadas a intensidade convectiva das PFs mostrados em \citeonline{zipser2006}. %Porém nesta pesquisa, a intensidade convectiva é investigada com base nos índices FTA e FT. 
 
-No ambiente oceânico e costeiro, as tempestades elétricas mais frequentes devem possuir menores índices de severidade do que no continente, pois na costa e oceano observa-se as maiores probabilidades de ocorrência de chuva quente \cite{Liu2009}. 
-%o aquecimento da superfície durante o ciclo diurno é menor e o processo de colisão coalescência é dominante em relação aos processos que envolvem a formação de gelo de nuvem 
+%O Oceano Verde, conceito associado a convecção durante o regime de ventos de Oeste na estação chuvosa Amazônica, discutido por \citeonline{silva2002lba,williams2002}, é bastante evidente. A região central da Bacia Amazônica possui os  valores de FTA na mesma ordem de magnitude e no mesmo percentil das densidades de probabilidades de FTA regionalizadas das tempestades elétricas oceânicas e costeiras.
 
-Nas figuras \ref{5oFta} e \ref{10oFta}, os contornos com valores de 0.05 $\times$ 10$^{-4}$ e 0.12 $\times$ 10$^{-4}$ raios minutos$^{-1}$
-km$^{-2}$ respectivamente, demarcam claramente a divisão entre a convecção oceânica e a continental. O Oceano Verde, conceito associado a convecção durante o regime de ventos de Oeste na estação chuvosa Amazônica, discutido por \citeonline{silva2002lba,williams2002}, é bastante evidente. A região central da Bacia Amazônica possui os  valores de FTA na mesma ordem de magnitude e no mesmo percentil das densidades de probabilidades de FTA regionalizadas das tempestades elétricas oceânicas e costeiras.
+%Os valores de FT associados ao 5\textsuperscript{\underline{o}} e 10\textsuperscript{\underline{o}} percentil, mostrados nas figuras \ref{5oFt} e \ref{10oFt}, revelam os menores valores de FT no centro do continente, principalmente nas regiões continentais fora da área de atuação da ZCIT e de sistemas transientes subtropicais.
 
-Os valores de FT associados ao 5\textsuperscript{\underline{o}} e 10\textsuperscript{\underline{o}} percentil, mostrados nas figuras \ref{5oFt} e \ref{10oFt}, revelam os menores valores de FT no centro do continente, principalmente nas regiões continentais fora da área de atuação da ZCIT e de sistemas transientes subtropicais.
-
-\begin{figure}[!ht]
-  \centering{
-  \subfloat[5\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor005thFt}} \label{5oFt}}\\
-  \subfloat[10\textsuperscript{\underline{o}} percentil de FT]{{\includegraphics[height=6.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor010thFt}} \label{10oFt}}
-  }    
-  \caption{Distribuição espacial dos valores do 5\textsuperscript{\underline{o}} e 10\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
-\label{extremosInfFT}
-\end{figure} 
-
-Para avaliar a distribuição geográfica dos extremos superiores dos índices FTA e FT, verificou-se os valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil das amostragens, os quais são expostos nos mapas das figuras \ref{extremosSupFTA} e \ref{extremosSupFT}.
-
-%: regionalizadas, representados nas cores das figuras \ref{extremosSupFTA} e \ref{extremosSupFT}; e totais (ver figura \ref{seriesFtaFt}), representados pela linha de contorno das figuras \ref{extremosSupFTA} e \ref{extremosSupFT}.
-
-Observa-se na figura \ref{95oFta} que os sistemas com índice FTA  superior à 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$
-km$^{-2}$, são considerados de severidade extrema, pois correspondem a valores superiores ao valor do 95\textsuperscript{\underline{o}} percentil da amostragem total de FTA da figura \ref{pdfFta}. Porém, em regiões no interior do continente, os valores de FTA do 95\textsuperscript{\underline{o}} percentil das amostragens regionalizadas, atingiram  111.97 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$.
-%, mostrando que nestas regiões, valores de 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$ são mais frequentes do que nas regiões em que passa a linha de contorno de 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$.
-%raios por minutos por quilômetros quadrado
+Os mapas das figuras \ref{95oFta}, \ref{99oFta}, \ref{95oFt}  e \ref{99oFt}, mostram os valores de FTA e FT do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil de ocorrência. Pontos da grade de 2.5$^{\circ}$ $\times$ 2.5$^{\circ}$ com menos do que 100 tempestades elétricas ocorridas nos 14 anos de dados foram preenchidos na cor branca. A barra de cores dos mapas correspondem aos valores extremos regionais, enquanto a linha de contorno na cor preta marca o extremo em relação a todas as tempestades observadas sobre a AS, como é exposta na figura \ref{cdfFTAFT}.
 
 \begin{figure}[!ht]
 \centering
-{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor095thFta}} 
+{\includegraphics[height=14cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor095thFta}} 
 \caption{Distribuição espacial dos valores do 95\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FTA a cada região de 2.5 por 2.5 graus de latitude e longitude.}
 \label{95oFta}
-\end{figure} 
+\end{figure}
+
+Observa-se na figura \ref{95oFta}, que o valor do 95\textsuperscript{\underline{o}} percentil da amostragem total de FTA corresponde a 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$
+km$^{-2}$. Porém, em algumas regiões os valores de FTA do 95\textsuperscript{\underline{o}} percentil das amostragens regionalizadas, atingiram  111 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$. Portanto, eventos considerados extremos em relação a todo o continente Sul-americano podem ser bem mais frequentes nas regiões em que o 95\textsuperscript{\underline{o}} percentil da amostragem regional correspondeu a valores superiores a 52.76 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$.
   
 \begin{figure}[!ht]
 \centering  
-{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor099thFta}}
+{\includegraphics[height=14cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FTA/distEspacialValor099thFta}}
 \caption{Distribuição espacial dos valores do  99\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FTA a cada região de 2.5 por 2.5 graus de latitude e longitude.}
 \label{99oFta}
 \end{figure} 
 
 
-Os valores do 99\textsuperscript{\underline{o}} percentil na figura \ref{99oFta}, mostram que no Leste do estado do Amazonas, no Acre e Tocantis e Sudeste do Peru e Norte da Bolívia, regiões estas que compõem o Oceano Verde, a severidade extrema de FTA possui valores entre 148.93-230.00  $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$,  valores que correspondem aos mais extremos do continente Sul-americano. 
-
-Mesmo que a Floresta Amazônica seja um Oceano Verde para atmosfera durante as fases ativas do SAMS, durante o regime de ventos de Leste na estação chuvosa que associa-se as fases inativas da SAMS e durante a estação de transição seca-úmida (SON), ``o Mar Verde"  ~fica revolto. Mesmo que a Floresta Amazônica dialogue com a precipitação como um oceano, este oceano possui temperatura superficial média na classe das maiores temperaturas superficiais continentais globais e está cercado por um vasto continente. Portanto, tem a capacidades de gerar tempestades elétricas extremamente severas, mostrando que a interação entre a Floresta Amazônica e a atmosfera é bastante diversificada.
-
-As regiões dos maiores valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil do índice FTA, os quais são  expostos nas figuras \ref{95oFta} e \ref{99oFta}, são principalmente: a Bacia do Rio da Prata, a região Leste Amazônia e as regiões  do planalto Brasileiro, que se estendem por quase todo o país.
-
-Observa-se que os sistemas mais severos da América do Sul ocorrem associados ao relevo nas regiões entre o Pantanal Mato-grossense e o Planalto Central Brasileiro, entre as Bacias dos Rios: Xingu, Araguaia e Tocantis e também o Planalto Central Brasileiro, entre a Bacia do Rio Paraná e o Planalto Meridional Brasileiro, aonde está localizado os planaltos e chapadas da Bacia do Paraná. Nestas regiões os sistemas severos possuem índice FTA superiores à 80 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$, como mostram as cores das figuras \ref{95oFta} e \ref{99oFta}. 
+As regiões dos maiores valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil do índice FTA, os quais são expostos nas figuras \ref{95oFta} e \ref{99oFta}, são principalmente: a Bacia do Rio da Prata, região Leste da Amazônia e as regiões do planalto Brasileiro, que se estendem por quase todo o país. Observa-se que os sistemas mais com FTA mais intensos da América do Sul ocorrem associados ao relevo nas regiões entre o Pantanal Mato-grossense e o Planalto Central Brasileiro, entre as Bacias dos Rios Xingu, Araguaia e Tocantis e na região do Planalto Meridional Brasileiro aonde está localizado os planaltos e chapadas da Bacia do Paraná. Nestas regiões os sistemas com índice FTA extremo possuem valores superiores à 80 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$, conforme as cores das figuras \ref{95oFta} e \ref{99oFta}. 
 
 Note que para saber aproximadamente o número de raios produzidos pelos sistemas extremos de FTA temos que multiplicar o índice FTA pela área do sistema. Por exemplo, a equação \ref{FTAkm2}, descreve que nas regiões em que os sistemas extremos possuem 100 $\times$ 10$^{-4}$ raios minutos$^{-1}$ km$^{-2}$, um sistemas severo com área de 10$^3$ km$^2$ então possui 10 raios observados pelo LIS em 1 minuto.  
 
@@ -524,20 +526,29 @@ Note que para saber aproximadamente o número de raios produzidos pelos sistemas
 \label{FTAkm2}
 \end{equation}
 
-Os mapas das figuras \ref{95oFt} e \ref{99oFt}, mostam que nas Bacias: do Rio da Prata principalmente, do Rio Araguaia, Rio Xingu e Rio Tocantis, são locais em que os sistemas possuem os maiores índices de FT tanto no 95\textsuperscript{\underline{o}} quanto no 99\textsuperscript{\underline{o}} percentil.
+Os mapas das figuras \ref{95oFt} e \ref{99oFt}, mostram que nas Bacias: do Rio da Prata principalmente, do Rio Araguaia, Rio Xingu e Rio Tocantis, são locais em que os sistemas possuem os maiores índices de FT tanto no 95\textsuperscript{\underline{o}} quanto no 99\textsuperscript{\underline{o}} percentil.
 
 \begin{figure}[!ht]
 \centering
-{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor095thFt}} 
+{\includegraphics[height=14cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor095thFt}} 
 \caption{Distribuição espacial dos valores do 95\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
 \label{95oFt}
 \end{figure} 
   
 \begin{figure}[!ht]
 \centering  
-{\includegraphics[height=13.5cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor099thFt}}
+{\includegraphics[height=14cm, trim=0 0 0 0, clip]{img/DistEspacialPercentis/FT/distEspacialValor099thFt}}
 \caption{Distribuição espacial dos valores do  99\textsuperscript{\underline{o}} percentil da amostra de probabilidade do índice FT a cada região de 2.5 por 2.5 graus de latitude e longitude.}
 \label{99oFt}
 \end{figure}
 
-Os maiores valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil do índice FT, figuras \ref{95oFt} e \ref{99oFt},  ficam situados na região Sul da América do Sul, compatível com a região em que \citeonline{cecil2005}, apontam como o local das tempestades categoria 5, ou seja, das mais severas do globo.
+Os maiores valores do 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil do índice FT, figuras \ref{95oFt} e \ref{99oFt},  ficam situados na região Sul da América do Sul, compatível com a região em que \citeonline{cecil2005} apontam como o local das PFs com as maiores taxas de raios por minuto da AS.
+
+No entanto, os mapas dos extremos regionalizados do índice FTA mostram localidades com potencial de tempo severo em regiões mais adentro do continente Sul-americano, que se estende conforme a topografia do Planalto Central e Meridional brasileiro, no Leste da Bacia Amazônia e ao Oeste da Cordilheira dos Andes. 
+
+Os maiores valores de extremos de FTA mostrados nas figuras \ref{95oFta} e \ref{99oFta} correspondem com as regiões apresentadas em 
+\citeonline{zipser2006}, com os maiores valores extremos de mínima temperatura de brilho em 85 GHz observada pelo TMI e máxima altura com refletividade superior a 40 dBZ observadas pelo PR, enquanto os maiores valores de extremos de FT correspondem com os locais das PFs com maiores taxas de raios no tempo.
+
+Observe que entre 40--20S e 70--60W, os mapas desta seção revelam informações a respeito da intensidade convectiva (índices FTA e FT) das tempestades elétricas extremas sobre a AS em regiões do semi-árido Argentino, as quais foram desconsideradas em \citeonline{zipser2006} por apresentarem baixo número de amostragem de PFs, menos do que 1000 PFs. Como podemos observar na seção \ref{cicloanualsecao}, entre 40--20S e 70--60W, observou-se a mais curta estação de tempestades elétricas da AS, porém, durante a estação de tempestades elétricas identifica-se os maiores índices extremos de FT e FTA da AS. 
+
+Ao comparar os valores extremos entre o 95\textsuperscript{\underline{o}} e 99\textsuperscript{\underline{o}} percentil nas regiões continentais, a intensidade de ambos os índices FTA e FT aumenta em mais de 250\%. Conforme o percentil de ocorrência de FTA e FT aumenta a partir do 95\textsuperscript{\underline{o}} percentil, as regiões de 2.5 por 2.5 graus de latitude e longitude em que estes sistemas ocorrem são mais restritas e a intensidade convectiva (FTA e FT) aumenta aceleradamente em relação aos sistemas mais frequentes.
