@@ -221,14 +221,32 @@ Cada tempestade elétrica identificada foi armazenada na forma de um arquivo HDF
 
 Inicialmente foram identificadas 154,189 tempestades elétricas, entretanto, 331 tempestades elétricas não corresponderam a um único sistema convectivo ou multicelular, pois esses núcleo convectivos com raios estão embebidos em grandes sistemas como Frentes e a ZCAS. 
 
-Portanto, foi feita uma redivisão nos 331 sistemas enormes considerando a temperatura de brilho limiar para definição geográfica das nuvens de 221 K. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}. 
+Portanto, foi feita uma redefinição nos 331 sistemas enormes considerando a temperatura de brilho limiar para definição geográfica das nuvens de 221 K. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}. 
+
+
+Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como enormes. Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semi-eixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho associada a radiância espectral em infravermelho observada pelo VIRS. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
+% Este sistema foi dividido em 12 sistemas menores, com limiar de temperatura de brilho de 221 K e ocorrência de raio. 
+
+\begin{figure}[hb]
+\centering
+\includegraphics[height=1.0cm]{img/grids/nucleosRaios/colorbar_virs}\\
+\includegraphics[height=11.cm,trim=0 47cm 0 0,clip]{img/topSevero/EnormesInvalidas/018_Enormes_40791_0001}
+\caption{Nuvem de tempestade elétrica considerada enorme.}  
+\label{nuvem221}
+\end{figure}
 
 Com a recategorização destes sistemas enormes, o número total de tempestades elétricas que passaram a integrar esta pesquisa é de 157,592.
+
+\simbolo{name={A},description={Nas figuras que ilustram as tempestades elétricas, refere-se a área total ($A_t$) da tempestade elétrica.}}
+\simbolo{name={a},description={Semi-eixo maior}}
+\simbolo{name={b},description={Semi-eixo menor}}
+\simbolo{name={2c},description={Distância focal}}
+\simbolo{name={e},description={Excentricidade}}
+
 
 
 \section{A TAXA DE RAIOS}
 \label{metodoFtaFt}
-
 
 Condições de tempo severo, como frentes de rajadas, queda de granizo e tornados estão associados com um aumento abrupto na taxa de raios totais das tempestades elétricas, principalmente governado por raios intra-nuvens \cite{macgorman1989,carey1998,williams1999}.   
 
