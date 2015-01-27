@@ -1,9 +1,13 @@
 \chapter{METODOLOGIA}
 \label{metodologia}
 
-A Metodologia consiste fundamentalmente na construção de um subconjunto de dados das observações dos sensores VIRS, LIS e PR abordo do satélite TRMM, durante o período entre 1998 e 2011. Além dos dados satelitais, as reanálises 2 do NCEP--DOE \sigla{name={NCEP},description={\textit{National Centers for Environmental Prediction}}} em níveis de pressão foram utilizadas para identificar os valores de temperatura nos níveis de altitude do PR.
+A Metodologia consiste fundamentalmente na construção de um subconjunto de dados das observações dos sensores VIRS, LIS e PR abordo do satélite TRMM, durante o período entre 1998 e 2011. Além dos dados satelitais, as reanálises 2 do \textit{National Centers for Environmental Prediction -- Department of Energy
+} (NCEP--DOE) em níveis de pressão foram utilizadas para calcular os valores de temperatura nos níveis correspondentes a altitude do PR.
+\sigla{name={NCEP--DOE},description={\textit{National Centers for Environmental Prediction -- Department of Energy}}} 
 
-As informações dos diferentes sensores foram combinadas de maneira a identificar sistemas denominados como tempestades elétricas, definidas como nuvens as quais possuem pelo menos um raio -- \textit{flash} -- detectado pelo LIS. 
+
+
+As informações dos diferentes sensores foram combinadas de maneira a identificar sistemas denominados como tempestades elétricas, definidas como nuvens as quais possuíram pelo menos um raio -- \textit{flash} -- detectado pelo LIS. 
 
 %A seguir são apresentadas as principais características do TRMM 
 %Para melhor entender as implicações que envolvem a construção de uma base de dados de sistemas individualmente a partir das observações do TRMM, inicialmente descreve-se algumas das principais características operacionais do satélite TRMM.
@@ -11,16 +15,19 @@ As informações dos diferentes sensores foram combinadas de maneira a identific
 \section{O SATÉLITE TRMM}
 \label{metodologiaTRMM}
 
-O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}} faz parte de uma missão conjunta entre a \textit{National Aeronautics and Space Administration} -- NASA e \sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}} a \textit{Japan Aerospace Exploration Agency} -- JAXA, \sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}} com o objetivo de determinar a distribuição geográfica e a variabilidade da chuva e do fluxo de calor latente de condensação para a região tropical e subtropical terrestre, informações fundamentais para as inicializações de modelos globais e climáticos principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
+O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM  faz parte de uma missão conjunta entre a \textit{National Aeronautics and Space Administration} (NASA) e a \textit{Japan Aerospace Exploration Agency} (JAXA),  com o objetivo de estimar a distribuição espaço-temporal da chuva e do fluxo de calor latente para a região tropical e subtropical terrestre. Estas informações são fundamentais para avaliar modelos atmosféricos globais e climáticos principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
+
+\sigla{name={NASA},description={\textit{National Aeronautics and Space Administration}}}   
+\sigla{name={JAXA},description={\textit{Japan Aerospace Exploration Agency}}}
   
 
-O satélite TRMM foi lançado em 28 de novembro de 1997 entrando em órbita circular de 350 km de altitude com inclinação de 35$^{\circ}$ e período de 90 minutos. Originalmente a missão teria 3 anos, porém, em agosto de 2011 sua órbita foi elevada até 402.5 km de altitude e o tempo  de vida da missão foi prolongado. Devido as suas características orbitais, o TRMM sobrevoa 2 vezes ao dia em uma região de 10$^{\circ}$ $\times$ 10$^{\circ}$ de latitude e longitude \cite{simpson1988}.  
+O satélite TRMM foi lançado em 28 de novembro de 1997 entrando em órbita circular de 350 km de altitude com inclinação de 35$^{\circ}$ e período de 90 minutos. Originalmente a missão teria 3 anos, porém, em agosto de 2011 sua órbita foi elevada até 402.5 km de altitude e o tempo  de vida da missão foi prolongado. Devido as suas características orbitais, o TRMM sobrevoa 2 vezes ao dia em uma região de 10$^{\circ}$ $\times$ 10$^{\circ}$ de latitude e longitude \cite{simpson1988}. Em 2014, verificou-se que o combustível do satélite TRMM está no fim e a manobra de reentrada na atmosfera e aterrissagem deverá ocorrer por volta de abril de 2015, conforme notícia divulgada \cite{TRMMgoodbye}.
   
 Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipitation Radar} -- PR), radiômetro de microondas (\textit{TRMM Microwave Imager} -- TMI), radiômetro no visível e no infravermelho (\textit{Visible and Infrared Scanner} -- VIRS), radiômetro para medir a energia radiante da terra e das nuvens (\textit{Clouds and the Earth's Radiant Energy System} -- CERES) e sensor para imageamento de relâmpagos (\textit{Lightning Imaging Sensor} -- LIS). A figura \ref{figtrmm}, ilustra algumas das principais características de varreduras \cite{kummerok1998}.
 
-\begin{figure}[!hb]
+\begin{figure}[!ht]
   \centering{
-  {{\includegraphics[height=9.6cm]{img/TRMM/sensorPackage}}}
+  {{\includegraphics[height=14.5cm]{img/TRMM/sensorPackageTraduzido}}}
   }
 \caption{Ilustração do satélite TRMM e as  principais características de varredura dos sensores (adaptada de \citeonline{kummerok1998})}
 \label{figtrmm} 
@@ -31,9 +38,9 @@ Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipita
 
 O radar de precipitação -- PR -- é o principal instrumento do satélite TRMM. Se trata do primeiro radar meteorológico lançado no espaço sendo a maior inovação apresentada pela missão TRMM. Os objetivos do PR são prover a estrutura tridimensional da precipitação e quantificar as taxas de precipitação sobre os continentes e oceanos.  \cite{kummerok1998}. 
 
+A antena do PR possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5,0/4,3 km. Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e aproximadamente  9150 varreduras horizontais.
 
 
-A antena do PR possui uma largura de feixe de 0.71$^{\circ}$ $\times$ 0.71$^{\circ}$ disposta em um painel com abertura de 2.0 m $\times$ 2.0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5.0/4.3 km. Verticalmente, o PR observa uma faixa de 20 km a partir da superfície, com resolução de 250 m. Portanto, a precipitação observada em cada varredura ($\simeq$9150 por órbita) corresponde a uma matriz bidimensional de 49 $\times$ 80 posições: 49 feixes na varredura horizontal, com 80 níveis verticais. 
 
 %As principais características técnicas do PR são apresentadas na figura \ref{prtrmm}.
 %\begin{figure}[!hb]
