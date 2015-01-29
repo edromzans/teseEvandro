@@ -29,46 +29,64 @@ Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipita
   \centering{
   {{\includegraphics[height=14.5cm]{img/TRMM/sensorPackageTraduzido}}}
   }
-\caption{Ilustração do satélite TRMM e as  principais características de varredura dos sensores (adaptada de \citeonline{kummerok1998})}
+\caption{Ilustração do satélite TRMM e as  principais características de varredura dos sensores (adaptada de \citeonline{kummerok1998}).}
 \label{figtrmm} 
 \end{figure} 
 
 
 \subsection{Radar de Precipitação}
 
-O radar de precipitação -- PR -- é o principal instrumento do satélite TRMM. Se trata do primeiro radar meteorológico lançado no espaço sendo a maior inovação apresentada pela missão TRMM. Os objetivos do PR são prover a estrutura tridimensional da precipitação e quantificar as taxas de precipitação sobre os continentes e oceanos.  \cite{kummerok1998}. 
-
-A antena do PR possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5,0/4,3 km. Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e aproximadamente  9150 varreduras horizontais.
+O radar de precipitação (PR) é o principal instrumento do satélite TRMM. Se trata do primeiro radar meteorológico lançado no espaço sendo a maior inovação apresentada pela missão TRMM. Os objetivos do PR são prover a estrutura tridimensional da precipitação e quantificar as taxas de precipitação sobre os continentes e oceanos.  \cite{kummerok1998}. 
 
 
+\begin{table}[!ht]
+\caption{Principais parâmetros do sinal eletromagnético transmitido e recebido pelo PR (adaptada de\citeonline{kummerok1998,trmmhandbook}).}
+\label{PRparametros}
+\centering
+\small
+\newcommand{\grayline}{\rowcolor[gray]{.88}}
+\renewcommand {\tabularxcolumn }[1]{ >{\arraybackslash }m{#1}}
+\newcolumntype{W}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{l W } %{|p{10cm}|X|X|X|X|X|X|X|X| }
+\hline\hline 
+  Item & Especificações \\[1.5pt]
+\hline
+\grayline Frequência & 13,796, 13,802 GHz\\[1.5pt]
+Sensibilidade & $\leq$0,7 mm h$^{-1}$ 21 (Sinal/Ruído por pulso $\simeq$ 0 dB)\\[1.5pt]
+\grayline  Transmissor/Receptor: & \\[1.5pt]
+\grayline {~~~~~~~~~}Tipo & SSPA and LNA (128 channels)\\[1.5pt]
+\grayline {~~~~~~~~~}Potência máxima & $\geq$500 W \\[1.5pt]
+\grayline {~~~~~~~~~}Largura do pulso & 1,6 $\mu$s $\times$ 2 canais \\[1.5pt]
+\grayline {~~~~~~~~~}Frequência de repetição do pulso (PRF) & 2776 Hz \\[1.5pt]
+\hline 
+\end{tabularx}
+\end{table}
 
-%As principais características técnicas do PR são apresentadas na figura \ref{prtrmm}.
-%\begin{figure}[!hb]
-%  \centering{
-%  {{\includegraphics[height=9.1cm]{img/TRMM/PRTRMM}}}
-%  }
-%\caption{Principais características das observações do PR %\cite{trmmhandbook}}
-%\label{prtrmm} 
-%\end{figure} 
 
-Conforme as varreduras do PR, as medidas de  potência recebida ($P_r$) são armazenadas no produto 1B21, assim como indicativos de ruídos no sinal. A equação do radar conforme as características físicas do PR é aplicada nos dados de $P_r$ no produto 1C21 em que é obtido o fator de refletividade $Z_m$ e este é convertido em dBZ. 
+Os principais parâmetros relacionados ao feixe eletromagnético do PR são listados na tabela \ref{PRparametros}. Em relação a antena do PR, possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5,0/4,3 km. Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e $\simeq$9150 varreduras horizontais.
 
-Os dados do PR desta pesquisa fazem parte do produto 2A25, que depende do 1C21, 2A21 e 2A23. No produto 1C21, informações a respeito da  degradação do feixe com a distância e do tipo de superfície (oceano, costa ou continente) são adicionadas. A partir do produto 1C21, no produto 2A25, a correção por atenuação do feixe é aplicada nos valores de $Z_m$, quando se obtém os valores de refletividade corrigida por atenuação $Z_c$ bem como a taxa de precipitação em cada instante do campo de visão do PR \cite{iguchi1994atenua,meneghini2000,iguchi2000rain}.   
+As medidas de potência recebida ($P_r$), associadas com a seção transversal de retro-espalhamento sem correção de atenuação e  \textit{ground clutter}, são armazenadas no produto 1B21. A equação do radar conforme as especificações do PR é aplicada nos dados de $P_r$, que são convertidos para o fator de refletividade ($Z_m$) em dBZ, definindo o produto 1C21.
+\simbolo{name={$Z_m$},description={Fator de refletividade sem correção de atenuação e \textit{ground clutter}}.}
 
-O produto 2A25 possui também as informações sobe o tipo de chuva, as quais são utilizadas nesta pesquisa. Esta classificação é gerada no produto 2A23 e incorporadas no 2A25, em que basicamente identifica-se a presença ou não de sinais de banda brilhante no perfil e busca classificar cada perfil vertical de $Z_m$ como convectivo estratiforme ou outros \cite{awaka1997}. 
+No produto 2A25, calcula-se a taxa de precipitação (R), quando faz-se necessário corrigir o efeito de atenuação e \textit{ground clutter} de $Z_m$ obtendo o fator refletividade corrigido $Z_c$ \cite{iguchi1994atenua,meneghini2000,iguchi2000rain}. No cálculo de R utiliza-se as classificações dos perfis verticais como convectivo, estratiforme e outros do produto 2A23 \cite{awaka1997}. 
+\simbolo{name={R},description={Taxa de precipitação}}
 
+%Os dados do PR desta pesquisa fazem parte do produto 2A25, que depende do 1C21, 2A21 e 2A23. No produto 1C21, informações a respeito da  degradação do feixe com a distância e do tipo de superfície (oceano, costa ou continente) são adicionadas. A partir do produto 1C21, no produto 2A25, a correção por atenuação do feixe é aplicada nos valores de $Z_m$, quando se obtém os valores de refletividade corrigida por atenuação $Z_c$ bem como a taxa de precipitação em cada instante do campo de visão do PR \cite{iguchi1994atenua,meneghini2000,iguchi2000rain}.   
+%O produto 2A25 possui também as informações sobe o tipo de chuva, as quais são utilizadas nesta pesquisa. Esta classificação é gerada no produto 2A23 e incorporadas no 2A25, em que basicamente identifica-se a presença ou não de sinais de banda brilhante no perfil e busca classificar cada perfil vertical de $Z_m$ como convectivo estratiforme ou outros \cite{awaka1997}. 
 % \cite{meneghini2000,iguchi2000rain,iguchi2009,PRv7}.
 %Considerando as características do TRMM, no produto 
 %Para esta pesquisa serão utilizados os dados do produto 2A25, o qual corrige a atenuação da refletividade do radar medida ($Z_m$) \simbolo{name={$Z_m$},description={Refletividade do radar medida}} e a partir do fator de refletividade corrigido por atenuação $Z_c$, estima a estrutura tridimensional da precipitação no instante da observação, bem como a taxa de precipitação em cada célula da resolução (46 $\times$ 80) do PR \cite{PRv7}. 
-%Além da estrutura tridimensional da precipitação do produto 2A25, nesta tese, utiliza-se das classificações do tipo de chuva do produto 2A23: convectivo, estratiforme, outros, etc \cite{2A25,PRv7}.
-      
-\sigla{name={PR},description={\textit{Precipitation Radar}}}
+%Além da estrutura tridimensional da precipitação do produto 2A25, nesta tese, utiliza-se das classificações do tipo de chuva do produto 2A23: convectivo, estratiforme, outros, etc \cite{2A25,PRv7}.   
+\sigla{name={PR},description={Radar de precipitação, do inglês \textit{Precipitation Radar}}}
+\sigla{name={PRF},description={Frequência de repetição do pulso, do inglês \textit{Pulse Repetition Frequency}}}
+
+
 
 \subsection{Imageador de raios}
 
-O imageador de raios -- LIS  é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
+O imageador de raios (LIS) é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
 
-O sistema de imageamento do LIS é constituído por um telescópio f/1.6 que expande o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777.4 nm e com largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{O CCD (\textit{charge-coupled device}) é um dispositivo eletrônico que mede corrente elétrica gerada por efeito fotoelétrico amplamente utilizado para obter imagens digitalmente.}. Acoplada a matriz de CCDs, uma lente angular proporciona um campo de visão panorâmico de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 600 km $\times$ 600 km. Um pixel do campo de visão do LIS, possui resolução entre 5-10km. O sistema de amostragem de dados do LIS garante o registro de 500 imagens por segundo. \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+O sistema de imageamento do LIS é constituído por um telescópio com razão focal de $f/1,6$ expandindo o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777,4 nm e com largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{O CCD (\textit{charge-coupled device}) é um dispositivo eletrônico que mede corrente elétrica gerada por efeito fotoelétrico amplamente utilizado para obter imagens digitalmente.}. Acoplada a matriz de CCDs, uma lente angular proporciona um campo de visão panorâmico de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 600 km $\times$ 600 km. Um pixel do campo de visão do LIS na superfície terrestre possui resolução entre 5 km no nadir e de até  10 km nas regiões mais externas de sua varredura. Para identificar os raios o LIS utiliza um sistema de amostragem que captura 500 imagens por segundo \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
 
 %\begin{figure}[!hb]
 %  \centering
@@ -77,15 +95,14 @@ O sistema de imageamento do LIS é constituído por um telescópio f/1.6 que exp
 %\label{Lispic}
 %\end{figure} 
 
+Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica  eventos, grupos e os raios. Os eventos são as posições das CCDs que ``brilham", os grupos são os agrupamentos de eventos que podem ser caracterizados como descargas de retorno -- \textit{stroke}. O raio -- \textit{flash} -- é o agrupamento espaço-temporal de grupos de eventos.
 
-Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica  eventos, grupos e os raios. Os eventos são as posições das CCDs que ``brilham", os grupos são os agrupamentos de eventos que podem ser caracterizados como descargas de retorno -- \textit{stroke}. O raio é o agrupamento espaço-temporal de grupos de eventos.
-
-
-A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  eventos, grupos até a caracterização de um raio. Observe, na figura \ref{evgrfla} que em $t=0$ ms, as CCDs, 1, 2 e 3  foram sensibilizadas e o algoritmo definiu o grupo de evento $a$ candidato a ser um raio $A$.  Quanto $t=100$ ms, as CCDs, 4, 5 e 6, são sensibilizadas e temos 2 grupos de eventos, $a$ e $b$, espacialmente e temporalmente ($<$330 ms) próximos, portanto, os grupos $a$ e $b$ integram o mesmo raio $A$, como ilustra a figura \ref{evgrflb}. Quando $t = 350$ ms, as CCDs 9 e 10 são sensibilizadas como mostra a figura \ref{evgrflc}. As CCDs 9 e 10 não estão próximas dos grupos $a$ e $b$ que compõe o raio $A$, portanto, o algoritmo define o grupo $d$ e um novo candidato a raio $B$. Na figura \ref{evgrfld} o raio $B$ possui mais dois grupos, $e$ e $f$. Na figura \ref{evgrfle}, note que a CCD 13 coincide com a posição 2, inicialmente em \ref{evgrfla}, mas como o intervalo de tempo entre as figuras \ref{evgrfla} e \ref{evgrfle} é superior a 330 ms, o grupo $g$ também definiu o novo raio $C$ \cite{christian2000LISalgorithm}.  
+A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  eventos, grupos até a caracterização de um raio. Observe, na figura \ref{evgrfla} que em $t=0$ ms, as CCDs, 1, 2 e 3  foram sensibilizadas e o algoritmo definiu o grupo de evento $a$ candidato a ser um raio $A$.  Quando $t=100$ ms, as CCDs, 4, 5 e 6, são sensibilizadas e temos 2 grupos de eventos, $a$ e $b$, espacialmente e temporalmente ($<$330 ms) próximos, portanto, os grupos $a$ e $b$ integram o mesmo raio $A$, como ilustra a figura \ref{evgrflb}. Quando $t = 350$ ms, as CCDs 9 e 10 são sensibilizadas como mostra a figura \ref{evgrflc}. As CCDs 9 e 10 não estão próximas dos grupos $a$ e $b$ que compõe o raio $A$, portanto, o algoritmo define o grupo $d$ e um novo candidato a raio $B$. Na figura \ref{evgrfld} o raio $B$ possui mais dois grupos, $e$ e $f$. Na figura \ref{evgrfle}, note que a CCD 13 coincide com a posição 2, inicialmente em \ref{evgrfla}, mas como o intervalo de tempo entre as figuras \ref{evgrfla} e \ref{evgrfle} é superior a 330 ms, o grupo $g$ também definiu o novo raio $C$ \cite{christian2000LISalgorithm}.  
 
      
 O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno. Conforme \citeonline{boccippio1996science} a eficiência de detecção de raios do LIS é maior no período noturno, com 93$\pm$4\%, enquanto que no período diurno é de 73$\pm$11\%.  Com a velocidade orbital de 11 km/s, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por até 90 segundos, tempo suficiente para a estimativa da taxa de raios de uma tempestade no momento da observação \cite{christianTM,trmmhandbook}.
-\sigla{name={LIS},description={\textit{Lightning Imaging Sensor}}}
+
+\sigla{name={LIS},description={Imageador de raios, do inglês \textit{Lightning Imaging Sensor}.}}
 
 \begin{figure}[!ht]
   \centering{
