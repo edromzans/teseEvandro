@@ -83,7 +83,7 @@ No produto 2A25 calcula-se a taxa de precipitação (R). É quando faz-se necess
 \sigla{name={PRF},description={Frequência de repetição do pulso, do inglês \textit{Pulse Repetition Frequency}}}
 \simbolo{name={$f$},description={Distância focal}}
 
-\subsection{Imageador de raios}
+\subsection{Sensor imageador de raios}
 
 O imageador de raios (LIS) é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
 
@@ -107,13 +107,13 @@ O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tan
 
 \begin{figure}[!ht]
   \centering{
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0}} \label{evgrfla}}
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time100}}\label{evgrflb}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time0_ptbr}} \label{evgrfla}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time100_ptbr}}\label{evgrflb}}
   
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time350}}\label{evgrflc}}
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time400}}\label{evgrfld}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time350_ptbr}}\label{evgrflc}}
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time400_ptbr}}\label{evgrfld}}
 
-  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700}} \label{evgrfle}}  
+  \subfloat[]{{\includegraphics[height=3.3cm]{img/TRMM/time700_ptbr}} \label{evgrfle}}  
   }
 \caption{Ilustração do algoritmo de identificação de eventos, grupos e os raios do LIS \cite{christian2000LISalgorithm}.}
 \label{LisImagemProcessa} 
@@ -368,7 +368,7 @@ Na figura \ref{taxaTotalTe} é notável o alto número de sistemas na região Su
 Mesmo que as matrizes representem pontos em uma grade com espaçamento angular regular, as áreas de cada ponto de grade não são iguais, pois a  o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
 
 
-A densidade de raios ($\mathbf{DE}_{fl}$) é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS de segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por minuto por quilômetro quadrado ([minuto$^{-1}$] [km$^{-2}$]).
+A densidade de raios ($\mathbf{DE}_{fl}$) é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS de segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por ano por quilômetro quadrado ([ano$^{-1}$] [km$^{-2}$]).
 
 \begin{equation}
 \mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600     
@@ -400,35 +400,30 @@ O estudo para descrever a morfologia da precipitação foi realizado com base na
 A partir dos perfis de $Z_c$ selecionados pelo algoritmo de identificação de tempestades elétricas, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude, através dos Diagramas de Contorno de Frequência por Altitude (CFAD) \cite{yuter1995}.
 \sigla{name={CFAD},description={Diagrama de Contorno de Frequência por Altitude}}
 
-Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de altitude do PR. A função $f_{pdf}(x,y)$, foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude.
+Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de altitude do PR. Neste estudo, a função $f_{pdf}(x,y)$ foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude.
 
 \simbolo{name={$f_{pdf}(x,y)$},description={Função densidade de probabilidade com duas variáveis}}
 
 
 Para a obtenção dos diagramas de probabilidade normalizados por nível de altitude, cada nível $y$ da função $f_{pdf}(x,y)$ foi normalizado pelo número total de ocorrências de valores de $Z_c$ distribuídos em $x$. Os níveis $y$ de altitude com número total de ocorrência de $Z_c$ em $x$, menor do que 10\% do nível de máxima ocorrência, foram desconsiderados dos contornos de probabilidade em todos os CFADs.
 
-Com base na ($f_{pdf}(x,y)$) que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa ($f_{cdf}(x,y)$) de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
-
+Com base na $f_{pdf}(x,y)$ que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa $f_{cdf}(x,y)$ de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
 
 \simbolo{name={$f_{cdf}(x,y)$},description={Função densidade de probabilidade cumulativa com duas variáveis}}
 
 Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ associados à diferentes quantis da amostra de probabilidade, elucidando ainda mais as informações contidas nos CFADs.
 
-
 %Então, objetivando uma análise dos processos de crescimento de hidrometeoros no perfil atmosférico e na mesma óptica de trabalhos como \citeonline{Takahashi1978,Saunders1999,Takahashi2002,avila2009}, ou seja, em função de diferentes condições de temperatura, nesta pesquisa construímos o diagrama denominado como Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}.
 
+\subsection{Distribuições de probabilidades em função da  temperatura}
 
+A distribuição vertical da precipitação está associada com o desenvolvimento vertical, porém o tipo de hidrometeoro de uma  determinada altitude é função da temperatura, probabilidade de colisão e da razão de saturação naquela altura \cite[p.~263]{mason1971_2ed}. Os processos de eletrificação por outro lado dependem do conteúdo de água líquida, temperatura, velocidade terminal, velocidade vertical, tamanho e tipo das partículas \cite{Takahashi1978,Saunders1999,Takahashi2002,avila2009}.
 
-\subsection{Distribuições de probabilidades com a temperatura}
-
-A distribuição de probabilidade da precipitação com a altitude associa-se com o desenvolvimento vertical, porém o tipo de hidrometeoro de determinada altitude é função da temperatura, probabilidade de colisão  e da razão de saturação naquela altura \cite[p.~263]{mason1971_2ed}. 
-
-Os processos de eletrificação por outro lado dependem do conteúdo de água líquida, temperatura, velocidade terminal, velocidade vertical, tamanho e tipo das partículas \cite{Takahashi1978,Saunders1999,Takahashi2002,avila2009}. Portanto saber como o perfil da precipitação varia com a temperatura é preponderante para identificar qual mecanismo de crescimento dos hidrometeoros está dominando. Neste sentido foi elaborado o Diagrama de Contorno de Frequência por Temperatura (CFTD). \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}} 
+Portanto saber como o perfil da precipitação varia com a temperatura é preponderante para identificar qual mecanismo de crescimento dos hidrometeoros está dominando conforme o desenvolvimento e a severidade das tempestades elétricas. Neste sentido foi elaborado o Diagrama de Contorno de Frequência por Temperatura (CFTD). \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}} 
 
 %Nos CFTDs, os níveis de temperatura não correspondem as condições controladas em laboratório, e sim às variações de temperatura do perfil atmosférico. 
 
-Para converter os níveis de altitude do PR em níveis de temperatura, foram utilizados os dados de reanálises (R2) do NCEP--DOE entre 1998--2011, em 17 níveis de pressão, da altura geopotencial e temperatura.
-
+Para converter os níveis de altitude do PR em níveis de temperatura, foram utilizados os dados de reanálises (R2) do NCEP--DOE entre 1998--2011, em 17 níveis de pressão, da altura geopotencial e temperatura, correspondentes aos horários mais próximos e anteriores ao horário de cada tempestades elétrica observada pelo TRMM.
 
 Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo VIRS, foram extraídos. A partir dos 17 níveis verticais das R2, os 80 níveis de temperaturas associados aos 80 níveis de altitude das observações do PR foram calculados através de um método de mínimos quadrados.
 
