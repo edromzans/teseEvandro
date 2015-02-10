@@ -31,7 +31,7 @@ Por exemplo, uma falha no sistema de distribuição de energia elétrica pode ce
     
 %Desta forma, o processo de eletrificação dos hidrometeoros até a formação de um raio, depende da capacidade do ar quente e úmido da superfície romper a estabilidade atmosférica e atingir altitude entre 4--15 km, regiões acima da isoterma de 0 $^{\circ}$C. Portanto, as tempestades elétricas podem indicar condições dinâmicas e termodinâmicas associadas a convecção profunda na atmosfera \cite{doswell2001,zipser2006}.
 
-Além dos raios que atingem o solo -- raios nuvem-solo -- causando danos a sociedade, as tempestades elétricas indicam condições dinâmicas e termodinâmicas associadas a convecção profunda na atmosfera, pois o processo de eletrificação dos hidrometeoros relacionado com a formação de um raio, depende da capacidade do ar quente e úmido da superfície romper a estabilidade atmosférica e atingir altitude entre 4--15 km, regiões acima da isoterma de 0 $^{\circ}$C \cite{doswell2001,zipser2006}. Por exemplo, em  \citeonline{macgorman1989,carey1998,williams1999}, mostraram que condições de tempo severo (frentes de rajadas com velocidade superior a 92,6 km h$^{-1}$, queda de granizo com diâmetro maior do que 1,9 cm ou tornados) são geralmente precedidas de um salto na taxa de raios total das tempestades elétricas associado ao intenso crescimento de hidrometeoros na região mista.      
+Além dos raios que atingem o solo -- raios nuvem-solo -- causando danos a sociedade, as tempestades elétricas indicam condições dinâmicas e termodinâmicas associadas a convecção profunda na atmosfera, pois o processo de eletrificação dos hidrometeoros relacionado com a formação de um raio, depende da capacidade do ar quente e úmido da superfície romper a estabilidade atmosférica e atingir altitude entre 4--15 km, regiões acima da isoterma de 0 $^{\circ}$C \cite{doswell2001,zipser2006}. Por exemplo,   \citeonline{macgorman1989,carey1998,williams1999}, mostram que condições de tempo severo (frentes de rajadas com velocidade superior a 92,6 km h$^{-1}$, queda de granizo com diâmetro maior do que 1,9 cm ou tornados) são geralmente precedidas de um salto na taxa de raios total das tempestades elétricas associado ao intenso crescimento de hidrometeoros na região mista.      
 %governado por raios que não atingem o solo -- raios intra-nuvens 
 
 Neste sentido, técnicas de seleção de sistemas meteorológicos a partir de dados de sensoriamento remoto, combinadas com o monitoramento da taxa de raios dos sistemas são de grande importância para o monitoramento de tempo severo. 
@@ -39,40 +39,199 @@ Neste sentido, técnicas de seleção de sistemas meteorológicos a partir de da
 Diversos estudos definiram sistemas meteorológicos fazendo o agrupamento de regiões na superfície a partir de limiares de temperatura de brilho observadas em satélite. \citeonline{Maddox1980}, observou a ocorrência de duas regiões: uma com temperatura de brilho $\leqslant$ -32°C (241K) e área $\geqslant$ 100,000 km$^2$;  outra região menor, no interior da região maior, com temperatura de brilho $\leqslant$ -52°C (221K) e área $\geqslant$ 50,000 km$^2$, que estavam associadas com Sistemas Convectivos de Meso-escala (SCM) nos Estados Unidos.  \citeonline{mapes1993}, utilizaram esta metodologia e também fazem uma síntese de trabalhos que buscaram selecionar \textit{clusters} de nuvens a partir de limiares de temperatura de brilho em infravermelho. Considerando monitoramento de sistemas sobre a AS, destaco os estudos de \citeonline{machado1998,laurent2002} que foram precursores para a operacionalização do sistema ForTraCC descrito em \cite{vila2008}.
 
 
-Em termos do monitoramento de sistemas juntamente com a taxa de raios, \citeonline{morales2003} desenvolveram um algoritmo hidro-estimador estudando regiões de temperatura de brilho em infravermelho do GOES coincidentes com medidas de raios da  \textit{Sferics Timing and Ranging Network} (STARNET) e a precipitação observada pelo radar a bordo do satélite \textit{Tropical Rainfall Measuring Mission} (TRMM). Dados da STARNET foram utilizados para definir \textit{clusters} com raios e sem raios, em que os raios estiveram associados ao núcleos mais intensos de precipitação. Foi observado que as descargas localizadas pela STARNET, em 90\% dos casos, estiveram associados a regiões com temperatura de brilho em infravermelho menores do que 258 K.
+Em termos do monitoramento de sistemas juntamente com a taxa de raios, \citeonline{morales2003} desenvolveram um algoritmo hidro-estimador estudando regiões de temperatura de brilho em infravermelho do  \textit{Geostationary Operational Environmental Satellite} (GOES) coincidentes com medidas de raios da  \textit{Sferics Timing and Ranging Network} (STARNET) e a precipitação observada pelo \textit{Precipitation Radar} (PR)  a bordo do satélite \textit{Tropical Rainfall Measuring Mission} (TRMM). Os dados da STARNET foram utilizados para definir \textit{clusters} de nuvens com raios e sem raios, em que os raios estiveram associados ao núcleos mais intensos de precipitação. Foi observado que as descargas localizadas pela STARNET, em 90\% dos casos, estiveram associados a regiões com temperatura de brilho em infravermelho menores do que 258 K.
 
+\sigla{name={GOES},description={\textit{Geostationary Operational Environmental Satellite}}}
+\sigla{name={PR},description={\textit{Precipitation Radar}}}
 \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}}
 \sigla{name={STARNET},description={\textit{Sferics Timing and Ranging Network}}}
 
 %Porém a radiação infravermelha observada por satélites, corresponde apenas a irradiação do topo das nuvens. Nuvens finas, com formação acima da isoterma de 0°C, como por exemplo as nuvem cirrus, podem cobrir grandes extensões e não estar associadas a precipitação nem descargas elétricas.
 
 
-Em \citeonline{houze1993} Linhas de Instabilidades (LI) foram definidas observando extensões com chuva contínua observada por radar. Em \citeonline{MohrZipser1996} Sistemas Convectivos de Meso-escala (SCM) sobre os trópicos foram observados a partir do espalhamento radiativo em micro-ondas (85-GHz PCT), em que regiões contínuas $\geqslant$ 2000 km$^2$ com PCT $\leqslant$ 250 K foram os principais critérios para a identificação dos sistemas.
+Em \citeonline{houze1993} Linhas de Instabilidades (LI) foram definidas observando extensões com chuva contínua observada por radar. Em \citeonline{MohrZipser1996} Sistemas Convectivos de Meso-escala (SCM) sobre os trópicos foram observados a partir do espalhamento radiativo em micro-ondas (85 GHz  \textit{Polarization Corrected Temperature} (PCT)), em que regiões contínuas $\geqslant$ 2000 km$^2$ com PCT $\leqslant$ 250 K foram os principais critérios para a identificação dos sistemas.
 
+\sigla{name={PCT},description={\textit{Polarization Corrected Temperature}}}
 \sigla{name={SCM},description={\textit{Sistema Convectivo de Meso-escala}}}
 \sigla{name={LI},description={\textit{Linha de Instabilidade}}}
 
-Combinando dados do \textit{Precipitation Radar} (PR) e  \textit{TRMM Microwave Imager} (TMI) abordo do satélite \textit{Tropical Rainfall Measuring Mission} (TRMM), \citeonline{Nesbitt2000} desenvolveu uma metodologia para selecionar sistemas precipitantes denominados como \textit{Precipitation Features} (PF), em que o principal critério de seleção foi identificar área contínua de chuva na superfície, seja estimada pelas observações de radar ou micro-ondas quando os sistemas estiveram fora da varredura do PR. A parir desta metodologia, \citeonline{cecil2005} mostraram que apenas 2,4\% das PFs observadas pelo TRMM em todo globo entre 12/1997--10/2000 possuíram atividade elétrica. Na AS as PFs classificadas com as maiores taxas de raios, concentraram-se na região da Bacia do Prata.% associadas a Sistemas Convectivos de Meso-escala \cite{Velasco1987,Durkee2009}.   
+Combinando dados do PR e o \textit{TRMM Microwave Imager} (TMI) abordo do satélite TRMM, \citeonline{Nesbitt2000} desenvolveu uma metodologia para selecionar sistemas precipitantes denominados como \textit{Precipitation Features} (PFs), em que o principal critério de seleção foi identificar área contínua de chuva na superfície, seja estimada pelas observações de radar ou micro-ondas quando os sistemas estiveram fora da varredura do PR. A parir desta metodologia, \citeonline{cecil2005} mostraram que apenas 2,4\% das PFs observadas pelo TRMM em todo globo entre 12/1997--10/2000 possuíram atividade elétrica. Na AS as PFs classificadas com as maiores taxas de raios, concentraram-se na região da Bacia do Prata.% associadas a Sistemas Convectivos de Meso-escala \cite{Velasco1987,Durkee2009}.   
 
-\sigla{name={PF},description={\textit{Precipitation Features}}}
+\sigla{name={PFs},description={\textit{Precipitation Features}}}
 \sigla{name={TMI},description={\textit{TRMM Microwave Imager}}}
 \sigla{name={TRMM},description={\textit{Tropical Rainfall Measuring Mission}}}
 
-Mais tarde, \citeonline{zipser2006} identificou os locais das tempestades mais severas do globo. Apenas 0,1\% da amostragem das PFs (período de 7 anos) foram observadas taxa de raios acima de 32,9 min$^{-1}$.  Entre as regiões do globo com as maiores concentrações de PFs que indicaram valores extremos (0,001\%), seja de taxa de raios, seja de mínimas temperaturas de brilho (85 e 37 GHz) ou de máxima altitude com 40 dBZ de fator de refletividade do radar, encontra-se a região Sul da AS que engloba a Bacia do Prata e o extremo Norte da Cordilheira dos Andes que abrange a Colômbia e região do Lago Maracaibo na Venezuela. 
+Mais tarde, \citeonline{zipser2006} utilizou medidas dos sensores do TRMM associadas a intensidade convectiva das PFs, estimando os locais das tempestades elétricas mais severas do globo. Apenas 0,1\% da amostragem das PFs (período de 7 anos) foram observadas taxa de raios acima de 32,9 min$^{-1}$.  Entre as regiões do globo com as maiores concentrações de PFs que indicaram valores extremos (0,001\%), seja de taxa de raios, seja de mínimas temperaturas de brilho (85 e 37 GHz) ou de máxima altitude com 40 dBZ de fator de refletividade do radar, encontra-se a região Sul da AS que engloba a Bacia do Prata e o extremo Norte da Cordilheira dos Andes que abrange a Colômbia e região do Lago Maracaibo na Venezuela. 
 %Conforme aumenta a intensidade das tempestades elétricas, menor será sua probabilidade de ocorrência. Apenas 0.1\% das PFs observou-se taxa de raios acima de 32.9 por minuto. 
 
+Com base em estudos a respeito da severidade dos sistemas como em \citeonline{doswell2001,brooks2003,zipser2006}, em que as medidas  associadas a intensidade convectiva indicaram os locais com condição de tempo severo, o estudo da morfologia da estrutura tridimensional da precipitação observadas pelo PR associado com a taxa de raios observada pelo LIS, pode esclarecer informações a respeito da intensidade convectiva, de modo a verificar a relação entre a taxa de raios e a severidade dos sistemas. 
+
+
+\section{INTENSIDADE CONVECTIVA E A PRECIPITAÇÃO TRIDIMENSIONAL OBSERVADA POR RADAR}
+\label{introRadar}
+
+A Refletividade do Radar %($\eta$) 
+\begin{equation}
+\eta = \sum_{i=1, 2, 3 ... }^{\Delta V} \sigma_i,
+\label{refletividade}
+\end{equation}
+é a somatória da seção de retro-espalhamento ($\sigma$) dos hidrometeoros contidos em um elemento de volume ($\Delta V$) iluminado -- \textit{gate} -- do feixe do radar \cite{battan1973}.
+
+\simbolo{name={$\eta$},description={Refletividade do Radar}}
+\simbolo{name={$\Delta V$},description={Elemento de volume ($\Delta V$) iluminado pelo radar}}
+\simbolo{name={$\sigma$},description={seção de retro-espalhamento}}
+
+Considerando que o parâmetro de tamanho ($\alpha$), dado pela relação 
+\begin{equation}
+\alpha = \dfrac{2\pi R_{h} }{\lambda},
+\label{parametroTam} 
+\end{equation}
+em que ($2\pi R_{h}$) é a área da seção transversal do hidrometeoro  precipitável na atmosfera e ($\lambda$) o comprimento de onda emitido pelo radar, quando $\alpha$ $<<$ 1, o espalhamento da radiação eletromagnética pelas partículas será do tipo Rayleigh. Neste caso, a seção transversal de retro-espalhamento $\sigma$ pode ser escrita como 
+\begin{equation}
+\sigma = \dfrac{\lambda^2 \alpha^6}{\pi} |K|^2,
+\label{sigma}
+\end{equation}
+em que $|K|^2$ corresponde ao índice de refração dos hidrometeoros. Como a equação \ref{parametroTam} depende do raio $R_h$, podemos reescrever a equação \ref{sigma} considerando o diâmetro 
+\begin{equation}
+D_h = 2 R_h.
+\label{diametro}
+\end{equation}
+
+\simbolo{name={$\alpha$},description={Parâmetro de tamanho}}
+\simbolo{name={$\pi$},description={Relação entre o perímetro e o diâmetro da circunferência}}
+\simbolo{name={$R_{h}$},description={Raio do hidrometeoro}}
+\simbolo{name={$\vert K \vert$},description={Grandeza relacionada ao índice de refração}}
+\simbolo{name={$D_h$},description={Diâmetro do hidrometeoro}}
+
+Então, substituindo as equações \ref{parametroTam} e \ref{diametro} em \ref{sigma}, obtemos que
+\begin{equation}
+\sigma = \dfrac{\pi^5 K^2  }{ \lambda^4 } D_h^6.
+\label{sigma2}
+\end{equation}
+
+Considerando o hidrometeoro como esférico, podemos relacionar o $D_h$ com a sua quantidade de massa, sendo  
+\begin{equation}
+D_h = \left( \dfrac{6 M_h}{\pi \rho} \right)^{\frac{1}{3}},
+\label{dh}
+\end{equation}
+em que, $\rho$ é a densidade e $M_h$ a massa do hidrometeoro.
+\simbolo{name={$M_h$},description={Massa do hidrometeoro}}
+\simbolo{name={$\rho$},description={Densidade}}
+
+Então substituindo a equação \ref{dh} em \ref{sigma2}, obtém-se
+\begin{equation}
+\sigma = \dfrac{36 \pi^3 |K|^2  }{ \lambda^4 \rho^2 M_h^2} .
+\label{sigma3}
+\end{equation}
+
+Portanto, observe que a Refletividade do Radar (equação  \ref{refletividade}), depende  de uma relação entre quantidade de massa $M_h$, densidade $\rho$ e também do índice de refração $|K|^2$ dos hidrometeoros, conforme mostra a equação \ref{sigma3}. Entretanto, o radar mede apenas a potência do sinal retro-espalhado ($P_r$). Logo, pode-se ter uma ideia da concentração de obstáculos espalhadores, porém não podemos ter certeza a respeito da massa, índice de refração e densidade dos alvos. 
+
+\simbolo{name={$P_r$},description={Potência recebida}}
+
+O que se faz para estimar a chuva é considerar que todos os alvos associados ao espalhamento do feixe do radar são gotas de água líquida esféricas. 
+
+Neste caso, podemos combinar as equações \ref{refletividade} e \ref{sigma2}, obtendo $\eta$ em função do Fator de Refletividade  do radar (Z), em que 
+%\begin{equation}
+%P_r = V_{m} \dfrac{P_t G^2 \lambda^2}{2\ln2(4\pi)^3 r^4}   \dfrac{\pi^5 |K|^2  }{ \lambda^4 } \sum_{i=1, 2, 3 ... }^{V_{m}}  D_{h_i}^6.      
+%\end{equation} 
+%\begin{equation}
+%P_r = \dfrac{P_t G^2 \lambda^2 \phi \varphi H}{ 512 (2\ln2)\pi^2 r^2} \dfrac{\pi^5 |K|^2  }{ \lambda^4 }  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6.   
+%\end{equation} 
+%\begin{equation}
+%P_r = \dfrac{\pi^3 P_t G^2  \phi \varphi H }{ 512 (2\ln2) %\lambda^2 } \dfrac{ |K|^2  }{ r^2 }  \sum_{i=1, 2, 3 ... }^{\Delta %V}  D_{h_i}^6, 
+%\end{equation} 
+\begin{equation}
+\eta =  \dfrac{\pi^5 |K|^2  }{ \lambda^4 } \sum_{i=1, 2, 3 ... }^{\Delta V} D_{h_i}^6,
+\end{equation}
+sendo o Fator de Refletividade do Radar
+\begin{equation}
+Z =  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6.
+\label{fz}
+\end{equation}
+
+
+Conforme a equação do radar descrita em \citeonline{battan1973}, cada medida de $P_r$ depende de parâmetros fixos como ganho da antena, potencia do sinal transmitido, largura de pulso, efeito de lóbulo, comprimento de onda e ângulo sólido associado ao feixe emitido. Considerando que todas as constantes que envolvem a equação do radar equivalem a $C$ e $r$ sendo a distância entre o radar e o alvo espalhador, temos que a cada \textit{gate} do radar, $P_r$ será  
+\begin{equation}
+P_r = C \dfrac{|K|^2}{r^2}  Z .
+\end{equation}
+
+Desta maneira, a partir da $P_r$ medida pelo radar, sabendo a distância $r$ do alvo e considerando que a chuva é composta de esferas de água líquida ($K_{\mathrm{agua}}^2=0,931$), então podemos determinar 
+\begin{equation}
+Z = \dfrac{P_r r^2}{C |K|^2}.
+\label{zsimples}
+\end{equation}
+%pois, $|K|^2=0.931$ para água líquida.
+Conforme mostra a equação \ref{fz}, $Z$ depende de $D_h$ que está associado com a massa ou o volume de chuva pela equação \ref{dh}.
+
+\simbolo{name={$Z$},description={Fator de refletividade do radar}}
+
+
+
+No entanto, ao observar o perfil vertical do fator de refletividade do radar $Z$, verifica-se que feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar, consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0.931$. 
+
+%Portanto, acima da da isoterma de 0 $^{\circ}$C, espera-se uma diminuição abrupta de $Z$ devido a mudança da constante dielétrica da água associada ao seu congelamento, sendo que a equação do radar mantem $|K|_{\mathrm{agua}}^2$ fixo para as medidas acima da isoterma de 0 $^{\circ}$C.
+
+Aplicando $10\log_{10}$, na equação \ref{zsimples}, e assumindo  $\vert K_{\mathrm{agua}}\vert^2 = 0.931$ e $\vert K_{\mathrm{gelo}}\vert^2= 0.197$, para uma mesma medida de $P_r$, as diferenças observadas nos valores de $Z$ em dB irão corresponder a
+\begin{equation}
+dBZ_{\mathrm{agua}}-dBZ_{\mathrm{gelo}}  =  10\log_{10}(\vert K_{\mathrm{gelo}}\vert^2 ) - 10\log_{10}(\vert K_{\mathrm{agua}}\vert^2).
+\end{equation}
+%dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} = - 10\log_{10}(K_{\mathrm{gelo}}^2 ) + 10\log_{10}(K_{\mathrm{agua}}^2).
+Substituindo os valores de $\vert K_{\mathrm{agua}}\vert^2$ e $\vert K_{\mathrm{gelo}}\vert^2$, obtém-se que 
+\begin{equation}
+dBZ_{\mathrm{agua}}- dBZ_{\mathrm{gelo}}   = -6,7 dBZ,
+\end{equation}
+mostrando que devido ao índice de refração do gelo ser menor do que o índice de refração da água ($\vert K_{\mathrm{agua}}\vert^2 > \vert K_{\mathrm{gelo}}\vert^2$), ao considerar $K_{\mathrm{agua}}^2$ em regiões que os hidrometeoros estão congelados, haverá uma redução de 6,7 dBZ em relação a considerar $\vert K_{\mathrm{gelo}}\vert^2$.  
+
+Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento do gelo é bastante marcada, pois haverá uma redução de $\simeq$7 dBZ em regiões acima da isoterma de 0 $^{\circ}$C devido ao congelamento dos hidrometeoros, enquanto que logo abaixo da isoterma 0 $^{\circ}$C, haverá um aumento de $Z$ devido ao derretimento dos hidrometeoros. Este efeito foi explorado por  \citeonline{Fabry1995}, para analisar os processos  de  agregação, acreção e colisão coalescência, que foram observados a partir da espessura da camada de derretimento e flutuações nos valores do Fator de Refletividade $Z$ no perfil atmosférico. 
+
+A espessura da camada de derretimento está relacionada com o lapse-rate da atmosfera \cite[p.~462]{mason1971_2ed}. Em uma atmosfera instável, com convecção profunda e precipitação convectiva, a camada de transição de fase de gelo para a água liquida é perturbada por correntes ascendentes. A mudança do índice de refração da água não ocorre apenas logo abaixo de 0 $^{\circ}$C, pois no ambiente convectivo teremos água super-resfriada em temperaturas de -15 $^{\circ}$C, o que intensifica o processo de acreção podendo gerar gelo sólido que cai derretendo até a superfície. Nestes casos espera-se uma camada de derretimento mais espessa.
+
+Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado um aumento acentuado no fator de refletividade do radar logo abaixo da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve, que denomina-se banda brilhante. Neste caso espera-se uma camada de derretimento menos espessa, pois os flocos de neve possuem velocidade terminal e densidade inferior as partículas de gelo compacto (ganizo ou saraiva/$graupel$) portanto derretem mais rapidamente, ou seja, percorrem um caminho menor durante o derretimento. 
+
+\simbolo{name={$^{\circ}$C},description={Grau Celsius}} 
+
+%\begin{xalignat}{3}
+%\mathbf{n} \cdot \mathbf{E} = 0 && &e  && \mathbf{n} \cdot \mathbf{B} = 0.
+%\end{xalignat}
+
+%\begin{equation}
+%|K|^2 = \left( \dfrac{m^2-1}{m^2+2}\right)^2
+%\end{equation}
+
+Também, sabendo que $Z$ é proporcional ao diâmetro dos hidrometeoros $D_h$ elevado a 6 potência, como mostra a equação \ref{fz}, os processos de crescimento de flocos de neves, granizo e gotas, são marcados por aumentos exponenciais no Fator de Refletividade do Radar ($Z$) no perfil de altitude. 
+
+%Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado um aumento acentuado no fator de refletividade do radar em logo abaixo da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve. \simbolo{name={$^{\circ}$C},description={Grau Celcius}} 
+
+Acima da região de derretimento, um aumento abruto nos valores de $Z$ podem indicar processo de crescimento de cristais de gelo e de gelo compacto. Enquanto que abaixo da região de derretimento, os acréscimos nos valores de $Z$ podem indicar processos de colisão coalescência e os decréscimos de $Z$, devido a evaporação e rompimento/quebra das gotas. 
+
+
+% durante o caminho que a precipitação percorre até a superfície ou temperaturas acima de 0°C.
+%Na figura \ref{fabry}, \citeonline{Fabry1995}
+%e o trabalho de 
+%\begin{figure}[hbp]
+%  \centering{
+%  \subfloat[\cite{Fabry1995}]{{\includegraphics[scale=0.25]{img/ilustracoes/fabry}} \label{fabry}}
+%  \subfloat[\cite{Takahashi2002}]{{\includegraphics[scale=0.35]{img/ilustracoes/takahashi}} \label{taka}}
+%  }
+%\caption{Fabry Taka}
+%\label{fabyTaka} 
+%\end{figure} 
+
+%Consequentemente, a taxa de raios associa-se com a intensidade convectiva devido a acreção\footnote{A acreção é o processo de \textit{rimming} descrito no trabalho de \citeonline{Takahashi1978}.} ser o processo mais eficiente de eletrificação de nuvens, principalmente quando há presença de flocos de neve embebidos na região de fase mista \cite{Takahashi1978,Takahashi2002}. 
 
 
 
 
-\subsection{PROPOSTA}
+
+
+\section{PROPOSTA}
 Nesta tese, faz-se a identificação de sistemas que possuem atividade elétrica, ou seja, tempestades elétricas, apenas sobre a América do Sul  a partir das observações orbitais do satélite TRMM, mais especificamente do sensor de raios (LIS), radiômetro no infravermelho (VIRS) e o radar de precipitação (PR) a bordo do da satélite entre os anos de 1998 e 2011. Desta forma cria-se um banco de dados de tempestades elétricas do TRMM.
 
 Com este subconjunto de dados do TRMM, é estudada a sazonalidade, o ciclo diurno e ciclo anual das tempestades elétricas, bem como a densidade geográfica de raios e de tempestades elétricas, buscando evidenciar regiões ou estações do ano em que as tempestades elétricas possuem processo de eletrificação mais eficientes sobre a América do Sul.
 
 A intensidade das tempestades elétricas é estudada com base na taxa de raios e aspectos morfológicos como: dimensões relacionadas a sua extensão e a estrutura tridimensional da precipitação observada pelo PR, buscando identificar qual é a taxa de raios que corresponde potencialmente a condições de convecção profunda e consequentemente de tempo severo, conforme cada localidade da extensa região da AS.
 
-A estrutura tridimensional da precipitação observada pelo PR é estuda com base na probabilidade de ocorrência por altitude, conforme descreve \cite{yuter1995}, e também conforme a probabilidade de ocorrência por níveis de temperatura do perfil atmosférica. As seções \ref{introRadar} e \ref{derretimento} fazem uma revisão de conceitos fundamentais que devem ser considerados na interpretação dos diagramas de probabilidade elaborados associados as observações por radar.
+%A estrutura tridimensional da precipitação observada pelo PR é estuda com base na probabilidade de ocorrência por altitude, conforme descreve \cite{yuter1995}, e também conforme a probabilidade de ocorrência por níveis de temperatura do perfil atmosférica. As seções \ref{introRadar} e \ref{derretimento} fazem uma revisão de conceitos fundamentais que devem ser considerados na interpretação dos diagramas de probabilidade elaborados associados as observações por radar.
  
 %------------------------------------------------------\\
 %\textit{Acho que essa parte de baixo é Metodologia... ou discussão dos resultados}
@@ -101,195 +260,11 @@ A estrutura tridimensional da precipitação observada pelo PR é estuda com bas
 
 %A variação intra-sazonal da atividade elétrica durante o período chuvoso mostrou-se evidente. \citeonline{petersen2002trmm},  identificaram regiões de extremos opostos de atividade elétrica que devem estar associados ao mecanismos de manutenção da monção na América do Sul, principalmente com a dinâmica que envolve Zona de Convergência do Atlântico Sul (ZCAS) \cite{CarvalhoJones2002,Carvalho2002}.   
 
-\section{FUNDAMENTOS DA OBSERVAÇÃO DA PRECIPITAÇÃO POR RADAR}
-\label{introRadar}
-
-A medida da precipitação por radar, consiste na emissão de um feixe eletromagnético ($P_t$) e na análise da potência do eco ($P_r$) gerado pelo sinal emitido.
-
-O sistema eletrônico de um radar envia um feixe eletromagnético periódico com frequência e a largura ($H$) de pulso definidos de modo a avaliar o eco de obstáculos em distâncias distintas. Assim pode-se distinguir o eco do sinal emitido para diferentes elementos de volume ($\Delta V$) do feixe do radar.
-
-Um elemento de volume ($\Delta V$) de um feixe de radar está associado com a resolução radial da medida, que depende de H, pois a largura do pulso (H) é proporcional a distância mínima ($\frac{H}{2}$) para que dois alvos sejam distinguíveis.
- 
-Considerando um feixe eletromagnético com azimute de $\phi$ na vertical e $\varphi$ na horizontal, pode-se considerar que $\Delta V$ a uma distância $r$ do radar terá o volume na forma do cilindro elíptico
-
-\begin{equation}
-\Delta V = \pi \dfrac{r\phi}{2} \dfrac{r\varphi}{2} \dfrac{H}{2} .
-\end{equation}
- 
-A potência recebida $P_r$ do sinal espalhado referente a ao volume iluminado $\Delta V$, pode ser expressa como
-\begin{equation}
-P_r = \dfrac{P_t G^2 \lambda^2 \phi \varphi H}{ 512 (2\ln2)\pi^2 r^2} \sum_{i=1, 2, 3 ... }^{\Delta V} \sigma_i ,
-\label{radar1}
-\end{equation}
-em que, $G$ é o ganho da antena, $\lambda$ o comprimento de onda, $r$ a distância do alvo, $\sigma$ a seção transversal de retro-espalhamento das partículas de nuvem e o fator $2\ln2$ corresponde ao efeito de lóbulo no sinal eletromagnético captado \cite{battan1973}.
-
-A Refletividade do Radar 
-\begin{equation}
-\eta = \sum_{i=1, 2, 3 ... }^{V_{m}} \sigma_i,
-\label{refletividade}
-\end{equation}
-é a somatória da seção de retro-espalhamento dos hidrometeoros a cada elemento de volume iluminado $\Delta V$ (a cada $gate$) do radar.
-
-Considerando que o parâmetro de tamanho ($\alpha$), que é a relação entre a área da seção transversal do hidrometeoro ($2\pi R_{h}$) precipitável na atmosfera e o comprimento de onda da radiação emitida pelo radar
-\begin{equation}
-\alpha = \dfrac{2\pi R_{h} }{\lambda},
-\label{parametroTam} 
-\end{equation}
-corresponda a um valor de $\alpha$ $<<$ 1, então o espalhamento do feixe do radar pode ser considerando como Rayleigh. Neste caso, a seção transversal de retro-espalhamento pode ser escrita como 
-\begin{equation}
-\sigma = \dfrac{\lambda^2 \alpha^6}{\pi} K^2,
-\label{sigma}
-\end{equation}
-em que $K^2$ corresponde ao índice de refração dos hidrometeoros. Como a equação \ref{parametroTam} depende do raio $R_h$, podemos reescrever a equação \ref{sigma} considerando o diâmetro 
-\begin{equation}
-D_h = 2R_h.
-\label{diametro}
-\end{equation}
-
-Então, substituindo as equações \ref{parametroTam} e \ref{diametro} em \ref{sigma}, obtemos que
-\begin{equation}
-\sigma = \dfrac{\pi^5 K^2  }{ \lambda^4 } D_h^6.
-\label{sigma2}
-\end{equation}
-
-Considerando o hidrometeoro como esférico, podemos relacionar o $D_h$ com a sua quantidade de massa, sendo  
-\begin{equation}
-D_h = \left( \dfrac{6 M_h}{\pi \rho} \right)^{\frac{1}{3}},
-\label{dh}
-\end{equation}
-em que, $\rho$ é a densidade e $M_h$ a massa do hidrometeoro.
-
-Então substituindo a equação \ref{dh} em \ref{sigma2}, obtém-se
-\begin{equation}
-\sigma = \dfrac{36 \pi^3 K^2  }{ \lambda^4 \rho^2 M_h^2} .
-\label{sigma3}
-\end{equation}
-
-Portanto, observe que a Refletividade do Radar (equação  \ref{refletividade}), depende  de uma relação entre quantidade de massa $M_h$, densidade $\rho$ e também do índice de refração $K^2$ dos hidrometeoros, conforme mostra a equação \ref{sigma3}.
-
-Porém o radar mede apenas a potência do sinal retro-espalhado ($P_r$). Pode-se ter uma ideia da concentração de obstáculos espalhadores, porém não podemos ter certeza a respeito da massa, índice de refração e densidade dos obstáculos. 
-
-O que se faz para estimar a chuva é considerar que todos os obstáculos associados ao espalhamento do feixe do radar são gotas de água esféricas. Neste caso, podemos combinar as equações \ref{radar1} e \ref{sigma3}, obtendo
-%\begin{equation}
-%P_r = V_{m} \dfrac{P_t G^2 \lambda^2}{2\ln2(4\pi)^3 r^4}   \dfrac{\pi^5 K^2  }{ \lambda^4 } \sum_{i=1, 2, 3 ... }^{V_{m}}  D_{h_i}^6.      
-%\end{equation} 
-%\begin{equation}
-%P_r = \dfrac{P_t G^2 \lambda^2 \phi \varphi H}{ 512 (2\ln2)\pi^2 r^2} \dfrac{\pi^5 K^2  }{ \lambda^4 }  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6.   
-%\end{equation} 
-\begin{equation}
-P_r = \dfrac{\pi^3 P_t G^2  \phi \varphi H }{ 512 (2\ln2) \lambda^2 } \dfrac{ K^2  }{ r^2 }  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6, 
-\end{equation} 
-sendo o Fator de Refletividade do Radar
-\begin{equation}
-Z =  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6.
-\label{fz}
-\end{equation}
-Observe que a cada medida de $P_r$, algumas variáveis serão sempre constantes 
-\begin{equation}
-C = \dfrac{\pi^3 P_t G^2  \phi \varphi H }{ 512 (2\ln2) \lambda^2 } .
-\end{equation}
-Então,
-\begin{equation}
-P_r = C \dfrac{K^2}{r^2}  Z.
-\end{equation}
-
-Desta maneira, a partir da $P_r$ medida pelo radar, sabendo a distância $r$ do alvo e considerando que a chuva é composta de esferas de água líquida, então podemos saber $Z$, pois 
-\begin{equation}
-Z = \dfrac{P_r r^2}{C K^2},
-\label{zsimples}
-\end{equation}
-e, $K^2=0.931$ para água líquida.
-
-
-Conforme mostra a equação \ref{fz}, $Z$ depende de $D_h$, portanto conforme a equação \ref{dh}, podemos relacionar o diâmetro $D_h$ dos hidrometeoros com a massa ou o volume de chuva.  
-
-É conveniente converter o Fator de Refletividade do Radar ($Z$), para uma escala em decibel, portanto os valores de eco de radar geralmente são expressos em unidade de decibel do Fator de Refletividade (dBZ). 
-
-Aplicando $10\log_{10}$ na equação \ref{zsimples}, temos que
-
-\begin{align}
-10\log_{10}(Z)  &= 10\log_{10} \left( \dfrac{P_r r^2}{C K^2} \right)\\
-dBZ &= 10\left[ \log_{10}(P_r r^2) - \log_{10}(C K^2)     \right]\\
-      &=  10 \lbrace \log_{10}(P_r)+ 2\log_{10}(r) - [ \log_{10}(C) + \log_{10}(K^2)]  \rbrace,
-\end{align}
-portanto,
-\begin{equation}
-dBZ =  10\log_{10}(P_r) + 20\log_{10}(r) - 10\log_{10}(C) - 10\log_{10}(K^2)
-\end{equation}
-
-\section{FUSÃO DO GELO DE NUVEM E O CRESCIMENTO DOS HIDROMETEOROS}
-\label{derretimento}
-
-Ao observar a precipitação por radar no perfil atmosférico, a varredura do feixe irá atingir regiões de altitude com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem. Para quantificar o gelo precipitando, podemos considerar que 
-\begin{equation}
-dBZ_{\mathrm{gelo}} =  10\log_{10}(P_r) + 20\log_{10}(r) - 10\log_{10}(C) - 10\log_{10}(K_{\mathrm{gelo}}^2).
-\label{zg}
-\end{equation}
-
-Portanto quando o feixe espalha em altitudes abaixo da isoterma de 0 $^{\circ}$C, pressupõe-se que $P_r$ estará associada a quantidade de água líquida. Então, para quantificar a água precipitando, podemos considerar que
-\begin{equation}
-dBZ_{\mathrm{agua}} =  10\log_{10}(P_r) + 20\log_{10}(r) - 10\log_{10}(C) - 10\log_{10}(K_{\mathrm{agua}}^2).
-\label{za}
-\end{equation}
-
-Subtraindo as equações \ref{zg} e \ref{za}, temos
-\begin{equation}
-dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} = - 10\log_{10}(K_{\mathrm{gelo}}^2 )+ 10\log_{10}(K_{\mathrm{agua}}^2).
-\end{equation}
-
-Sabendo que $K_{\mathrm{agua}}^2 = 0.931$ e $K_{\mathrm{gelo}}^2= 0.197$, então 
-\begin{equation}
-dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} =   6.7dBZ,
-\end{equation}
-mostrando que devido ao índice de refração do gelo ser menor do que o índice de refração da água ($K_{\mathrm{agua}}^2 > K_{\mathrm{gelo}}^2$), ao considerar $K_{\mathrm{gelo}}^2$, conforme mostra a equação \ref{zg}, haverá um acréscimo de potência de  6.7 dBZ em relação a considerar $K_{\mathrm{agua}}^2$, como mostra a equação \ref{za}.
-
-Porém, na observação tridimensional da precipitação, podemos conhecer as distâncias $r$ dos alvos espalhadores, mas não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então os dados brutos das observações de radar, consideram $K^2$ como constante, geralmente $K_{\mathrm{agua}}^2 = 0.931$  para toda a estrutura tridimensional da precipitação observada.
-
-Portanto em observações de radar no perfil de altitude, a região ou camada de derretimento (fusão do gelo) é bastante marcada, pois, identifica-se um aumento de $\simeq$7 dBZ no Fator de Refletividade do Radar devido a mudança do índice de refração.
-
-Em \citeonline{Fabry1995}, é mostrado que processos como a agregação, acreção e colisão coalescência, podem ser estudados em função da espessura da camada de derretimento e flutuações nos valores do Fator de Refletividade $Z$ no perfil atmosférico. 
-
-A espessura da camada de derretimento está relacionada com o lapse-rate da atmosfera \cite[p.~462]{mason1971_2ed}. Em uma atmosfera instável, com convecção profunda e precipitação convectiva, a camada de transição de fase de gelo para a água liquida é perturbada por correntes ascendentes. A mudança do índice de refração da água não ocorre apenas logo abaixo de 0 $^{\circ}$C, pois no ambiente convectivo teremos água super-resfriada em temperaturas de -15 $^{\circ}$C, o que intensifica o processo de acreção podendo gerar gelo sólido que cai derretendo até a superfície. Nestes casos espera-se uma camada de derretimento mais espessa.
-
-Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado um aumento acentuado no fator de refletividade do radar logo abaixo da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve, que denomina-se banda brilhante. Neste caso espera-se uma camada de derretimento menos espessa, pois os flocos de neve possuem velocidade terminal e densidade inferior as partículas de gelo compacto (ganizo ou saraiva/$graupel$) portanto derretem mais rapidamente, ou seja, percorrem um caminho menor durante o derretimento. 
-
-\simbolo{name={$^{\circ}$C},description={Grau Celcius}} 
-
-%\begin{xalignat}{3}
-%\mathbf{n} \cdot \mathbf{E} = 0 && &e  && \mathbf{n} \cdot \mathbf{B} = 0.
-%\end{xalignat}
-
-%\begin{equation}
-%K^2 = \left( \dfrac{m^2-1}{m^2+2}\right)^2
-%\end{equation}
-
-Também, sabendo que $Z$ é proporcional ao diâmetro dos hidrometeoros $D_h$ elevado a 6 potência, como mostra a equação \ref{fz}, os processos de crescimento de flocos de neves, granizo e gotas, são marcados por aumentos exponenciais no Fator de Refletividade do Radar ($Z$) no perfil de altitude. 
-
-%Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado um aumento acentuado no fator de refletividade do radar em logo abaixo da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve. \simbolo{name={$^{\circ}$C},description={Grau Celcius}} 
-
-Acima da região de derretimento, um aumento abruto nos valores de $Z$ podem indicar processo de crescimento de cristais de gelo e de gelo compacto. Enquanto que abaixo da região de derretimento, os acréscimos nos valores de $Z$ podem indicar processos de colisão coalescência e os decréscimos de $Z$, devido a evaporação e rompimento/quebra das gotas. 
-
-
-% durante o caminho que a precipitação percorre até a superfície ou temperaturas acima de 0°C.
-%Na figura \ref{fabry}, \citeonline{Fabry1995}
-%e o trabalho de 
-%\begin{figure}[hbp]
-%  \centering{
-%  \subfloat[\cite{Fabry1995}]{{\includegraphics[scale=0.25]{img/ilustracoes/fabry}} \label{fabry}}
-%  \subfloat[\cite{Takahashi2002}]{{\includegraphics[scale=0.35]{img/ilustracoes/takahashi}} \label{taka}}
-%  }
-%\caption{Fabry Taka}
-%\label{fabyTaka} 
-%\end{figure} 
-
-%Consequentemente, a taxa de raios associa-se com a intensidade convectiva devido a acreção\footnote{A acreção é o processo de \textit{rimming} descrito no trabalho de \citeonline{Takahashi1978}.} ser o processo mais eficiente de eletrificação de nuvens, principalmente quando há presença de flocos de neve embebidos na região de fase mista \cite{Takahashi1978,Takahashi2002}. 
-
-
-\section{OBJETIVOS... PROPOSTA...}
-\begin{itemize}
-\item Criar um banco de dados de tempestades elétricas do TRMM. 
-\item Criar mapas que identifique a densidade de tempestades elétricas e de raios sobre a América do Sul.
-\item Descrever o ciclo diurno e o ciclo anual das tempestades elétricas do TRMM.
-\item Classificar a intensidade das tempestades elétricas com base na taxa de raios e no estudo da frequência de ocorrência do Fator de Refletividade do radar por temperatura e por altura. 
-\end{itemize}
-...
+%\section{OBJETIVOS... PROPOSTA...}
+%\begin{itemize}
+%\item Criar um banco de dados de tempestades elétricas do TRMM. 
+%\item Criar mapas que identifique a densidade de tempestades elétricas e de raios sobre a América do Sul.
+%\item Descrever o ciclo diurno e o ciclo anual das tempestades elétricas do TRMM.
+%\item Classificar a intensidade das tempestades elétricas com base na taxa de raios e no estudo da frequência de ocorrência do Fator de Refletividade do radar por temperatura e por altura. 
+%\end{itemize}
+%...
