@@ -165,21 +165,19 @@ Conforme mostra a equação \ref{fz}, $Z$ depende de $D_h$ que está associado c
 
 \simbolo{name={$Z$},description={Fator de refletividade do radar}}
 
-
-
 No entanto, ao observar o perfil vertical do fator de refletividade do radar $Z$, verifica-se que feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar, consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0.931$. 
 
 %Portanto, acima da da isoterma de 0 $^{\circ}$C, espera-se uma diminuição abrupta de $Z$ devido a mudança da constante dielétrica da água associada ao seu congelamento, sendo que a equação do radar mantem $|K|_{\mathrm{agua}}^2$ fixo para as medidas acima da isoterma de 0 $^{\circ}$C.
 
 Aplicando $10\log_{10}$, na equação \ref{zsimples}, e assumindo  $\vert K_{\mathrm{agua}}\vert^2 = 0.931$ e $\vert K_{\mathrm{gelo}}\vert^2= 0.197$, para uma mesma medida de $P_r$, as diferenças observadas nos valores de $Z$ em dB irão corresponder a
-\begin{equation}
-dBZ_{\mathrm{agua}}-dBZ_{\mathrm{gelo}}  =  10\log_{10}(\vert K_{\mathrm{gelo}}\vert^2 ) - 10\log_{10}(\vert K_{\mathrm{agua}}\vert^2).
-\end{equation}
+
+\begin{align}
+dBZ_{\mathrm{agua}}-dBZ_{\mathrm{gelo}} &=  10\log_{10}(\vert K_{\mathrm{gelo}}\vert^2 ) - 10\log_{10}(\vert K_{\mathrm{agua}}\vert^2)\\
+dBZ_{\mathrm{agua}}- dBZ_{\mathrm{gelo}} &= -6,7 dBZ,
+\end{align}
 %dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} = - 10\log_{10}(K_{\mathrm{gelo}}^2 ) + 10\log_{10}(K_{\mathrm{agua}}^2).
-Substituindo os valores de $\vert K_{\mathrm{agua}}\vert^2$ e $\vert K_{\mathrm{gelo}}\vert^2$, obtém-se que 
-\begin{equation}
-dBZ_{\mathrm{agua}}- dBZ_{\mathrm{gelo}}   = -6,7 dBZ,
-\end{equation}
+%Substituindo os valores de $\vert K_{\mathrm{agua}}\vert^2$ e $\vert K_{\mathrm{gelo}}\vert^2$, obtém-se que 
+
 mostrando que devido ao índice de refração do gelo ser menor do que o índice de refração da água ($\vert K_{\mathrm{agua}}\vert^2 > \vert K_{\mathrm{gelo}}\vert^2$), ao considerar $K_{\mathrm{agua}}^2$ em regiões que os hidrometeoros estão congelados, haverá uma redução de 6,7 dBZ em relação a considerar $\vert K_{\mathrm{gelo}}\vert^2$.  
 
 Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento do gelo é bastante marcada, pois haverá uma redução de $\simeq$7 dBZ em regiões acima da isoterma de 0 $^{\circ}$C devido ao congelamento dos hidrometeoros, enquanto que logo abaixo da isoterma 0 $^{\circ}$C, haverá um aumento de $Z$ devido ao derretimento dos hidrometeoros. Este efeito foi explorado por  \citeonline{Fabry1995}, para analisar os processos  de  agregação, acreção e colisão coalescência, que foram observados a partir da espessura da camada de derretimento e flutuações nos valores do Fator de Refletividade $Z$ no perfil atmosférico. 
@@ -219,11 +217,109 @@ Acima da região de derretimento, um aumento abruto nos valores de $Z$ podem ind
 
 %Consequentemente, a taxa de raios associa-se com a intensidade convectiva devido a acreção\footnote{A acreção é o processo de \textit{rimming} descrito no trabalho de \citeonline{Takahashi1978}.} ser o processo mais eficiente de eletrificação de nuvens, principalmente quando há presença de flocos de neve embebidos na região de fase mista \cite{Takahashi1978,Takahashi2002}. 
 
+\section{PROCESSOS DE ELETRIFICAÇÃO DAS NUVENS}
+
+Os processos de eletrificação das nuvens são intrínsecos ao processo de desenvolvimento da precipitação, especialmente em regiões com temperaturas entre -5 $^{\circ}$C e -40 $^{\circ}$C, portanto, está fortemente relacionado ao crescimento do gelo de nuvem \cite{mason1953}. 
+
+A partir de medidas em superfície, observa-se que os campos eletrostáticos produzidos pelas tempestades elétricas são da ordem de dezenas de milhares de volts por metro, que correspondem a centros de cargas nas nuvens com dezenas de coulombs. 
+\citeonline{williams1989} mostra uma síntese de trabalhos com medidas de campo eletrostático de tempestades elétricas no período entre 1752 e 1989 relatando que na maioria das observações a curva de campo elétrico observada correspondia com a perturbação causada por uma estrutura tripolar de cargas nas nuvens, havendo um centro de carga positivo na parte superior, um centro de carga negativa na região central e um centro de carga positiva menos intenso na base da nuvem conforme mostra a figura \ref{fig:tripeletr}.
+
+
+\begin{figure}[htp]
+\centering 
+\includegraphics[width=\textwidth]{img/ilustracoes/tripoloeletr}
+\caption{Representação do tripolo eletrostático de uma tempestade elétrica. A medida de campo eletrostático na superfície (parte inferior da figura), corresponde aos centros de cargas $Q_{+}$, $Q_{-}$ e $q_{+}$ (adaptada de \citeonline{ogawahandbook}).}
+\label{fig:tripeletr}
+\end{figure}
+
+Mesmo que o modelo do tripolo eletrostático proposto por \citeonline{williams1989} seja uma teoria condizente com a estrutura de cargas dominante em uma tempestade elétrica, considerando sondagens de campo elétrico no interior das tempestades \citeonline{rust1996}, verificam que os centros de cargas podem estar distribuídos de maneira mais complexa. 
+\citeonline{stolzenburg1998} criou um modelo conceitual para a estrutura de cargas das tempestades elétricas exposto na figura \ref{fig:multipcentros}, sugerindo que nas regiões aonde ocorrem ventos ascendentes pode haver 4 ou mais centros de carga enquanto as regiões com correntes descendentes 6 ou mais centros de cargas.
+
+%Experimentos relacionados a simulação de nuvens em laboratório mostram que a presença de gelo é fundamental no processo e que a carga adquirida pelos granizos depende da temperatura do ambiente, do conteúdo de água líquida da nuvem, da velocidade de colisão entre os hidrometeoros e dos tamanhos dos cristais de gelo \cite{Takahashi1978,saunders2008}. 
+
+
+Os processos de eletrificação das nuvens não é completamente entendido ou descrito na literatura devido a sua complexidade, que envolve desde fenômenos em meso-escala, por exemplo a convergência de massas de ar até as propriedades físico-químicas da água.  
+
+
+As teorias de eletrificação das
+
+
+Para explicar as características
 
 
 
 
 
+\begin{figure}[htp]
+\centering 
+\includegraphics[width=\textwidth]{img/ilustracoes/nuvem}
+\caption{Estrutura elétrica de uma tempestade elétrica idealizada a partir de sondagens de campo eletrostático realizadas no interior de nuvens de tempestades (adaptada de \citeonline{stolzenburg1998}).}
+\label{fig:multipcentros}
+\end{figure}
+
+\subsection{Teoria convectiva de eletrificação}
+\index{Teoria!convectiva de eletrificação}
+
+Nessa teoria é proposto que as fontes de cargas negativas e positivas são fornecidas por fontes externas às nuvens. Esse mecanismo de eletrificação pode ser produzido pela distribuição de íons livres na atmosfera \cite{wilson1956,phillips1967}  \cite[apud \cite{vonnegut1995}]{grenet,wagner1981}. Conforme descrito por \citeonline{vonnegut1995}, o campo elétrico de tempo bom pode concentrar íons positivos na baixa atmosfera. Na ocorrência de térmicas os íons positivos podem ser transportados para o interior das nuvens eletrificandos-as positivamente, conforme pode ser visualizado na figura \ref{fig:elec-a}. Com o crescimento vertical da nuvem e o excesso de cargas positivas,  íons  negativos são atraídos tornando o topo da nuvem negativamente carregado (ver figura \ref{fig:elec-b}).
+
+\begin{figure}[htp]
+   \centering
+   \subfloat[Os íons positivos são injetados na nuvem pelas térmicas.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-a}\label{fig:elec-a}} 
+   \subfloat[Íons negativos são atraídos.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-b} \label{fig:elec-b}}  
+   \subfloat[Retro-alimentação positiva devido ao efeito corona.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-c} \label{fig:elec-c}}
+   \caption{Representação do processo convectivo de eletrização.}
+   \label{fig:elec}
+\end{figure}
+
+\begin{citacao}
+Conforme a nuvem cresce, ela penetra em níveis mais altos na troposfera, encontrando ar no qual a mobilidade de íons livres (ou condutividade do ar) aumenta com o aumento da altura. Esses íons são produzidos na ionosfera ou acima de 6 km de altura por radiação cósmica. \cite[p.~10]{rachel}.
+\end{citacao}
+
+Os íons negativos são transportados para as laterais da nuvem\footnote{Processo conhecido como estranhamento lateral.} e, em um estágio mais maduro, correntes descendentes de ar concentram os íons negativos nas regiões mais baixas tornando mais forte o fluxo de cargas positivas para o interior da nuvem. Com o acúmulo de cargas negativas na base da nuvem os íons positivos são induzidos por efeito corona (ver figura \ref{fig:elec-c}).
+
+Conforme \citeonline{vonnegut1991}, existem evidências que comprovem a ocorrência do processo convectivo de eletrificação, portanto acredita-se que esse não é suficiente para promover campos elétricos tão intensos,  principalmente nos estágios iniciais da eletrificação, devido à baixa disponibilidade de íons na atmosfera. Dessa forma, entende-se que o processo convectivo contribui para a manutenção de outros processos de separação de cargas.
+
+\subsection{Teoria precipitativa de eletrificação}
+\index{Teoria!precipitativa de eletrificação}
+
+Durante o desenvolvimento vertical das nuvens de tempestades a água sofre mudanças de fase intermediadas por processos de formação de gotículas, cristais de gelo e granizo, que ao interagirem com o campo gravitacional da Terra sofrem uma sedimentação diferenciada de acordo com a força peso atuante em cada hidrometeoro. Desta forma a combinação da força gravitacional com  correntes ascendentes, fazem com que as partículas das nuvens obtenham velocidades diferenciadas ocorrendo colisões entre as mesmas. Durante as colisões, cargas elétricas são transferidas entre as partículas, seja relacionadas a processos de eletrificação indutivo ou não indutivo.
+
+\subsubsection{Processo colisional indutivo} 
+\index{Processo!colisional indutivo}
+
+Ocorre quando não há coalescência, portanto, torna-se mais provável na colisão entre o \textit{graupel}\footnote{Granizo com diâmetro menor que 2 mm.} e cristais de gelo.
+
+Pressupõe-se que um campo elétrico inicial consiga induzir a polarização do \textit{graupel} e dos cristais de gelo conforme na figura \ref{fig:ind-a}. Ao colidirem, cargas são transferidas tornando o \textit{graupel} carregado negativamente e os cristais de gelo positivamente, conforme ilustrado na figura \ref{fig:ind-b}.
+
+\begin{figure}[htp]
+   \centering
+   \subfloat[Processo de indução elétrica.]{\includegraphics[height=9cm]{img/ilustracoes/indutivopdf-a} \label{fig:ind-a}}  
+   \subfloat[Colisão e eletrização por contato.]{\includegraphics[height=9cm]{img/ilustracoes/indutivopdf-b} \label{fig:ind-b}}
+   \caption{Devido a diferença de massa entre o \textit{graupel} e o cristal de gelo, o \textit{graupel} precipita com velocidade $\textit{\textbf{v}}_g$ enquanto o cristal de gelo tende a subir com velocidade $\textit{\textbf{v}}_c$ junto à correntes ascendentes. Estando essas partículas imersas em um campo elétrico $\textbf{E}$ a eletrização no momento da colisão torna-se possível.}
+   \label{fig:ind}
+\end{figure}
+
+
+Porém, \citeonline{macgorman} apontam que o campo elétrico de tempo bom não é suficiente para polarizar as partículas de gelo. Assim, para a ocorrência do processo colisional indutivo, é necessária primeiramente a separação de cargas por processos não indutivos que irão gerar campos elétricos no interior da nuvem para que ocorra a eletrificação colisional indutiva.
+
+
+\subsubsection{Processo colisional não indutivo}
+\index{Processo!colisional não indutivo}
+
+Experiências realizadas em laboratório conforme \citeonline{Reynolds1957,Saunders1999,Takahashi1978} evidenciam que a colisão entre partículas de gelo em crescimento (\textit{rimer}) e partículas menores são fundamentais no processo de eletrificação colisional não indutivo. Porém, o carregamento não-indutivo depende do tamanho das partículas, do conteúdo de água líquida dentro da nuvem, da temperatura (T), e da velocidade de impacto entre os hidrometeoros.
+
+Associado ao tamanho das partículas considera-se que exista uma interface entre a água e o ar, gelo e ar, e água e gelo, composta de água quase líquida (QLL)\sigla{name={QLL},description={\textit{Quasi-liquid Layer}}}, que no momento da colisão, é transferida das partículas com maior quantidade de QLL para as partículas com camada de QLL menor \cite[apud \cite{rachel}]{baker1994}.
+Em \citeonline{saunders2008} são mostrados resultados de experiências controladas em laboratório nas quais analisa-se a polaridade adquirida pelo \textit{rimer} em função da temperatura e presença de água líquida (ver figura \ref{fig:saunders}). 
+
+\begin{figure}[htp]
+\centering 
+\includegraphics[width=9cm]{img/ilustracoes/saunders}
+\caption{Cada resultado obtido desenha uma linha de fronteira entre as regiões nas quais a temperatura e quantidade de água líquida influenciam na carga, positiva ou negativa, adquirida pelo \textit{rimer} (adaptada de \citeonline{saunders2008}).}
+\label{fig:saunders}
+\end{figure}
+
+O estudo da microfísica dos processos de eletrificação não indutiva apresenta pouco consenso entre os pesquisadores, conforme mostra a figura \ref{fig:saunders} em que os resultados obtidos por diferentes autores, divergem. Porém, é o processo que melhor compreende a estrutura tripolar das nuvens de tempestades, pois, converge com o fato de que os centros de cargas identificados no interior das nuvens correspondem à sedimentação de partículas de mesma massa e mesma polaridade elétrica.  
+ 
 \section{PROPOSTA}
 Nesta tese, faz-se a identificação de sistemas que possuem atividade elétrica, ou seja, tempestades elétricas, apenas sobre a América do Sul  a partir das observações orbitais do satélite TRMM, mais especificamente do sensor de raios (LIS), radiômetro no infravermelho (VIRS) e o radar de precipitação (PR) a bordo do da satélite entre os anos de 1998 e 2011. Desta forma cria-se um banco de dados de tempestades elétricas do TRMM.
 
