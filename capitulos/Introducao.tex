@@ -124,7 +124,7 @@ Então substituindo a equação \ref{dh} em \ref{sigma2}, obtém-se
 \label{sigma3}
 \end{equation}
 
-Portanto, observe que a Refletividade do Radar (equação  \ref{refletividade}), depende  de uma relação entre quantidade de massa $M_h$, densidade $\rho$ e também do índice de refração $|K|^2$ dos hidrometeoros, conforme mostra a equação \ref{sigma3}. Entretanto, o radar mede apenas a potência do sinal retro-espalhado ($P_r$). Logo, pode-se ter uma ideia da concentração de obstáculos espalhadores, porém não podemos ter certeza a respeito da massa, índice de refração e densidade dos alvos. 
+Portanto, observe que a Refletividade do Radar $\eta$ (equação  \ref{refletividade}), depende  de uma relação entre quantidade de massa $M_h$, densidade $\rho$ e também do índice de refração $|K|^2$ dos hidrometeoros, conforme mostra a equação \ref{sigma3}. Entretanto, o radar mede apenas a potência do sinal retro-espalhado ($P_r$). Logo, pode-se ter uma ideia da concentração de obstáculos espalhadores, porém não podemos ter certeza a respeito da massa, índice de refração e densidade dos alvos. 
 
 \simbolo{name={$P_r$},description={Potência recebida}}
 
@@ -143,14 +143,14 @@ Neste caso, podemos combinar as equações \ref{refletividade} e \ref{sigma2}, o
 \begin{equation}
 \eta =  \dfrac{\pi^5 |K|^2  }{ \lambda^4 } \sum_{i=1, 2, 3 ... }^{\Delta V} D_{h_i}^6,
 \end{equation}
-sendo o Fator de Refletividade do Radar
+sendo 
 \begin{equation}
-Z =  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6.
+Z =  \sum_{i=1, 2, 3 ... }^{\Delta V}  D_{h_i}^6,
 \label{fz}
 \end{equation}
+o Fator de Refletividade do Radar.
 
-
-Conforme a equação do radar descrita em \citeonline{battan1973}, cada medida de $P_r$ depende de parâmetros fixos como ganho da antena, potencia do sinal transmitido, largura de pulso, efeito de lóbulo, comprimento de onda e ângulo sólido associado ao feixe emitido. Considerando que todas as constantes que envolvem a equação do radar equivalem a $C$ e $r$ sendo a distância entre o radar e o alvo espalhador, temos que a cada \textit{gate} do radar, $P_r$ será  
+Conforme a equação do radar descrita em \citeonline{battan1973}, cada medida de $P_r$ depende de parâmetros fixos como ganho da antena, potência do sinal transmitido, largura de pulso, efeito de lóbulo, comprimento de onda e ângulo sólido associado ao feixe emitido. Considerando que todas as constantes que envolvem a equação do radar equivalem a $C$ e $r$ sendo a distância entre o radar e o alvo espalhador, temos que a cada \textit{gate} do radar, $P_r$ será  
 \begin{equation}
 P_r = C \dfrac{|K|^2}{r^2}  Z .
 \end{equation}
@@ -266,7 +266,7 @@ Devido a esta distribuição de íons livres na atmosfera, o campo elétrico de 
    \centering
    \subfloat[Íons positivos injetados pela convecção.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-a}\label{fig:elec-a}} 
    \subfloat[Íons negativos são atraídos.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-b} \label{fig:elec-b}}  
-   \subfloat[Retro-alimentação positiva devido ao efeito corona.]{\includegraphics[width=5.8cm]{img/ilustracoes/eleconvectiva-c} \label{fig:elec-c}}
+   \subfloat[Retro-alimentação positiva devido ao efeito corona.]{\includegraphics[width=5.9cm]{img/ilustracoes/eleconvectiva-c} \label{fig:elec-c}}
    \caption{Representação do processo convectivo de eletrização.}
    \label{fig:elec}
 \end{figure}
@@ -276,36 +276,40 @@ Devido a esta distribuição de íons livres na atmosfera, o campo elétrico de 
 \subsection{Eletrificação por Precipitação}
 \index{Teoria!Eletrificação por Precipitação}
 
-A teoria de Eletrificação por Precipitação, parte do pressuposto de que os centros de cargas são gerados por processos no interior da nuvem, associado com a interação entre os hidrometeoros de nuvens.
+A teoria de Eletrificação por Precipitação, trata dos processos de eletrização no interior das nuvens, associado com a formação e  interação entre os hidrometeoros e as propriedades físicas da água.
 
-Em função dos diferentes níveis de temperatura, pressão de vapor, correntes ascendentes e descendentes, o ambiente de nuvem proporciona o crescimento de gotas com diferentes tamanhos, diversos tipos de cristais de gelo e granizo com diferentes tamanhos. Com a atuação da força gravitacional, as correntes ascendentes, descendentes e a força de arraste, os hidrometeoros adquirem velocidades diferenciadas e colidem entre si.
 
-Ao colidirem, poderá haver transferência de cargas entre os hidrometeoros de nuvens, especialmente se o tempo de colisão for pequeno, gerando fricção, e se houver rupturas \cite{Lenard1892, reynolds1957, matthews1964, jonas1968, simpson1909}. Durante as colisões, a eletrificação poderá ocorrer por Processo de Colisão Indutivo ou Processo de Colisão Não-indutivo.
+A Eletrificação por Precipitação é o mecanismo mais aceito para explicar a estrutura dos centros de cargas observados nas tempestades elétricas conforme as observações em \citeonline{stolzenburg1998,williams1989}, pois sugere que uma região de centro de carga é definida a partir da sedimentação de uma população de partículas com quantidade de massa equivalentes, pois passaram por condições de crescimento semelhante, adquirindo uma mesma polaridade elétrica. 
 
-\subsubsection{Processo de Colisão Indutivo} 
-\index{Processo!de Colisão Indutivo}
 
-Ocorre quando não há coalescência ou acreção portanto, torna-se mais provável na colisão entre o \textit{graupel}\footnote{Granizo com diâmetro menor que 2 mm.} e cristais de gelo.
+%Em função dos diferentes níveis de temperatura, pressão de vapor, correntes ascendentes e descendentes, o ambiente de nuvem proporciona o crescimento de gotas com diferentes tamanhos, diversos tipos de cristais de gelo e granizo com diferentes tamanhos. Com a atuação da força gravitacional, as correntes ascendentes, descendentes e a força de arraste, os hidrometeoros adquirem velocidades diferenciadas e colidem entre si.
+
+Durante o processo de crescimento de hidrometeoros de nuvem, poderá haver transferência de cargas entre os mesmos, especialmente quando há colisões em que o tempo de colisão é pequeno, gerando fricção, e se houver rupturas de gotas ou de cristais de gelo \cite{Lenard1892, reynolds1957, matthews1964, jonas1968, simpson1909}. Durante o crescimento e as colisões dos hidrometeoros, a eletrificação poderá ocorrer por Processo Indutivo ou Processo Não-indutivo.
+
+
+\subsubsection{Processo indutivo} 
+\index{Processo! indutivo}
+
+Ocorre quando há colisões entre os hidrometeoros e não ocorre coalescência ou acreção portanto, torna-se mais provável na colisão entre o \textit{graupel}\footnote{Granizo com diâmetro menor que 2 mm.} e cristais de gelo.
 
 As colisões ocorrem sobre a influência de um campo elétrico $\mathbf{E}$ já existente na nuvem, provocando a polarização do \textit{graupel} e dos cristais de gelo conforme na figura \ref{fig:ind-a}. Ao colidirem, cargas são transferidas, tornando o \textit{graupel} carregado com carga negativa e os cristais de gelo com carga positiva ou falta de elétrons, conforme é mostrado na ilustração referente a figura \ref{fig:ind-b}.
 
 \begin{figure}[ht]
    \centering
    \subfloat[Indução elétrica causada por um campo elétrico $\mathbf{E}$.]{\includegraphics[height=10cm]{img/ilustracoes/indutivo-a} \label{fig:ind-a}}  
-   \subfloat[Colisão entre o \textit{graupel} e o cristal de gelo e eletrização.]{\includegraphics[height=10cm]{img/ilustracoes/indutivo-b} \label{fig:ind-b}}
-   \caption{Ilustração da eletrização de hidrometeoros por Processo de Colisão Indutivo.}
+   \subfloat[Colisão entre o \textit{graupel} e o cristal de gelo  sobre a influencia de $\mathbf{E}$.]{\includegraphics[height=10.9cm]{img/ilustracoes/indutivo-b} \label{fig:ind-b}}
+   \caption{Ilustração da eletrização de hidrometeoros durante uma colisão sob a influência de indução elétrica.}
    \label{fig:ind}
 \end{figure}
 
-Porém, \citeonline{macgorman1998} apontam que a intensidade do campo elétrico de bom tempo, não possui intensidade suficiente para polarizar as partículas de gelo de nuvem. Então, o Processo de Colisão Indutivo deve ocorrer após um mecanismo de eletrização não-indutivo promover um campo elétrico $\mathbf{E}$ no interior da nuvem. 
+Porém, \citeonline{macgorman1998} apontam que a intensidade do campo elétrico de bom tempo, não possui intensidade suficiente para polarizar as partículas de gelo de nuvem. Então, o processo de colisão indutivo deve ocorrer após um mecanismo de eletrização não-indutivo promover um campo elétrico $\mathbf{E}$ no interior da nuvem. 
 
-\subsubsection{Processo de Colisão Não-indutivo}
-\index{Processo!de Colisão Não-indutivo}
+\subsubsection{Processo não-indutivo}
+\index{Processo! não-indutivo}
 
-Conforme diversos estudos dos mecanismos de eletrificação de nuvem realizados em laboratórios que buscaram recriar as condições atmosféricas relacionadas ao crescimento dos hidrometeoros, foi constatado que o carregamento não-indutivo depende: do tamanho dos hidrometeoros, do conteúdo de água líquida dentro da nuvem, da temperatura, e da velocidade de impacto entre os hidrometeoros  \cite{reynolds1957, Takahashi1978, baker1994, Saunders1999, pereyra2000}. Em \citeonline{Takahashi1978} e \citeonline{Takahashi2002}, descreve-se que o mecanismo mais eficiente de eletrização dos hidrometeoros por Processo de Colisão Não-indutivo envolve a colisões entre o \textit{graupel}/granizo com neve seca. 
+Conforme diversos estudos dos mecanismos de eletrificação de nuvem realizados em laboratórios que buscaram recriar as condições atmosféricas relacionadas ao crescimento dos hidrometeoros, foi constatado que o carregamento não-indutivo depende: do tamanho dos hidrometeoros, do conteúdo de água líquida dentro da nuvem, da temperatura, e da velocidade de impacto entre os hidrometeoros  \cite{reynolds1957, Takahashi1978, baker1994, Saunders1999, pereyra2000}. Em \citeonline{Takahashi1978} e \citeonline{Takahashi2002}, descreve-se que o mecanismo mais eficiente de eletrização dos hidrometeoros envolve a colisões entre o \textit{graupel}/granizo com neve seca. 
 
 No trabalho de \citeonline{saunders2008} são expostos alguns dos principais resultados de experimentos de laboratório que investigaram a carga, positiva ou negativa adquirida pelo \textit{graupel} durante o processo de acreção em função da temperatura e o conteúdo de água líquida. Na figura  \ref{fig:saunders}, podemos observar diferentes curvas que marcam a fronteira entre o carregamento positivo e negativo do \textit{graupel}. Apesar de diferenças entres as curvas, que são associadas as diferentes características das câmaras de nuvens que cada autor utilizou, observa-se que em temperaturas mais altas do que -10 $^{\circ}$C, o carregamento é positivo, para temperaturas mais baixas do que -10 $^{\circ}$C o carregamento é negativo, e que o aumento da taxa de acreção pode tornar o carregamento positivo do \textit{graupel} em regiões com temperaturas abaixo de -10 $^{\circ}$C.
-
 
 %\begin{figure}[htp]
 %\centering 
@@ -315,22 +319,23 @@ No trabalho de \citeonline{saunders2008} são expostos alguns dos principais res
 %\caption{}
 %\end{figure}
 
-
-
 \begin{figure}[htp]
 \centering 
 \includegraphics[width=15cm]{img/ilustracoes/saunders}
-\caption{(adaptada de \citeonline{saunders2008}).}
+\caption{Sinal da carga adquirida pelo gelo durante o processo de acreção, conforme diferentes experimentos realizados em laboratório (adaptada de \citeonline{saunders2008}).}
 \label{fig:saunders}
 \end{figure}
 
-Associado ao tamanho das partículas considera-se que exista uma interface entre a água e o ar, gelo e ar, e água e gelo, composta de água quase líquida (QLL)\sigla{name={QLL},description={\textit{Quasi-liquid Layer}}}, que no momento da colisão, é transferida das partículas com maior quantidade de QLL para as partículas com camada de QLL menor \cite[apud \cite{rachel}]{baker1994}.
+Considerando o estudo de \citeonline{faraday1859}, observa-se que em temperaturas logo abaixo de 0 $^{\circ}$C, partículas de gelo podem possuir uma camada de água líquida super-resfriada com aproximadamente 10 {\AA}. Neste ambiente, segundo \citeonline{fletcher}, as moléculas de água tendem a orientar a parte negativa do seu dipolo elétrico permanente para a superfície da água, em contato com o ar. Esse efeito, também pode ser observado em partículas de gelo derretendo, em temperaturas logo acima de 0 $^{\circ}$C, conforme sugerido em \cite{fletcher}.
+\simbolo{name={{\AA}},description={Ângstron}}
+
+No trabalho de \citeonline{Baker1987}, observa-se que a camada de água líquida sobre o gelo pode crescer/diminuir por difusão de vapor, e que se a taxa de difusão de vapor for maior sobre a camada líquida super-resfriada, a partícula de gelo adquiri carga positiva e quando a taxa de difusão de vapor é maior sobre o gelo do que sobre a camada de água líquida a carga adquirida pelo gelo é negativa. É constado também que as partículas de gelo que possuem esta camada de água líquida super-resfriada, ao colidirem podem trocar massa e carga entre si, geralmente as partículas com maior quantidade de água líquida em sua superfície transferem massa para as partículas com menor quantidade de água líquida \cite{baker1994}. 
 
 
+O efeito termoelétrico no gelo também contribui para a eletrificação das partículas de gelo sobre a influência de gradientes de temperatura, pois há dissociação da água em frações com dimensões moleculares das partículas de gelo, gerando disponibilidade de íons de H$^{+}$ e OH$^{-}$. Como a mobilidade do íon de hidrogênio é maior do que da hidroxila devido ao peso molecular, nas regiões mais quentes ocorre maior difusão de íons de hidrogênio deixando maiores concentrações de hidroxilas (OH$^{-}$) sobre o gelo, portanto proporcionando o carregamento negativo de determinada porção da partícula de gelo e aumentando a disponibilidade de íons positivos (H$^{+}$) no ambiente de nuvem \cite{latham1961}.  
 
-O estudo da microfísica dos processos de eletrificação não indutiva apresenta pouco consenso entre os pesquisadores, conforme mostra a figura \ref{fig:saunders} em que os resultados obtidos por diferentes autores, divergem. Porém, é o processo que melhor compreende a estrutura tripolar das nuvens de tempestades, pois, converge com o fato de que os centros de cargas identificados no interior das nuvens correspondem à sedimentação de partículas de mesma massa e mesma polaridade elétrica.  
- 
 \section{PROPOSTA}
+
 Nesta tese, faz-se a identificação de sistemas que possuem atividade elétrica, ou seja, tempestades elétricas, apenas sobre a América do Sul  a partir das observações orbitais do satélite TRMM, mais especificamente do sensor de raios (LIS), radiômetro no infravermelho (VIRS) e o radar de precipitação (PR) a bordo do da satélite entre os anos de 1998 e 2011. Desta forma cria-se um banco de dados de tempestades elétricas do TRMM.
 
 Com este subconjunto de dados do TRMM, é estudada a sazonalidade, o ciclo diurno e ciclo anual das tempestades elétricas, bem como a densidade geográfica de raios e de tempestades elétricas, buscando evidenciar regiões ou estações do ano em que as tempestades elétricas possuem processo de eletrificação mais eficientes sobre a América do Sul.
