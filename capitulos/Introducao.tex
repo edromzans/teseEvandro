@@ -161,31 +161,40 @@ Z = \dfrac{P_r r^2}{C |K|^2}.
 \label{zsimples}
 \end{equation}
 %pois, $|K|^2=0.931$ para água líquida.
+
 Conforme mostra a equação \ref{fz}, $Z$ depende de $D_h$ que está associado com a massa ou o volume de chuva pela equação \ref{dh}.
 
 \simbolo{name={$Z$},description={Fator de refletividade do radar}}
 
-No entanto, ao observar o perfil vertical do fator de refletividade do radar $Z$, verifica-se que feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar, consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0.931$. 
+No entanto, ao observar o perfil vertical do fator de refletividade do radar $Z$, verifica-se que feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar, consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0,931$. 
 
 %Portanto, acima da da isoterma de 0 $^{\circ}$C, espera-se uma diminuição abrupta de $Z$ devido a mudança da constante dielétrica da água associada ao seu congelamento, sendo que a equação do radar mantem $|K|_{\mathrm{agua}}^2$ fixo para as medidas acima da isoterma de 0 $^{\circ}$C.
 
 Aplicando $10\log_{10}$, na equação \ref{zsimples}, e assumindo  $\vert K_{\mathrm{agua}}\vert^2 = 0.931$ e $\vert K_{\mathrm{gelo}}\vert^2= 0.197$, para uma mesma medida de $P_r$, as diferenças observadas nos valores de $Z$ em dB irão corresponder a
 
+%dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} = - 10\log_{10}(K_{\mathrm{gelo}}^2 ) + 10\log_{10}(K_{\mathrm{agua}}^2).
+%Substituindo os valores de $\vert K_{\mathrm{agua}}\vert^2$ e $\vert K_{\mathrm{gelo}}\vert^2$, obtém-se que 
 \begin{align}
 dBZ_{\mathrm{agua}}-dBZ_{\mathrm{gelo}} &=  10\log_{10}(\vert K_{\mathrm{gelo}}\vert^2 ) - 10\log_{10}(\vert K_{\mathrm{agua}}\vert^2)\\
 dBZ_{\mathrm{agua}}- dBZ_{\mathrm{gelo}} &= -6,7 dBZ,
 \end{align}
-%dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} = - 10\log_{10}(K_{\mathrm{gelo}}^2 ) + 10\log_{10}(K_{\mathrm{agua}}^2).
-%Substituindo os valores de $\vert K_{\mathrm{agua}}\vert^2$ e $\vert K_{\mathrm{gelo}}\vert^2$, obtém-se que 
-
 mostrando que devido ao índice de refração do gelo ser menor do que o índice de refração da água ($\vert K_{\mathrm{agua}}\vert^2 > \vert K_{\mathrm{gelo}}\vert^2$), ao considerar $\vert K_{\mathrm{agua}}\vert^2$ em regiões que os hidrometeoros estão congelados, haverá uma redução de 6,7 dBZ em relação a considerar $\vert K_{\mathrm{gelo}}\vert^2$.  
 
-Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento do gelo é bastante marcada, pois haverá uma redução de $\simeq$7 dBZ em regiões acima da isoterma de 0 $^{\circ}$C devido ao congelamento dos hidrometeoros, enquanto que logo abaixo da isoterma 0 $^{\circ}$C, haverá um aumento de $Z$ devido ao derretimento dos hidrometeoros. Este efeito foi explorado por  \citeonline{Fabry1995}, para analisar os processos  de  agregação, acreção e colisão coalescência, que foram observados a partir da espessura da camada de derretimento e flutuações nos valores do Fator de Refletividade $Z$ no perfil atmosférico. 
+Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento do gelo é bastante marcada, pois haverá uma redução de $\simeq$7 dBZ em regiões acima da isoterma de 0 $^{\circ}$C devido ao congelamento dos hidrometeoros, enquanto que logo abaixo da isoterma de 0 $^{\circ}$C, haverá um aumento de $Z$ devido ao derretimento dos hidrometeoros. Conforme descreve \citeonline{austin1950}, quando há derretimento de flocos de neve no perfil atmosférico, observa-se um aumento da Refletividade ($\eta$) logo abaixo da isoterma 0 $^{\circ}$C denominada como banda brilhante, e que este aumento de $\eta$ pode não estar associado apenas com a mudança da constante dielétrica do gelo para água líquida, mas conforme ilustra a figura \ref{Austin},  processos de colisão-coalescência causam um efeito de aumento contínuo da refletividade abaixo do nível de congelamento e o aumento da velocidade terminal das gotas favorecem a sua ruptura e evaporação, reduzindo o diâmetros das gotas, causando diminuição de $\eta$ e esses fatores irão influenciar sobre a banda brilhante observada por radar.
 
-A espessura da camada de derretimento está relacionada com o lapse-rate da atmosfera \cite[p.~462]{mason1971_2ed}. Em uma atmosfera instável, com convecção profunda e precipitação convectiva, a camada de transição de fase de gelo para a água liquida é perturbada por correntes ascendentes. A mudança do índice de refração da água não ocorre apenas logo abaixo de 0 $^{\circ}$C, pois no ambiente convectivo teremos água super-resfriada em temperaturas de -15 $^{\circ}$C, o que intensifica o processo de acreção podendo gerar gelo sólido que cai derretendo até a superfície. Nestes casos espera-se uma camada de derretimento mais espessa.
+\begin{figure}[hb]
+\centering
+\includegraphics[width=\textwidth]{img/ilustracoes/AustinBemis}
+\caption{(adaptada de \citeonline{austin1950})}
+\label{Austin}
+\end{figure}
 
-Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado um aumento acentuado no fator de refletividade do radar logo abaixo da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve, que denomina-se banda brilhante. Neste caso espera-se uma camada de derretimento menos espessa, pois os flocos de neve possuem velocidade terminal e densidade inferior as partículas de gelo compacto (ganizo ou saraiva/$graupel$) portanto derretem mais rapidamente, ou seja, percorrem um caminho menor durante o derretimento. 
 
+Este efeito foi explorado por \citeonline{Fabry1995}, para analisar os processos  de  agregação, acreção e colisão coalescência, que foram observados a partir da espessura da camada de derretimento e flutuações nos valores do Fator de Refletividade $Z$ no perfil atmosférico. 
+
+A espessura da camada de derretimento está relacionada com o lapse-rate da atmosfera \cite[p.~462]{austin1950,mason1971_2ed}. Em uma atmosfera instável, com convecção profunda e precipitação convectiva, a camada de transição de fase de gelo para a água liquida é perturbada por correntes ascendentes. A mudança do índice de refração da água não ocorre apenas logo abaixo de 0 $^{\circ}$C, pois no ambiente convectivo teremos água super-resfriada em temperaturas de -15 $^{\circ}$C, o que intensifica o processo de acreção podendo gerar gelo sólido que cai derretendo até a superfície. Nestes casos espera-se uma camada de derretimento mais espessa, sem a definição de banda brilhante.
+
+Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado a banda brilhante e uma camada de derretimento menos espessa, pois os flocos de neve possuem velocidade terminal e densidade inferior  as partículas de gelo compacto (ganizo/saraiva e $graupel$) portanto derretem mais rapidamente, ou seja, percorrem um caminho menor durante o derretimento. 
 \simbolo{name={$^{\circ}$C},description={Grau Celsius}} 
 
 %\begin{xalignat}{3}
@@ -196,7 +205,7 @@ Considerando um regime de precipitação estratiforme, que é governado por proc
 %|K|^2 = \left( \dfrac{m^2-1}{m^2+2}\right)^2
 %\end{equation}
 
-Também, sabendo que $Z$ é proporcional ao diâmetro dos hidrometeoros $D_h$ elevado a 6 potência, como mostra a equação \ref{fz}, os processos de crescimento de flocos de neves, granizo e gotas, são marcados por aumentos exponenciais no Fator de Refletividade do Radar ($Z$) no perfil de altitude. 
+Também, sabendo que $Z$ é proporcional ao diâmetro dos hidrometeoros $D_h$ elevado a 6 potência, como mostra a equação \ref{fz}, os processos de crescimento de flocos de neves, granizo e gotas, são marcados por aumentos exponenciais de $Z$ no perfil de altitude. 
 
 %Considerando um regime de precipitação estratiforme, que é governado por processos de agregação, será observado um aumento acentuado no fator de refletividade do radar em logo abaixo da isoterma de 0 $^{\circ}$C associado ao derretimento de flocos de neve. \simbolo{name={$^{\circ}$C},description={Grau Celcius}} 
 
@@ -233,7 +242,6 @@ A partir de medidas em superfície, observa-se que os campos eletrostáticos pro
 \label{fig:tripeletr}
 \end{figure}
 
-
 Mesmo que o modelo do tripolo eletrostático proposto por \citeonline{williams1989} seja uma teoria condizente com a estrutura de cargas dominante em uma tempestade elétrica, considerando sondagens de campo elétrico no interior das tempestades \citeonline{rust1996}, verificam que os centros de cargas podem estar distribuídos de maneira mais complexa. 
 \citeonline{stolzenburg1998} criou um modelo conceitual para a estrutura de cargas das tempestades elétricas exposto na figura \ref{fig:multipcentros}, sugerindo que nas regiões aonde ocorrem ventos ascendentes pode haver 4 ou mais centros de carga enquanto as regiões com correntes descendentes 6 ou mais centros de cargas.
 
@@ -266,7 +274,7 @@ Devido a esta distribuição de íons livres na atmosfera, o campo elétrico de 
    \centering
    \subfloat[Íons positivos injetados pela convecção.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-a}\label{fig:elec-a}} 
    \subfloat[Íons negativos são atraídos.]{\includegraphics[width=5cm]{img/ilustracoes/eleconvectiva-b} \label{fig:elec-b}}  
-   \subfloat[Retro-alimentação positiva devido ao efeito corona.]{\includegraphics[width=5.9cm]{img/ilustracoes/eleconvectiva-c} \label{fig:elec-c}}
+   \subfloat[Retro-alimentação positiva devido ao efeito corona.]{\includegraphics[width=6cm]{img/ilustracoes/eleconvectiva-c} \label{fig:elec-c}}
    \caption{Representação do processo convectivo de eletrização.}
    \label{fig:elec}
 \end{figure}
@@ -292,13 +300,12 @@ Durante o processo de crescimento de hidrometeoros de nuvem, poderá haver trans
 
 Ocorre quando há colisões entre os hidrometeoros e não ocorre coalescência ou acreção portanto, torna-se mais provável na colisão entre o \textit{graupel}\footnote{Granizo com diâmetro menor que 2 mm.} e cristais de gelo.
 
-As colisões ocorrem sobre a influência de um campo elétrico $\mathbf{E}$ já existente na nuvem, provocando a polarização do \textit{graupel} e dos cristais de gelo conforme na figura \ref{fig:ind-a}. Ao colidirem, cargas são transferidas, tornando o \textit{graupel} carregado com carga negativa e os cristais de gelo com carga positiva ou falta de elétrons, conforme é mostrado na ilustração referente a figura \ref{fig:ind-b}.
+As colisões ocorrem sobre a influência de um campo elétrico $\mathbf{E}$ já existente na nuvem, provocando a polarização do \textit{graupel} e dos cristais de gelo conforme na figura \ref{fig:ind}, para situação antes da colisão. Depois da colisão conforme mostra a ilustração na figura \ref{fig:ind}, cargas são transferidas, tornando o \textit{graupel} carregado com carga negativa e os cristais de gelo com carga positiva ou falta de elétrons.
 
 \begin{figure}[ht]
    \centering
-   \subfloat[Indução elétrica causada por um campo elétrico $\mathbf{E}$.]{\includegraphics[height=10cm]{img/ilustracoes/indutivo-a} \label{fig:ind-a}}  
-   \subfloat[Colisão entre o \textit{graupel} e o cristal de gelo  sobre a influencia de $\mathbf{E}$.]{\includegraphics[height=10.9cm]{img/ilustracoes/indutivo-b} \label{fig:ind-b}}
-   \caption{Ilustração da eletrização de hidrometeoros durante uma colisão sob a influência de indução elétrica.}
+   \includegraphics[height=10cm]{img/ilustracoes/indutivo}
+   \caption{Eletrização dos hidrometeoros por processo indutivo. A ilustração representa a configuração das cargas antes e depois da colisão.}
    \label{fig:ind}
 \end{figure}
 
@@ -327,7 +334,7 @@ No trabalho de \citeonline{saunders2008} são expostos alguns dos principais res
 \end{figure}
 
 Considerando o estudo de \citeonline{faraday1859}, observa-se que em temperaturas logo abaixo de 0 $^{\circ}$C, partículas de gelo podem possuir uma camada de água líquida super-resfriada com aproximadamente 10 {\AA}. Neste ambiente, segundo \citeonline{fletcher}, as moléculas de água tendem a orientar a parte negativa do seu dipolo elétrico permanente para a superfície da água, em contato com o ar. Esse efeito, também pode ser observado em partículas de gelo derretendo, em temperaturas logo acima de 0 $^{\circ}$C, conforme sugerido em \cite{fletcher}.
-\simbolo{name={{\AA}},description={Ângstron}}
+\simbolo{name={{\AA}},description={Angstron}}
 
 No trabalho de \citeonline{Baker1987}, observa-se que a camada de água líquida sobre o gelo pode crescer/diminuir por difusão de vapor, e que se a taxa de difusão de vapor for maior sobre a camada líquida super-resfriada, a partícula de gelo adquiri carga positiva e quando a taxa de difusão de vapor é maior sobre o gelo do que sobre a camada de água líquida a carga adquirida pelo gelo é negativa. É constado também que as partículas de gelo que possuem esta camada de água líquida super-resfriada, ao colidirem podem trocar massa e carga entre si, geralmente as partículas com maior quantidade de água líquida em sua superfície transferem massa para as partículas com menor quantidade de água líquida \cite{baker1994}. 
 
