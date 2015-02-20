@@ -308,15 +308,15 @@ Note que o fator 60 que multiplica tanto a equação \ref{eqFT} quanto a \ref{eq
 \simbolo{name={$FT$},description={Taxa de raios por tempo $[raios~minuto^{-1}]$}} \simbolo{name={$FTA$},description={Taxa de raios por tempo por área $[raios~dia^{-1}~km^{-2}]$}}.
 
 
-\section{DENSIDADE GEOGRÁFICA DE RAIOS E TEMPESTADES ELÉTRICAS}
+\section{DISTRIBUIÇÃO GEOGRÁFICA DE DENSIDADE DE RAIOS E TEMPESTADES ELÉTRICAS}
 \label{metodoPass}
 
 
-A densidade de tempestades elétricas e também de raios projetadas sobre a AS, busca proporcionar ao leitor não apenas uma visão geográfica dos locais em que se tem maior ocorrência de raios, mas também identificar os locais e períodos do ano em que as tempestades elétricas apresentam processos de eletrificação mais eficazes.  
+A distribuição geográfica da densidade de tempestades elétricas e também de raios sobre a AS, busca mostrar as regiões de maior/menor ocorrência de raios e de tempestades elétricas e também identificar os locais e períodos do ano em que as tempestades elétricas apresentam processos de eletrificação mais eficazes.  
 
-O que se torna fundamental na construção destes mapas é considerar quantas vezes, ou qual o tempo em que o satélite ficou observando cada parte da região de estudo, pois uma determinada região pode ter muito mais amostragens do que outras, por causa das características orbitais do TRMM. Portanto, qualquer análise de densidade geográfica com dados do TRMM que não considere o número de passagens ou tempo em que o sensor observou a região projetada na superfície será tendenciosa. 
+O que se torna fundamental na construção destes mapas de densidade de ocorrência sobre a superfície terrestre é considerar quantas vezes, ou qual o tempo em que o satélite ficou observando cada parte da região de estudo, pois uma determinada região pode ter muito mais amostragens do que outras, por causa das características orbitais do TRMM. Portanto, qualquer análise de distribuição geográfica relacionadas as observações do TRMM que não considere o número de passagens ou tempo em que o sensor observou a região projetada na superfície será tendenciosa. 
 
-Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua órbita inclinada 35$^{\circ}$ e velocidade de 7,3 km s$^{-1}$, entre o período de 1998--2011, o satélite passou {10 000} vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT} que apresenta o número de orbitas sobrevoadas pelo VIRS em cada ponto da grade regular de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ na América do Sul. Este efeito decorre da região aonde o satélite atinge a latitude máxima.
+Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua órbita com altitude de 402,5 km e  inclinada 35$^{\circ}$, entre o período de 1998--2011, o satélite passou {10 000} vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT} que apresenta o número de orbitas sobrevoadas pelo VIRS em cada ponto da grade regular de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ na América do Sul. Este efeito decorre da região aonde o satélite atinge a latitude máxima.
 
 \begin{figure}[!hb]
   \centering
@@ -327,7 +327,7 @@ Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em f
 
 %\label{gridAmostragem} 
 
-Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}), figura \ref{lisVT}, o número de dias de amostragem em cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ projetada sobre a região de estudo, revela que durante os 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ Sul do que em 0$^{\circ}$. Logo, se estas regiões com maior tempo de amostragem forem eletricamente ativas, é de se esperar um alto número raios observados.
+Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}), figura \ref{lisVT}, o número de dias de amostragem em cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ projetada sobre AS, revela que durante os 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ Sul do que em 0$^{\circ}$. Logo, se estas regiões com maior tempo de amostragem forem eletricamente ativas, é de se esperar um alto número raios observados.
 
 \begin{figure}[!ht]
   \centering
@@ -336,18 +336,20 @@ Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}
 \label{lisVT}
 \end{figure} 
 
-As figuras  \ref{lisVT} e \ref{VirsVT} representam duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0.25$^{\circ}$ de resolução, projetada sobre a América do Sul. A matriz $\mathbf{VT}_{lis}$, figura \ref{lisVT}, do tempo de amostragem do sensor LIS sobre a superfície e a matriz $\mathbf{VT}_{virs}$, figura \ref{VirsVT}, do número de vezes que o VIRS sobrevoou cada ponto de grade na superfície, são utilizadas para normalizar as medidas de raios observados pelo LIS e tempestades elétricas definidas por meio do  canal 4 do VIRS.  
+As figuras  \ref{lisVT} e \ref{VirsVT} representam duas matrizes que correspondem aos pontos de uma grade igualmente espaçada (grade regular), com 0,25$^{\circ}$ de resolução, projetada sobre a América do Sul. A matriz $\mathbf{VT}_{lis}$, figura \ref{lisVT}, do tempo de amostragem do LIS sobre a superfície e a matriz $\mathbf{VT}_{virs}$, figura \ref{VirsVT}, do número de vezes que o VIRS sobrevoou cada ponto de grade na superfície, são utilizadas para normalizar as medidas de raios observados pelo LIS e tempestades elétricas definidas por meio do canal 4 do VIRS.  
 
 \simbolo{name={$\mathbf{VT}_{lis}$},description={Matriz do tempo total da visada do sensor LIS sobre a superfície}}
 
-Portanto a partir destas grandezas podemos calcular a densidade de raios ($\mathbf{DE}_{fl}$) e a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) em função do tempo de amostragem.
+As medidas tanto de raios do LIS quanto de regiões sobre a superfície terrestre com ocorrência de tempestades elétricas definidas pelo VIRS, foram projetadas sobre uma grade de  0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ de latitude e longitude, referente a região de estudo. Portanto, foi obtida a matriz $\mathbf{FL}_{lis}$ em que cada posição da matiz corresponde a um ponto da grade de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ com o acumulado de raios ocorridos entre 1998--2011, bem como foi obtida a matriz $\mathbf{P}_{te}$ com o total de tempestades elétricas ocorridas a cada ponto com 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ sobre a AS.
 
-Para tanto, é necessário calcular o número total de raios observados $\mathbf{FL}_{lis}$ e o número total de tempestades elétricas $\mathbf{P}_{te}$ em cada ponto da grade de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$. A matriz $\mathbf{FL}_{lis}$ é ilustrada na figura \ref{taxatotalraios}, e a matriz $\mathbf{P}_{te}$ na figura \ref{taxaTotalTe}.
 
 %Com as mesmas dimensões e resolução de grade que o tempo de observação e o número de passagens do satélite foram acumulados em duas matrizes, os raios foram acumulados na matriz ($\mathbf{FL}_{lis}$) e todos os píxeis do VIRS com radiância espectral associada com temperaturas de brilho inferiores a 258 K e que definiram as áreas das tempestades elétricas, foram acumulados na matriz ($\mathbf{P}_{te}$) que representa os locais com maior cobertura de nuvens de tempestades elétricas.
 %A matriz $\mathbf{FL}_{lis}$ projeta sobre a América do Sul está representada na figura \ref{gridFL} e a matriz $\mathbf{P}_{te}$, na figura \ref{gridTe}.
 
-Na figura \ref{taxaTotalTe} é notável o alto número de sistemas na região Sul da AS, mas este máximo não indica maior ocorrência de tempestades elétricas e sim maior frequência de passagem do satélite TRMM. 
+%A matriz $\mathbf{FL}_{lis}$ é ilustrada na figura \ref{taxatotalraios}, e a matriz $\mathbf{P}_{te}$ na figura \ref{taxaTotalTe}. 
+
+Na figura \ref{taxaTotalTe}, que ilustra a matriz $\mathbf{P}_{te}$, há uma extensa região na parte Sul da AS em que se observa um elevado número de sistemas, mas este máximo não indica maior ocorrência de tempestades elétricas e sim maior frequência de passagem do satélite TRMM. No entanto, a ilustração da matriz $\mathbf{FL}_{lis}$ como mostra a figura \ref{taxatotalraios}, revela que no extremo norte da cordilheira dos Andes, mesmo que o satélite sobrevoe menos esta região próxima da linha do equador, os acumulados de raios são maiores do que sobre a região Sul da AS. 
+
 
 %Portanto, faz-se necessário normalizar as medidas do TRMM pelo tempo de amostragem ou número de passagens.
 
@@ -365,10 +367,9 @@ Na figura \ref{taxaTotalTe} é notável o alto número de sistemas na região Su
 \label{taxaTotalTe}
 \end{figure} 
 
-Mesmo que as matrizes representem pontos em uma grade com espaçamento angular regular, as áreas de cada ponto de grade não são iguais, pois a  o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
+Devemos também levar em consideração que os pontos de uma grade com espaçamento angular regular, não possuem áreas iguais, pois a  o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
 
-
-A densidade de raios ($\mathbf{DE}_{fl}$) é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS de segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por ano por quilômetro quadrado ([ano$^{-1}$] [km$^{-2}$]).
+Portanto a partir destas grandezas podemos calcular a densidade de raios ($\mathbf{DE}_{fl}$) e a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) em função do tempo de amostragem. A densidade de raios $\mathbf{DE}_{fl}$ é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS de segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por ano por quilômetro quadrado ([ano$^{-1}$] [km$^{-2}$]).
 
 \begin{equation}
 \mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600     
