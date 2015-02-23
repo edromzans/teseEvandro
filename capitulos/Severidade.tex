@@ -3,41 +3,40 @@
 Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa estão associadas aos índices FTA e FT. Nesta seção identifica-se qual desses índices podem melhor associar-se com a intensidade convectiva das tempestades elétricas.
 %, ou seja, os sistemas com as maiores taxas de raios por minuto (FT) ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado (FTA) da sua extensão. 
 
-Para o estudo de intensidade dos sistemas, foram selecionados apenas as tempestades elétricas as quais possuíram $VT_m$ maior ou igual a 1 minuto e com pelo menos um pixel do campo de visão do PR contido na área do sistema com chuva válida, totalizando {94~733} tempestades elétricas do TRMM. %Como a intensidade convectiva dos sistemas é avaliada com base, principalmente, na morfologia da estrutura tridimensional da precipitação e na taxa de raios, 
+
+Como a intensidade convectiva será avaliada a partir da taxa de raios (FTA e FT) e análise da estrutura tridimensional da precipitação observada pelo PR, para o estudo de severidade das tempestades elétricas, foram selecionados apenas os sistemas que possuíram $VT_m$ maior ou igual a 1 minuto e com pelo menos um pixel do campo de visão do PR contido na área do sistema com chuva válida, totalizando {94~733} tempestades elétricas do TRMM. 
+
+
+  %Como a intensidade convectiva dos sistemas é avaliada com base, principalmente, na morfologia da estrutura tridimensional da precipitação e na taxa de raios, 
 
 As equações \ref{eqFT} e \ref{eqFTA} foram aplicadas nas {94~733} tempestades elétricas selecionadas, e então estudada as distribuições de probabilidades dos índices FTA e FT (figuras \ref{pdfFTAFT} e \ref{cdfFTAFT}). Conforme mostra a figura \ref{pdfFTAFT}, trata-se de distribuições exponenciais de probabilidade. Os valores de FTA e FT para cada quantil da amostragem de tempestades elétricas, tanto para as mais frequentes quanto as mais raras, podem ser verificados por meio da distribuição cumulativa de probabilidade de FTA e FT mostradas na figura \ref{cdfFTAFT}. 
 
-Na mediana da amostragem de FTA observa-se 2,3 $\times$ 10$^{-4}$ raios min$^{-1}$ km$^{-2}$, e na mediana da amostragem de FT 3,4 raios min$^{-1}$. Observe que o maior número de tempestades elétricas possuem os menores valores FTA e FT. Observe que na curva referente a distribuição cumulativa de FT na figura \ref{cdfFTAFT}, que o primeiro degrau da curva corresponde a 28,9\% da amostragem das {94~733} tempestades elétricas do TRMM. O primeiro degrau da distribuição cumulativa de FTA (figura \ref{cdfFTAFT}) corresponde a 9,2\% de {94~733}. 
+Na mediana da amostragem de FTA,  as tempestades elétricas tiveram 2,3 $\times$ 10$^{-4}$ raios min$^{-1}$ km$^{-2}$  e na mediana da amostragem de FT, foram 3,4 raios min$^{-1}$. O maior número de tempestades elétricas possuem os menores valores FTA e FT, conforme é mostrado na figura \ref{pdfFTAFT}. Note que o primeiro degrau referente a curva da distribuição cumulativa de FT na figura \ref{cdfFTAFT}, corresponde a 28,9\% da amostragem das {94~733} tempestades elétricas do TRMM e o primeiro degrau da distribuição cumulativa de FTA (figura \ref{cdfFTAFT}) corresponde a 9,2\% de {94~733}. 
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[height=9cm]{img/FtaFt/pdf_FTA_FT}      
+  \includegraphics[height=9.5cm]{img/FtaFt/pdf_FTA_FT}      
   \caption{Densidade de probabilidade de FTA e FT.} 
    \label{pdfFTAFT} 
 \end{figure}
 
 \begin{figure}[!hb]
   \centering 
-  \includegraphics[height=9cm]{img/FtaFt/cdf_FTA_FT} 
+  \includegraphics[height=9.5cm]{img/FtaFt/cdf_FTA_FT} 
   \caption{Densidade de probabilidade cumulativa de FTA e FT.}
   \label{cdfFTAFT}
 \end{figure}
 %\label{seriesFtaFt}
 
-Os sistemas potencialmente severos são selecionados pelo 90\textsuperscript{\underline{o}} percentil das amostras de probabilidades de FTA e FT, que estão associado aos maiores e mais raros valores ocorridos. Portanto, pressupõe-se que as tempestades elétricas as quais provavelmente causaram chuva de granizo, rajadas de ventos com queda de árvores e construções ou tornados devem estar associadas aos sistemas com valores extremos de FTA ou FT.
+Os sistemas potencialmente severos são selecionados pelo 90\textsuperscript{\underline{o}} percentil das amostragens de probabilidades de FTA e FT, que correspondem aos 10\% mais intensos e mais raros valores de FTA e FT ocorridos. Portanto, pressupõe-se que as tempestades elétricas as quais provavelmente causaram chuva de granizo, rajadas de ventos com queda de árvores e construções ou tornados devem estar associadas aos sistemas com valores extremos de FTA ou FT.
 
-
-
-O grupo das tempestades elétricas com FTA extremo, possuíram valores entre {29,3--1258,7 $\times$ 10$^{-4}$} raios por minuto por quilômetro quadrado ([min$^{-1}$] [km$^{-2}$]), enquanto as tempestades elétricas com extremos de FT possuíram valores entre {47,2--1283,6} raios por minuto ([min$^{-1}$]). Note que, os sistemas severos classificados pelo índice FT, correspondem as taxas de raios min$^{-1}$ das PFs de categoria três, quatro e cinco, as quais possuíram taxa de raios entre 30,9--1351 raios min$^{-1}$, que totalizaram 5727 PFs observadas sobre o globo em 3 anos de dados do TRMM \cite{cecil2005}. Neste trabalho de pesquisa, que considera apenas a região da AS, porém 13 anos de dados do TRMM, os extremos de FT ({47,2--1283,6} raios min$^{-1}$) representam um total de 9473 tempestades elétricas do TRMM.      
+Desta forma, temos dois grupo de tempestades elétricas do TRMM extremas, um composto por 9475 tempestades elétricas com valores extremos de FTA e outro com 9475 tempestades elétricas com valores extremos de FT. Os valores extremos de FTA correspondem a tempestades elétricas com {29,3--1258,7 $\times$ 10$^{-4}$} raios por minuto por quilômetro quadrado ([min$^{-1}$] [km$^{-2}$]), enquanto as tempestades elétricas com FT extremos possuíram valores entre {47,2--1283,6} raios por minuto ([min$^{-1}$]). Observe que, os extremos do índice FT, correspondem as taxas de raios no tempo das PFs de categoria três, quatro e cinco, as quais produziram entre 30,9--1351 raios min$^{-1}$, que totalizaram 5727 PFs observadas sobre o globo em 3 anos de dados do TRMM \cite{cecil2005}. Neste trabalho de pesquisa, que considera apenas a região da AS, porém 14 anos de dados do TRMM, os extremos de FT ({47,2--1283,6} raios min$^{-1}$) representam um total de 9475 tempestades elétricas do TRMM.      
 
 %, 0,09\% da base de dados globais de três anos das PFs
 %Note também que o grupo das tempestades elétricas severas desta tese\footnote{90\textsuperscript{\underline{o}} percentil das amostras de probabilidades de FTA e FT}, é formado por um total de 9473 sistemas apenas sobre a América do Sul.
 % As tempestades elétricas severas, correspondem ao total de 9473 
 
-
-
-
-Nas figuras \ref{topFTA} e \ref{topFT} ilustram as medidas do TRMM para as 4 tempestades elétricas com FTA e FT mais intensos e que possuíram pelo menos 50\% da sua área dentro da visada do PR. 
+As figuras \ref{topFTA} e \ref{topFT} ilustram as medidas do TRMM para as 4 tempestades elétricas com FTA e FT mais intensos das amostragens e que possuíram pelo menos 50\% da sua área dentro da visada do PR. 
 
 
 \begin{figure}[!hb]
@@ -64,7 +63,7 @@ Nas figuras \ref{topFTA} e \ref{topFT} ilustram as medidas do TRMM para as 4 tem
 
 Na parte superior e inferior de cada tempestade elétrica nas figuras \ref{topFTA} e \ref{topFT}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, valores dos índices FTA e FT, área do sistema (A), semi-eixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema. A barra de cores nas figura \ref{barravirs_fta} e \ref{barravirs_ft}, correspondem as temperaturas de brilho ($<$258K) associada a radiância espectral em infravermelho observada pelo VIRS. O gráfico abaixo da ilustração de cada sistema são as médias dos perfis de $Z_c$ por altitude, classificados como convectivos e estratiformes, nas cores vermelho e azul respectivamente e o perfil médio de $Z_c$ considerando todos os perfis, convectivo, estratiforme e outros, que é representado pela curva na cor preta.
 
-Observe que o valor mínimo de FT foi de 0,6 raios por minuto. Em \citeonline{cecil2005}, considera-se que, a mínima taxa de raios no tempo para as PFs é de 0,7 raios por minutos. Porém a resolução espacial da projeção do tempo de visada do LIS utilizada nesta tese possui resolução de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$  \cite{albrecht2009tropical,albrecht2011b}. Ao considerar a velocidade e altura da órbita do satélite, o tempo de observação do LIS em um ponto de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ na superfície terrestre pode atingir até 102 segundos na região zenital. Então, as tempestades elétricas que possuíram apenas 1 raio e $VT_m$ de $\simeq$100 segundos, tiveram o mínimo valor de FT de 0,6 raios min$^{-1}$, sendo esta, a mínima taxa de raios no tempo detectável em uma tempestade elétrica do TRMM desta pesquisa.
+Observe que o valor mínimo de FT foi de 0,6 raios por minuto, diferente de \citeonline{cecil2005}, que considerou a mínima taxa de raios no tempo para as PFs de 0,7 raios por minutos. Porém a resolução espacial da projeção do tempo de visada do LIS utilizada nesta tese possui resolução de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$  \cite{albrecht2009tropical,albrecht2011b}. Ao considerar a velocidade e altura da órbita do satélite, o tempo de observação do LIS em um ponto de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ na superfície terrestre pode atingir até 102 segundos na região zenital. Então, as tempestades elétricas que possuíram apenas 1 raio e $VT_m$ de $\simeq$100 segundos, tiveram o mínimo valor de FT de 0,6 raios min$^{-1}$, sendo esta, a taxa mínima de raios no tempo detectável em uma tempestade elétrica do TRMM neste estudo.
 
 % Na figura \ref{percetilFtaFt}, temos a série de FTA e FT ordenada, e a linha tracejada vertical corta o 90\% percentil dos índices. 
 
@@ -77,15 +76,6 @@ Observe que o valor mínimo de FT foi de 0,6 raios por minuto. Em \citeonline{ce
 
 \section{ÁREA E TEMPERATURA DO TOPO DA NUVEM}
 
-Observa-se que os extremos de FTA e FT correspondem a sistemas com tamanhos bem distintos. Conforme é mostrado na figura \ref{size}, verifica-se que as máximas probabilidades de ocorrência de tempestades elétricas associadas com os extremos de FTA, ocorrem em sistemas com área 3 ordens de grandeza menor do que nos extremos de FT.
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[height=9cm,trim=0 0 215 0,clip]{img/tb/TbAreas}   
-  \caption{Densidade de probabilidade de extensão em área das tempestades elétricas com extremos de FTA e FT.}
-  \label{size}  
-\end{figure}
-
 
 %\begin{figure}[!hb]
 %  \centering{  
@@ -97,23 +87,11 @@ Observa-se que os extremos de FTA e FT correspondem a sistemas com tamanhos bem 
 %\end{figure}
 
 %As tempestades elétricas com valores extremos de FT são maiores em extensão.
-Na figura \ref{areaFTAFTA}, pode-se observar que os sistemas com tamanho entre 10$^2$--10$^3$ km$^2$, não ultrapassam 20 raios min$^{-1}$ de FT. As tempestades elétricas com FT superior a 100 raios por minuto, possuíram tamanho entre 10$^{4}$--10$^{6}$ km$^2$. Note que há tendencia de aumento exponencial de FT conforme aumenta a extensão das tempestades elétricas, no  entanto, FTA tende a diminui exponencialmente com o aumento da área das tempestades elétricas.
+
+Na figura \ref{areaFTAFTA}, pode-se observar a dispersão entre os valore de FTA e FT em função da área das 94~733 tempestades elétricas selecionadas para o estudo da severidade neste capítulo. As linhas horizontais na figura \ref{areaFTAFTA} demarcam o 90\textsuperscript{\underline{o}} percentil das amostras de probabilidades de FTA (cor preta) e FT (cor azul). Verifica-se que os sistemas com tamanho entre 10$^2$--10$^3$ km$^2$, não ultrapassam 20 raios min$^{-1}$ de FT e as tempestades elétricas com FT superior a 100 raios por minuto, possuíram tamanho entre 10$^{4}$--10$^{6}$ km$^2$ e existe uma tendencia de aumento exponencial de FT conforme aumenta a área das tempestades elétricas, enquanto que FTA tende a diminui exponencialmente com o aumento da área das tempestades elétricas.
 
 %Uma tempestade elétrica com 10$^5$ km$^2$, terá maior número de descargas observadas durante o tempo de visada do LIS do que uma com 10$^2$ km$^2$.
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[height=9cm]{img/FtaFt/area_FTA_FT}   
-  \caption{Dispersão entre as áreas das tempestades elétricas e os valores de FTA e FT. As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
-  \label{areaFTAFTA}  
-\end{figure}
-
-\begin{figure}[!hb]
-  \centering 
-  \includegraphics[height=9cm]{img/FtaFt/volChuva_FTA_FT}
-  \caption{Dispersão entre o volume de chuva das tempestades elétricas e os valores de FTA e FT.  As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
-  \label{volchuvaFTAFT}
-\end{figure}
 
 %\begin{figure}[!hb]
 %  \centering 
@@ -128,18 +106,50 @@ Ao normalizar a taxa de raios no tempo por $A_t$, o número de raios fica diluí
 
 Na figura \ref{volchuvaFTAFT}, observa-se que conforme aumenta FT o volume de chuva das tempestades elétricas também aumenta exponencialmente, de maneira semelhante ao aumento de FT com a área (figura \ref{areaFTAFTA}). Para FTA, há um comportamento inverso. Conforme aumenta FTA, o volume de chuva dos sistemas diminui.  
 
-A frequência de ocorrência dos pixeis de temperaturas de brilho, associados a radiância espectral em infravermelho observada pelo VIRS, os quais definiram as áreas das tempestades elétricas, é mostrado na figura \ref{tb}. Observa-se que o maior valor de probabilidade para a curva das tempestades elétricas com índice extremo de FTA, possui temperatura de topo de nuvens aproximadamente 10 K mais frias do que nas tempestades elétricas com extremos de FT, indicando que a convecção nos sistemas extremos de FTA é mais profunda na atmosfera na maioria das observações.
 
 \begin{figure}[!ht]
-  \centering 
-  \includegraphics[height=9cm,trim=220 0 0 0,clip]{img/tb/TbAreas}
-  \caption{Densidade de probabilidade de temperatura de brilho em infravermelho (VIRS 10,8$\mu$m) do topo das nuvens das tempestades elétricas com extremos de FTA e FT.}
-  \label{tb}
+  \centering
+  \includegraphics[height=9.5cm]{img/FtaFt/area_FTA_FT}   
+  \caption{Dispersão entre as áreas das tempestades elétricas e os valores de FTA e FT. As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{areaFTAFTA}  
 \end{figure}
+
+\begin{figure}[!hb]
+  \centering 
+  \includegraphics[height=9.5cm]{img/FtaFt/volChuva_FTA_FT}
+  \caption{Dispersão entre o volume de chuva das tempestades elétricas e os valores de FTA e FT.  As linhas horizontais marcam os valores de FTA (cor preta) e FT (cor azul) referente ao 90\textsuperscript{\underline{o}} percentil das respectivas amostragem.}
+  \label{volchuvaFTAFT}
+\end{figure}
+
+
+Na figura \ref{size} é apresentada a distribuição de probabilidade de ocorrência de área das tempestades elétricas, apenas para as 9475 referentes aos extremos de FTA e FT. 
+Observa-se que os extremos de FTA e FT correspondem a sistemas com tamanhos bem distintos. Por exemplo, verifica-se que as máximas probabilidades de tempestades elétricas dos extremos de FTA, ocorrem em sistemas com área 3 ordem de grandeza menor do que nos extremos de FT.
+
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height=9.5cm]{img/tb/areasSeveras}   
+  \caption{Densidade de probabilidade de extensão em área das 9475 tempestades elétricas com valores extremos de FTA e FT.}
+  \label{size}  
+\end{figure}
+
+Considerando também apenas os extremos de FTA e FT, é mostrado na figura \ref{tb}, a frequência de ocorrência dos pixeis de temperaturas de brilho ($T_b$ $\leq$ 258 K) que definiram as áreas das tempestades elétricas. Observa-se que o maior valor de probabilidade para a curva das tempestades elétricas com índice extremo de FTA possui temperatura de topo de nuvens aproximadamente 10 K mais frias do que nas tempestades elétricas com extremos de FT, indicando que a convecção nos sistemas extremos de FTA é mais profunda na atmosfera na maioria das observações.
+
+
 
 \citeonline{morales2003} ao desenvolver a \textit{Sferics Infrared Rainfall Technique} (SIRT), mostram que as regiões com temperatura de brilho inferior a 215 K e com ocorrência de \textit{sferics} foram as regiões categorizadas como de maior precipitação associada. Nesta tese, ao selecionar as tempestades elétricas com índice extremo de FTA, os maiores valores de probabilidade de ocorrência, conforme é mostrado na figura \ref{tb}, concentram-se em temperaturas de brilho abaixo de 215 K.
 
 \sigla{name={SIRT},description={\textit{Sferics Infrared Rainfall Technique} }}
+
+
+
+\begin{figure}[!ht]
+  \centering 
+  \includegraphics[height=9.5cm]{img/tb/TbSeveras}
+  \caption{Densidade de probabilidade de temperatura de brilho em infravermelho (VIRS 10,8$\mu$m) do topo das nuvens das 9475 tempestades elétricas com valores extremos de FTA e FT.}
+  \label{tb}
+\end{figure}
+
 
 Nas figuras \ref{pdffracaoFTA}, \ref{cdffracaoFTA}, \ref{pdffracaoFT} e  \ref{cdffracaoFT}, apresenta-se o estudo das probabilidades das frações de chuva para as tempestades elétricas com valores extremos de FTA e FT. As curvas denominadas como convectivo, estratiforme e outros, correspondem a fração de área de chuva associada aos perfis do PR classificados como convectivo, estratiforme e outros em relação a área total de chuva do sistema. A curva denominada na legenda como chuva total corresponde a fração da área de chuva em relação a área total ($A_t$) da tempestade elétrica. A curva denominada como varredura do PR, mostra a fração da $A_t$ que esteve dentro do alcance da varredura do PR.
 
@@ -192,7 +202,7 @@ Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$
 
 Nas figuras \ref{ftacfadwithout}, \ref{ftcfadwithout},  \ref{ftacfadwith} e \ref{ftcfadwith} foram calculados os CFADs das tempestades elétricas com índices FTA e FT extremos, para cada região de 10 por 10 graus de latitude e longitude na superfície sobre a AS. Para localizar a caixa (10$^{\circ}$ $\times$ 10$^{\circ}$) em que cada sistema esteve contido, foi considerado a latitude e longitude do centro geométrico da área definida por cada sistema. Desta forma, foram obtidas as amostragens de probabilidade de FTA e FT, da mesma maneira que mostrado na figura \ref{pdfFTAFT} ou \ref{cdfFTAFT}, porém para cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$. O estudo da precipitação tridimensional foi feito apenas para as tempestades elétricas com valores maiores ou igual ao valor do    90\textsuperscript{\underline{o}} percentil das amostragem de FTA e FT de cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$.
 
-As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0.05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. A figura \ref{nucleosRaios}, ilustra as regiões dos núcleos de raios das tempestades elétricas.
+As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0,05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. A figura \ref{nucleosRaios}, ilustra as regiões dos núcleos de raios das tempestades elétricas.
 
 
 \begin{figure}[!htb]
