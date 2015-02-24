@@ -3,11 +3,9 @@
 Conforme descrito em \ref{metodoFtaFt}, as taxas de raios das tempestades elétricas neste trabalho de pesquisa estão associadas aos índices FTA e FT. Nesta seção identifica-se qual desses índices podem melhor associar-se com a intensidade convectiva das tempestades elétricas.
 %, ou seja, os sistemas com as maiores taxas de raios por minuto (FT) ou os sistemas com as maiores taxas de raios por minuto por quilômetro quadrado (FTA) da sua extensão. 
 
-
 Como a intensidade convectiva será avaliada a partir da taxa de raios (FTA e FT) e análise da estrutura tridimensional da precipitação observada pelo PR, para o estudo de severidade das tempestades elétricas, foram selecionados apenas os sistemas que possuíram $VT_m$ maior ou igual a 1 minuto e com pelo menos um pixel do campo de visão do PR contido na área do sistema com chuva válida, totalizando {94~733} tempestades elétricas do TRMM. 
 
-
-  %Como a intensidade convectiva dos sistemas é avaliada com base, principalmente, na morfologia da estrutura tridimensional da precipitação e na taxa de raios, 
+%Como a intensidade convectiva dos sistemas é avaliada com base, principalmente, na morfologia da estrutura tridimensional da precipitação e na taxa de raios, 
 
 As equações \ref{eqFT} e \ref{eqFTA} foram aplicadas nas {94~733} tempestades elétricas selecionadas, e então estudada as distribuições de probabilidades dos índices FTA e FT (figuras \ref{pdfFTAFT} e \ref{cdfFTAFT}). Conforme mostra a figura \ref{pdfFTAFT}, trata-se de distribuições exponenciais de probabilidade. Os valores de FTA e FT para cada quantil da amostragem de tempestades elétricas, tanto para as mais frequentes quanto as mais raras, podem ser verificados por meio da distribuição cumulativa de probabilidade de FTA e FT mostradas na figura \ref{cdfFTAFT}. 
 
@@ -104,8 +102,11 @@ Na figura \ref{areaFTAFTA}, pode-se observar a dispersão entre os valore de FTA
 
 Ao normalizar a taxa de raios no tempo por $A_t$, o número de raios fica diluído na extensão do sistema, evidenciando que os maiores valores de FTA correspondem aos sistemas com as maiores densidades espaciais de raios, cuja a área e o número de raios são menores do que nos sistemas com extremos de FT.
 
-Na figura \ref{volchuvaFTAFT}, observa-se que conforme aumenta FT o volume de chuva das tempestades elétricas também aumenta exponencialmente, de maneira semelhante ao aumento de FT com a área (figura \ref{areaFTAFTA}). Para FTA, há um comportamento inverso. Conforme aumenta FTA, o volume de chuva dos sistemas diminui.  
+Na figura \ref{volchuvaFTAFT}, referente dispersão entre os valore de FTA e FT em função do volume de chuva, observa-se que conforme aumenta FT o volume de chuva das tempestades elétricas também aumenta exponencialmente, de maneira semelhante ao aumento de FT com a área (figura \ref{areaFTAFTA}). Para FTA, há um comportamento inverso. Conforme aumenta FTA, o volume de chuva dos sistemas diminui. 
 
+Conforme mostra as linhas horizontais na figura \ref{volchuvaFTAFT} que demarcam o 90\textsuperscript{\underline{o}} percentil das amostras de probabilidades de FTA (cor preta) e FT (cor azul), pode-se observar que as tempestades elétricas que causam os maiores volumes de chuva estão associadas aos extremos de FT, porém os critérios de severidade de tempo\footnote{Frentes de rajadas com velocidade superior a 92,6 km h$^{-1}$, queda de granizo com diâmetro maior do que 1,9 cm ou tornados} conforme descrevem \cite{carey1998, williams1999, zipser2006}, não associam-se com o volume de chuva.  No entanto, para populações localizadas em regiões de várzea de rios, como por exemplo a população ribeirinha da Amazônia, ou em regiões serranas como Teresópolis, Nova Friburgo, Petrópolis no Rio de Janeiro, grandes volumes de chuva podem representar condições de tempo severo, pois causam deslizamentos de terra, alagamentos, perdas de vidas, etc, que provocam danos enormes à sociedade \cite{INPEchuvaSevera, WikichuvaSevera, BBC}.
+
+%Apesar de que populações localizadas em regiões de várzea de rios, como por exemplo a população ribeirinha da Amazônia, ou em regiões serranas como Teresópolis, Nova Friburgo, Petrópolis no Rio de Janeiro, grandes volumes de chuva associadas a vastas extensões de precipitação estratiforme, devido a atuação de sistemas como frentes ou ZCAS, podem causar deslizamentos de terra, alagamentos, etc,  que podem causar dados a sociedade até maiores do que a passagem de um tornado.
 
 \begin{figure}[!ht]
   \centering
@@ -122,22 +123,19 @@ Na figura \ref{volchuvaFTAFT}, observa-se que conforme aumenta FT o volume de ch
 \end{figure}
 
 
-Na figura \ref{size} é apresentada a distribuição de probabilidade de ocorrência de área das tempestades elétricas, apenas para as 9475 referentes aos extremos de FTA e FT. 
-Observa-se que os extremos de FTA e FT correspondem a sistemas com tamanhos bem distintos. Por exemplo, verifica-se que as máximas probabilidades de tempestades elétricas dos extremos de FTA, ocorrem em sistemas com área 3 ordem de grandeza menor do que nos extremos de FT.
+Na figura \ref{size} é apresentada a distribuição de probabilidade de ocorrência de área das tempestades elétricas apenas para os valores de FTA e FT acima do 90\textsuperscript{\underline{o}} percentil de ocorrência. Observa-se que os valores extremos de FTA e FT correspondem a sistemas com tamanhos bem distintos. Por exemplo, verifica-se que as máximas probabilidades de tempestades elétricas dos extremos de FTA, ocorrem em sistemas com área 3 ordem de grandeza menor do que nos extremos de FT.
 
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=9.5cm]{img/tb/areasSeveras}   
-  \caption{Densidade de probabilidade de extensão em área das 9475 tempestades elétricas com valores extremos de FTA e FT.}
+  \caption{Densidade de probabilidade de extensão em área das 9475 tempestades elétricas com valores extremos de FTA  e das 9475 tempestades elétricas com valores extremos de FT.}
   \label{size}  
 \end{figure}
 
 Considerando também apenas os extremos de FTA e FT, é mostrado na figura \ref{tb}, a frequência de ocorrência dos pixeis de temperaturas de brilho ($T_b$ $\leq$ 258 K) que definiram as áreas das tempestades elétricas. Observa-se que o maior valor de probabilidade para a curva das tempestades elétricas com índice extremo de FTA possui temperatura de topo de nuvens aproximadamente 10 K mais frias do que nas tempestades elétricas com extremos de FT, indicando que a convecção nos sistemas extremos de FTA é mais profunda na atmosfera na maioria das observações.
 
-
-
-\citeonline{morales2003} ao desenvolver a \textit{Sferics Infrared Rainfall Technique} (SIRT), mostram que as regiões com temperatura de brilho inferior a 215 K e com ocorrência de \textit{sferics} foram as regiões categorizadas como de maior precipitação associada. Nesta tese, ao selecionar as tempestades elétricas com índice extremo de FTA, os maiores valores de probabilidade de ocorrência, conforme é mostrado na figura \ref{tb}, concentram-se em temperaturas de brilho abaixo de 215 K.
+\citeonline{morales2003} ao desenvolver o algoritmo  SIRT, mostram que as regiões com temperatura de brilho inferior a 215 K e com ocorrência de \textit{sferics} foram as regiões categorizadas como de maior precipitação associada. Nesta tese, ao selecionar as tempestades elétricas com índice extremo de FTA, os maiores valores de probabilidade de ocorrência, conforme é mostrado na figura \ref{tb}, concentram-se em temperaturas de brilho abaixo de 215 K.
 
 \sigla{name={SIRT},description={\textit{Sferics Infrared Rainfall Technique} }}
 
@@ -146,51 +144,52 @@ Considerando também apenas os extremos de FTA e FT, é mostrado na figura \ref{
 \begin{figure}[!ht]
   \centering 
   \includegraphics[height=9.5cm]{img/tb/TbSeveras}
-  \caption{Densidade de probabilidade de temperatura de brilho em infravermelho (VIRS 10,8$\mu$m) do topo das nuvens das 9475 tempestades elétricas com valores extremos de FTA e FT.}
+  \caption{Densidade de probabilidade de temperatura de brilho em infravermelho (VIRS 10,8$\mu$m) do topo das nuvens das 9475 tempestades elétricas com valores extremos de FTA  e das 9475 tempestades elétricas com valores extremos de FT.}
   \label{tb}
 \end{figure}
 
 
-Nas figuras \ref{pdffracaoFTA}, \ref{cdffracaoFTA}, \ref{pdffracaoFT} e  \ref{cdffracaoFT}, apresenta-se o estudo das probabilidades das frações de chuva para as tempestades elétricas com valores extremos de FTA e FT. As curvas denominadas como convectivo, estratiforme e outros, correspondem a fração de área de chuva associada aos perfis do PR classificados como convectivo, estratiforme e outros em relação a área total de chuva do sistema. A curva denominada na legenda como chuva total corresponde a fração da área de chuva em relação a área total ($A_t$) da tempestade elétrica. A curva denominada como varredura do PR, mostra a fração da $A_t$ que esteve dentro do alcance da varredura do PR.
+Nas figuras \ref{pdffracaoFTA}, \ref{cdffracaoFTA}, \ref{pdffracaoFT} e  \ref{cdffracaoFT}, apresenta-se o estudo das probabilidades das frações de chuva para as tempestades elétricas com valores extremos de FTA e FT. As curvas denominadas como convectivo, estratiforme e outros, correspondem a fração de área de chuva associada aos perfis do PR classificados como convectivo, estratiforme e outros em relação a área total de chuva do sistema. A curva denominada na legenda como chuva total corresponde a fração da área de chuva em relação a área total ($A_t$) da tempestade elétrica que é definida pela $T_b$ $\leq$ 258 K. A curva denominada como varredura do PR, mostra a fração da $A_t$ que esteve dentro do alcance da varredura do PR.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_pdf_topFTA}   
-  \caption{Densidade de probabilidade das frações de áreas de chuva das tempestades elétricas com extremos de FTA, que foram classificadas (2A23) como convectiva (vermelha), estratiforme (bege) e outros (verde), em relação a toda a área de chuva observada pelo PR; das frações de chuva total (preta), que corresponde as frações das áreas de chuva observadas pelo PR em relação a $A_t$ das tempestades elétricas e também das frações das áreas das tempestades elétricas contidas na varredura do PR (azul).}
+  \caption{Densidade de probabilidade das frações de áreas de chuva das tempestades elétricas extremas de FTA, que foram classificadas (2A23) como convectiva (vermelha), estratiforme (bege) e outros (verde), em relação a toda a área de chuva observada pelo PR; das frações de chuva total (preta), que corresponde as frações das áreas de chuva observadas pelo PR em relação a $A_t$ das tempestades elétricas e também das frações das áreas das tempestades elétricas contidas na varredura do PR (azul).}
   \label{pdffracaoFTA}  
 \end{figure}
 
 \begin{figure}[!ht]
   \centering 
   \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_cdf_topFTA}
-  \caption{Densidade de probabilidade cumulativa das frações de áreas de chuva das tempestades elétricas com valores extremos de FTA.}
+  \caption{Densidade de probabilidade cumulativa das frações de áreas de chuva das tempestades elétricas extremas de FTA.}
   \label{cdffracaoFTA}
 \end{figure}
-
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_pdf_topFT}   
-  \caption{Densidade de probabilidade das frações de áreas de chuva das tempestades elétricas com extremos de FT, que foram classificadas (2A23) como convectiva (vermelha), estratiforme (bege) e outros (verde), em relação a toda a área de chuva observada pelo PR; das frações de chuva total (preta), que corresponde as frações das áreas de chuva observadas pelo PR em relação a $A_t$ das tempestades elétricas e também das frações das áreas das tempestades elétricas contidas na varredura do PR (azul).}
+  \caption{Densidade de probabilidade das frações de áreas de chuva das tempestades elétricas extremas de FT, que foram classificadas (2A23) como convectiva (vermelha), estratiforme (bege) e outros (verde), em relação a toda a área de chuva observada pelo PR; das frações de chuva total (preta), que corresponde as frações das áreas de chuva observadas pelo PR em relação a $A_t$ das tempestades elétricas e também das frações das áreas das tempestades elétricas contidas na varredura do PR (azul).}
   \label{pdffracaoFT}  
 \end{figure}
 
 \begin{figure}[!ht]
   \centering 
   \includegraphics[height=9cm]{img/FtaFt/fracaoChuva_cdf_topFT}
-  \caption{Densidade de probabilidade cumulativa das frações de áreas de chuva das tempestades elétricas com valores extremos de FT.}
+  \caption{Densidade de probabilidade cumulativa das frações de áreas de chuva das tempestades elétricas extremas de FT.}
   \label{cdffracaoFT}
 \end{figure}
 
-Avaliando a densidade de probabilidade da fração convectiva e fração estratiforme das tempestades elétricas, figuras \ref{pdffracaoFTA} e \ref{pdffracaoFT}, verifica-se que para os extremos de FTA as tempestades elétricas são mais frequentemente observadas com 70\% de área convectiva e 30\% de área estratiforme, enquanto que para os extremos de FT, 20\% de fração convectiva e 75\% de fração estratiforme.
+
+Verifica-se na curva denominada como varredura do PR na figura \ref{pdffracaoFT} que para a maioria dos sistemas com FT extremo, o PR conseguiu observar apenas 30\% da $A_t$ das tempestades elétricas. Na curva denominada como varredura do PR da figura \ref{pdffracaoFTA} referente as tempestades elétricas com FTA extremo, o PR observou com a maior probabilidade 100\% de $A_t$, efeito que se deve ao diferente tamanho dos sistemas extremos de FTA em relação aos extremos de FT, como mostra a figura \ref{size}. A mediana da amostragem de fração de chuva total das tempestades elétricas extremas de FTA (figura \ref{pdffracaoFTA}) mostra o valore de 62\%, enquanto a mediana da amostragem de fração de chuva total das tempestades elétricas extremas de FT (figura \ref{pdffracaoFT}), foi de apenas 5\%, pois a varredura do PR é menor do que a do VIRS e as tempestades elétricas com os maiores valores de FT abrangem uma extensão que ultrapassa o alcance do PR. 
+
+Apesar da diferença de amostragem espacial do PR para com os FTA e FT, a amostragem estatística é suficiente para mostrar que na mediana, FTA tem 72\% de fração convectiva e 32\% estratiforme, conforme verifica-se nos valores de fracão de chuva associado ao 50\textsuperscript{\underline{o}} percentil das distribuições cumulativas de probabilidade da figura \ref{cdffracaoFTA}. Por outro lado, o 50\textsuperscript{\underline{o}} percentil das distribuições cumulativas da figura \ref{cdffracaoFT}, mostram que os extremos de FT tem 22\% de fração convectiva e 65\% de fração estratiforme. 
+
+Estes resultados corroboram com as observações de \citeonline{Rasmussen2011}, em que os extensos sistemas convectivos estiveram associados com regiões de vasta extensão estratiforme. Anteriormente \citeonline{learyHouse1979}, observaram que sistemas convectivos em desenvolvimentos tem a maior área convectiva, enquanto os em dissipação e mais fracos possuem maior área estratiforme. A distribuição de probabilidade de $T_b$ da figura \ref{tb}, mostra que os extremos de FTA tem topos mais frios, o que se espera de nuvens em desenvolvimento. Portanto, a maior fração convectiva e menor tamanho das tempestades elétricas com FTA extremos sugerem sistemas em via de maturar ou sistemas novos que conforme as vão entrando em estágio maduro e dissipativo, vão ganhando área de chuva estratiforme e podem começar a se enquadrar no grupo dos extremos de FT. 
+
+%Avaliando a densidade de probabilidade da fração convectiva e fração estratiforme das tempestades elétricas, figuras \ref{pdffracaoFTA} e \ref{pdffracaoFT}, verifica-se que para os extremos de FTA as tempestades elétricas são mais frequentemente observadas com 70\% de área convectiva e 30\% de área estratiforme, enquanto que para os extremos de FT, 20\% de fração convectiva e 75\% de fração estratiforme.
 %juntamente com a as respectivas distribuições de probabilidade acumulativa,
+%Os sistemas selecionados pelo 90\textsuperscript{\underline{o}} percentil do índice FT possuem maior extensão em área e maior volume de chuva. São sistemas com vasta extensão estratiforme conforme descrevem \citeonline{Rasmussen2011}. As regiões das tempestades elétricas com precipitação convectiva, as quais tem potencial de gerar chuva de granizo, frentes de rajada e tornados, ocupam área bem menor do que as áreas com  precipitação estratiforme \cite{Jr2007}.
 
-Verifica-se nas figuras \ref{pdffracaoFT} e \ref{cdffracaoFT} que para a maioria dos sistemas com FT extremo, o PR conseguiu observar apenas 25\% da $A_t$ das tempestades elétricas. Nas figuras \ref{pdffracaoFTA} e \ref{cdffracaoFTA} das frações de chuva dos sistemas com FTA extremo, o PR observou com maior frequência 100\% de $A_t$. A fração de chuva total foi de apenas  $\simeq$10\% para a maioria dos sistemas com FT extremo (figura \ref{pdffracaoFT}), pois a varredura do PR é menor do que a do VIRS e as tempestades elétricas com os maiores valores de FT abrangem uma extensão que ultrapassa o alcance do PR. 
-
-
-Os sistemas selecionados pelo 90\textsuperscript{\underline{o}} percentil do índice FT possuem maior extensão em área e maior volume de chuva. São sistemas com vasta extensão estratiforme conforme descrevem \citeonline{Rasmussen2011}. As regiões das tempestades elétricas com precipitação convectiva, as quais tem potencial de gerar chuva de granizo, frentes de rajada e tornados, ocupam área bem menor do que as áreas com  precipitação estratiforme \cite{Jr2007}.
-
-A maior fração convectiva e menor tamanho das tempestades elétricas com FTA extremos sugerem sistemas em estágio de maturação. Conforme as tempestades elétricas vão entrando em estágio maduro e dissipativo, vão ganhando área de chuva estratiforme e podem começar a se enquadrar no grupo dos extremos de FT. 
 
 %.....
 %Para avaliar qual dos índices representaram a maior severidade de tempo, a morfologia da estrutura 3D da precipitação foi estudada por meio dos diagramas CFAD, CCFAD, CFTD e CCFTD. %para os 10\% das amostras de FT e FTA com os maiores valores.
@@ -198,9 +197,11 @@ A maior fração convectiva e menor tamanho das tempestades elétricas com FTA e
 
 \section{SEVERIDADE COM BASE NA ESTRUTURA 3D DA PRECIPITAÇÃO}
 
-Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$ do PR, contidos nos sistemas com índices extremos de FTA e FT. 
+%Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$ do PR
+%, contidos nos sistemas com índices extremos de FTA e FT. 
 
-Nas figuras \ref{ftacfadwithout}, \ref{ftcfadwithout},  \ref{ftacfadwith} e \ref{ftcfadwith} foram calculados os CFADs das tempestades elétricas com índices FTA e FT extremos, para cada região de 10 por 10 graus de latitude e longitude na superfície sobre a AS. Para localizar a caixa (10$^{\circ}$ $\times$ 10$^{\circ}$) em que cada sistema esteve contido, foi considerado a latitude e longitude do centro geométrico da área definida por cada sistema. Desta forma, foram obtidas as amostragens de probabilidade de FTA e FT, da mesma maneira que mostrado na figura \ref{pdfFTAFT} ou \ref{cdfFTAFT}, porém para cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$. O estudo da precipitação tridimensional foi feito apenas para as tempestades elétricas com valores maiores ou igual ao valor do    90\textsuperscript{\underline{o}} percentil das amostragem de FTA e FT de cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$.
+%Nas figuras ,  
+Nesta etapa iremos avaliar a intensidade convectiva com base nos perfis de $Z_c$ do PR. Para tanto, foram calculados os CFADs das tempestades elétricas extremas de FTA e FT, para suas frações com raios (figuras \ref{ftacfadwith} e \ref{ftcfadwith}) e sem raios (figuras \ref{ftacfadwithout}, \ref{ftcfadwithout}), para os extremos ocorridos em cada região de 10 por 10 graus de latitude e longitude na superfície sobre a AS. Para localizar a caixa (10$^{\circ}$ $\times$ 10$^{\circ}$) em que cada sistema esteve contido, foi calculada a latitude e longitude do centro geométrico da área definida por cada sistema. Novas amostragens de probabilidade de FTA e FT, foram obtidas da mesma maneira que mostrado na figura \ref{pdfFTAFT} ou \ref{cdfFTAFT}, porém para cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$. O estudo da precipitação tridimensional foi feito apenas para as tempestades elétricas com valores maiores ou igual ao valor do 90\textsuperscript{\underline{o}} percentil das amostragem de FTA e FT de cada região de 10$^{\circ}$ $\times$ 10$^{\circ}$.
 
 As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do PR, foram projetadas em uma grade regular de 0,05 graus. Os perfis de $Z_c$ projetados em pontos de grade em que tiveram eventos do LIS, definiram as regiões aqui denominadas como precipitação dos núcleos de raios. A figura \ref{nucleosRaios}, ilustra as regiões dos núcleos de raios das tempestades elétricas.
 
@@ -213,7 +214,7 @@ As posições geográficas dos eventos do LIS e dos perfis de $Z_c$ válidos do 
   \subfloat[]{\includegraphics[height=6.cm,trim=0 47cm 0 0,clip]{img/grids/nucleosRaios/003_topFTA_03444_0001} \label{nr3}} 
   \subfloat[]{\includegraphics[height=6.cm,trim=0 47cm 0 0,clip]{img/grids/nucleosRaios/004_topFTA_05694_0005} \label{nr4}} 
   }
-  \caption{Núcleos de raios das tempestades elétricas. Os pontos na cor  verde são os eventos e os símbolos de positivo na cor preta são os raios. Os pixeis em vermelho são as regiões dos núcleos de raios, definidas a partir da projeção dos eventos em uma grade regular de 0,05$^{\circ}$.} %(0.05$^{\circ}$ $\times$ 0.05$^{\circ}$)
+  \caption{Núcleos de raios das tempestades elétricas. Os pontos ``." na cor  verde são os eventos e os símbolos de positivo ``+" na cor preta são os raios. Os pixeis em vermelho são as regiões dos núcleos de raios, definidas a partir da projeção dos eventos em uma grade regular de 0,05$^{\circ}$.} %(0.05$^{\circ}$ $\times$ 0.05$^{\circ}$)
 \label{nucleosRaios}
 \end{figure}
 
@@ -256,7 +257,7 @@ Note que no canto superior direito de cada CFAD temos alguns valores estatístic
 \simbolo{name={H},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o nível de altitude, em quilômetros, aonde ocorreu o máximo de ocorrências de $Z_c$}}
 \simbolo{name={N},description={Nos diagramas, CFAD, CCFAD, CFTD e CCFTD, representam: o número de tempestades elétricas computadas}}
 
-Comparando os CFADs da chuva com e sem raios, representados para os extremos de FTA nas figuras \ref{ftacfadwith} e \ref{ftacfadwithout} e para os extremos de FT, nas figuras \ref{ftcfadwith} e \ref{ftcfadwithout}, é evidente que a fração das tempestades elétricas sem raios é a parte de menor velocidade vertical e a fração eletricamente ativa é a região com maior velocidade vertical. Os níveis de contorno de probabilidades dos CFADs da precipitação sem raios possuem suas máximas altitudes aproximadamente 3 quilômetros abaixo das máximas altitudes atingidas pelos contornos dos CFADs da precipitação com raios. A fração da precipitação sem raios dos sistemas é composta predominantemente por perfis estratiformes enquanto que a fração com raios  os perfis convectivos são predominantes.
+Comparando os CFADs da chuva com e sem raios, representados para os extremos de FTA nas figuras \ref{ftacfadwith} e \ref{ftacfadwithout} e para os extremos de FT, nas figuras \ref{ftcfadwith} e \ref{ftcfadwithout}, é evidente que a fração das tempestades elétricas sem raios é a parte de menor velocidade vertical e a fração eletricamente ativa é a região com maior velocidade vertical. Os níveis de contorno de probabilidades dos CFADs da precipitação sem raios possuem suas máximas altitudes aproximadamente 3 quilômetros abaixo das máximas altitudes atingidas pelos contornos dos CFADs da precipitação com raios. A fração da precipitação sem raios dos sistemas é composta predominantemente por perfis estratiformes enquanto que a fração com raios os perfis convectivos são predominantes.
 
 
 %\begin{figure}[!ht]
@@ -282,12 +283,13 @@ Se avaliarmos apenas os níveis de contorno com probabilidade entre 2-3,7\% (cor
 
 % \caption{Diagramas de Contorno de Frequência por Altitude (CFADs). Em cada CFAD pode-se verificar: a porcentagem (\%) de perfis convectivos, estratiformes e outros, respectivamente; (P) o numero de perfis do PR computados, (L) o número de ocorrência de refletividade no nível de máxima ocorrência e (H) o nível de máxima ocorrência.}
 
-A figura \ref{ftcfadwithout} mostra que a precipitação sem raios dos extremos de FT na região tropical, entre 20S-10N e 90W-30W, possui banda brilhante marcada entre 4-5 km de altitude, principalmente nos perfis com probabilidade de ocorrência entre 2-5,3\%, nas cores de contorno em verde e amarelo. 
+A figura \ref{ftcfadwithout} mostra que a precipitação sem raios dos extremos de FT na região tropical, entre 20S-10N e 90W-30W, possui banda brilhante marcada entre 4-5 km de altitude, principalmente nos perfis com probabilidade de ocorrência entre 2-5,3\%, nas cores de contorno em verde e amarelo, o que claramente demostra o predomínio de áreas estratiformes, caracterizadas processo de formação de flocos de neve e agregados, que são pouco eficiência no carregamento das nuvens de tempestades elétricas. 
 
 Podemos observar a banda brilhante entre 20S-10N e 90W-30W  dos sistemas com  extremo de FT na porção sem raios de maneira mais elucidativa por meio dos CCFADs da figura \ref{ftccfadwithout}, os quais evidenciam que entre o 12\textsuperscript{\underline{o}} e o 95\textsuperscript{\underline{o}} percentil da amostragem de probabilidade de $Z_c$ por altitude, há uma queda no valor de $Z_c$ logo abaixo de 5 quilômetros de altitude em cada região de 10 por 10 graus. 
 
-No entanto, para a região entre 20S-10N e 90W-30W, ao avaliar os CFADs da figura \ref{ftacfadwithout} ou CCFADs da figura \ref{ftaccfdsubtrop}, que representam a porção sem raios da precipitação tridimensional dos sistemas com índice extremo de FTA, não se observa banda brilhante marcada nos contornos de probabilidade de $Z_c$ por altitude. Há um aumento contínuo de $Z_c$ conforme os níveis de altitude diminuem, sem a diminuição abrupta de $Z_c$ logo abaixo de 5 quilômetros, o que indica menor presença de neve derretendo e processos de colisão-coalescência mais intensos para o grupo dos sistemas extremos de FTA do que para o grupo dos sistemas extremos de FT. 
+No entanto, para a região entre 20S-10N e 90W-30W, ao avaliar os CFADs da figura \ref{ftacfadwithout} ou CCFADs da figura \ref{ftaccfdsubtrop}, que representam a porção sem raios da precipitação tridimensional dos sistemas com índice extremo de FTA, não se observa banda brilhante marcada nos contornos de probabilidade de $Z_c$ por altitude. Conforme os níveis de altitude diminuem, não se observa uma diminuição abrupta de $Z_c$ logo abaixo de 5 quilômetros, devido a evaporação, o que indica menor presença de neve derretendo.
 
+%o que indica menor presença de neve derretendo e processos de colisão-coalescência mais intensos para o grupo dos sistemas extremos de FTA do que para o grupo dos sistemas extremos de FT. 
 %observa-se que, entre 20S-10N e 90W-30W,  
 %a banda brilhante é evidente apenas nas regiões costeiras e oceânicas, nas caixas entre 0-10N  %e 90-80W, entre 10-0S e 40-30W e entre 20-10S e 70-60W.
 
@@ -317,10 +319,7 @@ A precipitação sem raios das tempestades elétricas entre 20S-10N e 90W-30W re
 % \label{ftaccfdsubtrop}
 %\end{figure} 
 
-
-
-Na região entre 40-20S e 70-50W que engloba a Bacia do Prata, a banda brilhante foi menos evidente nos contornos de probabilidade associados a estrutura tridimensional da precipitação fora dos núcleos de raios, tanto para os extremos de FT, figura \ref{ftccfadwithout}, quanto para os extremos de FTA, figura \ref{ftaccfdsubtrop}. Provavelmente, as condições de instabilidade baroclínica associada a passagens de sistemas transientes  entre 40-20S e 70-50W, promovem condição de cisalhamento do vento que tornam a velocidade vertical maior nas frações sem raios das tempestades elétricas subtropicais do que para as tempestades elétricas sobre a região tropical, entre 20N--10S e 80--30W.
-
+Na região entre 40-20S e 70-50W que engloba a Bacia do Prata, a banda brilhante não é tão pronunciada na área sem raios, tanto para os extremos de FTA (figuras \ref{ftacfadwithout} e \ref{ftaccfdsubtrop}) quanto para os extremos de FT (figuras \ref{ftacfadwithout} e \ref{ftccfadwithout}), como é observado nas regiões mais tropicais, entre 20N--10S e 80--30W. Provavelmente, as condições de instabilidade baroclínica associada a passagens de sistemas transientes, e SCM conforme descrevem \citeonline{Durkee2009}, entre 40-20S e 70-50W, promovem condições de cisalhamento vertical do vento que intensifica a velocidade vertical nas frações sem raios das tempestades elétricas subtropicais, o que favorece a formação de mais cristais de gelo, agregados e o \textit{graupel}.
 
 Observe como a linha de contorno na cor preta no 50\textsuperscript{\underline{o}} percentil do CCFAD entre 40-20S e 70-50W nas figuras \ref{ftaccfdsubtrop} e \ref{ftccfadwithout}, indicam maiores valores de $Z_c$ para a fração sem raios das tempestades elétricas com índice FT extremo, mesmo que a estatística na parte superior direita de cada CCFAD indique maior percentual de perfis convectivos para a porção sem raios dos extremos de FTA. Porém, observe que acima do 80\textsuperscript{\underline{o}} percentil de ocorrência de perfis de $Z_c$ das tempestades elétricas com FTA extremo (figura \ref{ftaccfdsubtrop}), os valores de $Z_c$ passam a ser maiores do que para as tempestades elétricas com FT extremo. 
 
@@ -343,7 +342,7 @@ Os CFADs referentes as tempestades elétricas com FTA extremo possuem contornos 
 
 
 
-A precipitação é bem mais frequente próxima da superfície, entre 0-3 km de altitude. Acima da região de fase mista a precipitação é mais rara de ocorrer. Em \cite{liu2008}, é mostrado que a densidade espacial de sistemas com no mínimo 20 dBZ em 2 km de altitude é globalmente maior do que os sistemas que atingem 20 dBZ em níveis superiores de altitude.
+%A precipitação é bem mais frequente próxima da superfície, entre 0-3 km de altitude. Acima da região de fase mista a precipitação é mais rara de ocorrer. Em \cite{liu2008}, é mostrado que a densidade espacial de sistemas com no mínimo 20 dBZ em 2 km de altitude é globalmente maior do que os sistemas que atingem 20 dBZ em níveis superiores de altitude.
 
 
 %A região de 10 por 10 graus, a qual o valor de H marcado no topo direito de cada CFAD, é menor para a precipitação dos núcleos de raios dos sistemas com extremo de FTA, figura \ref{ftacfadwith}, do que para  a precipitação dos núcleos de raios dos sistemas com extremos de FT, figura \ref{ftcfadwith}, e mesmo assim, o CFAD dos extremos de FTA, figura \ref{ftacfadwith}, possuiu maior altitude nos níveis de contorno de probabilidade de $Z_c$, o índice FTA mostra que a chuva  
@@ -362,9 +361,8 @@ Nos CFADs da precipitação dos núcleos de raios na figura \ref{ftacfadwith}, d
 Os contornos de probabilidade entre 0,001-0,5\% das figuras \ref{ftacfadwith} e \ref{ftcfadwith}, revelam os valores dos perfis de $Z_c$ mais raros e mais intensos ocorridos nos sistemas com índice extremo de FTA e FT, os quais provavelmente estiveram associados a condições de tempo severo, ou seja, com enchentes rápidas, alta taxa de raios, chuva de granizo, fortes rajadas de vento e tornados. 
 % nas figuras \ref{ftacfadwith} e \ref{ftcfadwith}
 
-Os maiores valores de $Z_c$ foram registrados na análise da precipitação 3D das tempestades elétricas com FTA extremos (figura \ref{ftacfadwith}), entre 20S-40S e 40W-70W sobre a Bacia do Rio da Prata, que abrange o Sul do Brasil, Paraguai, Uruguai e Argentina. A dinâmica de formação de Sistemas Convectivos de Meso-escala, como é discutido em \cite{Velasco1987} e \cite{Durkee2009}, somados com efeitos de topografia, como por exemplo na região da Serra de Córdoba na Argentina, a qual \cite{Rasmussen2011} mostram grande ocorrência de convecção profunda, promoveram sistemas em que a estrutura tridimensional da precipitação dos núcleos de raios atingiram valores de $Z_c$ superiores a 45 dBZ entre 10-15 km de altitude e chuvas na superfície com $Z_c$ acima de 55 dBZ, como mostram os contornos de probabilidade entre 0,001-0,5\%.
+Os maiores valores de $Z_c$ foram registrados na análise da precipitação 3D das tempestades elétricas com FTA extremos (figura \ref{ftacfadwith}), entre 20S-40S e 40W-70W sobre a Bacia do Rio da Prata, que abrange o Sul do Brasil, Paraguai, Uruguai e Argentina, em que a precipitação dos núcleos de raios atingiram valores de $Z_c$ superior a 45 dBZ entre 10-15 km de altitude e $Z_c$ acima de 55 dBZ na superfície, como mostram os contornos de probabilidade entre 0,001-0,5\% da figura \ref{ftacfadwith}. Este efeito pode estar associado com a dinâmica de formação de Sistemas Convectivos de Meso-escala, conforme descrevem \citeonline{Velasco1987} e \citeonline{Durkee2009} somados aos efeitos de topografia, como por exemplo na região da Serra de Córdoba na Argentina, em que \citeonline{Rasmussen2011} observaram grande ocorrência de convecção profunda.
 
-%Os processos de eletrificação dos extremos de FTA pode estar associada com a presença de granizo, cristais de gelo e gotas água super-resfriada, enquanto que para os extremos de FT, 
 
 \subsection{A precipitação 3D e o perfil atmosférico de temperatura.}
 
