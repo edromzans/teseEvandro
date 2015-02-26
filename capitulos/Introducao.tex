@@ -169,11 +169,11 @@ Conforme mostra a equação \ref{fz}, $Z$ depende de $D_h$ que está associado c
 
 \simbolo{name={$Z$},description={Fator de refletividade do radar}}
 
-No entanto, ao observar o perfil vertical do Fator de Refletividade do Radar $Z$, verifica-se que feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar, consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0,931$. 
+No entanto, ao observar o perfil vertical do Fator de Refletividade do Radar $Z$, verifica-se que o feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar, consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0,931$. 
 
 %Portanto, acima da da isoterma de 0 $^{\circ}$C, espera-se uma diminuição abrupta de $Z$ devido a mudança da constante dielétrica da água associada ao seu congelamento, sendo que a equação do radar mantem $|K|_{\mathrm{agua}}^2$ fixo para as medidas acima da isoterma de 0 $^{\circ}$C.
 
-Aplicando $10\log_{10}$, na equação \ref{zsimples}, e assumindo  $\vert K_{\mathrm{agua}}\vert^2 = 0.931$ e $\vert K_{\mathrm{gelo}}\vert^2= 0.197$, para uma mesma medida de $P_r$, as diferenças observadas nos valores de $Z$ em dB irão corresponder a
+Aplicando $10\log_{10}$, na equação \ref{zsimples}, e assumindo  $\vert K_{\mathrm{agua}}\vert^2 = 0,931$ e $\vert K_{\mathrm{gelo}}\vert^2= 0,197$, para uma mesma medida de $P_r$, as diferenças observadas nos valores de $Z$ em dB irão corresponder a
 %dBZ_{\mathrm{gelo}} - dBZ_{\mathrm{agua}} = - 10\log_{10}(K_{\mathrm{gelo}}^2 ) + 10\log_{10}(K_{\mathrm{agua}}^2).
 %Substituindo os valores de $\vert K_{\mathrm{agua}}\vert^2$ e $\vert K_{\mathrm{gelo}}\vert^2$, obtém-se que 
 \begin{align}
@@ -191,7 +191,6 @@ Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento
 \label{Austin}
 \end{figure}
 
-
 Estes efeitos sobre o perfil de $Z$ na região de derretimento  foram explorados em \citeonline{Fabry1995}, para identificar processos de agregação, acreção e colisão coalescência, observados a partir de flutuações nos valores de $Z$ acima e abaixo do nível de congelamento, pois acima do nível de congelamento, um aumento nos valores de $Z$ conforme sugere a curva da figura \ref{Austin} referente ao efeito de coalescência, pode estar associados a processo de crescimento de cristais de gelo (agregação) e granizo (acreção), sendo que abaixo do nível de derretimento, as flutuações de $Z$ foram associadas a colisão-coalescência, rupturas e evaporação das gotas. 
 
 Em \citeonline{Fabry1995}, os processos de crescimentos de hidrometeoros também foram estudados a partir da espessura da camada de derretimento, pois está relacionada com o lapse-rate da atmosfera \cite[p.~462]{austin1950,mason1971_2ed}. Em uma atmosfera instável, com convecção profunda e precipitação convectiva, a camada de transição de fase de gelo para a água liquida é perturbada por correntes ascendentes. A mudança do índice de refração da água não ocorre apenas logo abaixo de 0 $^{\circ}$C, pois no ambiente convectivo teremos água super-resfriada em temperaturas de -15 $^{\circ}$C, o que intensifica o processo de acreção podendo gerar gelo sólido que cai derretendo até a superfície. Nestes casos espera-se uma camada de derretimento mais espessa, sem a definição da banda brilhante. 
@@ -201,12 +200,12 @@ Considerando um regime de precipitação estratiforme, que é governado por proc
 
 Estes efeitos no perfil de $Z$ refentes aos processos de formação dos hidrometeoros e que dependem da intensidade convectiva do ambiente, são ilustrados de maneira sintética na figura \ref{convestraDerr}. A partir um sistema de tempestade observado pelo TRMM, podemos analisar a média dos perfis estratiformes (menor intensidade convectiva) e a média dos perfis convectivos (maior intensidade convectiva) separadamente, identificando os principais processos de nuvem descritos nesta sessão.
 
-
+\newpage
 \begin{figure}[htb]
 \centering
-\includegraphics[width=8cm]{img/ilustracoes/tempestade}\\
-\includegraphics[width=12cm]{img/ilustracoes/perfis}
-\caption{Interpretação dos perfis médios de $Z$ observado pelo PR a bordo do TRMM. A barra de cores corresponde a temperatura de brilho em infravermelho.}
+\includegraphics[width=0.8\textwidth]{img/ilustracoes/tempestade}\\
+\includegraphics[width=\textwidth]{img/ilustracoes/perfis}
+\caption{Interpretação dos perfis médios de $Z$ observado pelo PR a bordo do TRMM para uma determinada tempestade elétrica. A barra de cores corresponde a temperatura de brilho em infravermelho observada pelo \textit{Visible and Infrared Scanner} (VIRS).}
 \label{convestraDerr}
 \end{figure}
 
