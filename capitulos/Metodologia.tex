@@ -1,19 +1,20 @@
 \chapter{METODOLOGIA}
 \label{metodologia}
 
-A Metodologia consiste fundamentalmente na construção de um subconjunto de dados das observações dos sensores VIRS, LIS e PR abordo do satélite TRMM, durante o período entre 1998 e 2011. Além dos dados satelitais, as reanálises 2 do \textit{National Centers for Environmental Prediction -- Department of Energy
-} (NCEP--DOE) em níveis de pressão foram utilizadas para calcular os valores de temperatura nos níveis correspondentes a altitude do PR.
+A Metodologia consiste fundamentalmente na construção de um subconjunto de dados das observações dos sensores VIRS, LIS e PR a bordo do satélite TRMM, durante o período entre 1998 e 2011. Além dos dados satelitais, as reanálises 2 do \textit{National Centers for Environmental Prediction -- Department of Energy
+} (NCEP--DOE) em níveis de pressão foram utilizadas para calcular os valores de temperatura nos níveis correspondentes as altitudes de medidas do PR.
 \sigla{name={NCEP--DOE},description={\textit{National Centers for Environmental Prediction -- Department of Energy}}} 
 
 
 
-As informações dos diferentes sensores foram combinadas de maneira a identificar sistemas denominados como tempestades elétricas, definidas como nuvens as quais possuíram pelo menos um raio -- \textit{flash} -- detectado pelo LIS. 
+As informações dos diferentes sensores foram combinadas de maneira a identificar sistemas denominados como tempestades elétricas, definidas como nuvens que possuíram pelo menos um raio -- \textit{flash} -- detectado pelo LIS. 
 
 %A seguir são apresentadas as principais características do TRMM 
 %Para melhor entender as implicações que envolvem a construção de uma base de dados de sistemas individualmente a partir das observações do TRMM, inicialmente descreve-se algumas das principais características operacionais do satélite TRMM.
 
 \section{O SATÉLITE TRMM}
 \label{metodologiaTRMM}
+\index{O Satélite TRMM}
 
 O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM  faz parte de uma missão conjunta entre a \textit{National Aeronautics and Space Administration} (NASA) e a \textit{Japan Aerospace Exploration Agency} (JAXA),  com o objetivo de estimar a distribuição espaço-temporal da chuva e do fluxo de calor latente para a região tropical e subtropical terrestre. Estas informações são fundamentais para avaliar modelos atmosféricos globais e climáticos principalmente quando se trata de previsão do tempo e clima nos trópicos \cite{kummerok1998,simpson1988}.
 
@@ -23,7 +24,7 @@ O satélite \textit{Tropical Rainfall Measuring Mission} -- TRMM  faz parte de u
 
 O satélite TRMM foi lançado em 28 de novembro de 1997 entrando em órbita circular de 350 km de altitude com inclinação de 35$^{\circ}$ e período de 90 minutos. Originalmente a missão teria 3 anos, porém, em agosto de 2011 sua órbita foi elevada até 402,5 km de altitude e o tempo  de vida da missão foi prolongado. Devido as suas características orbitais, o TRMM sobrevoa 2 vezes ao dia em uma região de 10$^{\circ}$ $\times$ 10$^{\circ}$ de latitude e longitude \cite{simpson1988}. Em 2014, verificou-se que o combustível do satélite TRMM está no fim e a manobra de reentrada na atmosfera e aterrissagem deverá ocorrer por volta de abril de 2015, conforme notícia divulgada \cite{TRMMgoodbye}.
   
-Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipitation Radar} -- PR), radiômetro de microondas (\textit{TRMM Microwave Imager} -- TMI), radiômetro no visível e no infravermelho (\textit{Visible and Infrared Scanner} -- VIRS), radiômetro para medir a energia radiante da terra e das nuvens (\textit{Clouds and the Earth's Radiant Energy System} -- CERES) e sensor para imageamento de relâmpagos (\textit{Lightning Imaging Sensor} -- LIS). A figura \ref{figtrmm}, ilustra algumas das principais características de varreduras \cite{kummerok1998}.
+Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipitation Radar} -- PR), radiômetro de micro-ondas (\textit{TRMM Microwave Imager} -- TMI), radiômetro no visível e no infravermelho (\textit{Visible and Infrared Scanner} -- VIRS), radiômetro para medir a energia radiante da terra e das nuvens (\textit{Clouds and the Earth's Radiant Energy System} -- CERES) e sensor para imageamento de relâmpagos (\textit{Lightning Imaging Sensor} -- LIS). A figura \ref{figtrmm}, ilustra algumas das principais características de varreduras \cite{kummerok1998}.
 
 \begin{figure}[!ht]
   \centering{
@@ -36,7 +37,7 @@ Os instrumentos a bordo do TRMM são: radar de precipitação (\textit{Precipita
 
 \subsection{Radar de Precipitação}
 
-O radar de precipitação (PR) é o principal instrumento do satélite TRMM. Se trata do primeiro radar meteorológico lançado no espaço sendo a maior inovação apresentada pela missão TRMM. Os objetivos do PR são prover a estrutura tridimensional da precipitação e quantificar as taxas de precipitação sobre os continentes e oceanos.  \cite{kummerok1998}. 
+O radar de precipitação (PR) é o principal instrumento do satélite TRMM. Trata-se do primeiro radar meteorológico lançado no espaço sendo a maior inovação apresentada pela missão TRMM. Os objetivos do PR são prover a estrutura tridimensional da precipitação e quantificar as taxas de precipitação sobre os continentes e oceanos.  \cite{kummerok1998}. 
 
 
 \begin{table}[!ht]
@@ -63,7 +64,7 @@ Sensibilidade & $\leq$0,7 mm h$^{-1}$ (Sinal/Ruído por pulso $\simeq$ 0 dB)\\[1
 \end{table}
 
 
-Os principais parâmetros relacionados ao feixe eletromagnético do PR são listados na tabela \ref{PRparametros}. Em relação a antena do PR, possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5,0/4,3 km. Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $\simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e $\simeq$9150 varreduras horizontais.
+Os principais parâmetros relacionados ao feixe eletromagnético do PR são listados na tabela \ref{PRparametros}. Em relação à antena do PR, possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5,0/4,3 km. Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $\simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e $\simeq$9150 varreduras horizontais.
 
 As medidas de potência recebida ($P_r$), associadas com a secção transversal de retro-espalhamento sem correção de atenuação e  \textit{ground clutter}, são armazenadas no produto 1B21. A equação do radar conforme as especificações do PR é aplicada nos dados de $P_r$ e são convertidos para o fator de refletividade ($Z_m$) em dBZ, definindo então o produto 1C21.
 
@@ -98,7 +99,7 @@ O sistema de imageamento do LIS é constituído por um telescópio com razão fo
 
 Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica  eventos, grupos e os raios. Os eventos são as posições das CCDs que ``brilham", os grupos são os agrupamentos de eventos que podem ser associados com as descargas de retorno -- \textit{strokes} -- dos raios. O raio -- \textit{flash} -- é o agrupamento espaço-temporal de grupos de eventos. Os raios do LIS correspondem aos raios totais observados na atmosfera, intranuvens e nuvem-solo.
 
-A figura \ref{LisImagemProcessa}, ilustra como é feita a identificação dos  eventos, grupos até a caracterização de um raio. Observe, na figura \ref{evgrfla} que em $t=0$ ms, as CCDs, 1, 2 e 3  foram sensibilizadas e o algoritmo definiu o grupo de evento $a$ candidato a ser um raio $A$.  Quando $t=100$ ms, as CCDs, 4, 5 e 6, são sensibilizadas e temos 2 grupos de eventos, $a$ e $b$, espacialmente e temporalmente ($<$330 ms) próximos, portanto, os grupos $a$ e $b$ integram o mesmo raio $A$, como ilustra a figura \ref{evgrflb}. Quando $t = 350$ ms, as CCDs 9 e 10 são sensibilizadas como mostra a figura \ref{evgrflc}. As CCDs 9 e 10 não estão próximas dos grupos $a$ e $b$ que compõe o raio $A$, portanto, o algoritmo define o grupo $d$ e um novo candidato a raio $B$. Na figura \ref{evgrfld} o raio $B$ possui mais dois grupos, $e$ e $f$. Na figura \ref{evgrfle}, note que a CCD 13 coincide com a posição 2, inicialmente em \ref{evgrfla}, mas como o intervalo de tempo entre as figuras \ref{evgrfla} e \ref{evgrfle} é superior a 330 ms, o grupo $g$ também definiu o novo raio $C$ \cite{christian2000LISalgorithm}.  
+A figura \ref{LisImagemProcessa} ilustra como é feita a identificação dos  eventos, grupos até a caracterização de um raio. Observe na figura \ref{evgrfla} que em $t=0$ ms, as CCDs, 1, 2 e 3  foram sensibilizadas e o algoritmo definiu o grupo de evento $a$ candidato a ser um raio $A$.  Quando $t=100$ ms, as CCDs, 4, 5 e 6, são sensibilizadas e temos 2 grupos de eventos, $a$ e $b$, espacialmente e temporalmente ($<$330 ms) próximos, portanto, os grupos $a$ e $b$ integram o mesmo raio $A$, como ilustra a figura \ref{evgrflb}. Quando $t = 350$ ms, as CCDs 9 e 10 são sensibilizadas como mostra a figura \ref{evgrflc}. As CCDs 9 e 10 não estão próximas dos grupos $a$ e $b$ que compõe o raio $A$, portanto, o algoritmo define o grupo $d$ e um novo candidato a raio $B$. Na figura \ref{evgrfld} o raio $B$ possui mais dois grupos, $e$ e $f$. Na figura \ref{evgrfle}, note que a CCD 13 coincide com a posição 2, inicialmente em \ref{evgrfla}, mas como o intervalo de tempo entre as figuras \ref{evgrfla} e \ref{evgrfle} é superior a 330 ms, o grupo $g$ também definiu o novo raio $C$ \cite{christian2000LISalgorithm}.  
 
      
 O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno. Conforme \citeonline{boccippio1996science} a eficiência de detecção de raios do LIS é maior no período noturno, com 93$\pm$4\%, enquanto que no período diurno é de 73$\pm$11\%.  Com a velocidade orbital de 11 km s$^{-1}$, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por até $\simeq$100 segundos no nadir, tempo suficiente para a estimativa da taxa de raios de uma tempestade \cite{christianTM,trmmhandbook}.
@@ -143,9 +144,9 @@ O Radiômetro no visível e infravermelho (VIRS) é um radiômetro de varredura 
 \end{tabularx}
 \end{table}
 
-O conjunto de dados das radiâncias espectrais calibradas, a partir das observações periódicas de referências ópticas como a Lua, o Sol e uma cavidade de corpo negro abordo do satélite, representam o produto 1B01 \cite{kummerok1998}.
+O conjunto de dados das radiâncias espectrais calibradas, a partir das observações periódicas de referências ópticas como a Lua, o Sol e uma cavidade de corpo negro a bordo do satélite, representam o produto 1B01 \cite{kummerok1998}.
 
-Nesta pesquisa, utilizamos apenas a radiância do canal 4 que corresponde ao comprimento de onda ($\lambda$) de 10,8 $\mu$m, pois considerando a Lei de Planck, os dados de radiância de $\lambda$=10,8 $\mu$m podem ser convertidos em temperatura de brilho ($T_b$) e a emissão do topo das nuvens associados a emissão de um corpo negro. 
+Nesta pesquisa, utilizamos apenas a radiância do canal 4 que corresponde ao comprimento de onda ($\lambda$) de 10,8 $\mu$m, pois considerando a Lei de Planck, os dados de radiância de $\lambda$=10,8 $\mu$m podem ser convertidos em temperatura de brilho ($T_b$) e a emissão do topo das nuvens associadas à emissão de um corpo negro. 
 
 \sigla{name={VIRS},description={Radiômetro no visível e infravermelho, do inglês \textit{Visible and InfraRed Scanner}}}
 \simbolo{name={$\lambda$},description={Comprimento de onda}}
@@ -158,12 +159,13 @@ Nesta pesquisa, utilizamos apenas a radiância do canal 4 que corresponde ao com
 
 
 \section{REANÁLISES (R2) DO NCEP-DOE}
+\index{Reanálises (r2) do NCEP-DOE}
 
 Os dados de altura geopotencial e temperatura são utilizados para converter a altura do feixe do PR em um eixo de temperatura. Para tanto, utiliza-se dos dados das reanálises 2 (R2) do NCEP-DOE.  \sigla{name={R2},description={Reanálises 2 do NCEP-DOE}} 
 
 As reanálises são um conjunto de campos meteorológicos  consistidos dinamicamente e termodinamicamente em um modelo de circulação atmosférica global a partir de dados de radio-sonda, aviões e satélites \cite{kalnay1996ncep}. Os campos disponíveis são: magnitude e direção de ventos, temperatura, umidade relativa, altura geopotencial entre outros.
 
-O projeto R2  -- \textit{NCEP-DOE Atmospheric Model Intercomparison Project (AMIP-II) reanalysis} -- representa correções aplicadas no projeto das reanálises R1, que busca corrigir erros humanos e erros de versões anteriores de modelos atmosféricos utilizados no processo de integração e assimilação que envolve a construção das reanálises \cite{kanamitsu}.
+O projeto R2  -- \textit{NCEP-DOE Atmospheric Model Intercomparison Project (AMIP-II) reanalysis} -- representa correções aplicadas no projeto das reanálises R1, que busca corrigir erros humanos e erros de versões anteriores de modelos atmosféricos utilizados no processo de integração e assimilação que envolvem a construção das reanálises \cite{kanamitsu}.
 
 
 \sigla{name={R1},description={Reanálises do NCEP-NCAR}}
@@ -175,7 +177,7 @@ O projeto R2  -- \textit{NCEP-DOE Atmospheric Model Intercomparison Project (AMI
 
 Os dados referentes as observações do TRMM foram obtidos a partir do servidor de FTP da NASA (ftp://disc2.nascom.nasa.gov) e do NCEP (ftp://ftp.cdc.noaa.gov).
 
-Foram utilizadas os dados de temperatura e altura geopotencial em 17 níveis de pressão das reanálises 2 do NCEP-DOE e os arquivos orbitais do TRMM, produto 1B01 e 2A25 ambos na versão 7, para o período entre janeiro de 1998 e dezembro de 2011. 
+Foram utilizados os dados de temperatura e altura geopotencial em 17 níveis de pressão das reanálises 2 do NCEP-DOE e os arquivos orbitais do TRMM, produto 1B01 e 2A25 ambos na versão 7, para o período entre janeiro de 1998 e dezembro de 2011. 
 
 %Nesta etapa um conjunto de \textit{scripts} foi desenvolvido para download e verificação de integridade dos dados baixados. No total o volume de dados atingiu 28 TB.  %PR 16,5TB / VIRS 10TB / TMI 1,4TB /   
 %órbitas
@@ -185,9 +187,9 @@ Foram utilizadas os dados de temperatura e altura geopotencial em 17 níveis de 
 %sobre a AS, subset = 63613(VIRS) 61229(PR)           
 
 
-Os dados do LIS refente ao tempo de visada (\textit{view time}), eventos, grupos e raios foram concedidos pela pesquisadora \citeonline{rachel}, que processou estes dados na NASA anteriormente a esta pesquisa. 
+Os dados do LIS refentes ao tempo de visada (\textit{view time}), eventos, grupos e raios foram concedidos pela pesquisadora \citeonline{rachel}, que processou estes dados na NASA anteriormente a esta pesquisa. 
 
-No total, os dados brutos desta pesquisa, representaram um volume de  aproximadamente 30 terabytes. 
+No total, os dados brutos desta pesquisa representaram um volume de  aproximadamente 30 terabytes. 
 
 Para este trabalho de pesquisa os dados do TRMM e da R2 foram amostrados sobre a região limitada entre 10N-40S e 91W-30W, que abrange toda a extensão da América do Sul. 
 %Portanto foi feito um recorte nos dados orbitais apenas para esta região que cobre toda a América do Sul, o que reduziu bastante o volume de dados a serem utilizados e tornou o processamento possível perante a infraestrutura computacional do IAG-USP.
@@ -226,20 +228,20 @@ Tempo de visada 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ & LIS &  \cite{rachel} \\
 
 \section{TEMPESTADES ELÉTRICAS}
 \label{identificaTempestades}
-
+\index{Tempestades Elétricas}
 
 %Após uma análise ponto a ponto, buscando associar cada raio com um perfil de refletividade do PR, partimos para uma análise de grupo, buscando identificar quais as tempestades elétricas que representam maior intensidade convectiva.
 
-As tempestades elétricas, como já definido anteriormente, são nuvens que durante o seu ciclo de vida apresentaram pelo menos um raio.
+As tempestades elétricas, como já definido anteriormente, são nuvens que durante o seu ciclo de vida apresentaram ao menos um raio.
 
-Dessa maneira, para criar o banco de dados de nuvens de tempestades elétricas deste trabalho de pesquisa, a equação de Planck foi aplicada nos dados de radiância espectral do produto 1B01, canal 4 do VIRS (10,8 $\mu$m) e as regiões com temperatura de brilho ($T_b$) inferiores à 258 K e com pelo menos um raio do LIS observado, definiram as tempestades elétricas \cite{morales2003}.
+Dessa maneira, para criar o banco de dados de nuvens de tempestades elétricas deste trabalho de pesquisa, a equação de Planck foi aplicada nos dados de radiância espectral do produto 1B01, canal 4 do VIRS (10,8 $\mu$m) e as regiões com temperatura de brilho ($T_b$) inferiores à 258 K e com pelo menos um raio do LIS observado definiram as tempestades elétricas \cite{morales2003}.
 
 
 % Após, o algoritmo verifica se houve raios detectados pelo LIS na mesma área da nuvem. Havendo pelo menos um raio, o sistema era classificado como uma tempestade elétrica. 
 
 A partir do agrupamento dos sistemas, \textit{clusters} com $T_b \leq 258$ K, o algorítimo extrai as variáveis listadas na tabela \ref{varsTRMM} refentes as observações do PR e LIS para a mesma região em que o \textit{cluster} de tempestade elétrica foi observado.
 
-Como os sensores do TRMM possuem diferentes resoluções espaciais, técnicas numéricas de mudança de base foram utilizadas para projetar as observações orbitais do VIRS, PR e LIS em uma grade regular com 0,05$^{\circ}$ $\times$ 0,05$^{\circ}$ de resolução, de maneira à verificar as medidas do PR, LIS e VIRS para uma mesma tempestade elétrica. 
+Como os sensores do TRMM possuem diferentes resoluções espaciais, técnicas numéricas de mudança de base foram utilizadas para projetar as observações orbitais do VIRS, PR e LIS em uma grade regular com 0,05$^{\circ}$ $\times$ 0,05$^{\circ}$ de resolução, de maneira a verificar as medidas do PR, LIS e VIRS para uma mesma tempestade elétrica. 
 
 Cada tempestade elétrica identificada foi armazenada na forma de um arquivo HDF contendo medidas coincidentes do VIRS, LIS e PR. 
 
@@ -248,7 +250,7 @@ Inicialmente foram identificadas {154 189} tempestades elétricas. Entretanto, 3
 Portanto, foi feita uma redefinição nos 331 sistemas enormes considerando a temperatura de brilho limiar para definição dos \textit{clusters} de nuvens de 221 K. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}. 
 
 
-Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como enorme. Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semieixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho do topo da tempestade elétrica. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
+Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como enorme. Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semieixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada às dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho do topo da tempestade elétrica. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
 % Este sistema foi dividido em 12 sistemas menores, com limiar de temperatura de brilho de 221 K e ocorrência de raio. 
 
 \begin{figure}[hb]
@@ -271,10 +273,12 @@ Com a recategorização destes sistemas enormes, o número total de tempestades 
 
 \section{SEVERIDADE: TAXA DE RAIOS}
 \label{metodoFtaFt}
+\index{FTA}
+\index{FT}
 
 Condições de tempo severo, como frentes de rajadas, queda de granizo e tornados estão associados com um aumento abrupto na taxa de raios total das tempestades elétricas, principalmente governado por raios intra-nuvens \cite{macgorman1989,carey1998,williams1999}.   
 
-Portanto, a taxa de raios ([min$^{-1}$]) do LIS, observada sobre a área que define uma tempestade elétrica pode indicar condições de tempo severo. Os sistemas precipitantes, (\textit{precipitation features} -- PFs) com as maiores 
+Portanto, a taxa de raios ([min$^{-1}$]) do LIS observada sobre a área que define uma tempestade elétrica pode indicar condições de tempo severo. Os sistemas precipitantes, (\textit{precipitation features} -- PFs) com as maiores 
 taxas de raios por minuto em \citeonline{cecil2005,zipser2006}, corresponderam aos sistemas com os maiores volumes de chuvas, mínimas temperaturas de brilho em mico-ondas, máximos valores de refletividade do PR, e de acordo com estes autores pode ser indicativo da presença de fortes correntes ascendentes. 
 
 Neste trabalho de pesquisa a taxa de raios das tempestades elétricas será avaliada a partir de dois índices:
@@ -313,11 +317,12 @@ Note que o fator 60 que multiplica tanto a equação \ref{eqFT} quanto a \ref{eq
 \label{metodoPass}
 
 
-A distribuição geográfica da densidade de tempestades elétricas e também de raios sobre a AS, busca mostrar as regiões de maior/menor ocorrência de raios e de tempestades elétricas e também identificar os locais e períodos do ano em que as tempestades elétricas apresentam processos de eletrificação mais eficazes.  
 
-O que se torna fundamental na construção destes mapas de densidade de ocorrência sobre a superfície terrestre é considerar quantas vezes, ou qual o tempo em que o satélite ficou observando cada parte da região de estudo, pois uma determinada região pode ter muito mais amostragens do que outras, por causa das características orbitais do TRMM. Portanto, qualquer análise de distribuição geográfica relacionadas as observações do TRMM que não considere o número de passagens ou tempo em que o sensor observou a região projetada na superfície será tendenciosa. 
+A distribuição geográfica da densidade de tempestades elétricas e também de raios sobre a AS busca mostrar as regiões de maior/menor ocorrência de raios e de tempestades elétricas e também identificar os locais e períodos do ano em que as tempestades elétricas apresentam processos de eletrificação mais eficazes.  
 
-Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua órbita com altitude de 402,5 km e  inclinada 35$^{\circ}$, entre o período de 1998--2011, o satélite passou {10 000} vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT} que apresenta o número de orbitas sobrevoadas pelo VIRS em cada ponto da grade regular de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ na América do Sul. Este efeito decorre da região aonde o satélite atinge a latitude máxima.
+O que se torna fundamental na construção destes mapas de densidade de ocorrência sobre a superfície terrestre é considerar quantas vezes ou qual o tempo em que o satélite ficou observando cada parte da região de estudo, pois uma determinada região pode ter muito mais amostragens do que outras, por causa das características orbitais do TRMM. Portanto, qualquer análise de distribuição geográfica relacionadas às observações do TRMM que não considere o número de passagens ou tempo em que o sensor observou a região projetada na superfície será tendenciosa. 
+
+Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em função de sua órbita com altitude de 402,5 km e  inclinada 35$^{\circ}$, entre o período de 1998--2011, o satélite passou {10 000} vezes mais sobre a região extra-topical do que na região tropical, como mostra a figura \ref{VirsVT} que apresenta o número de órbitas sobrevoadas pelo VIRS em cada ponto da grade regular de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ na América do Sul. Este efeito decorre da região onde o satélite atinge a latitude máxima.
 
 \begin{figure}[!hb]
   \centering
@@ -328,7 +333,7 @@ Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em f
 
 %\label{gridAmostragem} 
 
-Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}), figura \ref{lisVT}, o número de dias de amostragem em cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ projetada sobre AS, revela que durante os 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ Sul do que em 0$^{\circ}$. Logo, se estas regiões com maior tempo de amostragem forem eletricamente ativas, é de se esperar um alto número raios observados.
+Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}), figura \ref{lisVT}, o número de dias de amostragem em cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ projetada sobre AS revela que durante os 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ Sul do que em 0$^{\circ}$. Logo, se estas regiões com maior tempo de amostragem forem eletricamente ativas, é de se esperar um alto número raios observados.
 
 \begin{figure}[!ht]
   \centering
@@ -341,7 +346,7 @@ As figuras  \ref{lisVT} e \ref{VirsVT} representam duas matrizes que corresponde
 
 \simbolo{name={$\mathbf{VT}_{lis}$},description={Matriz do tempo total da visada do sensor LIS sobre a superfície}}
 
-As medidas tanto de raios do LIS quanto de regiões sobre a superfície terrestre com ocorrência de tempestades elétricas definidas pelo VIRS, foram projetadas sobre uma grade de  0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ de latitude e longitude, referente a região de estudo. Portanto, foi obtida a matriz $\mathbf{FL}_{lis}$ em que cada posição da matiz corresponde a um ponto da grade de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ com o acumulado de raios ocorridos entre 1998--2011, bem como foi obtida a matriz $\mathbf{P}_{te}$ com o total de tempestades elétricas ocorridas a cada ponto com 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ sobre a AS.
+As medidas tanto de raios do LIS quanto de regiões sobre a superfície terrestre com ocorrência de tempestades elétricas definidas pelo VIRS, foram projetadas sobre uma grade de  0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ de latitude e longitude, referente à região de estudo. Portanto, foi obtida a matriz $\mathbf{FL}_{lis}$ em que cada posição da matiz corresponde a um ponto da grade de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ com o acumulado de raios ocorridos entre 1998--2011, bem como foi obtida a matriz $\mathbf{P}_{te}$ com o total de tempestades elétricas ocorridas a cada ponto com 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ sobre a AS.
 
 
 %Com as mesmas dimensões e resolução de grade que o tempo de observação e o número de passagens do satélite foram acumulados em duas matrizes, os raios foram acumulados na matriz ($\mathbf{FL}_{lis}$) e todos os píxeis do VIRS com radiância espectral associada com temperaturas de brilho inferiores a 258 K e que definiram as áreas das tempestades elétricas, foram acumulados na matriz ($\mathbf{P}_{te}$) que representa os locais com maior cobertura de nuvens de tempestades elétricas.
@@ -368,7 +373,7 @@ Na figura \ref{taxaTotalTe}, que ilustra a matriz $\mathbf{P}_{te}$, há uma ext
 \label{taxaTotalTe}
 \end{figure} 
 
-Devemos também levar em consideração que os pontos de uma grade com espaçamento angular regular, não possuem áreas iguais, pois a  o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde a área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
+Devemos também levar em consideração que os pontos de uma grade com espaçamento angular regular, não possuem áreas iguais, pois há  o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde à área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
 
 Portanto a partir destas grandezas podemos calcular a densidade de raios ($\mathbf{DE}_{fl}$) e a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) em função do tempo de amostragem. A densidade de raios $\mathbf{DE}_{fl}$ é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS de segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por ano por quilômetro quadrado ([ano$^{-1}$] [km$^{-2}$]).
 
@@ -376,6 +381,8 @@ Portanto a partir destas grandezas podemos calcular a densidade de raios ($\math
 \mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600     
 \label{defl}
 \end{equation}
+\index{Distribuição geográfica de densidade! de raios}
+
 
 No mesmo caminho a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) é obtida. Porém, conforme descrito em \ref{metodologiaTRMM}, o tempo de amostragem do LIS e do VIRS são distintos. Enquanto o LIS é um sistema de imageamento, o VIRS é um radiômetro que realiza varreduras durante a trajetória do satélite. Portanto, na obtenção da densidade de tempestades elétricas é considerado o número de vezes que o VIRS sobrevoou cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$. Desta forma, $\mathbf{DE}_{te}$ é obtida conforme a equação \ref{dete}, que define uma grandeza que representa o número de tempestades elétricas por órbita por quilômetro quadrado ([km$^{-2}$]).
 
@@ -391,6 +398,7 @@ No mesmo caminho a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) é o
 \mathbf{DE}_{te} = \frac{\mathbf{P}_{te}}{\mathbf{VT}_{virs} \mathbf{A}_g}    
 \label{dete}
 \end{equation}
+\index{Distribuição geográfica de densidade! de tempestades}
 
 A partir da metodologia do cálculo de $\mathbf{DE}_{fl}$, equação \ref{defl} e $\mathbf{DE}_{te}$, equação \ref{dete}, cria-se a densidade raios por tempestades elétricas $\mathbf{DE}_{rt}$, em que 
 
@@ -401,6 +409,7 @@ A partir da metodologia do cálculo de $\mathbf{DE}_{fl}$, equação \ref{defl} 
 
 \simbolo{name={$\mathbf{DE}_{rt}$},description={Matriz de densidade de raios por tempestades}}
 
+\index{Distribuição geográfica de densidade! de de raios por tempestades}
 
 \section{MORFOLOGIA DA ESTRUTURA TRIDIMENSIONAL DA PRECIPITAÇÃO}
 \label{metodologiaPrec3D}
@@ -409,10 +418,11 @@ O estudo para descrever a morfologia da precipitação foi realizado com base na
 
 \subsection{Distribuições de probabilidades com a altitude}
 
-A partir dos perfis de $Z_c$ selecionados pelo algoritmo de identificação de tempestades elétricas, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude, através dos Diagramas de Contorno de Frequência por Altitude (CFAD) \cite{yuter1995}.
+A partir dos perfis de $Z_c$ selecionados pelo algoritmo de identificação de tempestades elétricas, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude através dos Diagramas de Contorno de Frequência por Altitude (CFAD) \cite{yuter1995}.
 \sigla{name={CFAD},description={Diagrama de Contorno de Frequência por Altitude}}
+\index{Diagrama de Contorno! de Frequência por Altitude -- CFAD}
 
-Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de altitude do PR. Neste estudo, a função $f_{pdf}(x,y)$ foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude.
+Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja  dimensão $x$ correspondeu aos valores de $Z_{c}$ e $y$ os níveis de altitude do PR. Neste estudo, a função $f_{pdf}(x,y)$ foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude.
 
 \simbolo{name={$f_{pdf}(x,y)$},description={Função densidade de probabilidade com duas variáveis}}
 
@@ -420,10 +430,11 @@ Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função 
 Para a obtenção dos diagramas de probabilidade normalizados por nível de altitude, cada nível $y$ da função $f_{pdf}(x,y)$ foi normalizado pelo número total de ocorrências de valores de $Z_c$ distribuídos em $x$. Os níveis $y$ de altitude com número total de ocorrência de $Z_c$ em $x$, menor do que 10\% do nível de máxima ocorrência, foram desconsiderados dos contornos de probabilidade em todos os CFADs.
 
 Com base na $f_{pdf}(x,y)$ que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa $f_{cdf}(x,y)$ de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
+\index{Diagrama de Contorno! de Frequência Cumulativa por Altitude -- CCFAD}
 
 \simbolo{name={$f_{cdf}(x,y)$},description={Função densidade de probabilidade cumulativa com duas variáveis}}
 
-Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ associados à diferentes quantis da amostra de probabilidade, elucidando ainda mais as informações contidas nos CFADs.
+Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ associados a diferentes quantis da amostra de probabilidade, elucidando ainda mais as informações contidas nos CFADs.
 
 %Então, objetivando uma análise dos processos de crescimento de hidrometeoros no perfil atmosférico e na mesma óptica de trabalhos como \citeonline{Takahashi1978,Saunders1999,Takahashi2002,avila2009}, ou seja, em função de diferentes condições de temperatura, nesta pesquisa construímos o diagrama denominado como Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}.
 
@@ -431,14 +442,21 @@ Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ as
 
 A distribuição vertical da precipitação está associada com o desenvolvimento vertical, porém o tipo de hidrometeoro de uma  determinada altitude é função da temperatura, probabilidade de colisão e da razão de saturação naquela altura \cite[p.~263]{mason1971_2ed}. Os processos de eletrificação por outro lado dependem do conteúdo de água líquida, temperatura, velocidade terminal, velocidade vertical, tamanho e tipo das partículas \cite{Takahashi1978,Saunders1999,Takahashi2002,avila2009}.
 
-Portanto saber como o perfil da precipitação varia com a temperatura é preponderante para identificar qual mecanismo de crescimento dos hidrometeoros está dominando conforme o desenvolvimento e a severidade das tempestades elétricas. Neste sentido foi elaborado o Diagrama de Contorno de Frequência por Temperatura (CFTD). \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}} 
+Portanto, saber como o perfil da precipitação varia com a temperatura é preponderante para identificar qual mecanismo de crescimento dos hidrometeoros está dominando conforme o desenvolvimento e a severidade das tempestades elétricas. Neste sentido foi elaborado o Diagrama de Contorno de Frequência por Temperatura (CFTD). \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}} 
+
+\index{Diagrama de Contorno! de Frequência por Temperatura -- CFTD}
+
 
 %Nos CFTDs, os níveis de temperatura não correspondem as condições controladas em laboratório, e sim às variações de temperatura do perfil atmosférico. 
 
 Para converter os níveis de altitude do PR em níveis de temperatura, foram utilizados os dados de reanálises (R2) do NCEP--DOE entre 1998--2011, em 17 níveis de pressão, da altura geopotencial e temperatura, correspondentes aos horários mais próximos e anteriores ao horário de cada tempestades elétrica observada pelo TRMM.
 
-Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo VIRS, foram extraídos. A partir dos 17 níveis verticais das R2, os 80 níveis de temperaturas associados aos 80 níveis de altitude das observações do PR foram calculados através de um método de mínimos quadrados.
+Os perfis de altura geopotencial e temperatura mais próximos ou coincidentes com cada região de tempestade elétrica observada pelo VIRS foram extraídos. A partir dos 17 níveis verticais das R2, os 80 níveis de temperaturas associados aos 80 níveis de altitude das observações do PR foram calculados através de um método de mínimos quadrados.
 
 Desta maneira, obteve-se a função $f_{pdf}(x,y)$, cuja a dimensão $x$ correspondeu à valores de $Z_{c}$ e $y$ os nível de temperaturas estimados a partir das R2 do NCEP--DOE. A função $f_{pdf}(x,y)$ de $Z_c$ por temperatura, foi representada por uma matriz bidimensional com a granularidade de 1 dBZ para cada 2 $^{\circ}$C. Nos CFTDs, os níveis superiores e inferiores foram definidos para temperaturas entre 20° C e -50° C.
 
-Também foi calculada a função $f_{cdf}(x,y)$ de $Z_c$ por temperatura, que originaram os Diagramas de Contorno de Frequência Cumulativa por Temperatura (CCFTD).  \sigla{name={CCFTD},description={Diagramas de Contorno de Frequência Cumulativa por Temperatura}}   
+
+
+Também foi calculada a função $f_{cdf}(x,y)$ de $Z_c$ por temperatura, que originaram os Diagramas de Contorno de Frequência Cumulativa por Temperatura (CCFTD).  \sigla{name={CCFTD},description={Diagrama de Contorno de Frequência Cumulativa por Temperatura}}   
+
+\index{Diagrama de Contorno! de Frequência Cumulativa por Temperatura -- CCFTD}
