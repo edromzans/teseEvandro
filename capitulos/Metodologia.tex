@@ -79,7 +79,7 @@ No produto 2A25 calcula-se a taxa de precipitação (R). É quando faz-se necess
 %Considerando as características do TRMM, no produto 
 %Para esta pesquisa serão utilizados os dados do produto 2A25, o qual corrige a atenuação da refletividade do radar medida ($Z_m$) \simbolo{name={$Z_m$},description={Refletividade do radar medida}} e a partir do fator de refletividade corrigido por atenuação $Z_c$, estima a estrutura tridimensional da precipitação no instante da observação, bem como a taxa de precipitação em cada célula da resolução (46 $\times$ 80) do PR \cite{PRv7}. 
 %Além da estrutura tridimensional da precipitação do produto 2A25, nesta tese, utiliza-se das classificações do tipo de chuva do produto 2A23: convectivo, estratiforme, outros, etc \cite{2A25,PRv7}.   
-\sigla{name={PR},description={Radar de precipitação, do inglês \textit{Precipitation Radar}}}
+
 \sigla{name={PRF},description={Frequência de repetição do pulso, do inglês \textit{Pulse Repetition Frequency}}}
 \simbolo{name={$f$},description={Distância focal}}
 
@@ -149,7 +149,7 @@ Nesta pesquisa, utilizamos apenas a radiância do canal 4 que corresponde ao com
 
 \sigla{name={VIRS},description={Radiômetro no visível e infravermelho, do inglês \textit{Visible and InfraRed Scanner}}}
 \simbolo{name={$\lambda$},description={Comprimento de onda}}
-\simbolo{name={$T_b$},description={temperatura de brilho}}
+\simbolo{name={$T_b$},description={Temperatura de brilho}}
 %\subsection{Radiômetro de microondas}
 
 %O TMI (\textit{TRMM Microwave Imager}) é um radiômetro passivo multicanal, 10,65 GHz, 19,35 GHz, 21,3 GHz, 37 GHz, e 85,5 GHz, com dupla polarização. Possui uma varredura cônica combinada com movimento de rotação de sua antena, a qual observa regiões elipsoidais quando projetadas na superfície \cite{kummerok1998}. Sua resolução horizontal varia entre 6-50 km, dependendo do ângulo entre o feixe e o nadir, e varredura de ~760 km \cite{trmmhandbook}. 
@@ -175,7 +175,7 @@ O projeto R2  -- \textit{NCEP-DOE Atmospheric Model Intercomparison Project (AMI
 
 Os dados referentes as observações do TRMM foram obtidos a partir do servidor de FTP da NASA (ftp://disc2.nascom.nasa.gov) e do NCEP (ftp://ftp.cdc.noaa.gov).
 
-Foram utilizadas os dados de temperatura e altura geopotencial em 17 níveis de pressão das reanálises 2 do NCEP-DOE e os arquivos orbitais do TRMM, produto 1B01 e 2A25 ambos na versão 7, para o período entre 1998 e 2011. 
+Foram utilizadas os dados de temperatura e altura geopotencial em 17 níveis de pressão das reanálises 2 do NCEP-DOE e os arquivos orbitais do TRMM, produto 1B01 e 2A25 ambos na versão 7, para o período entre janeiro de 1998 e dezembro de 2011. 
 
 %Nesta etapa um conjunto de \textit{scripts} foi desenvolvido para download e verificação de integridade dos dados baixados. No total o volume de dados atingiu 28 TB.  %PR 16,5TB / VIRS 10TB / TMI 1,4TB /   
 %órbitas
@@ -213,6 +213,7 @@ Longitude & VIRS & 1B01 \\[1.5pt]
 Latitude & PR & 2A25 \\[1.5pt]
  Longitude & PR & 2A25 \\[1.5pt]
 Fator de refletividade $Z_c$ & PR & 2A25 \\[1.5pt]
+Chuva na superfície  & PR & 2A25 \\[1.5pt]
  Tipo de chuva  &  PR  & 2A23 \\[1.5pt]
 Latitude eventos/grupos/raios & LIS &  \cite{rachel} \\[1.5pt]
  Longitude eventos/grupos/raios&LIS& \cite{rachel} \\[1.5pt]
@@ -247,7 +248,7 @@ Inicialmente foram identificadas {154 189} tempestades elétricas. Entretanto, 3
 Portanto, foi feita uma redefinição nos 331 sistemas enormes considerando a temperatura de brilho limiar para definição dos \textit{clusters} de nuvens de 221 K. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}. 
 
 
-Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como enorme. Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semi-eixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho do topo da tempestade elétrica. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
+Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como enorme. Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semieixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada as dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho do topo da tempestade elétrica. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
 % Este sistema foi dividido em 12 sistemas menores, com limiar de temperatura de brilho de 221 K e ocorrência de raio. 
 
 \begin{figure}[hb]
@@ -260,9 +261,9 @@ Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerado
 
 Com a recategorização destes sistemas enormes, o número total de tempestades elétricas que passaram a integrar esta pesquisa é de {157 592}.
 
-\simbolo{name={A},description={Nas figuras que ilustram as tempestades elétricas, refere-se a área total ($A_t$) da tempestade elétrica.}}
-\simbolo{name={a},description={Semi-eixo maior}}
-\simbolo{name={b},description={Semi-eixo menor}}
+\simbolo{name={A},description={Nas figuras que ilustram as tempestades elétricas, refere-se à área total ($A_t$) da tempestade elétrica.}}
+\simbolo{name={a},description={Semieixo maior}}
+\simbolo{name={b},description={Semieixo menor}}
 \simbolo{name={2c},description={Distância focal}}
 \simbolo{name={e},description={Excentricidade}}
 
@@ -390,6 +391,16 @@ No mesmo caminho a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) é o
 \mathbf{DE}_{te} = \frac{\mathbf{P}_{te}}{\mathbf{VT}_{virs} \mathbf{A}_g}    
 \label{dete}
 \end{equation}
+
+A partir da metodologia do cálculo de $\mathbf{DE}_{fl}$, equação \ref{defl} e $\mathbf{DE}_{te}$, equação \ref{dete}, cria-se a densidade raios por tempestades elétricas $\mathbf{DE}_{rt}$, em que 
+
+\begin{equation}
+\mathbf{DE}_{rt} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g\mathbf{P}_{te}} 31557600.  
+\label{dert}
+\end{equation}
+
+\simbolo{name={$\mathbf{DE}_{rt}$},description={Matriz de densidade de raios por tempestades}}
+
 
 \section{MORFOLOGIA DA ESTRUTURA TRIDIMENSIONAL DA PRECIPITAÇÃO}
 \label{metodologiaPrec3D}
