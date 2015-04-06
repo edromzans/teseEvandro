@@ -1,0 +1,344 @@
+\documentclass[smaller]{beamer}
+\usepackage[portuges, brazil]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[accumulated]{beamerseminar}
+\usepackage{multimedia}
+\usepackage{ragged2e}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shadows}
+\usepgflibrary{arrows}
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamerfont{section}{size=\scriptsize}
+%\usefonttheme[onlysmall]{structuresmallcapsserif}
+%structurebold}
+\usepackage{tabularx}
+\usepackage{textcomp}
+
+\usepackage{color}
+%\usepackage{pgf}
+%\usepackage{beamerthemesplit}
+%\usepackage[font=small,labelfont=small,textfont=small]{caption}
+%\usepackage[center,small]{caption}
+%\usetheme{default}
+\usefonttheme{serif}
+\usepackage{hyperref} 
+%\usetheme{Copenhagen}
+%\usetheme{Antibes}
+%\usetheme{Berkeley}
+%\usetheme{JuanLesPins}
+%\usetheme{Berlin}
+%\usetheme{Singapore}
+\usetheme{Warsaw}
+%\usetheme{CambridgeUS}
+%\usetheme{Montpellier}
+%\usecolortheme{JuanLesPins}
+
+%\usecolortheme{seagull}
+%\usecolortheme{default}
+%\usecolortheme[rgb={0,0,0}]{structure}
+%\setbeamercolor{title}{bg=black!15}
+%\usefonttheme{serif}
+%\usefonttheme{structuresmallcapsserif}
+
+%beaver beetle
+%\setbeamercolor{grandfather}{bg=red}
+%seahorse
+%\setbeamercolor{section in toc}{bg=white}
+%\usecolortheme[named=fly]{structure}
+%\useinnertheme{rounded} 
+%\usecolortheme{beetle}
+%\usecolortheme{beaver}
+\usecolortheme{seahorse}
+\useoutertheme[]{split}	
+%\useoutertheme[]{smoothbars}
+%\useoutertheme[]{shadow}
+%\useoutertheme[footline=empty]{split}
+%\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{navigation symbols}[vertical]
+\setbeamertemplate{footline}[title]
+% 	\useoutertheme[footline=empty]{} 
+\setbeamertemplate{footline}[default]
+\usepackage{graphics}
+\title[ICAE]{\textcolor{black}{Severe Thunderstorms as observed from TRMM PR and LIS in South America}}
+\subtitle{}
+\date[]{\begin{footnotesize}ICAE 2014\end{footnotesize}}
+\author[ICAE]{Evandro M. Anselmo, Carlos A. Morales}
+\institute{Institute of Astronomy, Geophysics and Atmospheric Science of University of São Paulo (IAG-USP), São Paulo-SP, Brazil. \par \bf{www.starnet.iag.usp.br}~~\bf{www.storm-t.iag.usp.br} \bigskip 
+\textbf{}}
+%\usepackage[pdftex]{graphicx}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.gif}
+\setbeamersize{text margin left=.3cm,text margin right=.3cm}
+
+\pgfdeclareimage[height=3.5cm]{ciclo1}{imgTese/ciclos/cicloanual19982011total}
+\pgfdeclareimage[height=3.5cm]{ciclo2}{imgTese/ciclos/ciclodiurno19982011total}
+
+\pgfdeclareimage[height=8.5cm]{ciclo3}{imgTese/ciclos/cicloanual10x1019982011localtime}
+\pgfdeclareimage[height=8.5cm]{ciclo4}{imgTese/ciclos/ciclodiurno10x1019982011localtime}
+
+\pgfdeclareimage[height=3.8cm]{tbareas}{../img/TbAreas}
+\pgfdeclareimage[height=8.5cm]{ftacfadftawithout}{imgTese/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia_km_90}
+\pgfdeclareimage[height=8.5cm]{ftacfadftawith}{imgTese/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90}
+\pgfdeclareimage[height=8.5cm]{ftcfadftawithout}{imgTese/precipitacao3d/percentil/ft/cfad10_semraio_fl_dia_90}
+\pgfdeclareimage[height=8.5cm]{ftcfadftawith}{imgTese/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_90}
+
+\pgfdeclareimage[height=8.5cm]{cftd_fta_com}{imgTese/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90}	
+\pgfdeclareimage[height=8.5cm]{ccftd_fta_com}{imgTese/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90}
+\pgfdeclareimage[height=8.5cm]{cftd_ft_com}{imgTese/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90}
+\pgfdeclareimage[height=8.5cm]{ccftd_ft_com}{imgTese/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90}
+
+\pgfdeclareimage[height=4.1cm]{top5FTA}{../img/painel_nuvem_fl_dia_km_90.pdf}
+\pgfdeclareimage[height=4.1cm]{top5FT}{../img/painel_nuvem_fl_dia_90}
+
+\pgfdeclareimage[height=5.0cm]{fabry}{../img/fabry}
+\pgfdeclareimage[height=6.0cm]{takahashi}{../img/takahashi}
+
+\pgfdeclareimage[height=7cm]{deriv1}{../img/deriv1}
+\pgfdeclareimage[height=7cm]{deriv2}{../img/deriv2}
+
+\pgfdeclareimage[height=0.5cm]{colorbar}{../img/colorbar_virs}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+ 
+%\begin{frame}
+%\frametitle{Objectives}
+%\justifying{
+%\begin{itemize}
+%\item Evaluate the thunderstorms severity individually based on the TRMM LIS flash  observation and
+%\item Identify the most intense convection base on 3D precipitation structure observed by PR TRMM.
+%\end{itemize}
+%}
+%\end{frame}
+ 
+\begin{frame}
+\frametitle{Data and Methodology}
+\justifying{
+\begin{itemize}
+\item Orbital TRMM LIS, VIRS (1B01), and PR (2A25) data from 1998-2011. 
+\item NCEP RII reanalysis from 1998-2011: geopotential height and temperature in 17 pressure levels.
+\item Region over South America -- SA: 40S-10N and 90-30W.
+\item 68,230 TRMM orbits and 154,189 thunderstorms found, only 96,281 thunderstorm had a least one valid PR profile.
+\item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141–159, 2003.}.
+\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
+\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Diurnal and Annual Cycle}
+\centering{
+\pgfuseimage{ciclo1}\pgfuseimage{ciclo2}\\
+}
+\end{frame} 
+
+
+\begin{frame}
+\frametitle{}
+\centering{
+\pgfuseimage{ciclo3}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{}
+\centering{
+\pgfuseimage{ciclo4}
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{FT and FTA index}
+
+-- Time flash rate (FT) defined as the ratio of number of flashes ($N_{fl}$) by the mean view time ($VT_m$) in the thunderstorm area extracted.	
+\begin{equation}
+FT = \frac{N_{fl} }{VT_m} 86400 ~[fl~day^{-1}]    
+\end{equation}
+
+-- Time flash rate normalized by the thunderstorm area ($A_t$) defined as FTA. 
+
+\begin{equation}
+FTA = \frac{N_{fl} }{VT_m A_t } 86400 ~[fl~day^{-1}~km^{-2}]
+\end{equation}
+
+\bigskip
+\textbf{We will only analyze the thunderstorms with FT and FTA index that are above the 90th percentile.} 
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Top five more severe FTA index}
+\centering{
+Brightness temperature (K)\\
+\pgfuseimage{colorbar}\\
+\pgfuseimage{top5FTA}
+}
+
+\end{frame}
+\begin{frame}
+\frametitle{Top five more severe FT index}
+\centering{
+Brightness temperature (K)\\ 
+\pgfuseimage{colorbar}\\
+\pgfuseimage{top5FT}}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{3D precipitation analyses -- CFAD}
+\begin{itemize}
+
+\item For thunderstorms order by FTA index, the Contour Frequency by Altitude Diagram -- CFAD\footnote{Yuter, S. E., and R. A. Houze Jr., Three-dimensional kinematic and microphysical evolution of florida cumulonimbus.
+part ii: Frequency distribution of vertical velocity, reflectivity, and differential reflectivity, J. Appl. Meteor., 123,
+1941–1963, 1995.} indicate more precipitation in mixed region.
+\item The CFAD diagrams have more definition in altitude for thunderstorms order by FTA.
+\end{itemize}
+\end{frame}
+  
+\begin{frame}
+\frametitle{CFAD - 90th percentile of FTA (without lightning)}
+\centering{
+\pgfuseimage{ftacfadftawithout}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{CFAD - 90th percentile of FT (without lightning)}
+\centering{
+\pgfuseimage{ftcfadftawithout}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{CFAD - 90th percentile of FTA (with lightning) }
+\centering{
+\pgfuseimage{ftacfadftawith}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{CFAD - 90th percentile of FT (with lightning)}
+\centering{
+\pgfuseimage{ftcfadftawith}}
+
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Size and Brightness Temperature}
+%\centering{
+%\pgfuseimage{tbareas}}
+
+%\end{frame}
+
+\begin{frame}
+\frametitle{Melting in accordance with temperature profile}
+\centering{
+\pgfuseimage{fabry}\pgfuseimage{takahashi}\\
+
+[Fabry and Zawadzki 1995]\footnote{Fabry, F., Zawadzki, I., 1995. \textbf{Long-Term Radar Observations of the Melting Layer of Precipitation and Their Interpretation.} Journal of the Atmospheric Sciences 52, 838–851.}~~~~~~~~~~~~~~~~~~~~[Takahashi and Miyawaki, 2002]\footnote{Takahashi, Tsutomu; Miyawaki, Kuniko. \textbf{Reexamination of riming electrification in a wind tunnel.} Journal of the Atmospheric Sciences. American Meteorological Society. 2002.}
+}
+\end{frame} 
+
+\begin{frame}
+\frametitle{Contour Frequency Diagrams by Temperature (CFTD)}
+For each thunderstorm, we have extracted the temperature and
+geopotencial height profile to make the conversion the altitude levels of PR to temperature levels and have created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
+\end{frame}
+
+%\begin{frame}
+%\frametitle{3D precipitation analyses -- CFTD and CCFTD }
+
+%\begin{itemize}
+%\item For thunderstorms order by FTA index, CFTD show a narrow of probability contour  between 3-5\% (green color) near of surface, mainly in southern part of South America, indicating more rain associate with FTA index.\\
+%\item Mainly in mixed region, the FTA group presented higher probability values associated with higher reflectivity values when compared with FT.
+%\end{itemize}
+
+%\end{frame}
+
+
+
+\begin{frame}
+\frametitle{CFTD - 90th percentile of FTA (with lightning) }
+\centering{
+\pgfuseimage{cftd_fta_com} }
+
+\end{frame}
+\begin{frame}
+\frametitle{CFTD - 90th percentile of FT (with lightning) }
+\centering{
+\pgfuseimage{cftd_ft_com} }
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{CCFTD - 90th percentile of FTA (with lightning)}
+\centering{
+\pgfuseimage{ccftd_fta_com} }
+
+\end{frame}
+\begin{frame}
+\frametitle{CCFTD - 90th percentile of FT (with lightning)}
+\centering{
+\pgfuseimage{ccftd_ft_com}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Derivatives contour line of frequency by temperature diagram (CFTD)  for quintiles of 30\%, 50\%, 70\% and 95\% -- (30S-40S and 60W-70W)}
+\centering{
+\pgfuseimage{deriv1}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Derivatives contour line of frequency by temperature diagram (CFTD)  for quintiles of 30\%, 50\%, 70\% and 95\% -- (00N-10N and 60W-70W)}
+\centering{
+\pgfuseimage{deriv2}
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Mains Conclusions}
+\begin{itemize}
+\item Thunderstorm selected by FTA have stronger accretion process than FT
+\item The northern thunderstorm have a enhanced aggregation process and weaker accretion process when compared to the southern thunderstorms.
+\item Those results could explain why we do observed the highest flash rates over the southern part of South America, i.e., because they have a efficient accretion mechanism when compared to the region we found the most thunderstorm that does not produce so much lightning because it has a better aggregation process.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{ACKNOWLEDGEMENTS}
+
+\justifying{
+This work is part of PhD project that is supported by CNPq grant 140842/2011-0. Moreover, this work is partially supported by CAPES PROEX program and COELCE.  The authors wish to thank ICAE scientific committee for providing a grant to participate in this conference, MSFC\/NASA for providing LIS data set and GSFC\/NASA for providing TRMM dataset. Finally we would like to thank Dra. Rachel Albrecht for the LIS view time reprocessed dataset.
+}
+
+
+\end{frame}
+
+\end{document}
