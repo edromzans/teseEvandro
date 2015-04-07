@@ -1,6 +1,6 @@
 \documentclass[smaller]{beamer}
-\usepackage[portuges, brazil]{babel}
-\usepackage[utf8x]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[accumulated]{beamerseminar}
 \usepackage{multimedia}
 \usepackage{ragged2e}
@@ -17,7 +17,6 @@
 %structurebold}
 \usepackage{tabularx}
 \usepackage{textcomp}
-
 \usepackage{color}
 %\usepackage{pgf}
 %\usepackage{beamerthemesplit}
@@ -63,7 +62,7 @@
 % 	\useoutertheme[footline=empty]{} 
 \setbeamertemplate{footline}[default]
 \usepackage{graphics}
-\title[ICAE]{\textcolor{black}{Severe Thunderstorms as observed from TRMM PR and LIS in South America}}
+\title[DCA--IAG--USP]{\textcolor{black}{Morfologia das tempestades el\'{e}tricas na América do Sul}}
 \subtitle{}
 \date[]{\begin{footnotesize}ICAE 2014\end{footnotesize}}
 \author[ICAE]{Evandro M. Anselmo, Carlos A. Morales}
@@ -74,22 +73,41 @@
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.gif}
 \setbeamersize{text margin left=.3cm,text margin right=.3cm}
 
-\pgfdeclareimage[height=3.5cm]{ciclo1}{imgTese/ciclos/cicloanual19982011total}
-\pgfdeclareimage[height=3.5cm]{ciclo2}{imgTese/ciclos/ciclodiurno19982011total}
+\pgfdeclareimage[height=3.5cm]{ciclo1}{../img/ciclos/cicloanual19982011total}
+\pgfdeclareimage[height=3.5cm]{ciclo2}{../img/ciclos/ciclodiurno19982011total}
 
-\pgfdeclareimage[height=8.5cm]{ciclo3}{imgTese/ciclos/cicloanual10x1019982011localtime}
-\pgfdeclareimage[height=8.5cm]{ciclo4}{imgTese/ciclos/ciclodiurno10x1019982011localtime}
+\pgfdeclareimage[height=8.5cm]{ciclo3}{../img/ciclos/cicloanual10x1019982011localtime}
+\pgfdeclareimage[height=8.5cm]{ciclo4}{../img/ciclos/ciclodiurno10x1019982011localtime}
 
-\pgfdeclareimage[height=3.8cm]{tbareas}{../img/TbAreas}
-\pgfdeclareimage[height=8.5cm]{ftacfadftawithout}{imgTese/precipitacao3d/percentil/fta/cfad10_semraio_fl_dia_km_90}
-\pgfdeclareimage[height=8.5cm]{ftacfadftawith}{imgTese/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90}
-\pgfdeclareimage[height=8.5cm]{ftcfadftawithout}{imgTese/precipitacao3d/percentil/ft/cfad10_semraio_fl_dia_90}
-\pgfdeclareimage[height=8.5cm]{ftcfadftawith}{imgTese/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_90}
 
-\pgfdeclareimage[height=8.5cm]{cftd_fta_com}{imgTese/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90}	
-\pgfdeclareimage[height=8.5cm]{ccftd_fta_com}{imgTese/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90}
-\pgfdeclareimage[height=8.5cm]{cftd_ft_com}{imgTese/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90}
-\pgfdeclareimage[height=8.5cm]{ccftd_ft_com}{imgTese/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90}
+
+
+\pgfdeclareimage[height=8.5cm]{ftacfadftawithout}{img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil}
+{img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFT_percentil}
+{img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFTA_percentil}
+{img/precipitacao3d/severo/percentil/90th/cfad10_comraio_topFT_percentil}
+
+{img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTApercentil}
+{img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTpercentil}
+
+{img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTApercentil}
+{img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTApercentil}
+{img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercentil}
+{img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercentil}
+
+
+
+%\pgfdeclareimage[height=3.8cm]{tbareas}{../img/TbAreas}
+\pgfdeclareimage[height=8.5cm]{ftacfadftawithout}{../img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil}
+
+\pgfdeclareimage[height=8.5cm]{ftacfadftawith}{../img/precipitacao3d/percentil/fta/cfad10_comraio_fl_dia_km_90}
+\pgfdeclareimage[height=8.5cm]{ftcfadftawithout}{../img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFT_percentil}
+\pgfdeclareimage[height=8.5cm]{ftcfadftawith}{../img/precipitacao3d/percentil/ft/cfad10_comraio_fl_dia_90}
+
+\pgfdeclareimage[height=8.5cm]{cftd_fta_com}{../img/precipitacao3d/percentil/fta/cftd_10deg_comraio_fl_dia_km_90}	
+\pgfdeclareimage[height=8.5cm]{ccftd_fta_com}{../img/precipitacao3d/percentil/fta/ccftd_10deg_comraio_fl_dia_km_90}
+\pgfdeclareimage[height=8.5cm]{cftd_ft_com}{../img/precipitacao3d/percentil/ft/cftd_10deg_comraio_fl_min_90}
+\pgfdeclareimage[height=8.5cm]{ccftd_ft_com}{../img/precipitacao3d/percentil/ft/ccftd_10deg_comraio_fl_min_90}
 
 \pgfdeclareimage[height=4.1cm]{top5FTA}{../img/painel_nuvem_fl_dia_km_90.pdf}
 \pgfdeclareimage[height=4.1cm]{top5FT}{../img/painel_nuvem_fl_dia_90}
@@ -252,7 +270,7 @@ part ii: Frequency distribution of vertical velocity, reflectivity, and differen
 \centering{
 \pgfuseimage{fabry}\pgfuseimage{takahashi}\\
 
-[Fabry and Zawadzki 1995]\footnote{Fabry, F., Zawadzki, I., 1995. \textbf{Long-Term Radar Observations of the Melting Layer of Precipitation and Their Interpretation.} Journal of the Atmospheric Sciences 52, 838–851.}~~~~~~~~~~~~~~~~~~~~[Takahashi and Miyawaki, 2002]\footnote{Takahashi, Tsutomu; Miyawaki, Kuniko. \textbf{Reexamination of riming electrification in a wind tunnel.} Journal of the Atmospheric Sciences. American Meteorological Society. 2002.}
+[Fabry and Zawadzki 1995]\footnote{Fabry, F., Zawadzki, I., 1995. \textbf{Long-Term Radar Observations of the Melting Layer of Precipitation and Their Interpretation.} Journal of the Atmospheric Sciences 52, 838--851.}~~~~~~~~~~~~~~~~~~~~[Takahashi and Miyawaki, 2002]\footnote{Takahashi, Tsutomu; Miyawaki, Kuniko. \textbf{Reexamination of riming electrification in a wind tunnel.} Journal of the Atmospheric Sciences. American Meteorological Society. 2002.}
 }
 \end{frame} 
 
