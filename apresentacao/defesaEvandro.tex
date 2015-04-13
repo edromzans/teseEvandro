@@ -64,10 +64,9 @@
 \usepackage{graphics}
 \title[DCA--IAG--USP]{\textcolor{black}{Morfologia das tempestades el\'{e}tricas na América do Sul}}
 \subtitle{}
-\date[]{\begin{footnotesize}ICAE 2014\end{footnotesize}}
-\author[ICAE]{Evandro M. Anselmo, Carlos A. Morales}
-\institute{Institute of Astronomy, Geophysics and Atmospheric Science of University of São Paulo (IAG-USP), São Paulo-SP, Brazil. \par \bf{www.starnet.iag.usp.br}~~\bf{www.storm-t.iag.usp.br} \bigskip 
-\textbf{}}
+\date[]{\begin{footnotesize}IAG/USP -- 2015\end{footnotesize}}
+\author[IAG]{Evandro M. Anselmo, Carlos A. Morales}
+\institute{Institute of Astronomy, Geophysics and Atmospheric Science of University of São Paulo (IAG-USP), São Paulo-SP, Brazil. \par}
 %\usepackage[pdftex]{graphicx}
 
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.gif}
@@ -79,22 +78,32 @@
 \pgfdeclareimage[height=8.5cm]{ciclo3}{../img/ciclos/cicloanual10x1019982011localtime}
 \pgfdeclareimage[height=8.5cm]{ciclo4}{../img/ciclos/ciclodiurno10x1019982011localtime}
 
-\pgfdeclareimage[height=8.5cm]{txDJF}{../img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill}
-\pgfdeclareimage[height=8.5cm]{txMAM}{../img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill}
-\pgfdeclareimage[height=8.5cm]{txJJA}{../img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill}
-\pgfdeclareimage[height=8.5cm]{txSON}{../img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill} 
+\pgfdeclareimage[height=5.1cm]{viewTime}{../img/grids/vt_trmm}
+\pgfdeclareimage[height=5.1cm]{passagens}{../img/grids/passagens_virs_1998-2011}
+
+
+
+\pgfdeclareimage[height=5.1cm]{acumTemp}{../img/grids/densEspacial19982011acumuladoTempestadesPolyfill}
+\pgfdeclareimage[height=5.1cm]{acumRaios}{../img/grids/densEspacial_19982011acumuladoFlashPolyfill}
+
+
+
+\pgfdeclareimage[height=5.1cm]{txDJF}{../img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill}
+\pgfdeclareimage[height=5.1cm]{txMAM}{../img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill}
+\pgfdeclareimage[height=5.1cm]{txJJA}{../img/TaxaFlash/densEspacial_19982011jjaTaxaFlashPolyfill}
+\pgfdeclareimage[height=5.1cm]{txSON}{../img/TaxaFlash/densEspacial_19982011sonTaxaFlashPolyfill} 
  
-\pgfdeclareimage[height=8.5cm]{tempestadesDJF}{../img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill} 
-\pgfdeclareimage[height=8.5cm]{tempestadesMAM}
+\pgfdeclareimage[height=5.1cm]{tempestadesDJF}{../img/DensidadeTempestades/densEspacial19982011djfTempestadesPolyfill} 
+\pgfdeclareimage[height=5.1cm]{tempestadesMAM}
 {../img/DensidadeTempestades/densEspacial19982011mamTempestadesPolyfill} 
-\pgfdeclareimage[height=8.5cm]{tempestadesJJA}{../img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill}
-\pgfdeclareimage[height=8.5cm]{tempestadesSON}{../img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill}
+\pgfdeclareimage[height=5.1cm]{tempestadesJJA}{../img/DensidadeTempestades/densEspacial19982011jjaTempestadesPolyfill}
+\pgfdeclareimage[height=5.1cm]{tempestadesSON}{../img/DensidadeTempestades/densEspacial19982011sonTempestadesPolyfill}
 
 \pgfdeclareimage[height=8.5cm]{RaiosPorTempestades}{../img/eficiencia/densEspacial_19982011totalEficienciaPolyfill}
 
-\pgfdeclareimage[height=8.5cm]{txRaiosTotal}
+\pgfdeclareimage[height=5.1cm]{txRaiosTotal}
 {../img/TaxaFlash/densEspacial_19982011totalTaxaFlashPolyfill}
-\pgfdeclareimage[height=8.5cm]{txTempestades}
+\pgfdeclareimage[height=5.1cm]{txTempestades}
 {../img/DensidadeTempestades/densEspacial19982011TotalTempestadesPolyfill}
 
 \pgfdeclareimage[height=8.5cm]{cfad10_semraio_topFTA_percentil}{../img/precipitacao3d/severo/percentil/90th/cfad10_semraio_topFTA_percentil}
@@ -105,34 +114,40 @@
 \pgfdeclareimage[height=8.5cm]{cCumFad_10deg_semraio_topFTApercentil}{../img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTApercentil}
 \pgfdeclareimage[height=8.5cm]{cCumFad_10deg_semraio_topFTpercentil}{../img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_semraio_topFTpercentil}
 
+\pgfdeclareimage[height=8.5cm]{cCumFad_10deg_comraio_topFTApercentil}{../img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_comraio_topFTApercentil}
+\pgfdeclareimage[height=8.5cm]{cCumFad_10deg_comraio_topFTpercentil}{../img/precipitacao3d/severo/percentil/90th/cCumFad_10deg_comraio_topFTpercentil}
+
 \pgfdeclareimage[height=8.5cm]{cftd_10deg_comraio_topFTApercentil}{../img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTApercentil}
 \pgfdeclareimage[height=8.5cm]{ccftd_10deg_comraio_topFTApercentil}{../img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTApercentil}
 \pgfdeclareimage[height=8.5cm]{cftd_10deg_comraio_topFTpercentil}{../img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercentil}
 \pgfdeclareimage[height=8.5cm]{ccftd_10deg_comraio_topFTpercentil}{../img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercentil}
 
-\pgfdeclareimage[height=4.1cm]{001_topFTA_10801_0006}{../img/topSevero/topFTA_chuva/001_topFTA_10801_0006}
-\pgfdeclareimage[height=4.1cm]{002_topFTA_58133_0007}{../img/topSevero/topFTA_chuva/002_topFTA_58133_0007}
-\pgfdeclareimage[height=4.1cm]{003_topFTA_28799_0006}{../img/topSevero/topFTA_chuva/003_topFTA_28799_0006}
-\pgfdeclareimage[height=4.1cm]{004_topFTA_29770_0008}{../img/topSevero/topFTA_chuva/004_topFTA_29770_0008}
-\pgfdeclareimage[height=4.1cm]{005_topFTA_52880_0006}{../img/topSevero/topFTA_chuva/005_topFTA_52880_0006}
-\pgfdeclareimage[height=4.1cm]{001_topFT_02837_00010002}{../img/topSevero/topFT_chuva/001_topFT_02837_00010002}
-\pgfdeclareimage[height=4.1cm]{002_topFT_14893_00010002}{../img/topSevero/topFT_chuva/002_topFT_14893_00010002}
-\pgfdeclareimage[height=4.1cm]{004_topFT_03444_0001}{../img/topSevero/topFT_chuva/004_topFT_03444_0001}
-\pgfdeclareimage[height=4.1cm]{005_topFT_56670_0003}{../img/topSevero/topFT_chuva/005_topFT_56670_0003}
+\pgfdeclareimage[height=4cm]{001_topFTA_10801_0006}{../img/topSevero/topFTA_chuva/001_topFTA_10801_0006}
+\pgfdeclareimage[height=4cm]{002_topFTA_58133_0007}{../img/topSevero/topFTA_chuva/002_topFTA_58133_0007}
+\pgfdeclareimage[height=4cm]{003_topFTA_28799_0006}{../img/topSevero/topFTA_chuva/003_topFTA_28799_0006}
+\pgfdeclareimage[height=4cm]{004_topFTA_29770_0008}{../img/topSevero/topFTA_chuva/004_topFTA_29770_0008}
+\pgfdeclareimage[height=4cm]{005_topFTA_52880_0006}{../img/topSevero/topFTA_chuva/005_topFTA_52880_0006}
+\pgfdeclareimage[height=4cm]{001_topFT_02837_00010002}{../img/topSevero/topFT_chuva/001_topFT_02837_00010002}
+\pgfdeclareimage[height=4cm]{002_topFT_14893_00010002}{../img/topSevero/topFT_chuva/002_topFT_14893_00010002}
+\pgfdeclareimage[height=4cm]{004_topFT_03444_0001}{../img/topSevero/topFT_chuva/004_topFT_03444_0001}
+\pgfdeclareimage[height=4cm]{005_topFT_56670_0003}{../img/topSevero/topFT_chuva/005_topFT_56670_0003}
 
-%\pgfdeclareimage[height=5.0cm]{fabry}{../img/fabry}
-%\pgfdeclareimage[height=6.0cm]{takahashi}{../img/takahashi}
+\pgfdeclareimage[height=5.0cm]{fabry}{../img/ilustracoes/fabry}
+\pgfdeclareimage[height=6.0cm]{takahashi}{../img/ilustracoes/takahashi}
 
-\pgfdeclareimage[height=0.5cm]{barradecor_virs}{../img/topSevero/barradecor_chuva/barradecor_virs}
-\pgfdeclareimage[height=0.5cm]{barradecor_chuva}{../img/topSevero/barradecor_chuva/barradecor_chuva}
+\pgfdeclareimage[height=0.5cm]{barradecor_virs}{../img/topSevero/barradecor_virs}
+\pgfdeclareimage[height=0.5cm]{barradecor_chuva}{../img/topSevero/barradecor_chuva}
 
 \pgfdeclareimage[height=7cm]{deriv1}{../img/deriv1}
 \pgfdeclareimage[height=7cm]{deriv2}{../img/deriv2}
 
-\pgfdeclareimage[height=7cm]{contornosAmazonas}{img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_2_1}
-\pgfdeclareimage[height=7cm]{derivaAmazonas}{img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1}
-\pgfdeclareimage[height=7cm]{contornosPrata}{img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3} 
-\pgfdeclareimage[height=7cm]{derivaPrata}{img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3}
+\pgfdeclareimage[height=7cm]{contornosAmazonas}{../img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_2_1}
+\pgfdeclareimage[height=7cm]{derivaAmazonas}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1}
+\pgfdeclareimage[height=7cm]{contornosPrata}{../img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3} 
+\pgfdeclareimage[height=7cm]{derivaPrata}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3}
+
+
+\pgfdeclareimage[height=8.5cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
 
 \begin{document}
 
@@ -169,6 +184,7 @@
 \centering{
 \pgfuseimage{ciclo1}\pgfuseimage{ciclo2}\\
 }
+
 \end{frame} 
 
 
@@ -188,6 +204,90 @@
 }
 
 \end{frame}
+
+
+
+\begin{frame}
+\frametitle{Geographical densities of:}
+%{\Large Geographical densities of:}
+\Large
+\begin{itemize}
+\item lightning [km$^{-2}$ year${^-1}$]
+\item thunderstorms per orbit [km$^{-2}$]
+\item lightning per thunderstorms [km$^{-2}$ year${^-1}$]
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{LIS view time and VIRS overpasses}
+\centering{
+\pgfuseimage{viewTime} \pgfuseimage{passagens}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Total lightning grid and thunderstorms grid}
+\centering{
+ \pgfuseimage{acumRaios} \pgfuseimage{acumTemp}
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Total: lightning -- thunderstorms}
+\centering{
+\pgfuseimage{txRaiosTotal} \pgfuseimage{txTempestades}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{DJF: lightning -- thunderstorms}
+\centering{
+\pgfuseimage{txDJF} \pgfuseimage{tempestadesDJF}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{MAM: lightning -- thunderstorms}
+\centering{
+\pgfuseimage{txMAM} \pgfuseimage{tempestadesMAM}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{JJA: lightning -- thunderstorms}
+\centering{
+\pgfuseimage{txJJA} \pgfuseimage{tempestadesJJA}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{SON: lightning -- thunderstorms}
+\centering{
+\pgfuseimage{txSON} \pgfuseimage{tempestadesSON}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Total: lightning per thunderstorms}
+\centering{
+\pgfuseimage{RaiosPorTempestades}
+}
+
+\end{frame}
+
 
 
 
@@ -211,28 +311,45 @@ FTA = \frac{N_{fl} }{VT_m A_t } 86400 ~[fl~day^{-1}~km^{-2}]
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Top severe FTA index}
+\pgfuseimage{barradecor_virs}~~
+\pgfuseimage{barradecor_chuva}\\
+\pgfuseimage{001_topFTA_10801_0006}\\
+\pgfuseimage{002_topFTA_58133_0007}
+
+\end{frame}
 
 
 \begin{frame}
-\frametitle{Top five more severe FTA index}
-\centering{
-Brightness temperature (K)\\
-\pgfuseimage{barradecor_virs}\pgfuseimage{barradecor_chuva}\\
-}
-%\pgfuseimage{{001_topFTA_10801_0006}}}
-%\pgfuseimage{002_topFTA_58133_0007}\\
-%\pgfuseimage{003_topFTA_28799_0006}}
+\frametitle{Top severe FTA index}
+\pgfuseimage{barradecor_virs}~~
+\pgfuseimage{barradecor_chuva}\\
+\pgfuseimage{005_topFTA_52880_0006}\\
+\pgfuseimage{004_topFTA_29770_0008}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Top severe FT index}
+
+\pgfuseimage{barradecor_virs}~~
+\pgfuseimage{barradecor_chuva}\\
+\pgfuseimage{001_topFT_02837_00010002}\\
+\pgfuseimage{002_topFT_14893_00010002}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Top five more severe FT index}
-\centering{
-Brightness temperature (K)\\ 
-\pgfuseimage{barradecor_virs}~~\pgfuseimage{barradecor_chuva}\\
-\pgfuseimage{001_topFT_02837_00010002}}
+\frametitle{Top severe FT index}
+\pgfuseimage{barradecor_virs}~~
+\pgfuseimage{barradecor_chuva}\\
+\pgfuseimage{004_topFT_03444_0001}\\
+\pgfuseimage{005_topFT_56670_0003}
 
 \end{frame}
+
 
 
 
@@ -250,28 +367,28 @@ part ii: Frequency distribution of vertical velocity, reflectivity, and differen
 \begin{frame}
 \frametitle{CFAD - 90th percentile of FTA (without lightning)}
 \centering{
-\pgfuseimage{ftacfadftawithout}}
+\pgfuseimage{cfad10_semraio_topFTA_percentil}}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{CFAD - 90th percentile of FT (without lightning)}
 \centering{
-\pgfuseimage{ftcfadftawithout}}
+\pgfuseimage{cfad10_semraio_topFT_percentil}}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{CFAD - 90th percentile of FTA (with lightning) }
 \centering{
-\pgfuseimage{ftacfadftawith}}
+\pgfuseimage{cfad10_comraio_topFTA_percentil}}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{CFAD - 90th percentile of FT (with lightning)}
 \centering{
-\pgfuseimage{ftcfadftawith}}
+\pgfuseimage{cfad10_comraio_topFT_percentil}}
 
 \end{frame}
 
@@ -282,6 +399,14 @@ part ii: Frequency distribution of vertical velocity, reflectivity, and differen
 
 %\end{frame}
 
+
+\begin{frame}
+\frametitle{Contour Frequency Diagrams by Temperature (CFTD)}
+For each thunderstorm, we have extracted the temperature and
+geopotencial height profile to make the conversion the altitude levels of PR to temperature levels and have created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
+\end{frame}
+
+
 \begin{frame}
 \frametitle{Melting in accordance with temperature profile}
 \centering{
@@ -291,11 +416,6 @@ part ii: Frequency distribution of vertical velocity, reflectivity, and differen
 }
 \end{frame} 
 
-\begin{frame}
-\frametitle{Contour Frequency Diagrams by Temperature (CFTD)}
-For each thunderstorm, we have extracted the temperature and
-geopotencial height profile to make the conversion the altitude levels of PR to temperature levels and have created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
-\end{frame}
 
 %\begin{frame}
 %\frametitle{3D precipitation analyses -- CFTD and CCFTD }
@@ -312,13 +432,13 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \begin{frame}
 \frametitle{CFTD - 90th percentile of FTA (with lightning) }
 \centering{
-\pgfuseimage{cftd_fta_com} }
+\pgfuseimage{cCumFad_10deg_comraio_topFTApercentil} }
 
 \end{frame}
 \begin{frame}
 \frametitle{CFTD - 90th percentile of FT (with lightning) }
 \centering{
-\pgfuseimage{cftd_ft_com} }
+\pgfuseimage{cCumFad_10deg_comraio_topFTpercentil} }
 
 \end{frame}
 
@@ -326,20 +446,20 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \begin{frame}
 \frametitle{CCFTD - 90th percentile of FTA (with lightning)}
 \centering{
-\pgfuseimage{ccftd_fta_com} }
+\pgfuseimage{ccftd_10deg_comraio_topFTApercentil}}
 
 \end{frame}
 \begin{frame}
 \frametitle{CCFTD - 90th percentile of FT (with lightning)}
 \centering{
-\pgfuseimage{ccftd_ft_com}}
+\pgfuseimage{ccftd_10deg_comraio_topFTpercentil}}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Derivatives contour line of frequency by temperature diagram (CFTD)  for quintiles of 30\%, 50\%, 70\% and 95\% -- (30S-40S and 60W-70W)}
 \centering{
-\pgfuseimage{deriv1}
+\pgfuseimage{contornosPrata} \pgfuseimage{derivaPrata}
 }
 
 \end{frame}
@@ -347,7 +467,7 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \begin{frame}
 \frametitle{Derivatives contour line of frequency by temperature diagram (CFTD)  for quintiles of 30\%, 50\%, 70\% and 95\% -- (00N-10N and 60W-70W)}
 \centering{
-\pgfuseimage{deriv2}
+\pgfuseimage{contornosAmazonas} \pgfuseimage{derivaAmazonas}
 }
 
 \end{frame}
@@ -362,6 +482,13 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \item The northern thunderstorm have a enhanced aggregation process and weaker accretion process when compared to the southern thunderstorms.
 \item Those results could explain why we do observed the highest flash rates over the southern part of South America, i.e., because they have a efficient accretion mechanism when compared to the region we found the most thunderstorm that does not produce so much lightning because it has a better aggregation process.
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Top FTA and FT}
+\centering{
+\pgfuseimage{topFTAeFT} }
 
 \end{frame}
 
