@@ -7,8 +7,15 @@
 \usepackage{colortbl}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
-\usetikzlibrary{shadows}
-\usepgflibrary{arrows}
+%\usetikzlibrary{shadows}
+%\usepgflibrary{arrows}
+%\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{verbatim}
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%\setlength\PreviewBorder{5pt}%
+
 \setbeamertemplate{caption}[numbered]
 \setbeamerfont{caption}{size=\scriptsize}
 \setbeamerfont{footnote}{size=\tiny}
@@ -149,6 +156,17 @@
 
 \pgfdeclareimage[height=8.5cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
 
+
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=3.5em, text badly centered, node distance=2cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=1.5em, text width=5em, text centered]
+
+
+
 \begin{document}
 
 \begin{frame}
@@ -170,42 +188,31 @@
 \justifying{
 \begin{itemize}
 \item Orbital TRMM LIS, VIRS (1B01), and PR (2A25) data from 1998-2011. 
+\item 79,932 TRMM orbits were investigated, only 63,613 were over South America.
 \item NCEP RII reanalysis from 1998-2011: geopotential height and temperature in 17 pressure levels.
-\item Region over South America -- SA: 40S-10N and 90-30W.
-\item 68,230 TRMM orbits and 154,189 thunderstorms found, only 96,281 thunderstorm had a least one valid PR profile.
-\item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141–159, 2003.}.
-\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
+\item Region over South America (SA): 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
+\item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141--159, 2003.}.
+%\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
 \end{itemize}
 }
-\end{frame}
 
-\begin{frame}
-\frametitle{Diurnal and Annual Cycle}
-\centering{
-\pgfuseimage{ciclo1}\pgfuseimage{ciclo2}\\
-}
-
-\end{frame} 
-
-
-\begin{frame}
-\frametitle{}
-\centering{
-\pgfuseimage{ciclo3}
-}
-
+%and 154,189 thunderstorms found, only 96,281 thunderstorm had a least one %valid PR profile.
 \end{frame}
 
 
 \begin{frame}
-\frametitle{}
-\centering{
-\pgfuseimage{ciclo4}
-}
+
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block] (init) {Faz cluster de tempestade elétrica};
+    \node [cloud, left of=init] (1B01c4) {VIRS (1B01) canal 4};
+    \node [cloud, right of=init] (LISfl) {LIS flash};
+    \node [cloud, below of=init] (PR) {PR (2A25): Z$_c$, rain type (2A23), geolocation}; 
+    \node [cloud, left of=PR] (LIStem) {LIS: flashes, events, groups, view time, geolocation};
+    \node [cloud, right of=PR] (VIRStem) {VIRS (1B01): channel 4, geolocation};    
+\end{tikzpicture}
 
 \end{frame}
-
-
 
 \begin{frame}
 \frametitle{Geographical densities of:}
@@ -284,6 +291,33 @@
 \frametitle{Total: lightning per thunderstorms}
 \centering{
 \pgfuseimage{RaiosPorTempestades}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Diurnal and Annual Cycle}
+\centering{
+\pgfuseimage{ciclo1}\pgfuseimage{ciclo2}\\
+}
+
+\end{frame} 
+
+
+\begin{frame}
+\frametitle{}
+\centering{
+\pgfuseimage{ciclo3}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{}
+\centering{
+\pgfuseimage{ciclo4}
 }
 
 \end{frame}
