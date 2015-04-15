@@ -88,12 +88,8 @@
 \pgfdeclareimage[height=5.1cm]{viewTime}{../img/grids/vt_trmm}
 \pgfdeclareimage[height=5.1cm]{passagens}{../img/grids/passagens_virs_1998-2011}
 
-
-
 \pgfdeclareimage[height=5.1cm]{acumTemp}{../img/grids/densEspacial19982011acumuladoTempestadesPolyfill}
 \pgfdeclareimage[height=5.1cm]{acumRaios}{../img/grids/densEspacial_19982011acumuladoFlashPolyfill}
-
-
 
 \pgfdeclareimage[height=5.1cm]{txDJF}{../img/TaxaFlash/densEspacial_19982011djfTaxaFlashPolyfill}
 \pgfdeclareimage[height=5.1cm]{txMAM}{../img/TaxaFlash/densEspacial_19982011mamTaxaFlashPolyfill}
@@ -152,20 +148,12 @@
 \pgfdeclareimage[height=7cm]{derivaAmazonas}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1}
 \pgfdeclareimage[height=7cm]{contornosPrata}{../img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3} 
 \pgfdeclareimage[height=7cm]{derivaPrata}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3}
-
-
 \pgfdeclareimage[height=8.5cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
 
-
-\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
-    text width=3.5em, text badly centered, node distance=2cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
-    text width=5em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=5em, text badly centered, node distance=2cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=8em, text centered, rounded corners, minimum height=2em]
 \tikzstyle{line} = [draw, -latex']
-\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
-    minimum height=1.5em, text width=5em, text centered]
-
-
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=1.5em, text width=5em, text centered]
 
 \begin{document}
 
@@ -201,17 +189,24 @@
 
 
 \begin{frame}
-
-\begin{tikzpicture}[node distance = 2cm, auto]
+\begin{center}
+\resizebox{5.0cm}{!}{%
+\begin{tikzpicture}[node distance = 4cm, auto]
     % Place nodes
-    \node [block] (init) {Faz cluster de tempestade elétrica};
-    \node [cloud, left of=init] (1B01c4) {VIRS (1B01) canal 4};
-    \node [cloud, right of=init] (LISfl) {LIS flash};
-    \node [cloud, below of=init] (PR) {PR (2A25): Z$_c$, rain type (2A23), geolocation}; 
-    \node [cloud, left of=PR] (LIStem) {LIS: flashes, events, groups, view time, geolocation};
-    \node [cloud, right of=PR] (VIRStem) {VIRS (1B01): channel 4, geolocation};    
+    \node [cloud](1B01c4){VIRS (1B01) channel 4 (10.8 $\mu$m)};
+    \node [cloud,below of=1B01c4](LISfl){LIS flash};
+    \node [decision,right of=LISfl](seach){Search for thunderstorms};
+    \node [cloud,below of=search](PRtem){PR (2A25): Z$_c$, rain type (2A23), geolocation}; 
+    \node [cloud,left of=PRtem](LIStem){LIS: flashes, events, groups, view time, geolocation};
+    \node [cloud, right of=LIStem](VIRStem){VIRS (1B01): channel 4, geolocation};   
+    \node [block,below of=PRtem](write){Write the thunderstorm HDF file};
 \end{tikzpicture}
-
+}%
+\end{center}
+%    \node [cloud,below of=write](seach){PR (2A25): Z$_c$, rain type (2A23), geolocation}; 
+%    \node [cloud,left of=PR] (LIStem) {LIS: flashes, events, groups, view time, geolocation};
+%    \node [cloud, right of=PR] (VIRStem) {VIRS (1B01): channel 4, geolocation};  
+%    \node [block,right of=project](write){Write the thunderstorm HDF file: PR (2A25) -- Z$_c$, rain type (2A23), geolocation; LIS -- flashes, events, groups, view time, geolocation; VIRS (1B01) -- channel 4, geolocation}  ;  
 \end{frame}
 
 \begin{frame}
