@@ -150,10 +150,10 @@
 \pgfdeclareimage[height=7cm]{derivaPrata}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3}
 \pgfdeclareimage[height=8.5cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
 
-\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=5em, text badly centered, node distance=2cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=8em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=9em, text badly centered, node distance=2cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=9em, text centered, rounded corners, minimum height=2em]
 \tikzstyle{line} = [draw, -latex']
-\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=1.5em, text width=5em, text centered]
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=1.5em, text width=9em, text centered]
 
 \begin{document}
 
@@ -189,17 +189,26 @@
 
 
 \begin{frame}
+\frametitle{TRMM's thunderstorms}
 \begin{center}
-\resizebox{5.0cm}{!}{%
-\begin{tikzpicture}[node distance = 4cm, auto]
+\resizebox{8.0cm}{!}{%
+\begin{tikzpicture}[node distance = 1.5cm, auto]
     % Place nodes
-    \node [cloud](1B01c4){VIRS (1B01) channel 4 (10.8 $\mu$m)};
-    \node [cloud,below of=1B01c4](LISfl){LIS flash};
-    \node [decision,right of=LISfl](seach){Search for thunderstorms};
-    \node [cloud,below of=search](PRtem){PR (2A25): Z$_c$, rain type (2A23), geolocation}; 
-    \node [cloud,left of=PRtem](LIStem){LIS: flashes, events, groups, view time, geolocation};
-    \node [cloud, right of=LIStem](VIRStem){VIRS (1B01): channel 4, geolocation};   
-    \node [block,below of=PRtem](write){Write the thunderstorm HDF file};
+    \node [decision](search){Locate thunderstorms clusters (T$_b$ $\leq$ 258 K and at least one flash)};    
+    \node [cloud,above left = of search](1B01c4){VIRS (1B01) channel 4 (10.8 $\mu$m)};
+    \node [cloud,above right = of search](LISfl){LIS flash};  
+    \node [cloud,below left = of search](PRtem){PR (2A25): Z$_e$, rain type (2A23), geolocation}; 
+    \node [cloud,below = of search](LIStem){LIS: flashes, events, groups, view time, geolocation};
+    \node [cloud,below right = of search](VIRStem){VIRS (1B01): channel 4, geolocation};   
+    \node [block,below = of LIStem](write){Write the TRMM thunderstorm HDF file};
+    \path [line] (1B01c4) -- (search);
+    \path [line] (LISfl) --  (search);
+    \path [line] (search) -- node {read} (PRtem);
+    \path [line] (search) -- node {read} (LIStem);
+    \path [line] (search) -- node {read} (VIRStem);
+    \path [line] (PRtem) -- (write);
+    \path [line] (LIStem) -- (write);
+    \path [line] (VIRStem) -- (write);
 \end{tikzpicture}
 }%
 \end{center}
