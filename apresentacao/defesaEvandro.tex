@@ -177,14 +177,14 @@
 %\end{frame}
  
 \begin{frame}
-\frametitle{Initial results}
+\frametitle{Initial results: LIS + PR (1998--2010)}
 \centering{
  \pgfuseimage{CFADgroupclasses} 
 }
 \end{frame} 
 
 \begin{frame}
-\frametitle{Initial results}
+\frametitle{Initial results: LIS + PR (1998--2010)}
 \centering{
  \pgfuseimage{probflashesgroupclasses} 
 }
@@ -195,10 +195,11 @@
 \frametitle{Data and Methodology}
 \justifying{
 \begin{itemize}
-\item Orbital TRMM LIS, VIRS (1B01), and PR (2A25) data from 1998-2011. 
-\item 79,932 TRMM orbits were investigated, only 63,613 were over South America.
+\item Download orbital data v7 from TRMM: LIS, VIRS (1B01), and PR (2A25), between 1998--2011 ($\simeq$30TB of data). 
+\item 79,932 TRMM orbits were investigated, only 63,613 were over South America (SA) 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
 \item NCEP RII reanalysis from 1998-2011: geopotential height and temperature in 17 pressure levels.
-\item Region over South America (SA): 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
+\item Subset of the TRMM data for SA region, for search thundestorms.
+%\item Region over South America (SA): 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
 \item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141--159, 2003.}.
 %\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
 \end{itemize}
@@ -217,7 +218,7 @@
     \node [decision](search){Locate thunderstorms clusters (T$_b$ $\leq$ 258 K and at least one flash)};    
     \node [cloud,above left = of search](1B01c4){VIRS (1B01) channel 4 (10.8 $\mu$m)};
     \node [cloud,above right = of search](LISfl){LIS flash};  
-    \node [cloud,below left = of search](PRtem){PR (2A25): Z$_e$, rain type (2A23), geolocation}; 
+    \node [cloud,below left = of search](PRtem){PR (2A25): Z$_e$, surface rain, rain type (2A23), geolocation}; 
     \node [cloud,below = of search](LIStem){LIS: flashes, events, groups, view time, geolocation};
     \node [cloud,below right = of search](VIRStem){VIRS (1B01): channel 4, geolocation};   
     \node [block,below = of LIStem](write){Write the TRMM thunderstorm HDF file};
@@ -238,9 +239,31 @@
 %    \node [block,right of=project](write){Write the thunderstorm HDF file: PR (2A25) -- Z$_c$, rain type (2A23), geolocation; LIS -- flashes, events, groups, view time, geolocation; VIRS (1B01) -- channel 4, geolocation}  ;  
 \end{frame}
 
+\begin{frame}
+
+\begin{itemize}
+\frametitle{TRMM's thunderstorms}
+\item 157,592 thunderstorms were found!
+\item Only 94,733 had $VT_m$ greater than 1 minute and with at least one PR pixel with valid rain. 
+\end{itemize}
+
+\end{frame}
+
 
 \begin{frame}
-\frametitle{Grids}
+\frametitle{South America thunderstorms mark}
+
+\begin{itemize}
+\item Where the thunderstorms are more often in SA?
+\item What the duration of thunderstorm season in SA?
+\item Places with high densities of lightning corresponding to 	the high density of thunderstorms?
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Grids for calculus of geographical densities}
 \centering{
 (LIS view)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(VIRS overpasses)\\
 \pgfuseimage{viewTime} \pgfuseimage{passagens}
@@ -249,7 +272,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Grids}
+\frametitle{Grids for calculus of geographical densities}
 \centering{
  (lightning)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(thunderstorms)\\
  \pgfuseimage{acumRaios} \pgfuseimage{acumTemp}
@@ -263,9 +286,9 @@
 %{\Large Geographical densities of:}
 \Large
 \begin{itemize}
-\item lightning [km$^{-2}$ year${^-1}$]
+\item lightning [km$^{-2}$ year$^{-1}$]
 \item thunderstorms per orbit [km$^{-2}$]
-\item lightning per thunderstorms [km$^{-2}$ year${^-1}$]
+\item lightning per thunderstorms [km$^{-2}$ year$^{-1}$]
 \end{itemize}
 
 \end{frame}
@@ -354,23 +377,30 @@
 
 
 \begin{frame}
-\frametitle{FT and FTA index}
+\frametitle{Severity of thunderstorms: FT and FTA index}
 
 -- Time flash rate (FT) defined as the ratio of number of flashes ($N_{fl}$) by the mean view time ($VT_m$) in the thunderstorm area extracted.	
+
 \begin{equation}
-FT = \frac{N_{fl} }{VT_m} 86400 ~[fl~day^{-1}]    
+FT = \frac{N_{fl} }{VT_m} 60 ~[\mathrm{min^{-1}}]  
+\label{eqFT}  
 \end{equation}
 
 -- Time flash rate normalized by the thunderstorm area ($A_t$) defined as FTA. 
 
 \begin{equation}
-FTA = \frac{N_{fl} }{VT_m A_t } 86400 ~[fl~day^{-1}~km^{-2}]
+FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
+\label{eqFTA}
 \end{equation}
 
 \bigskip
-\textbf{We will only analyze the thunderstorms with FT and FTA index that are above the 90th percentile.} 
+\textbf{Potential severe thunderstorms were systems with FT and FTA in 90th percentile of sampling.} 
 
 \end{frame}
+
+
+
+
 
 \begin{frame}
 \frametitle{Top severe FTA index}
