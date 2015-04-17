@@ -150,6 +150,11 @@
 \pgfdeclareimage[height=7cm]{derivaPrata}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3}
 \pgfdeclareimage[height=8.5cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
 
+\pgfdeclareimage[height=8.5cm]{CFADgroupclasses}{../img/ilustracoes/resIniciais/CFADgroupclasses}
+\pgfdeclareimage[height=7.5cm]{probflashesgroupclasses}{../img/ilustracoes/resIniciais/probflashesgroupclasses}
+\pgfdeclareimage[height=8.5cm]{ccfadgroupclasses}{../img/ilustracoes/resIniciais/ccfadgroupclasses}
+\pgfdeclareimage[height=8.5cm]{tabela}{../img/ilustracoes/resIniciais/tabela}
+
 \tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=9em, text badly centered, node distance=2cm, inner sep=0pt]
 \tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=9em, text centered, rounded corners, minimum height=2em]
 \tikzstyle{line} = [draw, -latex']
@@ -170,6 +175,21 @@
 %\end{itemize}
 %}
 %\end{frame}
+ 
+\begin{frame}
+\frametitle{Initial results}
+\centering{
+ \pgfuseimage{CFADgroupclasses} 
+}
+\end{frame} 
+
+\begin{frame}
+\frametitle{Initial results}
+\centering{
+ \pgfuseimage{probflashesgroupclasses} 
+}
+\end{frame} 
+
  
 \begin{frame}
 \frametitle{Data and Methodology}
@@ -218,6 +238,26 @@
 %    \node [block,right of=project](write){Write the thunderstorm HDF file: PR (2A25) -- Z$_c$, rain type (2A23), geolocation; LIS -- flashes, events, groups, view time, geolocation; VIRS (1B01) -- channel 4, geolocation}  ;  
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Grids}
+\centering{
+(LIS view)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(VIRS overpasses)\\
+\pgfuseimage{viewTime} \pgfuseimage{passagens}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Grids}
+\centering{
+ (lightning)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(thunderstorms)\\
+ \pgfuseimage{acumRaios} \pgfuseimage{acumTemp}
+}
+
+\end{frame}
+
+
 \begin{frame}
 \frametitle{Geographical densities of:}
 %{\Large Geographical densities of:}
@@ -230,29 +270,20 @@
 
 \end{frame}
 
-\begin{frame}
-\frametitle{LIS view time and VIRS overpasses}
-\centering{
-\pgfuseimage{viewTime} \pgfuseimage{passagens}
-}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Total lightning grid and thunderstorms grid}
-\centering{
- \pgfuseimage{acumRaios} \pgfuseimage{acumTemp}
-}
-
-\end{frame}
-
-
-
 
 \begin{frame}
 \frametitle{Total: lightning -- thunderstorms}
 \centering{
 \pgfuseimage{txRaiosTotal} \pgfuseimage{txTempestades}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{SON: lightning -- thunderstorms}
+\centering{
+\pgfuseimage{txSON} \pgfuseimage{tempestadesSON}
 }
 
 \end{frame}
@@ -278,14 +309,6 @@
 \frametitle{JJA: lightning -- thunderstorms}
 \centering{
 \pgfuseimage{txJJA} \pgfuseimage{tempestadesJJA}
-}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{SON: lightning -- thunderstorms}
-\centering{
-\pgfuseimage{txSON} \pgfuseimage{tempestadesSON}
 }
 
 \end{frame}
@@ -470,13 +493,13 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \begin{frame}
 \frametitle{CFTD - 90th percentile of FTA (with lightning) }
 \centering{
-\pgfuseimage{cCumFad_10deg_comraio_topFTApercentil} }
+\pgfuseimage{cftd_10deg_comraio_topFTApercentil} }
 
 \end{frame}
 \begin{frame}
 \frametitle{CFTD - 90th percentile of FT (with lightning) }
 \centering{
-\pgfuseimage{cCumFad_10deg_comraio_topFTpercentil} }
+\pgfuseimage{cftd_10deg_comraio_topFTpercentil}}
 
 \end{frame}
 
