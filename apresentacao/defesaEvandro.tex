@@ -125,6 +125,12 @@
 \pgfdeclareimage[height=8.5cm]{cftd_10deg_comraio_topFTpercentil}{../img/precipitacao3d/severo/percentil/90th/cftd_10deg_comraio_topFTpercentil}
 \pgfdeclareimage[height=8.5cm]{ccftd_10deg_comraio_topFTpercentil}{../img/precipitacao3d/severo/percentil/90th/ccftd_10deg_comraio_topFTpercentil}
 
+\pgfdeclareimage[height=4.5cm]{pdf_FTA_FT}{../img/FtaFt/pdf_FTA_FT}
+\pgfdeclareimage[height=4.5cm]{cdf_FTA_FT}{../img/FtaFt/cdf_FTA_FT}
+
+\pgfdeclareimage[height=4.1cm]{fracaoChuva_pdf_topFTA}{../img/FtaFt/fracaoChuva_pdf_topFTA}
+\pgfdeclareimage[height=4.1cm]{fracaoChuva_pdf_topFT}{../img/FtaFt/fracaoChuva_pdf_topFT}
+
 \pgfdeclareimage[height=4cm]{001_topFTA_10801_0006}{../img/topSevero/topFTA_chuva/001_topFTA_10801_0006}
 \pgfdeclareimage[height=4cm]{002_topFTA_58133_0007}{../img/topSevero/topFTA_chuva/002_topFTA_58133_0007}
 \pgfdeclareimage[height=4cm]{003_topFTA_28799_0006}{../img/topSevero/topFTA_chuva/003_topFTA_28799_0006}
@@ -143,6 +149,9 @@
 
 \pgfdeclareimage[height=7cm]{deriv1}{../img/deriv1}
 \pgfdeclareimage[height=7cm]{deriv2}{../img/deriv2}
+
+\pgfdeclareimage[height=8.5cm]{distEspacialValor099thFta}{../img/DistEspacialPercentis/FTA/distEspacialValor099thFta}
+\pgfdeclareimage[height=8.5cm]{distEspacialValor099thFt}{../img/DistEspacialPercentis/FT/distEspacialValor099thFt}
 
 \pgfdeclareimage[height=7cm]{contornosAmazonas}{../img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_2_1}
 \pgfdeclareimage[height=7cm]{derivaAmazonas}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1}
@@ -176,19 +185,52 @@
 %}
 %\end{frame}
  
+ 
+ 
 \begin{frame}
-\frametitle{Initial results: LIS + PR (1998--2010)}
-\centering{
- \pgfuseimage{CFADgroupclasses} 
-}
-\end{frame} 
+\frametitle{Introduction}
+In context of global lightning measures, South America is located in one of the most electrical active places of the word. Know where the thunderstorm are more frequent and where this systems are more efficient in lightning production is essential for planning the infrastructure of the South American countries.
+\end{frame}
+
 
 \begin{frame}
-\frametitle{Initial results: LIS + PR (1998--2010)}
-\centering{
- \pgfuseimage{probflashesgroupclasses} 
-}
+\frametitle{Purpose}
+\begin{itemize}
+\item Create a database of TRMM's thunderstorm.
+\item Determine the annual cycle and diurnal cycle of thunderstorms in South America
+\item Determine the geographical distribution of lightning and thunderstorm
+\item Evaluate the thunderstorms severity base on flash rate, size and morphology of 3D precipitation structure .
+\end{itemize}
+\end{frame}
+  
+
+\begin{frame}
+\frametitle{Tropical Rainfall Measuring Mission -- TRMM}
+\begin{itemize}
+\item Launch in November 28, 1997, orbit with inclination of 35$^{\circ}$ and altitude of 350 km (August, 2011, the altitude was change for 402.5 km)
+\item Sensors: Precipitation Radar
+-- PR, TRMM Microwave Imager -- TMI, Visible and Infrared Scanner -- VIRS, Lightning Imaging Sensor -- LIS,  Clouds and the Earth’s Radiant Energy System
+-- CERES.
+\item Objective: Estimate the spatiotemporal distribution of the latent heat flux in the tropics and subtropics \footnote{KUMMEROW, C.; BARNES, W.; KOZU, T.; SHIUE, J.; SIMPSON, J. The tropical
+rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v. 15, p. 809--817, 1998}
+\end{itemize}
+
 \end{frame} 
+ 
+%Resultados iniciais 
+%\begin{frame}
+%\frametitle{Initial results: LIS + PR (1998--2010)}
+%\centering{
+% \pgfuseimage{CFADgroupclasses} 
+%}
+%\end{frame} 
+%
+%\begin{frame}
+%\frametitle{Initial results: LIS + PR (1998--2010)}
+%\centering{
+% \pgfuseimage{probflashesgroupclasses} 
+%}
+%\end{frame} 
 
  
 \begin{frame}
@@ -198,7 +240,7 @@
 \item Download orbital data v7 from TRMM: LIS, VIRS (1B01), and PR (2A25), between 1998--2011 ($\simeq$30TB of data). 
 \item 79,932 TRMM orbits were investigated, only 63,613 were over South America (SA) 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
 \item NCEP RII reanalysis from 1998-2011: geopotential height and temperature in 17 pressure levels.
-\item Subset of the TRMM data for SA region, for search thundestorms.
+\item Subset of the TRMM data for SA region.
 %\item Region over South America (SA): 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
 \item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141--159, 2003.}.
 %\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
@@ -251,7 +293,7 @@
 
 
 \begin{frame}
-\frametitle{South America thunderstorms mark}
+\frametitle{South America thunderstorms onset}
 
 \begin{itemize}
 \item Where the thunderstorms are more often in SA?
@@ -287,8 +329,23 @@
 \Large
 \begin{itemize}
 \item lightning [km$^{-2}$ year$^{-1}$]
+
+\begin{equation}
+\mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600     
+\label{defl}
+\end{equation}
+
 \item thunderstorms per orbit [km$^{-2}$]
+\begin{equation}
+\mathbf{DE}_{te} = \frac{\mathbf{P}_{te}}{\mathbf{VT}_{virs} \mathbf{A}_g}    
+\label{dete}
+\end{equation}
+
 \item lightning per thunderstorms [km$^{-2}$ year$^{-1}$]
+\begin{equation}
+\mathbf{DE}_{rt} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g\mathbf{P}_{te}} 31557600.  
+\label{dert}
+\end{equation}
 \end{itemize}
 
 \end{frame}
@@ -393,14 +450,28 @@ FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
 \label{eqFTA}
 \end{equation}
 
-\bigskip
-\textbf{Potential severe thunderstorms were systems with FT and FTA in 90th percentile of sampling.} 
+%\bigskip
+%\textbf{Potential severe thunderstorms were systems with FT and FTA in 90th percentile of sampling.} 
 
 \end{frame}
 
+\begin{frame}
+\centering{
+\pgfuseimage{pdf_FTA_FT}\\
+\pgfuseimage{cdf_FTA_FT}
+}
 
+\end{frame}
 
+\begin{frame}
+\centering{
+Thunderstorms with extreme FTA: rain areas \\
+\pgfuseimage{fracaoChuva_pdf_topFTA} \\
+Thunderstorms with extreme FT: rain areas \\
+\pgfuseimage{fracaoChuva_pdf_topFT}
+}
 
+\end{frame}
 
 \begin{frame}
 \frametitle{Top severe FTA index}
@@ -490,13 +561,11 @@ part ii: Frequency distribution of vertical velocity, reflectivity, and differen
 
 %\end{frame}
 
-
 \begin{frame}
 \frametitle{Contour Frequency Diagrams by Temperature (CFTD)}
 For each thunderstorm, we have extracted the temperature and
 geopotencial height profile to make the conversion the altitude levels of PR to temperature levels and have created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Melting in accordance with temperature profile}
@@ -563,23 +632,87 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 
 \end{frame}
 
-
-
-
 \begin{frame}
-\frametitle{Mains Conclusions}
-\begin{itemize}
-\item Thunderstorm selected by FTA have stronger accretion process than FT
-\item The northern thunderstorm have a enhanced aggregation process and weaker accretion process when compared to the southern thunderstorms.
-\item Those results could explain why we do observed the highest flash rates over the southern part of South America, i.e., because they have a efficient accretion mechanism when compared to the region we found the most thunderstorm that does not produce so much lightning because it has a better aggregation process.
-\end{itemize}
+\frametitle{Spatial distribution of extreme FTA values}
+\centering{
+\pgfuseimage{distEspacialValor099thFta} 
+}
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Spatial distribution of extreme FT values}
+\centering{
+\pgfuseimage{distEspacialValor099thFt} 
+}
+
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Top FTA and FT}
 \centering{
 \pgfuseimage{topFTAeFT} }
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Conclusions}
+
+\begin{itemize}
+\item The characterization of the severe thunderstorm have been analyzed by means of 14 years worth of TRMM LIS, PR and VIRS data that have been compiled and integrated to define 157,592 electrified clouds over South America (40S-10N and 90W-30W). 
+
+\item  The severe thunderstorms database, 94,733 thunderstorms, are based only in thunderstorms that had view time greater and equal to 60 seconds and at least one valid PR raining vertical profile were used . 
+
+\item Two groups of severe systems are found, the with FTA or FT  above the 90\% percentile cumulative frequency distribution:  FTA 29.3 to 1,258.7 $\times$ 10$^{-4}$ fl min$^{1}$ km$^{-2}$; FT 47.2 to 1,283.6 fl min$^{1}$, which is above category 3 of Cecil et al. [2005] and Zipser et al. [2006].
+
+
+\item We defined a new configuration of Yuter and Houze [1995] CFADs that incorporates the temperature levels instead of altitude. Based on these diagrams, CFTD, it is possible to relate Z$_c$ changes with temperature and the width of the distributions in the presence of different hydrometeor types and growth mechanisms. 
+ 
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Thunderstorms onset in South America}
+\Large{Diurnal cycle:}
+\begin{itemize}
+\item 40\% of thunderstorm occurred between 13h--17h (LT)
+\item In ocean, we found one maximum in 20h (LT) and another between  4--5 (LT)
+\item The nocturnal peak of thunderstorm were found in extreme North of Andes Mountains (Paramillo National Natural Park, Maracaibo lake). 630 systems where observed in 14 years, only between 0h e 00:59h
+\item The thunderstorms were more frequent in center of South America (10$^{\circ}$--0$^{\circ}$ S and 70$^{\circ}$--50$^{\circ}$ W  and 20$^{\circ}$--10$^{\circ}$ S and 60$^{\circ}$--50$^{\circ}$ W), between 14h--16h (LT).
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{}
+\Large{Annual cycle:}
+\begin{itemize}
+\item Thunderstorms season in South America was between October and March with two peaks: January and October.
+\item Northeast of South America (0$^{\circ}$--10$^{\circ}$ N e 70$^{\circ}$--50$^{\circ}$ W) the peak of thunderstorm was found in August. In South of South America (40$^{\circ}$--20$^{\circ}$ S e 70$^{\circ}$--60$^{\circ}$ W, Plata basin) was found more short thunderstorm season with 2 mouths.  
+\item A região com a estação de maior duração de tempestades elétricas,
+\item The longer season was found in Colombia e West of Venezuela with 9 mouths.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+%Thunderstorm selected by FTA have stronger accretion process than FT
+%\item The northern thunderstorm have a enhanced aggregation process and weaker accretion process when compared to the southern thunderstorms.
+%\item Those results could explain why we do observed the highest flash rates over the southern part of South America, i.e., because they have a efficient accretion mechanism when compared to the region we found the most thunderstorm that does not produce so much lightning because it has a better aggregation process.
+
+\begin{frame}
+\frametitle{Severity of Thunderstorms in South America}
 
 \end{frame}
 
