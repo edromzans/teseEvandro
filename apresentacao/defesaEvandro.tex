@@ -72,7 +72,7 @@
 \title[DCA--IAG--USP]{\textcolor{black}{Morfologia das tempestades el\'{e}tricas na América do Sul}}
 \subtitle{}
 \date[]{\begin{footnotesize}IAG/USP -- 2015\end{footnotesize}}
-\author[IAG]{Evandro M. Anselmo, Carlos A. Morales}
+\author[IAG]{Evandro M. Anselmo } %\par Adivisor: Carlos A. Morales
 \institute{Institute of Astronomy, Geophysics and Atmospheric Science of University of São Paulo (IAG-USP), São Paulo-SP, Brazil. \par}
 %\usepackage[pdftex]{graphicx}
 
@@ -187,30 +187,35 @@
  
 \begin{frame}
 \frametitle{Introduction}
-In context of global lightning measures, South America is located in one of the most electrical active places of the word. Know where the thunderstorm are more frequent and where this systems are more efficient in lightning production is essential for planning the infrastructure of the South American countries.
+\begin{itemize}
+\item South America is one of the 3 lightning chimes
+\item Infrastructure  planning requires knowledge about thunderstorm position, frequency and lightning efficient production.
+\end{itemize}
+
+
 \end{frame}
 
 \begin{frame}
-\frametitle{Purpose}
+\frametitle{Objectives}
 \begin{itemize}
-\item Create a database of TRMM's thunderstorm.
+\item Create a thunderstorm database based on TRMM measurements
 \item Determine the annual cycle and diurnal cycle of thunderstorms in South America
-\item Determine the geographical distribution of lightning and thunderstorm
-\item Evaluate the thunderstorms severity base on flash rate, size and morphology of 3D precipitation structure .
+\item Determine the geographical distribution of lightning flashes and thunderstorms
+\item Evaluate the thunderstorms severity.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Tropical Rainfall Measuring Mission -- TRMM}
 \begin{itemize}
-\item Launch in November 28, 1997, orbit with inclination of 35$^{\circ}$ and altitude of 350 km (August, 2011, the altitude was change for 402.5 km)
+\item Launched in November 28th, 1997. Orbit with inclination of 35$^{\circ}$ and altitude of 350 km (August, 2011, the altitude was change for 402.5 km)
 \item Sensors: Precipitation Radar
 -- PR, TRMM Microwave Imager -- TMI, Visible and Infrared Scanner -- VIRS, Lightning Imaging Sensor -- LIS,  Clouds and the Earth’s Radiant Energy System
 -- CERES.
-\item Objective: Estimate the spatiotemporal distribution of the latent heat flux in the tropics and subtropics \footnote{KUMMEROW, C.; BARNES, W.; KOZU, T.; SHIUE, J.; SIMPSON, J. The tropical
+\item Goal: Estimate rainfall over the  tropics and subsequently latent heat flux\footnote{KUMMEROW, C.; BARNES, W.; KOZU, T.; SHIUE, J.; SIMPSON, J. The tropical
 rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v. 15, p. 809--817, 1998}
 \end{itemize}
-
+desenho esquemático do TRMM e das orbitas. Passagens ascendentes e descendentes.
 \end{frame} 
 
 %Resultados iniciais 
@@ -231,13 +236,23 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \begin{frame}
 \frametitle{Data and Methodology}
 \justifying{
+
+\textbf{TRMM:}
 \begin{itemize}
-\item Download orbital data v7 from TRMM: LIS, VIRS (1B01), and PR (2A25), between 1998--2011 ($\simeq$30TB of data). 
-\item 79,932 TRMM orbits were investigated, only 63,613 were over South America (SA) 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
-\item NCEP RII reanalysis from 1998-2011: geopotential height and temperature in 17 pressure levels.
-\item Subset of the TRMM data for SA region.
+\item TRMM orbital v7 files: LIS, VIRS (1B01), and PR (2A25), between 1998--2011 ($\simeq$30TB of data). (figura sensor package)
+\item During this period we had 79,932 TRMM orbits, but only 63,613 were over South America (SA) 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W. (mostrar mapa)
+\end{itemize}
+
+\textbf{NCEP RII:}
+\begin{itemize}
+\item NCEP RII reanalysis from 1998-2011: geopotential height and temperature at 17 pressure levels. This data is used to convert TRMM PR altitudes levels in temperature. (ilustrar a conversão ZxH para ZxT)  
+\end{itemize}
+
+\textbf{Defining thunderstorms:}
+\begin{itemize}
+%\item Subset of the TRMM data for SA region.
 %\item Region over South America (SA): 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W.
-\item Thunderstorms have been definite as clouds with brightness temperature below 258 K in the 1B01 10.8 $\mu$m channel and had at least one LIS flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141--159, 2003.}.
+\item Thunderstorms have been defined as clouds with brightness temperature below 258 K at the 1B01 10.8 $\mu$m channel and had at least one LIS lightning flash [Morales and Anagnostou, 2003]\footnote{Morales, C. A., and E. N. Anagnostou, Extending the capabilities of high-frequency rainfall estimation from geostationary-based satellite infrared via a network of long-range lightning observations, J. Hydrometeor, 4, 141--159, 2003.}.
 %\item 3D precipitation structure were studied using Contour Frequency of PR reflectivity by Altitude and by Temperature Diagrams.
 \end{itemize}
 }
@@ -247,7 +262,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 
 
 \begin{frame}
-\frametitle{TRMM's thunderstorms}
+\frametitle{TRMM's thunderstorms (flow chart)}
 \begin{center}
 \resizebox{8.0cm}{!}{%
 \begin{tikzpicture}[node distance = 1.5cm, auto]
@@ -281,45 +296,48 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \begin{itemize}
 \frametitle{TRMM's thunderstorms}
 \item 157,592 thunderstorms were found!
-\item Only 94,733 had $VT_m$ greater than 1 minute and with at least one PR pixel with valid rain. 
+\item Only 94,733 had view time ($VT_m$) greater than 1 minute and with at least one PR pixel with valid rain. \\
+\pgfuseimage{barradecor_virs}~~
+\pgfuseimage{barradecor_chuva}\\
+\pgfuseimage{004_topFT_03444_0001}
+
 \end{itemize}
 
 \end{frame}
 
 
 \begin{frame}
-\frametitle{South America thunderstorms onset}
+\frametitle{The onset of the South American thunderstorms}
 
 \begin{itemize}
 \item Where the thunderstorms are more often in SA?
-\item What the duration of thunderstorm season in SA?
-\item Places with high densities of lightning corresponding to 	the high density of thunderstorms?
+\item Where are the places with high lightning densities that corresponds with the highest density of thunderstorms?
+\item How long does the thunderstorm season last in SA?
 \end{itemize}
 
 \end{frame}
 
-
 \begin{frame}
-\frametitle{Grids for calculus of geographical densities}
+\frametitle{Onset: TRMM overpasses and LIS view time}
 \centering{
-(LIS view)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(VIRS overpasses)\\
+(LIS view -- $\mathbf{VT}_{lis}$)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(VIRS overpasses -- $\mathbf{VT}_{virs}$)\\
 \pgfuseimage{viewTime} \pgfuseimage{passagens}
 }
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Grids for calculus of geographical densities}
+\frametitle{Onset: LIS lightning flashes and number of thunderstorms}
 \centering{
- (lightning)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(thunderstorms)\\
- \pgfuseimage{acumRaios} \pgfuseimage{acumTemp}
+ (lightning -- $\mathbf{FL}_{lis}$)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(thunderstorms  -- $\mathbf{P}_{te}$)\\
+  \pgfuseimage{acumRaios} \pgfuseimage{acumTemp}
 }
 
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Geographical densities of:}
+\frametitle{Onset: Defining densities ratios}
 %{\Large Geographical densities of:}
 \Large
 \begin{itemize}
@@ -347,8 +365,14 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 
 
 \begin{frame}
-\frametitle{Total: lightning -- thunderstorms}
+\Large
+Where the thunderstorms are more often in SA?
+\end{frame}
+
+\begin{frame}
+\frametitle{Onset: lightning $\times$ thunderstorms -- Annual}
 \centering{
+
 \pgfuseimage{txRaiosTotal} \pgfuseimage{txTempestades}
 }
 
@@ -356,7 +380,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 
 
 \begin{frame}
-\frametitle{SON: lightning -- thunderstorms}
+\frametitle{Onset: lightning $\times$ thunderstorms -- SON}
 \centering{
 \pgfuseimage{txSON} \pgfuseimage{tempestadesSON}
 }
@@ -365,7 +389,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 
 
 \begin{frame}
-\frametitle{DJF: lightning -- thunderstorms}
+\frametitle{Onset: lightning $\times$ thunderstorms -- DJF}
 \centering{
 \pgfuseimage{txDJF} \pgfuseimage{tempestadesDJF}
 }
@@ -373,7 +397,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \end{frame}
 
 \begin{frame}
-\frametitle{MAM: lightning -- thunderstorms}
+\frametitle{Onset: lightning $\times$ thunderstorms -- MAM}
 \centering{
 \pgfuseimage{txMAM} \pgfuseimage{tempestadesMAM}
 }
@@ -381,7 +405,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \end{frame}
 
 \begin{frame}
-\frametitle{JJA: lightning -- thunderstorms}
+\frametitle{Onset: lightning $\times$ thunderstorms -- JJA}
 \centering{
 \pgfuseimage{txJJA} \pgfuseimage{tempestadesJJA}
 }
@@ -389,8 +413,15 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \end{frame}
 
 
+
+
 \begin{frame}
-\frametitle{Total: lightning per thunderstorms}
+\Large
+Where are the places with high lightning densities that corresponds with the highest density of thunderstorms?
+\end{frame}
+
+\begin{frame}
+\frametitle{Onset: lightning per thunderstorms -- Annual}
 \centering{
 \pgfuseimage{RaiosPorTempestades}
 }
@@ -398,8 +429,14 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \end{frame}
 
 
+
 \begin{frame}
-\frametitle{Diurnal and Annual Cycle}
+\Large
+How long does the thunderstorm season last in SA?
+\end{frame}
+
+\begin{frame}
+\frametitle{Onset: Diurnal and Annual Cycle}
 \centering{
 \pgfuseimage{ciclo1}\pgfuseimage{ciclo2}\\
 }
@@ -410,6 +447,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \begin{frame}
 \frametitle{}
 \centering{
+Annual cycle\\
 \pgfuseimage{ciclo3}
 }
 
@@ -419,6 +457,7 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 \begin{frame}
 \frametitle{}
 \centering{
+Diurnal cycle\\
 \pgfuseimage{ciclo4}
 }
 
@@ -427,18 +466,22 @@ rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v.
 
 
 
+\begin{frame}
+\Large Thunderstorms Severity
+\end{frame}
+
 
 \begin{frame}
-\frametitle{Severity of thunderstorms: FT and FTA index}
+\frametitle{Thunderstorms Severity: Defining severity index}
 
--- Time flash rate (FT) defined as the ratio of number of flashes ($N_{fl}$) by the mean view time ($VT_m$) in the thunderstorm area extracted.	
+-- Flash rate (FT) is defined as the ratio of number of lightning flashes ($N_{fl}$) by the mean view time ($VT_m$) in the thunderstorm area extracted.	
 
 \begin{equation}
 FT = \frac{N_{fl} }{VT_m} 60 ~[\mathrm{min^{-1}}]  
 \label{eqFT}  
 \end{equation}
 
--- Time flash rate normalized by the thunderstorm area ($A_t$) defined as FTA. 
+-- Flash rate (FTA) normalized by thunderstorm area is defined as the ratio of number of lightning flashes ($N_{fl}$) by the mean view time ($VT_m$) and thunderstorm area ($A_t$). 
 
 \begin{equation}
 FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
@@ -451,6 +494,7 @@ FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
 \end{frame}
 
 \begin{frame}
+\frametitle{Thunderstorms Severity: FTA and FT pdf distribution}
 \centering{
 \pgfuseimage{pdf_FTA_FT}\\
 \pgfuseimage{cdf_FTA_FT}
@@ -459,6 +503,23 @@ FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
 \end{frame}
 
 \begin{frame}
+\frametitle{Thunderstorms Severity: defining the extreme FTA and FT thunderstorms}
+\begin{itemize}
+\item Extreme: 90th percentile
+\end{itemize}
+\pgfuseimage{cdf_FTA_FT}
+\begin{itemize}
+\item FTA: 29.3 to 1,258.7 $\times$ 10$^{-4}$ fl min$^{1}$ km$^{-2}$
+\item  FT: 47.2 to 1,283.6 fl min$^{1}$
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Thunderstorms Severity: Rain and CV/ST fraction}
 \centering{
 Thunderstorms with extreme FTA: rain areas \\
 \pgfuseimage{fracaoChuva_pdf_topFTA} \\
@@ -469,7 +530,7 @@ Thunderstorms with extreme FT: rain areas \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Top severe FTA index}
+\frametitle{Thunderstorms Severity: Top severe FTA index}
 \pgfuseimage{barradecor_virs}~~
 \pgfuseimage{barradecor_chuva}\\
 \pgfuseimage{001_topFTA_10801_0006}\\
@@ -479,7 +540,7 @@ Thunderstorms with extreme FT: rain areas \\
 
 
 \begin{frame}
-\frametitle{Top severe FTA index}
+\frametitle{Thunderstorms Severity: Top severe FTA index}
 \pgfuseimage{barradecor_virs}~~
 \pgfuseimage{barradecor_chuva}\\
 \pgfuseimage{005_topFTA_52880_0006}\\
@@ -489,7 +550,7 @@ Thunderstorms with extreme FT: rain areas \\
 
 
 \begin{frame}
-\frametitle{Top severe FT index}
+\frametitle{Thunderstorms Severity: Top severe FT index}
 
 \pgfuseimage{barradecor_virs}~~
 \pgfuseimage{barradecor_chuva}\\
@@ -499,7 +560,7 @@ Thunderstorms with extreme FT: rain areas \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Top severe FT index}
+\frametitle{Thunderstorms Severity: Top severe FT index}
 \pgfuseimage{barradecor_virs}~~
 \pgfuseimage{barradecor_chuva}\\
 \pgfuseimage{004_topFT_03444_0001}\\
@@ -507,46 +568,53 @@ Thunderstorms with extreme FT: rain areas \\
 
 \end{frame}
 
-
-
-
-\begin{frame}
-\frametitle{3D precipitation analyses -- CFAD}
-\begin{itemize}
-
-\item For thunderstorms order by FTA index, the Contour Frequency by Altitude Diagram -- CFAD\footnote{Yuter, S. E., and R. A. Houze Jr., Three-dimensional kinematic and microphysical evolution of florida cumulonimbus.
-part ii: Frequency distribution of vertical velocity, reflectivity, and differential reflectivity, J. Appl. Meteor., 123,
-1941–1963, 1995.} indicate more precipitation in mixed region.
-\item The CFAD diagrams have more definition in altitude for thunderstorms order by FTA.
-\end{itemize}
-\end{frame}
   
 \begin{frame}
-\frametitle{CFAD - 90th percentile of FTA (without lightning)}
+\frametitle{Thunderstorms Severity: CFAD -- FTA (w/o lightning)}
 \centering{
 \pgfuseimage{cfad10_semraio_topFTA_percentil}}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{CFAD - 90th percentile of FT (without lightning)}
+\frametitle{Thunderstorms Severity: CFAD -- FT (w/o lightning)}
 \centering{
 \pgfuseimage{cfad10_semraio_topFT_percentil}}
 
 \end{frame}
 
+
+
 \begin{frame}
-\frametitle{CFAD - 90th percentile of FTA (with lightning) }
+\frametitle{Thunderstorms Severity: non-lightning pixels}
+\begin{itemize}
+\item FTA pixels are taller than FT.
+\item FTA pixels have higher Z$_c$ values than FT, especially above 5 km.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Thunderstorms Severity: CFAD -- FTA (with lightning) }
 \centering{
 \pgfuseimage{cfad10_comraio_topFTA_percentil}}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{CFAD - 90th percentile of FT (with lightning)}
+\frametitle{Thunderstorms Severity: CFAD - FT (with lightning)}
 \centering{
 \pgfuseimage{cfad10_comraio_topFT_percentil}}
 
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Thunderstorms Severity: lightning pixels}
+\begin{itemize}
+\item ops
+\item ops
+\end{itemize}
 \end{frame}
 
 %\begin{frame}
@@ -557,20 +625,15 @@ part ii: Frequency distribution of vertical velocity, reflectivity, and differen
 %\end{frame}
 
 \begin{frame}
-\frametitle{Contour Frequency Diagrams by Temperature (CFTD)}
-For each thunderstorm, we have extracted the temperature and
-geopotencial height profile to make the conversion the altitude levels of PR to temperature levels and have created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
+\frametitle{Thunderstorms Severity: temperature dependency}
+\begin{itemize}
+\item It is know that the mixed phase region regulates the electrification charge process. 
+\pgfuseimage{takahashi}\\
+\item As a consequence, we converted the PR altitude levels into temperature levels based on RII reanalysis.
+\item Now we created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
+\end{itemize}
+
 \end{frame}
-
-\begin{frame}
-\frametitle{Melting in accordance with temperature profile}
-\centering{
-\pgfuseimage{fabry}\pgfuseimage{takahashi}\\
-
-[Fabry and Zawadzki 1995]\footnote{Fabry, F., Zawadzki, I., 1995. \textbf{Long-Term Radar Observations of the Melting Layer of Precipitation and Their Interpretation.} Journal of the Atmospheric Sciences 52, 838--851.}~~~~~~~~~~~~~~~~~~~~[Takahashi and Miyawaki, 2002]\footnote{Takahashi, Tsutomu; Miyawaki, Kuniko. \textbf{Reexamination of riming electrification in a wind tunnel.} Journal of the Atmospheric Sciences. American Meteorological Society. 2002.}
-}
-\end{frame} 
-
 
 %\begin{frame}
 %\frametitle{3D precipitation analyses -- CFTD and CCFTD }
@@ -585,13 +648,13 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 
 
 \begin{frame}
-\frametitle{CFTD - 90th percentile of FTA (with lightning) }
+\frametitle{Thunderstorms Severity: CFTD -- FTA (with lightning) }
 \centering{
 \pgfuseimage{cftd_10deg_comraio_topFTApercentil} }
 
 \end{frame}
 \begin{frame}
-\frametitle{CFTD - 90th percentile of FT (with lightning) }
+\frametitle{Thunderstorms Severity: CFTD -- FT (with lightning)}
 \centering{
 \pgfuseimage{cftd_10deg_comraio_topFTpercentil}}
 
@@ -599,20 +662,38 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 
 
 \begin{frame}
-\frametitle{CCFTD - 90th percentile of FTA (with lightning)}
+\frametitle{Thunderstorms Severity: CCFTD --  FTA (with lightning)}
 \centering{
 \pgfuseimage{ccftd_10deg_comraio_topFTApercentil}}
 
 \end{frame}
 \begin{frame}
-\frametitle{CCFTD - 90th percentile of FT (with lightning)}
+\frametitle{Thunderstorms Severity: CCFTD -- FT (with lightning)}
 \centering{
 \pgfuseimage{ccftd_10deg_comraio_topFTpercentil}}
 
 \end{frame}
 
+
 \begin{frame}
-\frametitle{Derivatives contour line of frequency by temperature diagram (CFTD)  for quintiles of 30\%, 50\%, 70\% and 95\% -- (30S-40S and 60W-70W)}
+\frametitle{Thunderstorms Severity: Rate of Z$_c$ change with temperature}
+\centering{
+\begin{itemize}
+\item Above 0$^{\circ}$ C we might have ice and supercooled water droplets.
+\item The rate of change of Z$_c$ with temperature might give an idea about of extend of mixed phase layer.
+\item ops
+\item We computed this rate for 30\%, 50\%, 70\% and 95\%.
+\item We compare tropical versus sub-tropical regions (Amazon $\times$ La Plata basin)
+\end{itemize}
+
+}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Thunderstorms Severity: Z$_c$ change -- La Plata basin (30S-40S and 60W-70W)}
 \centering{
 \pgfuseimage{contornosPrata} \pgfuseimage{derivaPrata}
 }
@@ -620,15 +701,26 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \end{frame}
 
 \begin{frame}
-\frametitle{Derivatives contour line of frequency by temperature diagram (CFTD)  for quintiles of 30\%, 50\%, 70\% and 95\% -- (00N-10N and 60W-70W)}
+\frametitle{Thunderstorms Severity: Z$_c$ change -- Amazon (00N-10N and 60W-70W)}
 \centering{
 \pgfuseimage{contornosAmazonas} \pgfuseimage{derivaAmazonas}
 }
 
 \end{frame}
 
+
 \begin{frame}
-\frametitle{Spatial distribution of extreme FTA values}
+\frametitle{Thunderstorms Severity: identifying the efficient and severe regions}
+\begin{itemize}
+\item For each grid box with 2.5$^{\circ}$ $\times$ 2.5$^{\circ}$ we obtained the FTA and FT pdf.
+\item For each grid box, we extracted the 99th percentile value. 
+\item Based on 99th percentile FTA and FT values, we build a spatial distribution map that show where are the most efficient (FTA) and severe (FT).
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Thunderstorms Severity: the most efficient thunderstorms}
 \centering{
 \pgfuseimage{distEspacialValor099thFta} 
 }
@@ -636,7 +728,7 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \end{frame}
 
 \begin{frame}
-\frametitle{Spatial distribution of extreme FT values}
+\frametitle{Thunderstorms Severity: the most severe thunderstorms}
 \centering{
 \pgfuseimage{distEspacialValor099thFt} 
 }
@@ -644,9 +736,19 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \end{frame}
 
 
+\begin{frame}
+\frametitle{Thunderstorms Severity: where are the most efficient and severe thunderstorms}
+\centering{
+\begin{itemize}
+\item Find the thunderstorms that have FTA and FT above 90th percentile.
+\item Compute the geographical densities of these thunderstorms (normalized by TRMM overpasses). 
+\end{itemize}
+}
+
+\end{frame}
 
 \begin{frame}
-\frametitle{Top FTA and FT}
+\frametitle{Thunderstorms Severity: the most severe and efficient thunderstorms}
 \centering{
 \pgfuseimage{topFTAeFT} }
 
@@ -657,15 +759,12 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \frametitle{Conclusions}
 
 \begin{itemize}
-\item The characterization of the severe thunderstorm have been analyzed by means of 14 years worth of TRMM LIS, PR and VIRS data that have been compiled and integrated to define 157,592 electrified clouds over South America (40S-10N and 90W-30W). 
+\item This study characterized the severe thunderstorms over South America by employing 14 years of TRMM measurements. 
+\item The thunderstorms were characterized by integrating TRMM LIS, PR and VIRS measurements.
+\item A total of 157,592 electrified clouds have been observed in South America (40S-10N and 90W-30W). 
+\item  For the severe thunderstorms database, only 94,733 thunderstorms were used. Those thunderstorms had LIS view time greater and equal to 60 seconds and at least one valid PR raining pixel . 
 
-\item  The severe thunderstorms database, 94,733 thunderstorms, are based only in thunderstorms that had view time greater and equal to 60 seconds and at least one valid PR raining vertical profile were used . 
-
-\item Two groups of severe systems are found, the with FTA or FT  above the 90\% percentile cumulative frequency distribution:  FTA 29.3 to 1,258.7 $\times$ 10$^{-4}$ fl min$^{1}$ km$^{-2}$; FT 47.2 to 1,283.6 fl min$^{1}$, which is above category 3 of Cecil et al. [2005] and Zipser et al. [2006].
-
-
-\item We defined a new configuration of Yuter and Houze [1995] CFADs that incorporates the temperature levels instead of altitude. Based on these diagrams, CFTD, it is possible to relate Z$_c$ changes with temperature and the width of the distributions in the presence of different hydrometeor types and growth mechanisms. 
- 
+%\item We defined a new configuration of Yuter and Houze [1995] CFADs that incorporates the temperature levels instead of altitude. Based on these diagrams, CFTD, it is possible to relate Z$_c$ changes with temperature and the width of the distributions in the presence of different hydrometeor types and growth mechanisms.  
 
 \end{itemize}
 \end{frame}
@@ -676,8 +775,8 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \Large{Diurnal cycle:}
 \begin{itemize}
 \item 40\% of thunderstorm occurred between 13h--17h (LT)
-\item In ocean, we found one maximum in 20h (LT) and another between  4--5 (LT)
-\item The nocturnal peak of thunderstorm were found in extreme North of Andes Mountains (Paramillo National Natural Park, Maracaibo lake). 630 systems where observed in 14 years, only between 0h e 00:59h
+\item In the ocean, we found one maximum at 20h (LT) and another between  4--5 (LT)
+\item The nocturnal peak of thunderstorms were found in extreme North of Andes Mountains (Paramillo National Natural Park, Maracaibo lake). 630 systems where observed in 14 years, only between 0h e 00:59h
 \item The thunderstorms were more frequent in center of South America (10$^{\circ}$--0$^{\circ}$ S and 70$^{\circ}$--50$^{\circ}$ W  and 20$^{\circ}$--10$^{\circ}$ S and 60$^{\circ}$--50$^{\circ}$ W), between 14h--16h (LT).
 \end{itemize}
 
@@ -690,16 +789,42 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 \Large{Annual cycle:}
 \begin{itemize}
 \item Thunderstorms season in South America was between October and March with two peaks: January and October.
-\item Northeast of South America (0$^{\circ}$--10$^{\circ}$ N e 70$^{\circ}$--50$^{\circ}$ W) the peak of thunderstorm was found in August. In South of South America (40$^{\circ}$--20$^{\circ}$ S e 70$^{\circ}$--60$^{\circ}$ W, Plata basin) was found more short thunderstorm season with 2 mouths.  
-\item The longer season was found in Colombia and West of Venezuela with 9 mouths.
+\item Northeast of South America (0$^{\circ}$--10$^{\circ}$ N and 70$^{\circ}$--50$^{\circ}$ W) the peak of thunderstorm was found in August.
+\item In South of South America (40$^{\circ}$--20$^{\circ}$ S and 70$^{\circ}$--60$^{\circ}$ W, Plata basin) was found a shorter thunderstorm season with 2 months.  
+\item The longer season was found in Colombia and West of Venezuela with 9 months.
 \end{itemize}
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Numbers of thunderstorm associate with seasonal geographical densities of lightning and thunderstorms}
+\Large
+1$^{\circ}$ Spring = 57,861\\ 
+2$^{\circ}$ Summer = 46,077\\
+3$^{\circ}$ Autumn = 36,804\\
+4$^{\circ}$ Winter = 16,850\\
 
+\end{frame}
 
+\begin{frame}
+\frametitle{Total geographical densities:}
+Thunderstorms:
+\begin{itemize}
+\item North and Northwest of South America (Colombia, Panama, Northwest of Amazon): 3.5--4.7 $\times$ 10$^{-4}$ km$^{-2}$
+\item Regions with high topography: Northeast of Titicaca Lake in Peru, mountain range in Santa Catarina, Emas National Park in Goias: $\simeq$2.5 $\times$ 10$^{-4}$ km$^{-2}$
+\end{itemize}
+Lightning:
+\begin{itemize}
+\item Mouth of the Catatumbo River: 148.1 fl year$^{-1}$ km$^{-2}$ 
+\item Cochabamba, Bolivia: $\simeq$60 fl year$^{-1}$ km$^{-2}$
+\item The Black Needles peak, Matiqueira mountain range, Neblina peak, La Plata basin: 30--60 fl year$^{-1}$ km$^{-2}$.  
+\end{itemize}
+Lightning per thunderstorm:
+\begin{itemize}
+\item 11.73 $\times$ 10$^{-2}$ ano$^{-1}$ km$^{-2}$ (Maracaibo lake). In this grid point (772 km$^{-2}$) each thunderstorm had in average 91 fl year$^{-1}$.  
+\end{itemize}
 
-
+\end{frame}
 
 %Thunderstorm selected by FTA have stronger accretion process than FT
 %\item The northern thunderstorm have a enhanced aggregation process and weaker accretion process when compared to the southern thunderstorms.
@@ -707,17 +832,48 @@ geopotencial height profile to make the conversion the altitude levels of PR to 
 
 \begin{frame}
 \frametitle{Severity of Thunderstorms in South America}
+\begin{itemize}
+\item \textbf{Two groups of severe systems are found}:
+\begin{itemize}
+\item FTA 29.3 to 1,258.7 $\times$ 10$^{-4}$ fl min$^{-1}$ km$^{-2}$
+\item FT 47.2 to 1,283.6 fl min$^{-1}$ (above category 3 of Cecil et al. [2005] and Zipser et al. [2006])
+\end{itemize}
+\item \textbf{Cloud top Tb}: FTA thunderstorms are 10 K colder than FT thunderstorms
+\item \textbf{Convective $\times$ Stratiform rain fraction}: FTA thunderstorms have 72\% of convective rain fraction and 32\% stratiform and FT systems $\simeq$22\% convective and 65\% stratiform.
+\item \textbf{Lightning $\times$ non Lightning pixels (CFAD)}: profiles with lightning pixels have higher Z$_c$ values, and are taller. In the layer between 5 and 7 km height, the Z$_c$ difference can reach 5 to 10 dBZ. At lower levels (2--3km) Z$_c$ is above 50 dBZ compared to 40 dBZ for non-lightning pixels;
+\item \textbf{Lightning pixels (CFAD)}: FTA thunderstorms show 1-3 dBZ higher Z$_c$ values than FT systems, specially above 5 km height;
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item \textbf{Top 1\% FTA thunderstorms}: More than 148.93 $\times$ 10$^{-4}$ fl min$^{-1}$ km$^{-2}$. Associated with orography in the Pantanal Matogrossense, Central Plateau of Brazil, and the Xingu and Araguaia basin and Tocantins rivers in the Amazon basin, the meridional Plateau of Brazil in Paraná basin and the Andes foothill -- eastward of the Sierra of Cordoba in Argentina.
+\item \textbf{Top 1\% severe FT thunderstorms}: More than  272.88 fl min$^{-1}$ and are located in the elevated topography areas like Andes foothill and Sierra of Cordoba in Argentina and also at less pronounced orography at Tocantins central of Brazil, Sierras Gauchas and Catarinenses at South of Brazil to more flat areas that have a water and vegetation contrast like south of Amazon, Rio Branco in Acre, in the boundaries of the states of Acre, Amazon with Peru, central Bolivia, Pantanal Matogrossense, Paraná state, Paraguay and a Plata basin.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperature dependence -- CFTD}
+\begin{itemize}
+\item \textbf{Z$_c$ distribution}: FTA thunderstorms show broader Z$_c$ distribution than FT systems for the same temperature level, specially above 0$^{\circ}$ C and they have 1--3 dBZ higher Z$_c$ values;
+\item \textbf{Latitudinal variation}: FT thunderstorm show an enhancement of the collision-coalescence process towards the sub-tropics.
+\item  \textbf{Z$_c$ change}: the maximum Z$_c$ decrease with temperature for FTA(FT) thunderstorms is at -2$^{\circ}$ C (0$^{\circ}$ C) and -12$^{\circ}$ C(-8$^{\circ}$ C) for 50\% and 95\% levels profiles respectively in the Amazon and -6$^{\circ}$ C(-2$^{\circ}$ C) and -14$^{\circ}$ C (-6$^{\circ}$ C) for 50\% and 95\% respectively for the La Plata Basin.
+\end{itemize}
 
 \end{frame}
 
 
 \begin{frame}
 \frametitle{ACKNOWLEDGEMENTS}
-
 \justifying{
-This work is part of PhD project that is supported by CNPq grant 140842/2011-0. Moreover, this work is partially supported by CAPES PROEX program and COELCE.  The authors wish to thank ICAE scientific committee for providing a grant to participate in this conference, MSFC\/NASA for providing LIS data set and GSFC\/NASA for providing TRMM dataset. Finally we would like to thank Dra. Rachel Albrecht for the LIS view time reprocessed dataset.
+\begin{itemize}
+\item This work is part of PhD project that is supported by CNPq grant 140842/2011-0.
+\item This work is partially supported by CAPES PROEX program and COELCE.
+\item I would like to thank  MSFC\/NASA for providing LIS data set and GSFC\/NASA for providing TRMM dataset.
+\item Finally I would like to thank Dra. Rachel Albrecht for the LIS lightning and view time reprocessed dataset.
+\end{itemize}
 }
-
 
 \end{frame}
 
