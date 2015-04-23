@@ -128,8 +128,8 @@
 \pgfdeclareimage[height=4.5cm]{pdf_FTA_FT}{../img/FtaFt/pdf_FTA_FT}
 \pgfdeclareimage[height=4.5cm]{cdf_FTA_FT}{../img/FtaFt/cdf_FTA_FT}
 
-\pgfdeclareimage[height=4.1cm]{fracaoChuva_pdf_topFTA}{../img/FtaFt/fracaoChuva_pdf_topFTA}
-\pgfdeclareimage[height=4.1cm]{fracaoChuva_pdf_topFT}{../img/FtaFt/fracaoChuva_pdf_topFT}
+\pgfdeclareimage[height=3.9cm]{fracaoChuva_pdf_topFTA}{../img/FtaFt/fracaoChuva_pdf_topFTA}
+\pgfdeclareimage[height=3.9cm]{fracaoChuva_pdf_topFT}{../img/FtaFt/fracaoChuva_pdf_topFT}
 
 \pgfdeclareimage[height=4cm]{001_topFTA_10801_0006}{../img/topSevero/topFTA_chuva/001_topFTA_10801_0006}
 \pgfdeclareimage[height=4cm]{002_topFTA_58133_0007}{../img/topSevero/topFTA_chuva/002_topFTA_58133_0007}
@@ -157,12 +157,23 @@
 \pgfdeclareimage[height=7cm]{derivaAmazonas}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_2_1}
 \pgfdeclareimage[height=7cm]{contornosPrata}{../img/precipitacao3d/deriv_ccftd/Contornos_contornos_cdf_3_3} 
 \pgfdeclareimage[height=7cm]{derivaPrata}{../img/precipitacao3d/deriv_ccftd/deriv_contornos_cdf_3_3}
-\pgfdeclareimage[height=8.5cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
+\pgfdeclareimage[height=8cm]{topFTAeFT}{../img/DensidadeTempestades/topFTAeFT/densEspacial_orbita_19982011_90FTAFT_TempestadesPolyfill}
 
 \pgfdeclareimage[height=8.5cm]{CFADgroupclasses}{../img/ilustracoes/resIniciais/CFADgroupclasses}
 \pgfdeclareimage[height=7.5cm]{probflashesgroupclasses}{../img/ilustracoes/resIniciais/probflashesgroupclasses}
 \pgfdeclareimage[height=8.5cm]{ccfadgroupclasses}{../img/ilustracoes/resIniciais/ccfadgroupclasses}
 \pgfdeclareimage[height=8.5cm]{tabela}{../img/ilustracoes/resIniciais/tabela}
+
+
+\pgfdeclareimage[height=5cm]{HRFCCOMFRV232014}{../img/ilustracoes/HRFCCOMFRV232014}
+
+\pgfdeclareimage[height=7cm]{sensorPackageTraduzido}{../img/TRMM/sensorPackageTraduzido}
+
+\pgfdeclareimage[height=7cm]{131220qlhi}{../img/ilustracoes/131220qlhi}
+
+\pgfdeclareimage[height=2.5cm]{time0_ptbr}{../img/TRMM/time0_ptbr}
+\pgfdeclareimage[height=2.5cm]{time100_ptbr}{../img/TRMM/time100_ptbr}
+\pgfdeclareimage[height=2.5cm]{time350_ptbr}{../img/TRMM/time350_ptbr}
 
 \tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=9em, text badly centered, node distance=2cm, inner sep=0pt]
 \tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=9em, text centered, rounded corners, minimum height=2em]
@@ -189,10 +200,19 @@
 \frametitle{Introduction}
 \begin{itemize}
 \item South America is one of the 3 lightning chimes
-\item Infrastructure  planning requires knowledge about thunderstorm position, frequency and lightning efficient production.
 \end{itemize}
+\centering{
+\pgfuseimage{HRFCCOMFRV232014}\\
+(http://thunder.msfc.nasa.gov/data/)
+}
 
+\end{frame}
 
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+\item Infrastructure  planning requires knowledge about thunderstorm position, frequency and lightning efficient production
+\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -215,8 +235,41 @@
 \item Goal: Estimate rainfall over the  tropics and subsequently latent heat flux\footnote{KUMMEROW, C.; BARNES, W.; KOZU, T.; SHIUE, J.; SIMPSON, J. The tropical
 rainfall measuring mission (TRMM) sensor package. J. Atmos. Oceanic Technol., v. 15, p. 809--817, 1998}
 \end{itemize}
-desenho esquemático do TRMM e das orbitas. Passagens ascendentes e descendentes.
 \end{frame} 
+
+\begin{frame}
+\frametitle{Tropical Rainfall Measuring Mission -- TRMM}
+\centering{
+\pgfuseimage{sensorPackageTraduzido}
+}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Tropical Rainfall Measuring Mission -- TRMM}
+\centering{
+TRMM overpasses\\
+\pgfuseimage{131220qlhi}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Tropical Rainfall Measuring Mission -- TRMM}
+\centering{
+LIS processing\\ 
+\pgfuseimage{time0_ptbr} ~~~\pgfuseimage{time100_ptbr}\\
+\pgfuseimage{time350_ptbr}
+
+}
+
+\end{frame}
+
+
+
+
+
 
 %Resultados iniciais 
 %\begin{frame}
@@ -239,13 +292,13 @@ desenho esquemático do TRMM e das orbitas. Passagens ascendentes e descendentes
 
 \textbf{TRMM:}
 \begin{itemize}
-\item TRMM orbital v7 files: LIS, VIRS (1B01), and PR (2A25), between 1998--2011 ($\simeq$30TB of data). (figura sensor package)
-\item During this period we had 79,932 TRMM orbits, but only 63,613 were over South America (SA) 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W. (mostrar mapa)
+\item TRMM orbital v7 files: LIS, VIRS (1B01), and PR (2A25), between 1998--2011 ($\simeq$30TB of data). 
+\item During this period we had 79,932 TRMM orbits, but only 63,613 were over South America (SA) 40$^{\circ}$S--10$^{\circ}$N and 90$^{\circ}$--30$^{\circ}$W. 
 \end{itemize}
 
 \textbf{NCEP RII:}
 \begin{itemize}
-\item NCEP RII reanalysis from 1998-2011: geopotential height and temperature at 17 pressure levels. This data is used to convert TRMM PR altitudes levels in temperature. (ilustrar a conversão ZxH para ZxT)  
+\item NCEP RII reanalysis from 1998-2011: geopotential height and temperature at 17 pressure levels. This data is used to convert TRMM PR altitudes levels in temperature. 
 \end{itemize}
 
 \textbf{Defining thunderstorms:}
@@ -297,6 +350,7 @@ desenho esquemático do TRMM e das orbitas. Passagens ascendentes e descendentes
 \frametitle{TRMM's thunderstorms}
 \item 157,592 thunderstorms were found!
 \item Only 94,733 had view time ($VT_m$) greater than 1 minute and with at least one PR pixel with valid rain. \\
+\bigskip
 \pgfuseimage{barradecor_virs}~~
 \pgfuseimage{barradecor_chuva}\\
 \pgfuseimage{004_topFT_03444_0001}
@@ -356,7 +410,7 @@ desenho esquemático do TRMM e das orbitas. Passagens ascendentes e descendentes
 
 \item lightning per thunderstorms [km$^{-2}$ year$^{-1}$]
 \begin{equation}
-\mathbf{DE}_{rt} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g\mathbf{P}_{te}} 31557600.  
+\mathbf{DE}_{rt} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g\mathbf{P}_{te}} 31557600 
 \label{dert}
 \end{equation}
 \end{itemize}
@@ -365,8 +419,11 @@ desenho esquemático do TRMM e das orbitas. Passagens ascendentes e descendentes
 
 
 \begin{frame}
+\centering{
 \Large
 Where the thunderstorms are more often in SA?
+} 
+
 \end{frame}
 
 \begin{frame}
@@ -431,8 +488,11 @@ Where are the places with high lightning densities that corresponds with the hig
 
 
 \begin{frame}
+\centering{
 \Large
 How long does the thunderstorm season last in SA?
+}
+
 \end{frame}
 
 \begin{frame}
@@ -463,25 +523,28 @@ Diurnal cycle\\
 
 \end{frame}
 
-
-
-
 \begin{frame}
+\centering{
 \Large Thunderstorms Severity
-\end{frame}
+} 
 
+\end{frame}
 
 \begin{frame}
 \frametitle{Thunderstorms Severity: Defining severity index}
 
--- Flash rate (FT) is defined as the ratio of number of lightning flashes ($N_{fl}$) by the mean view time ($VT_m$) in the thunderstorm area extracted.	
+\begin{itemize}
+\item Flash rate (FT) is defined as the ratio of number of lightning flashes ($N_{fl}$) by the mean view time ($VT_m$) in the thunderstorm area extracted.	
+\end{itemize}
 
 \begin{equation}
 FT = \frac{N_{fl} }{VT_m} 60 ~[\mathrm{min^{-1}}]  
 \label{eqFT}  
 \end{equation}
 
--- Flash rate (FTA) normalized by thunderstorm area is defined as the ratio of number of lightning flashes ($N_{fl}$) by the mean view time ($VT_m$) and thunderstorm area ($A_t$). 
+\begin{itemize}
+\item Flash rate  normalized by thunderstorm area (FTA) is defined as the ratio of number of lightning flashes ($N_{fl}$) by the mean view time ($VT_m$) and thunderstorm area ($A_t$). 
+\end{itemize}
 
 \begin{equation}
 FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
@@ -496,22 +559,23 @@ FTA = \frac{N_{fl}}{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
 \begin{frame}
 \frametitle{Thunderstorms Severity: FTA and FT pdf distribution}
 \centering{
-\pgfuseimage{pdf_FTA_FT}\\
-\pgfuseimage{cdf_FTA_FT}
+\pgfuseimage{pdf_FTA_FT}
 }
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Thunderstorms Severity: defining the extreme FTA and FT thunderstorms}
+\centering{
 \begin{itemize}
 \item Extreme: 90th percentile
 \end{itemize}
 \pgfuseimage{cdf_FTA_FT}
 \begin{itemize}
-\item FTA: 29.3 to 1,258.7 $\times$ 10$^{-4}$ fl min$^{1}$ km$^{-2}$
-\item  FT: 47.2 to 1,283.6 fl min$^{1}$
+\item \textbf{FTA: 29.3 to 1,258.7 $\times$ 10$^{-4}$ fl min$^{-1}$ km$^{-2}$}
+\item  \textbf{FT: 47.2 to 1,283.6 fl min$^{-1}$}
 \end{itemize}
+} 
 
 \end{frame}
 
@@ -539,25 +603,25 @@ Thunderstorms with extreme FT: rain areas \\
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Thunderstorms Severity: Top severe FTA index}
-\pgfuseimage{barradecor_virs}~~
-\pgfuseimage{barradecor_chuva}\\
-\pgfuseimage{005_topFTA_52880_0006}\\
-\pgfuseimage{004_topFTA_29770_0008}
+%\begin{frame}
+%\frametitle{Thunderstorms Severity: Top severe FTA index}
+%\pgfuseimage{barradecor_virs}~~
+%\pgfuseimage{barradecor_chuva}\\
+%\pgfuseimage{005_topFTA_52880_0006}\\
+%\pgfuseimage{004_topFTA_29770_0008}
+%
+%\end{frame}
 
-\end{frame}
 
+%\begin{frame}
+%\frametitle{Thunderstorms Severity: Top severe FT index}
 
-\begin{frame}
-\frametitle{Thunderstorms Severity: Top severe FT index}
+%\pgfuseimage{barradecor_virs}~~
+%\pgfuseimage{barradecor_chuva}\\
+%\pgfuseimage{001_topFT_02837_00010002}\\
+%\pgfuseimage{002_topFT_14893_00010002}
 
-\pgfuseimage{barradecor_virs}~~
-\pgfuseimage{barradecor_chuva}\\
-\pgfuseimage{001_topFT_02837_00010002}\\
-\pgfuseimage{002_topFT_14893_00010002}
-
-\end{frame}
+%\end{frame}
 
 \begin{frame}
 \frametitle{Thunderstorms Severity: Top severe FT index}
@@ -583,16 +647,6 @@ Thunderstorms with extreme FT: rain areas \\
 
 \end{frame}
 
-
-
-\begin{frame}
-\frametitle{Thunderstorms Severity: non-lightning pixels}
-\begin{itemize}
-\item FTA pixels are taller than FT.
-\item FTA pixels have higher Z$_c$ values than FT, especially above 5 km.
-\end{itemize}
-\end{frame}
-
 \begin{frame}
 \frametitle{Thunderstorms Severity: CFAD -- FTA (with lightning) }
 \centering{
@@ -608,12 +662,11 @@ Thunderstorms with extreme FT: rain areas \\
 \end{frame}
 
 
-
 \begin{frame}
-\frametitle{Thunderstorms Severity: lightning pixels}
+\frametitle{Thunderstorms Severity: CFADs}
 \begin{itemize}
-\item ops
-\item ops
+\item FTA pixels are taller than FT.
+\item FTA pixels have higher Z$_c$ values than FT, especially above 5 km.
 \end{itemize}
 \end{frame}
 
@@ -626,9 +679,19 @@ Thunderstorms with extreme FT: rain areas \\
 
 \begin{frame}
 \frametitle{Thunderstorms Severity: temperature dependency}
+
 \begin{itemize}
 \item It is know that the mixed phase region regulates the electrification charge process. 
-\pgfuseimage{takahashi}\\
+\end{itemize}
+\centering{
+\pgfuseimage{takahashi}
+} 
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Thunderstorms Severity: temperature dependency}
+\begin{itemize}
 \item As a consequence, we converted the PR altitude levels into temperature levels based on RII reanalysis.
 \item Now we created the Contoured Frequency by Temperature Diagram (CFTD) in addition to the cumulative CFTD (CCFTD).
 \end{itemize}
@@ -648,13 +711,13 @@ Thunderstorms with extreme FT: rain areas \\
 
 
 \begin{frame}
-\frametitle{Thunderstorms Severity: CFTD -- FTA (with lightning) }
+\frametitle{Thunderstorms Severity: CFTD - FTA (with lightning) }
 \centering{
 \pgfuseimage{cftd_10deg_comraio_topFTApercentil} }
 
 \end{frame}
 \begin{frame}
-\frametitle{Thunderstorms Severity: CFTD -- FT (with lightning)}
+\frametitle{Thunderstorms Severity: CFTD - FT (with lightning)}
 \centering{
 \pgfuseimage{cftd_10deg_comraio_topFTpercentil}}
 
@@ -662,13 +725,13 @@ Thunderstorms with extreme FT: rain areas \\
 
 
 \begin{frame}
-\frametitle{Thunderstorms Severity: CCFTD --  FTA (with lightning)}
+\frametitle{Thunderstorms Severity: CCFTD-FTA (with lightning)}
 \centering{
 \pgfuseimage{ccftd_10deg_comraio_topFTApercentil}}
 
 \end{frame}
 \begin{frame}
-\frametitle{Thunderstorms Severity: CCFTD -- FT (with lightning)}
+\frametitle{Thunderstorms Severity: CCFTD-FT (with lightning)}
 \centering{
 \pgfuseimage{ccftd_10deg_comraio_topFTpercentil}}
 
@@ -681,16 +744,12 @@ Thunderstorms with extreme FT: rain areas \\
 \begin{itemize}
 \item Above 0$^{\circ}$ C we might have ice and supercooled water droplets.
 \item The rate of change of Z$_c$ with temperature might give an idea about of extend of mixed phase layer.
-\item ops
 \item We computed this rate for 30\%, 50\%, 70\% and 95\%.
 \item We compare tropical versus sub-tropical regions (Amazon $\times$ La Plata basin)
 \end{itemize}
-
 }
 
 \end{frame}
-
-
 
 \begin{frame}
 \frametitle{Thunderstorms Severity: Z$_c$ change -- La Plata basin (30S-40S and 60W-70W)}
@@ -716,11 +775,11 @@ Thunderstorms with extreme FT: rain areas \\
 \item For each grid box, we extracted the 99th percentile value. 
 \item Based on 99th percentile FTA and FT values, we build a spatial distribution map that show where are the most efficient (FTA) and severe (FT).
 \end{itemize}
+
 \end{frame}
 
-
 \begin{frame}
-\frametitle{Thunderstorms Severity: the most efficient thunderstorms}
+\frametitle{Thunderstorms Severity: {\normalsize the most efficient thunderstorms}}
 \centering{
 \pgfuseimage{distEspacialValor099thFta} 
 }
@@ -771,7 +830,7 @@ Thunderstorms with extreme FT: rain areas \\
 
 
 \begin{frame}
-\frametitle{Thunderstorms onset in South America}
+\frametitle{The onset of the thunderstorms}
 \Large{Diurnal cycle:}
 \begin{itemize}
 \item 40\% of thunderstorm occurred between 13h--17h (LT)
@@ -785,7 +844,7 @@ Thunderstorms with extreme FT: rain areas \\
 
 
 \begin{frame}
-\frametitle{}
+\frametitle{Onset:}
 \Large{Annual cycle:}
 \begin{itemize}
 \item Thunderstorms season in South America was between October and March with two peaks: January and October.
@@ -797,7 +856,7 @@ Thunderstorms with extreme FT: rain areas \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Numbers of thunderstorm associate with seasonal geographical densities of lightning and thunderstorms}
+\frametitle{Onset: Numbers of thunderstorm associate with seasonal geographical densities of lightning and thunderstorms}
 \Large
 1$^{\circ}$ Spring = 57,861\\ 
 2$^{\circ}$ Summer = 46,077\\
@@ -807,7 +866,7 @@ Thunderstorms with extreme FT: rain areas \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Total geographical densities:}
+\frametitle{Onset: Total geographical densities}
 Thunderstorms:
 \begin{itemize}
 \item North and Northwest of South America (Colombia, Panama, Northwest of Amazon): 3.5--4.7 $\times$ 10$^{-4}$ km$^{-2}$
@@ -854,7 +913,7 @@ Lightning per thunderstorm:
 \end{frame}
 
 \begin{frame}
-\frametitle{Temperature dependence -- CFTD}
+\frametitle{Severity: Temperature dependence -- CFTD}
 \begin{itemize}
 \item \textbf{Z$_c$ distribution}: FTA thunderstorms show broader Z$_c$ distribution than FT systems for the same temperature level, specially above 0$^{\circ}$ C and they have 1--3 dBZ higher Z$_c$ values;
 \item \textbf{Latitudinal variation}: FT thunderstorm show an enhancement of the collision-coalescence process towards the sub-tropics.
