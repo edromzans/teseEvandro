@@ -73,12 +73,12 @@ Com base em estudos a respeito da severidade dos sistemas como em \citeonline{do
 \section{INTENSIDADE CONVECTIVA E A PRECIPITAÇÃO OBSERVADA POR RADAR}
 \label{introRadar}
 
-A Refletividade do Radar ($\eta$) 
+A Refletividade do Radar ($\eta$)
 \begin{equation}
 \eta = \sum_{i=1, 2, 3 ... }^{\Delta V} \sigma_i,
 \label{refletividade}
 \end{equation}
-é a somatória da seção de retroespalhamento ($\sigma$) dos hidrometeoros contidos em um elemento de volume ($\Delta V$) iluminado -- \textit{gate} -- do feixe do radar \cite{battan1973}.
+é o somatório da seção de retroespalhamento ($\sigma$) dos hidrometeoros ($i$) contidos em um elemento de volume ($\Delta V$) iluminado -- \textit{gate} -- do feixe do radar \cite{battan1973}.
 
 \simbolo{name={$\eta$},description={Refletividade do Radar}}
 \simbolo{name={$\Delta V$},description={Elemento de volume ($\Delta V$) iluminado pelo radar}}
@@ -89,12 +89,12 @@ Considerando que o parâmetro de tamanho ($\alpha$), dado pela relação
 \alpha = \dfrac{2\pi R_{h} }{\lambda},
 \label{parametroTam} 
 \end{equation}
-em que $R_{h}$ é o raio do hidrometeoro e portanto, $2\pi R_{h}$ a área da seção transversal do hidrometeoro precipitável na atmosfera e ($\lambda$) o comprimento de onda emitido pelo radar, quando $\alpha$ $<<$ 1, o espalhamento da radiação eletromagnética pelas partículas será do tipo Rayleigh. Neste caso, a seção transversal de retroespalhamento $\sigma$ pode ser escrita como 
+em que $R_{h}$ é o raio do hidrometeoro e portanto, $2\pi R_{h}$ representa a área da seção transversal do hidrometeoro precipitável na atmosfera e $\lambda$ o comprimento de onda emitido pelo radar.  Quando $\alpha$ $<<$ 1, o espalhamento da radiação eletromagnética pelas partículas será do tipo Rayleigh. Neste caso, a seção transversal de retroespalhamento $\sigma$ pode ser escrita como 
 \begin{equation}
 \sigma = \dfrac{\lambda^2 \alpha^6}{\pi} |K|^2,
 \label{sigma}
 \end{equation}
-em que $|K|^2$ corresponde ao índice de refração dos hidrometeoros. Como a equação \ref{parametroTam} depende do raio $R_h$, podemos reescrever a equação \ref{sigma} considerando o diâmetro 
+em que $|K|^2$ corresponde ao índice de refração dos hidrometeoros. Como a equação \ref{parametroTam} depende do raio do hidrometeoros $R_h$, podemos reescrever a equação \ref{sigma} considerando o diâmetro 
 \begin{equation}
 D_h = 2 R_h.
 \label{diametro}
@@ -134,7 +134,7 @@ Portanto, observe que a Refletividade do Radar $\eta$ (equação  \ref{refletivi
 
 O que se faz para estimar a chuva é considerar que todos os alvos associados ao espalhamento do feixe do radar são gotas de água líquida esféricas. 
 
-Neste caso, podemos combinar as equações \ref{refletividade} e \ref{sigma2}, obtendo $\eta$ em função do Fator de Refletividade  do radar (Z), em que 
+Neste caso, podemos combinar as equações \ref{refletividade} e \ref{sigma2}, obtendo $\eta$ em função do Fator de Refletividade  do radar ($Z$), em que 
 %\begin{equation}
 %P_r = V_{m} \dfrac{P_t G^2 \lambda^2}{2\ln2(4\pi)^3 r^4}   \dfrac{\pi^5 |K|^2  }{ \lambda^4 } \sum_{i=1, 2, 3 ... }^{V_{m}}  D_{h_i}^6.      
 %\end{equation} 
@@ -159,7 +159,7 @@ Conforme a equação do radar descrita em \citeonline{battan1973}, cada medida d
 P_r = C \dfrac{|K|^2}{r^2}  Z .
 \end{equation}
 
-Desta maneira, a partir da $P_r$ medida pelo radar, sabendo a distância $r$ do alvo e considerando que a chuva é composta de esferas de água líquida ($\vert K_{\mathrm{agua}}\vert^2=0,931$), então podemos determinar 
+Desta maneira, a partir da $P_r$ medida pelo radar, sabendo a distância $r$ do alvo e considerando que a chuva é composta de esferas de água líquida ($\vert K_{\mathrm{agua}}\vert^2=0,931$), podemos determinar $Z$, pois  
 \begin{equation}
 Z = \dfrac{P_r r^2}{C |K|^2}.
 \label{zsimples}
@@ -170,7 +170,7 @@ Conforme mostra a equação \ref{fz}, $Z$ depende de $D_h$ que está associado c
 
 \simbolo{name={$Z$},description={Fator de refletividade do radar}}
 
-No entanto, ao observar o perfil vertical do Fator de Refletividade do Radar $Z$, verifica-se que o feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará associada ao espalhamento em gelo de nuvem em vez da água líquida. Mesmo conhecendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, bem como se haverá água super-resfriada acima de 0 $^{\circ}$C ou gelo sólido caindo na superfície. Então, os dados brutos das observações de radar consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0,931$. 
+No entanto, ao observar o perfil vertical do Fator de Refletividade do Radar $Z$, verifica-se que o feixe atinge regiões na atmosfera com temperaturas abaixo de 0 $^{\circ}$C. Nestes casos, a potência $P_r$ estará também associada ao espalhamento em gelo de nuvem ao invés de apenas água líquida. Também, mesmo sabendo as distâncias $r$ dos alvos espalhadores, não podemos afirmar sobre a temperatura da atmosfera para cada distância $r$ do radar, se haverá água super-resfriada acima de 0 $^{\circ}$C e granizo caindo até a superfície. Então, os dados brutos das observações de radar consideram $|K|^2$ como constante, geralmente $\vert K_{\mathrm{agua}}\vert^2 = 0,931$.
 
 %Portanto, acima da da isoterma de 0 $^{\circ}$C, espera-se uma diminuição abrupta de $Z$ devido a mudança da constante dielétrica da água associada ao seu congelamento, sendo que a equação do radar mantem $|K|_{\mathrm{agua}}^2$ fixo para as medidas acima da isoterma de 0 $^{\circ}$C.
 
@@ -183,7 +183,7 @@ dBZ_{\mathrm{agua}}- dBZ_{\mathrm{gelo}} &= -6,7 dBZ,
 \end{align}
 mostrando que devido ao índice de refração do gelo ser menor do que o índice de refração da água ($\vert K_{\mathrm{agua}}\vert^2 > \vert K_{\mathrm{gelo}}\vert^2$), ao considerar $\vert K_{\mathrm{agua}}\vert^2$ em regiões que os hidrometeoros estão congelados, haverá uma redução de 6,7 dBZ em relação à considerar $\vert K_{\mathrm{gelo}}\vert^2$.  
 
-Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento do gelo é bastante marcada, pois haverá uma redução de $\simeq$7 dBZ em regiões acima da isoterma de 0 $^{\circ}$C devido ao congelamento dos hidrometeoros, enquanto que logo abaixo da isoterma de 0 $^{\circ}$C, haverá um aumento de $Z$ devido ao derretimento dos hidrometeoros. Conforme descreve \citeonline{austin1950}, quando há derretimento de flocos de neve no perfil atmosférico, observa-se um aumento da Refletividade -- $\eta$ -- logo abaixo da isoterma 0 $^{\circ}$C denominado como banda brilhante, e que este aumento de $\eta$ pode não estar associado apenas com a mudança da constante dielétrica do gelo para água líquida, mas conforme ilustra a figura \ref{Austin},  processos de colisão-coalescência causam um efeito de aumento contínuo da refletividade abaixo do nível de congelamento e o aumento da velocidade terminal das gotas favorece a sua ruptura e evaporação, reduzindo o diâmetros das gotas, causando diminuição de $\eta$ e esses fatores irão influenciar sobre a banda brilhante observada por radar.
+Nas observações de $Z$ no perfil vertical, a região ou camada de derretimento do gelo é bastante marcada, pois haverá uma redução de $\simeq$7 dBZ em regiões acima da isoterma de {0~$^{\circ}$C} devido ao congelamento dos hidrometeoros, enquanto que logo abaixo da isoterma de 0~$^{\circ}$C, haverá um aumento de $Z$ devido ao derretimento dos hidrometeoros. Conforme descrevem \citeonline{austin1950}, quando há derretimento de flocos de neve no perfil atmosférico, observa-se um aumento da Refletividade -- $\eta$ -- logo abaixo da isoterma de {0~$^{\circ}$C} denominado como banda brilhante e que este aumento de $\eta$ pode não estar associado apenas com a mudança da constante dielétrica do gelo para água líquida, mas conforme ilustra a figura \ref{Austin},  processos de colisão-coalescência causam um efeito de aumento contínuo da refletividade abaixo do nível de congelamento e o aumento da velocidade terminal das gotas favorece as rupturas e a evaporação, causando redução dos diâmetros das gotas e consequentemente diminuindo $\eta$,  fatores estes que irão influenciar sobre a banda brilhante observada por radar.
 
 \begin{figure}[ht]
 \centering
