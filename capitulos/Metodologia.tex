@@ -66,7 +66,7 @@ Sensibilidade & $\leq$0,7 mm h$^{-1}$ (Sinal/Ruído por pulso $\simeq$ 0 dB)\\[1
 \end{table}
 
 
-Os principais parâmetros relacionados ao feixe eletromagnético do PR são listados na tabela \ref{PRparametros}. Em relação à antena do PR, possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após/antes a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247/215 km e resolução horizontal no nadir de 5,0/4,3 km. Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $\simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e $\simeq$9150 varreduras horizontais.
+Os principais parâmetros relacionados ao feixe eletromagnético do PR são listados na tabela \ref{PRparametros}. Em relação à antena do PR, possui uma largura de feixe de 0,71$^{\circ}$ $\times$ 0,71$^{\circ}$ disposta em um painel com abertura de 2,0 m $\times$ 2,0 m. Sua varredura transversal (\textit{cross-track}) de $\pm$17$^{\circ}$ é composta por 49 feixes. Após (antes) a elevação do satélite TRMM, o PR observa uma faixa na superfície de 247 km (215~km) e resolução horizontal no nadir de 5,0 km (4,3~km). Verticalmente o PR registra 80 medidas ao longo de uma faixa de 20 km a partir da superfície, com resolução de 250 m. O PR realiza $\simeq$9150 varreduras por órbita, o que corresponde a uma matriz tridimensional de 49 $\times$ 80 $\times$ 9150   \textit{gates}: 49 feixes na varredura horizontal, com 80 níveis verticais e $\simeq$9150 varreduras horizontais.
 
 As medidas de potência recebida ($P_r$), associadas com a secção transversal de retro-espalhamento sem correção de atenuação e  \textit{ground clutter}, são armazenadas no produto 1B21. A equação do radar conforme as especificações do PR é aplicada nos dados de $P_r$ e são convertidos para o fator de refletividade ($Z_m$) em dBZ, definindo então o produto 1C21.
 
@@ -90,7 +90,7 @@ No produto 2A25 calcula-se a taxa de precipitação (R). É quando faz-se necess
 
 O imageador de raios (LIS) é um sensor óptico capaz de detectar e localizar raios individualmente, a partir da emissão óptica resultante da dissociação, excitação e recombinação dos constituintes atmosféricos durante uma descarga atmosférica. 
 
-O sistema de imageamento do LIS é constituído por um telescópio com razão focal de $f/1,6$ expandindo o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777,4 nm e com largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{O CCD (\textit{charge-coupled device}) é um dispositivo eletrônico que mede corrente elétrica gerada por efeito fotoelétrico amplamente utilizado para obter imagens digitalmente.}. Acoplada a matriz de CCDs, uma lente angular proporciona um campo de visão panorâmico de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área de 600 km $\times$ 600 km na superfície terrestre. Um pixel do campo de visão do LIS possui resolução entre 5 km no nadir e até 10 km nas regiões mais externas da sua varredura. Para identificar os raios o LIS utiliza um sistema de amostragem que captura 500 imagens por segundo \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
+O sistema de imageamento do LIS é constituído por um telescópio com razão focal de $f/1,6$ expandindo o feixe luminoso observado, que passa por um filtro de interferência no comprimento de onda de 777,4 nm e com largura de banda de 1 nm e atinge uma matriz de 128 $\times$ 128 CCDs\footnote{O CCD (\textit{charge-coupled device}) é um dispositivo eletrônico que mede corrente elétrica gerada por efeito fotoelétrico amplamente utilizado para obter imagens digitalmente.}. Acoplada a matriz de CCDs, uma lente angular proporciona um campo de visão panorâmico de 80$^{\circ}$ $\times$ 80$^{\circ}$, que corresponde a uma área na superfície terrestre de 668~km~$\times$~668~km depois da elevação, ou 580~km~$\times$~580~km antes da elevação. Um pixel do campo de visão do LIS no nadir possui resolução de 4,3~km depois da elevação e  3,7~km antes da elevação, sendo que, nas regiões mais externas da sua varredura a resolução depois (antes) da elevação atinge 12 km (10,4~km). Para identificar os raios o LIS utiliza um sistema de amostragem que captura 500 imagens por segundo \cite{christian2000LISalgorithm,boccippio1996science,trmmhandbook}. 
 
 %\begin{figure}[!hb]
 %  \centering
@@ -99,12 +99,12 @@ O sistema de imageamento do LIS é constituído por um telescópio com razão fo
 %\label{Lispic}
 %\end{figure} 
 
-Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes, o algoritmo de processamento de imagens do LIS identifica  eventos, grupos e os raios. Os eventos são as posições das CCDs que ``brilham", os grupos são os agrupamentos de eventos que podem ser associados com as descargas de retorno -- \textit{strokes} -- dos raios. O raio -- \textit{flash} -- é o agrupamento espaço-temporal de grupos de eventos. Os raios do LIS correspondem aos raios totais observados na atmosfera, intranuvens e nuvem-solo.
+Conforme descrito em \citeonline{christian2000LISalgorithm}, a identificação dos raios depende do brilho difuso e transiente observado no topo das tempestades elétricas. Dependendo das posições das CCDs que são sensibilizadas e do intervalo de tempo entre os brilhos subsequentes nas nuvens, o algoritmo de processamento de imagens do LIS identifica eventos, grupos e os raios. Os eventos, correspondem as posições das CCDs em que a irradiação detectada excede a irradiação do plano de fundo que é determinada a cada medida do LIS, os grupos são os agrupamentos de eventos que podem ser interpretados como descargas de retorno -- \textit{strokes} -- e os raios -- \textit{flashes} -- são  agrupamentos espaço-temporal de grupos de eventos. Os raios do LIS correspondem aos raios totais observados na atmosfera, i.e., intranuvens e nuvem-solo.
 
 A figura \ref{LisImagemProcessa} ilustra como é feita a identificação dos  eventos, grupos até a caracterização de um raio. Observe na figura \ref{evgrfla} que em $t=0$ ms, as CCDs, 1, 2 e 3  foram sensibilizadas e o algoritmo definiu o grupo de evento $a$ candidato a ser um raio $A$.  Quando $t=100$ ms, as CCDs, 4, 5 e 6, são sensibilizadas e temos 2 grupos de eventos, $a$ e $b$, espacialmente e temporalmente ($<$330 ms) próximos, portanto, os grupos $a$ e $b$ integram o mesmo raio $A$, como ilustra a figura \ref{evgrflb}. Quando $t = 350$ ms, as CCDs 9 e 10 são sensibilizadas como mostra a figura \ref{evgrflc}. As CCDs 9 e 10 não estão próximas dos grupos $a$ e $b$ que compõe o raio $A$, portanto, o algoritmo define o grupo $d$ e um novo candidato a raio $B$. Na figura \ref{evgrfld} o raio $B$ possui mais dois grupos, $e$ e $f$. Na figura \ref{evgrfle}, note que a CCD 13 coincide com a posição 2, inicialmente em \ref{evgrfla}, mas como o intervalo de tempo entre as figuras \ref{evgrfla} e \ref{evgrfle} é superior a 330 ms, o grupo $g$ também definiu o novo raio $C$ \cite{christian2000LISalgorithm}.  
 
      
-O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno. Conforme \citeonline{boccippio1996science} a eficiência de detecção de raios do LIS é maior no período noturno, com 93$\pm$4\%, enquanto que no período diurno é de 73$\pm$11\%.  Com a velocidade orbital de 11 km s$^{-1}$, o sensor LIS possui um campo de visão que permite a observação de um ponto na Terra por até $\simeq$100 segundos no nadir, tempo suficiente para a estimativa da taxa de raios de uma tempestade \cite{christianTM,trmmhandbook}.
+O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tanto no período diurno quanto noturno. Conforme \citeonline{boccippio2002} a eficiência de detecção de raios do LIS é maior no período noturno, com 93$\pm$4\%, enquanto que no período diurno é de 73$\pm$11\%.  Com a velocidade orbital de 11 km s$^{-1}$, o sensor LIS possui um campo de visão que permite a observação de um ponto (\textit{view time}) na Terra por até $\simeq$100 segundos no nadir, tempo suficiente para a estimativa da taxa de raios de uma tempestade \cite{christianTM,trmmhandbook}.
 
 \sigla{name={LIS},description={Sensor imageador de raios, do inglês \textit{Lightning Imaging Sensor}.}}
 
@@ -125,11 +125,11 @@ O LIS possui a capacidade de identificar descargas nuvem-solo e intranuvens, tan
 
 \subsection{Radiômetro no visível e infravermelho}
 
-O Radiômetro no visível e infravermelho (VIRS) é um radiômetro de varredura transversal de $\pm$45$^{\circ}$, fazendo que seja observada uma faixa de 720 km  na superfície terrestre com uma resolução de 2,11 km no nadir. Após a elevação do satélite, o VIRS passou a observar uma faixa de 833 km com 2,4 km de resolução no nadir. O VIRS mede a radiância em 5 bandas espectrais entre 0,63--12,03 $\mu$m, conforme mostra a tabela \ref{canaisVirs} \cite{kummerok1998}.
+O Radiômetro no visível e infravermelho (VIRS) é um radiômetro de varredura transversal de $\pm$45$^{\circ}$, observando uma faixa de 720~km  na superfície terrestre com uma resolução de 2,11~km no nadir. Após a elevação do satélite, o VIRS passou a observar uma faixa de 833 km com 2,4~km de resolução no nadir. O VIRS mede a radiância em 5 bandas espectrais entre 0,63--12,03~$\mu$m, conforme mostra a tabela \ref{canaisVirs} \cite{kummerok1998}.
 %: com comprimentos de onda de 0.63 $\mu$m e  1.61 $\mu$m, faixa do visível; 3.75 $\mu$m, infravermelho próximo; 10.8 $\mu$m e 12 $\mu$m, infravermelho. 
 
 \begin{table}[!ht]
-\caption{Canais do VIRS e objetivos das medidas de radiância espectral conforme cada comprimento de onda ($\lambda$) (adaptada de\citeonline{kummerok1998,trmmhandbook}).}
+\caption{Canais do VIRS e objetivos das medidas de radiância espectral conforme cada comprimento de onda ($\lambda$) (adaptada de \citeonline{kummerok1998,trmmhandbook}).}
 \label{canaisVirs}
 \centering
 \small
@@ -189,11 +189,11 @@ Foram utilizados os dados de temperatura e altura geopotencial em 17 níveis de 
 %sobre a AS, subset = 63613(VIRS) 61229(PR)           
 
 
-Os dados do LIS refentes ao tempo de visada (\textit{view time}), eventos, grupos e raios foram concedidos pela pesquisadora \citeonline{rachel}, que processou estes dados na NASA anteriormente a esta pesquisa. 
+Os dados do LIS refentes ao tempo de visada (\textit{view time}), eventos, grupos e raios foram concedidos pela pesquisadora \citeonline{rachel}, quem processou estes dados na NASA, projetando os dados do tempo de visada do LIS para uma grade regular com resolução espacial de 0,25$^{\circ}$, próxima à resolução da varredura do PR. Originalmente os dados do tempo de visada do LIS são fornecidos na base de dados do LIS com resolução de 0,5$^{\circ}$. 
 
-No total, os dados brutos desta pesquisa representaram um volume de  aproximadamente 30 terabytes. 
+%No total, os dados brutos desta pesquisa representaram um volume de  aproximadamente 30 terabytes. 
 
-Para este trabalho de pesquisa os dados do TRMM e da R2 foram amostrados sobre a região limitada entre 10N-40S e 91W-30W, que abrange toda a extensão da América do Sul. 
+Para este trabalho de pesquisa os dados do TRMM e da R2 foram amostrados sobre a região limitada entre 10$^{\circ}$~ Norte--40$^{\circ}$~Sul e 90$^{\circ}$--30$^{\circ}$~Oeste, que abrange toda a extensão da América do Sul e oceanos adjacentes. 
 %Portanto foi feito um recorte nos dados orbitais apenas para esta região que cobre toda a América do Sul, o que reduziu bastante o volume de dados a serem utilizados e tornou o processamento possível perante a infraestrutura computacional do IAG-USP.
 
 Na tabela \ref{varsTRMM} são apresentadas as medidas extraídas de cada sensor do TRMM e respectiva fonte.
@@ -241,7 +241,7 @@ Dessa maneira, para criar o banco de dados de nuvens de tempestades elétricas d
 
 % Após, o algoritmo verifica se houve raios detectados pelo LIS na mesma área da nuvem. Havendo pelo menos um raio, o sistema era classificado como uma tempestade elétrica. 
 
-A partir do agrupamento dos sistemas, \textit{clusters} com $T_b \leq 258$ K, o algorítimo extrai as variáveis listadas na tabela \ref{varsTRMM} refentes as observações do PR e LIS para a mesma região em que o \textit{cluster} de tempestade elétrica foi observado.
+A partir do agrupamento dos sistemas, \textit{clusters} com $T_b \leq 258$ K, foram extraídas as variáveis listadas na tabela \ref{varsTRMM} refentes as observações do PR e LIS para a mesma região em que o \textit{cluster} de tempestade elétrica foi observado.
 
 Como os sensores do TRMM possuem diferentes resoluções espaciais, técnicas numéricas de mudança de base foram utilizadas para projetar as observações orbitais do VIRS, PR e LIS em uma grade regular com 0,05$^{\circ}$ $\times$ 0,05$^{\circ}$ de resolução, de maneira a verificar as medidas do PR, LIS e VIRS para uma mesma tempestade elétrica. 
 
