@@ -236,34 +236,37 @@ Tempo de visada 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ & LIS &  \cite{rachel} \\
 
 As tempestades elétricas, como já definido anteriormente, são nuvens que durante o seu ciclo de vida apresentaram ao menos um raio.
 
-Dessa maneira, para criar o banco de dados de nuvens de tempestades elétricas deste trabalho de pesquisa, a equação de Planck foi aplicada nos dados de radiância espectral do produto 1B01, canal 4 do VIRS (10,8 $\mu$m) e as regiões com temperatura de brilho ($T_b$) inferiores à 258 K e com pelo menos um raio do LIS observado definiram as tempestades elétricas \cite{morales2003}.
+Dessa maneira, para criar o banco de dados de nuvens de tempestades elétricas deste trabalho de pesquisa, a equação de Planck foi aplicada nos dados de radiância espectral do produto 1B01, canal 4 do VIRS (10,8 $\mu$m) e as regiões com temperatura de brilho ($T_b$) inferiores à 258 K e com pelo menos um raio do LIS observado definiram as áreas das tempestades elétricas ($A_t$) \cite{morales2003}.
 
+\simbolo{name={$A_t$},description={Área da tempestade elétrica}}
 
 % Após, o algoritmo verifica se houve raios detectados pelo LIS na mesma área da nuvem. Havendo pelo menos um raio, o sistema era classificado como uma tempestade elétrica. 
 
 A partir do agrupamento dos sistemas, \textit{clusters} com $T_b \leq 258$ K, foram extraídas as variáveis listadas na tabela \ref{varsTRMM} refentes as observações do PR e LIS para a mesma região em que o \textit{cluster} de tempestade elétrica foi observado.
 
-Como os sensores do TRMM possuem diferentes resoluções espaciais, técnicas numéricas de mudança de base foram utilizadas para projetar as observações orbitais do VIRS, PR e LIS em uma grade regular com 0,05$^{\circ}$ $\times$ 0,05$^{\circ}$ de resolução, de maneira a verificar as medidas do PR, LIS e VIRS para uma mesma tempestade elétrica. 
+%técnicas numéricas de mudança de base foram utilizadas para projetar 
+Como os sensores do TRMM possuem diferentes resoluções espaciais, as observações orbitais do VIRS, PR e LIS, foram todas projetadas em uma grade regular com 0,05$^{\circ}$ $\times$ 0,05$^{\circ}$ de resolução, de maneira a verificar as medidas do PR, LIS e VIRS para uma mesma tempestade elétrica.
 
 Cada tempestade elétrica identificada foi armazenada na forma de um arquivo HDF contendo medidas coincidentes do VIRS, LIS e PR. 
 
-Inicialmente foram identificadas {154 189} tempestades elétricas. Entretanto, 331 tempestades elétricas não corresponderam a um único sistema convectivo ou multicelular, pois esses núcleo convectivos com raios estavam embebidos em grandes sistemas como Frentes e a ZCAS. 
+Inicialmente foram identificadas 154~189 tempestades elétricas. Entretanto, 331 tempestades elétricas não corresponderam a um único sistema convectivo ou multicelular, pois esses núcleos convectivos com raios estavam embebidos em grandes sistemas como Frentes e a ZCAS. 
 
-Portanto, foi feita uma redefinição nos 331 sistemas enormes considerando a temperatura de brilho limiar para definição dos \textit{clusters} de nuvens de 221 K. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}. 
+Ao ajustar a área das tempestades elétricas a área de uma elipse, os 331 sistemas considerados ``enormes" ~possuíram distância focal (2c) maior do que 2500 km. Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como ``enorme". 
 
+Nestes 331 sistemas, foi feita uma redefinição do limiar de $T_b$ que define $A_t$, em que $A_t$ passou a ser definida como regiões com $T_b$ $\leq$ 221 K e com pelo menos um raio observado pelo LIS. Regiões com temperatura de brilho em infravermelho inferiores a 221 K são consideradas como a parte mais ativa dos sistemas convectivos de meso-escala identificados em \citeonline{Maddox1980}.  
 
-Na figura \ref{nuvem221}, temos a representação de um dos sistemas considerados como enorme. Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semieixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada às dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho do topo da tempestade elétrica. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
+%Note que, na parte superior e inferior da figura \ref{nuvem221}, há informações referentes a data e hora em que o sistema foi observado, número de raios/eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semieixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada às dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho do topo da tempestade elétrica. Os valores de FTA e FT na parte superior da figura \ref{nuvem221} serão definidos em \ref{metodoFtaFt}, próxima seção.
 % Este sistema foi dividido em 12 sistemas menores, com limiar de temperatura de brilho de 221 K e ocorrência de raio. 
 
 \begin{figure}[hb]
 \centering
 \includegraphics[height=1.0cm]{img/grids/nucleosRaios/colorbar_virs}\\
 \includegraphics[height=11.cm,trim=0 47cm 0 0,clip]{img/topSevero/EnormesInvalidas/018_Enormes_40791_0001}
-\caption{Nuvem de tempestade elétrica considerada enorme.}  
+\caption{Nuvem de tempestade elétrica considerada ``enorme". Na parte superior e inferior da figura, há informações referentes a data e hora em que o sistema foi observado, número de raios e eventos (FL/EV), fração do sistema observado pelo PR, área do sistema (A), semieixo maior (a), menor (b), distância focal (2c) e excentricidade (e) de uma elipse ajustada às dimensões do sistema, a qual está plotada sobre a região geográfica. A barra de cores corresponde as temperaturas de brilho em infravermelho (VIRS 10,8~$\mu$m) do topo da tempestade elétrica.}  
 \label{nuvem221}
 \end{figure}
 
-Com a recategorização destes sistemas enormes, o número total de tempestades elétricas que passaram a integrar esta pesquisa é de {157 592}.
+Com a recategorização dos sistemas ``enormes", o número total de tempestades elétricas que passaram a integrar esta pesquisa é de 157~592.
 
 \simbolo{name={A},description={Nas figuras que ilustram as tempestades elétricas, refere-se à área total ($A_t$) da tempestade elétrica.}}
 \simbolo{name={a},description={Semieixo maior}}
@@ -272,16 +275,15 @@ Com a recategorização destes sistemas enormes, o número total de tempestades 
 \simbolo{name={e},description={Excentricidade}}
 
 
-
 \section{SEVERIDADE: TAXA DE RAIOS}
 \label{metodoFtaFt}
 \index{FTA}
 \index{FT}
 
-Condições de tempo severo, como frentes de rajadas, queda de granizo e tornados estão associados com um aumento abrupto na taxa de raios total das tempestades elétricas, principalmente governado por raios intra-nuvens \cite{macgorman1989,carey1998,williams1999}.   
+Condições de tempo severo, como frentes de rajadas, queda de granizo e tornados estão associados com um aumento abrupto na taxa de raios total das tempestades elétricas, principalmente governado por raios intra-nuvens \cite{macgorman1989, carey1998, williams1999, gatlin2010, schultz2011}.   
 
-Portanto, a taxa de raios ([min$^{-1}$]) do LIS observada sobre a área que define uma tempestade elétrica pode indicar condições de tempo severo. Os sistemas precipitantes, (\textit{precipitation features} -- PFs) com as maiores 
-taxas de raios por minuto em \citeonline{cecil2005,zipser2006}, corresponderam aos sistemas com os maiores volumes de chuvas, mínimas temperaturas de brilho em mico-ondas, máximos valores de refletividade do PR, e de acordo com estes autores pode ser indicativo da presença de fortes correntes ascendentes. 
+Portanto, a taxa de raios ([min$^{-1}$]) do LIS observada sobre a área que define uma tempestade elétrica pode indicar condições de tempo severo. Os sistemas precipitantes, (\textit{precipitation features} -- PFs) definidos em \citeonline{Nesbitt2000}, com as maiores 
+taxas de raios por minuto, conforme mostram  \citeonline{cecil2005, zipser2006}, corresponderam aos sistemas com os maiores volumes de chuvas, mínimas temperaturas de brilho em mico-ondas, máximos valores de refletividade do PR, e de acordo com estes autores pode ser indicativo da presença de fortes correntes ascendentes. 
 
 Neste trabalho de pesquisa a taxa de raios das tempestades elétricas será avaliada a partir de dois índices:
 
@@ -296,7 +298,7 @@ FT = \frac{N_{fl} }{VT_m} 60 ~[\mathrm{min^{-1}}]
 %31557600 ano
 
 \begin{itemize}
-\item FTA -- A taxa de raios por tempo normalizada pela área da tempestade elétrica, sendo a razão entre o número de raios ($N_{fl}$), o tempo médio ($VT_m$) observação do LIS e a extensão em área ($A_t$) da tempestade elétrica observada, conforme descreve a equação \ref{eqFTA}.
+\item FTA -- A taxa de raios por tempo normalizada pela área da tempestade elétrica, sendo a razão entre o número de raios ($N_{fl}$), o tempo médio ($VT_m$) observação do LIS e a extensão em área $A_t$ da tempestade elétrica observada, conforme descreve a equação \ref{eqFTA}.
 \end{itemize}
 
 \begin{equation}
@@ -306,7 +308,7 @@ FTA = \frac{N_{fl} }{VT_m A_t } 60 ~[\mathrm{min^{-1}~km^{-2}}]
 
 \simbolo{name={$N_{fl}$},description={Número de flashes }}
 \simbolo{name={$VT_m$},description={Tempo médio de visada do LIS}}
-\simbolo{name={$A_t$},description={Área da tempestade elétrica}}
+
 
 Note que o fator 60 que multiplica tanto a equação \ref{eqFT} quanto a \ref{eqFTA} é aplicado para converter o tempo de visada do LIS de segundos ($VT_m$) para minutos de observações, pois, em geral a severidade é quantificada em raios por minuto.
 
@@ -318,9 +320,7 @@ Note que o fator 60 que multiplica tanto a equação \ref{eqFT} quanto a \ref{eq
 \section{DISTRIBUIÇÃO GEOGRÁFICA DE DENSIDADE DE RAIOS E TEMPESTADES ELÉTRICAS}
 \label{metodoPass}
 
-
-
-A distribuição geográfica da densidade de tempestades elétricas e também de raios sobre a AS busca mostrar as regiões de maior/menor ocorrência de raios e de tempestades elétricas e também identificar os locais e períodos do ano em que as tempestades elétricas apresentam processos de eletrificação mais eficazes.  
+A distribuição geográfica da densidade de tempestades elétricas e também de raios sobre a AS busca mostrar as regiões de maior e menor ocorrência de raios e de tempestades elétricas e também identificar os locais e períodos do ano em que as tempestades elétricas produzem mais raios por número de tempestades, i.e., apresentam processos de eletrificação mais eficazes. 
 
 O que se torna fundamental na construção destes mapas de densidade de ocorrência sobre a superfície terrestre é considerar quantas vezes ou qual o tempo em que o satélite ficou observando cada parte da região de estudo, pois uma determinada região pode ter muito mais amostragens do que outras, por causa das características orbitais do TRMM. Portanto, qualquer análise de distribuição geográfica relacionadas às observações do TRMM que não considere o número de passagens ou tempo em que o sensor observou a região projetada na superfície será tendenciosa. 
 
