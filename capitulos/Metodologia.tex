@@ -329,24 +329,24 @@ Mesmo que o satélite TRMM visite o mesmo lugar do globo duas vezes por dia em f
 \begin{figure}[!hb]
   \centering
   {{\includegraphics[height=13.5cm]{img/grids/passagens_virs_1998-2011}}}
-\caption{Número de observações do VIRS em cada região de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude.}
+\caption{Número de sobrevoos do VIRS em cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude entre 1998--2011, ilustrando a matriz $\mathbf{VT}_{virs}$.}
 \label{VirsVT}
 \end{figure} 
 
 %\label{gridAmostragem} 
 
-Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}), figura \ref{lisVT}, o número de dias de amostragem em cada ponto da grade regular (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$) projetada sobre AS revela que durante os 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ Sul do que em 0$^{\circ}$. Logo, se estas regiões com maior tempo de amostragem forem eletricamente ativas, é de se esperar um alto número raios observados se comparadas com 0$^{\circ}$ de latitude.
+Agora levando em consideração o tempo de amostragem do LIS (\textit{view time}), figura \ref{lisVT}, o número de dias de amostragem em cada ponto da grade regular (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$) projetada sobre AS revela que durante os 14 anos o LIS observou 10 dias a mais na latitude 34$^{\circ}$ Sul do que em 0$^{\circ}$. Logo, se estas regiões com maior tempo de amostragem forem eletricamente ativas, é de se esperar um alto número de raios observados se comparadas com 0$^{\circ}$ de latitude.
 
 \begin{figure}[!ht]
   \centering
   {{\includegraphics[height=13.5cm]{img/grids/vt_trmm}} }
-  \caption{Tempo de amostragem (\textit{View time}) do LIS ente 1998-2011 (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude).}
+  \caption{Tempo de amostragem (\textit{view time}) do LIS ente 1998--2011, para cada ponto da grade de  0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude, ilustrando a matriz $\mathbf{VT}_{lis}$. }
 \label{lisVT}
 \end{figure} 
 
 %Portanto, as figuras \ref{lisVT} e \ref{VirsVT} representam duas matrizes que correspondem aos pontos de uma grade com 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ de latitude e longitude sobre a América do Sul. são utilizadas para normalizar as medidas de raios observados pelo LIS e tempestades elétricas definidas por meio do canal 4 do VIRS.  
 
-Portanto, as figuras \ref{lisVT} e \ref{VirsVT} representam duas matrizes: $\mathbf{VT}_{lis}$ refente ao tempo de amostragem do LIS sobre cada ponto de grade (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude) e  $\mathbf{VT}_{virs}$ (figura \ref{VirsVT}), refente ao número de vezes que o VIRS sobrevoou cada ponto de grade (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude), as quais são utilizadas para normalizar as medidas de raios observados pelo LIS e tempestades elétricas definidas por meio do canal 4 do VIRS ($T_b$ $\leq$ 258 K).  
+Portanto, as figuras \ref{lisVT} e \ref{VirsVT} representam duas matrizes: $\mathbf{VT}_{lis}$ (figura \ref{lisVT}) referente ao tempo de amostragem do LIS sobre cada ponto de grade (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude) e  $\mathbf{VT}_{virs}$ (figura \ref{VirsVT}), refente ao número de vezes que o VIRS sobrevoou cada ponto de grade (0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude), as quais são utilizadas para normalizar as medidas de raios observados pelo LIS e tempestades elétricas definidas por meio do canal 4 do VIRS ($T_b$ $\leq$ 258 K).  
 
 \simbolo{name={$\mathbf{VT}_{lis}$},description={Matriz do tempo total da visada do sensor LIS sobre a superfície}}
 
@@ -365,20 +365,22 @@ Na figura \ref{taxaTotalTe}, que ilustra a matriz $\mathbf{P}_{te}$, há uma ext
 \begin{figure}[!ht]
   \centering
   \subfloat[]{{\includegraphics[height=13.5cm]{img/grids/densEspacial_19982011acumuladoFlashPolyfill}} } 
-\caption{Número total de raios (\textit{flashes}) observados pelo LIS em cada região de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude,  entre 1998--2011.}
+\caption{Número total de raios (\textit{flashes}) observados pelo LIS em cada região de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude entre 1998--2011, ilustrando a matriz $\mathbf{FL}_{lis}$.}
 \label{taxatotalraios}
 \end{figure}   
   
 \begin{figure}[!ht]
   \centering 
   {{\includegraphics[height=13.5cm]{img/grids/densEspacial19982011acumuladoTempestadesPolyfill}}}
-\caption{Número  total de tempestade elétrica observadas em cada região de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude, entre 1998--2011.}
+\caption{Número total de tempestades elétricas observadas em cada região de 0,25$^{\circ}$ $\times$ 0,25$^{\circ}$ de latitude e longitude entre 1998--2011, ilustrando a matriz $\mathbf{P}_{te}$.}
 \label{taxaTotalTe}
 \end{figure} 
 
-Devemos também levar em consideração que os pontos de uma grade com espaçamento angular regular, não possuem áreas iguais, pois o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde à área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
+Devemos também levar em consideração que os pontos de uma grade regular em graus de latitude e longitude não possuem áreas iguais, pois o comprimento de arco de 0,25$^{\circ}$ na direção zonal depende da latitude da região. Assim a matriz que corresponde à área da grade regular ($\mathbf{A}_g$) foi calculada e considera nos cálculos de densidades.
 
-Portanto a partir destas grandezas podemos calcular a densidade de raios ($\mathbf{DE}_{fl}$) e a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) em função do tempo de amostragem. A densidade de raios $\mathbf{DE}_{fl}$ é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS de segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por ano por quilômetro quadrado ([ano$^{-1}$] [km$^{-2}$]).
+Portanto a partir das grandezas $\mathbf{FL}_{lis}$, $\mathbf{P}_{te}$, $\mathbf{VT}_{lis}$, $\mathbf{VT}_{virs}$ e $\mathbf{A}_g$, podemos determinar a densidade de raios $\mathbf{DE}_{fl}$, a densidade de tempestades elétricas $\mathbf{DE}_{te}$ e a densidade raios por tempestades elétricas $\mathbf{DE}_{rt}$. 
+
+A densidade de raios $\mathbf{DE}_{fl}$ é calculada conforme a equação \ref{defl}, que apresenta a razão entre $\mathbf{FL}_{lis}$, $\mathbf{VT}_{lis}$ e $\mathbf{A}_g$ multiplicada por 24 horas $\times$ 60 minutos $\times$ 60 segundos $\times$ 365,25 dias, o que converte o tempo de observação do LIS originalmente em segundos para anos. A densidade de raios, portanto, é uma grandeza que representa o número de raios por ano por quilômetro quadrado ([ano$^{-1}$] [km$^{-2}$]).
 
 \begin{equation}
 \mathbf{DE}_{fl} = \frac{\mathbf{FL}_{lis}}{\mathbf{VT}_{lis} \mathbf{A}_g} 31557600     
@@ -387,7 +389,7 @@ Portanto a partir destas grandezas podemos calcular a densidade de raios ($\math
 \index{Distribuição geográfica de densidade! de raios}
 
 
-No mesmo caminho a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) é obtida. Porém, conforme descrito em \ref{metodologiaTRMM}, o tempo de amostragem do LIS e do VIRS são distintos. Enquanto o LIS é um sistema de imageamento, o VIRS é um radiômetro que realiza varreduras durante a trajetória do satélite. Portanto, na obtenção da densidade de tempestades elétricas é considerado o número de vezes que o VIRS sobrevoou cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$. Desta forma, $\mathbf{DE}_{te}$ é obtida conforme a equação \ref{dete}, que define uma grandeza que representa o número de tempestades elétricas por órbita por quilômetro quadrado ([km$^{-2}$]).
+Analogamente a densidade de tempestades elétricas ($\mathbf{DE}_{te}$) é obtida. Porém, conforme descrito em \ref{metodologiaTRMM}, o tempo de amostragem do LIS e do VIRS são distintos. Enquanto o LIS é um sistema de imageamento, o VIRS é um radiômetro que realiza varreduras durante a trajetória do satélite. Portanto, na obtenção da densidade de tempestades elétricas é considerado o número de sobrevoos do VIRS em cada ponto da grade de 0,25$^{\circ}$  $\times$ 0,25$^{\circ}$ de latitude e longitude. Desta forma, $\mathbf{DE}_{te}$ é obtida conforme a equação \ref{dete}, que define uma grandeza que representa o número de tempestades elétricas por órbita  por quilômetro quadrado ([km$^{-2}$]).
 
 %Na figura \ref{VirsVT} temos apenas o acumulado de passagens do VIRS, porém, é conveniente converter o número de vezes que o VIRS observou cada ponto da grade de 0.25$^{\circ}$  $\times$ 0.25$^{\circ}$ em unidade de tempo, pois desta forma teremos as mesmas dimensões físicas tanto para a $\mathbf{DE}_{te}$ quanto para a $\mathbf{DE}_{fl}$.
 %Conforme descrito em \ref{metodologiaTRMM}, em função da velocidade e órbita do satélite TRMM, é possível sobrevoar uma mesma região tropical duas vezes por dia. Então podemos considerar que cada ponto da grande de 0.25$^{\circ}$  $\times$ 0.25$^{\circ}$ da figura \ref{VirsVT} é observado pelo VIRS 2 vezes por dia, portanto se multiplicarmos 2 passagens por 365.25 dias podemos concluir o satélite observa cada ponto da grade aproximadamente 730.5 vezes por ano.
@@ -421,23 +423,23 @@ O estudo para descrever a morfologia da precipitação foi realizado com base na
 
 \subsection{Distribuições de probabilidades com a altitude}
 
-A partir dos perfis de $Z_c$ selecionados pelo algoritmo de identificação de tempestades elétricas, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude através dos Diagramas de Contorno de Frequência por Altitude (CFAD) \cite{yuter1995}.
-\sigla{name={CFAD},description={Diagrama de Contorno de Frequência por Altitude}}
+A partir dos perfis de $Z_c$ selecionados pela metodologia de identificação de tempestades elétricas, conforme descrita em \ref{identificaTempestades}, foi estudada a probabilidade de ocorrência de $Z_c$ por altitude através dos Diagramas de Contorno de Frequência por Altitude (CFAD, do inglês, \textit{Contour Frequency by Altitude Diagram}) \cite{yuter1995}.
+\sigla{name={CFAD},description={Diagrama de Contorno de Frequência por Altitude, do inglês, \textit{Contour Frequency by Altitude Diagram}}}
 \index{Diagrama de Contorno! de Frequência por Altitude -- CFAD}
 
-Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja  dimensão $x$ correspondeu aos valores de $Z_{c}$ e $y$ os níveis de altitude do PR. Neste estudo, a função $f_{pdf}(x,y)$ foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude.
+Conforme descrevem \citeonline{yuter1995}, primeiramente obteve-se uma função de densidade de probabilidade com duas variáveis ($f_{pdf}(x,y)$), cuja  dimensão $x$ correspondeu aos valores de $Z_{c}$ e $y$ os níveis de altitude do PR. Neste estudo, a função $f_{pdf}(x,y)$ foi representada numericamente por uma matriz bidimensional com a granularidade de 1 dBZ para cada 250 m de altitude. Para a obtenção dos diagramas de probabilidade normalizados por nível de altitude -- CFADs --, cada nível $y$ da função $f_{pdf}(x,y)$ foi normalizado pelo número total de ocorrências de $Z_c$. 
+
+Os níveis $y$ de altitude com número total de ocorrências de $Z_c$ menor do que 10\% do nível $y$ com a máxima ocorrência de $Z_c$ foram desconsiderados de todos os CFADs, pois quando a amostragem de valores de $Z_c$ é baixa em relação ao nível $y$ de máxima ocorrência de $Z_c$ (níveis mais elevados de $y$ $\simeq$15--20 km),  pode-se obter valores de probabilidade próximos de 100\% e que não são representativos para os CFADs \cite[Apêndice~A]{yuter1995}.
 
 \simbolo{name={$f_{pdf}(x,y)$},description={Função densidade de probabilidade com duas variáveis}}
 
+Com base na $f_{pdf}(x,y)$ que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa $f_{cdf}(x,y)$ de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD\footnote{Sigla criada a partir do inglês, \textit{Contour Cumulative Frequency by Altitude Diagram}}).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude, do inglês, \textit{Contour Cumulative Frequency by Altitude Diagram} }}   
 
-Para a obtenção dos diagramas de probabilidade normalizados por nível de altitude, cada nível $y$ da função $f_{pdf}(x,y)$ foi normalizado pelo número total de ocorrências de valores de $Z_c$ distribuídos em $x$. Os níveis $y$ de altitude com número total de ocorrência de $Z_c$ em $x$, menor do que 10\% do nível de máxima ocorrência, foram desconsiderados dos contornos de probabilidade em todos os CFADs.
-
-Com base na $f_{pdf}(x,y)$ que definiu cada CFAD, foi calculada a função densidade de probabilidade cumulativa $f_{cdf}(x,y)$ de $Z_c$ por altitude, que originaram os Diagramas de Contorno de Frequência Cumulativa por Altitude (CCFAD).  \sigla{name={CCFAD},description={Diagramas de Contorno de Frequência Cumulativa por Altitude}}   
 \index{Diagrama de Contorno! de Frequência Cumulativa por Altitude -- CCFAD}
 
 \simbolo{name={$f_{cdf}(x,y)$},description={Função densidade de probabilidade cumulativa com duas variáveis}}
 
-Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ associados a diferentes quantis da amostra de probabilidade, elucidando ainda mais as informações contidas nos CFADs.
+Os CCFADs auxiliam a investigar quais as diferenças entre os perfis de $Z_c$ associados a diferentes percentis da amostra de probabilidade, elucidando as informações contidas nos CFADs.	
 
 %Então, objetivando uma análise dos processos de crescimento de hidrometeoros no perfil atmosférico e na mesma óptica de trabalhos como \citeonline{Takahashi1978,Saunders1999,Takahashi2002,avila2009}, ou seja, em função de diferentes condições de temperatura, nesta pesquisa construímos o diagrama denominado como Diagrama de Contorno de Frequência por Temperatura (CFTD), \sigla{name={CFTD},description={Diagrama de Contorno de Frequência por Temperatura}}.
 
