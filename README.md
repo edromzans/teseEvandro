@@ -9,7 +9,7 @@ makeindex -s teseEvandro.ist -t teseEvandro.sgl -o teseEvandro.sbl teseEvandro.s
 makeindex -s teseEvandro.ist -t teseEvandro.agl -o teseEvandro.sgl teseEvandro.sig
 #REFERENCIAS
 bibtex teseEvandro
-#Índice remissivo
+#Indice remissivo
 makeindex teseEvandro
 #PDFLateTEX
 pdflatex teseEvandro
